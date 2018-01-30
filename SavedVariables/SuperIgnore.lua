@@ -296,6 +296,6 @@ SI_Global = {
 	["BanOptDuel"] = true,
 	["WhisperBlock"] = false,
 	["BanDuration"] = 6,
-	["BannedSelected"] = 18,
 	["BanOptGuild"] = false,
+	["BannedSelected"] = 18,
 }

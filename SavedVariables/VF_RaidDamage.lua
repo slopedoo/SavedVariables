@@ -1,36 +1,41 @@
 
 VF_RaidDamageData = {
 	[1] = {
-		[1] = "Session:Info:Zone=Durotar,Zone=Orgrimmar,",
-		[2] = "Session:TimeSynch:Date=2018-01-30 16:08:15,ServerTime=17:8:0,Time=74055,",
-		[3] = "73996::Actar=1,VF_PET_200_Thelvo_Actar=200,VF_PET_738_VFUnknown_Actar=738,VF_PET_6521_VFUnknown_Actar=6521,7273   10  0.00 0.00   0.00 0.00     0,B.psDivineSpirit=1,B.pArcane_TeleportOrgrimmar=2,B.blWhiteDireWolf=3,B1.3...1 2 3,",
-		[4] = "Session:TimeSynch:Date=2018-01-30 16:07:15,ServerTime=17:7:0,Time=73995,",
-		[5] = "73986::Boujoujijou=7274,7274   42  0.00 0.00   0.00 0.00     0,7273   20  0.00 0.00   0.00 0.00     0,R 2100 1,Z Orgrimmar,",
-		[6] = "73976::Ildiaodadall=7273,7273   10  0.00 0.00   0.00 0.00     0,",
-		[7] = "Session:Info:Date=2018-01-30 16:06:26,ServerTime=-1:-1,Time=73945,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-230-60813,RaidID2=Blackwing Lair-214-60813,Zone=Orgrimmar,RaidID1=Molten Core-230-60807,RaidID2=Blackwing Lair-214-60807,",
+		[1] = "Session:TimeSynch:Date=2018-01-30 16:59:33,ServerTime=18:0:0,Time=77132,",
+		[2] = "Session:TimeSynch:Date=2018-01-30 16:58:33,ServerTime=17:59:0,Time=77072,",
+		[3] = "Session:Info:Date=2018-01-30 16:57:45,ServerTime=17:58,Time=77025,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,Zone=Orgrimmar,RaidID1=Molten Core-230-57738,RaidID2=Blackwing Lair-214-57738,RaidID1=Molten Core-230-57738,RaidID2=Blackwing Lair-214-57738,RaidID1=Molten Core-230-57727,RaidID2=Blackwing Lair-214-57727,",
 	},
 	[2] = {
-		[1] = "Session:Info:Date=2018-01-30 15:18:14,ServerTime=-1:-1,Time=71054,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-230-63705,RaidID2=Blackwing Lair-214-63705,Zone=Orgrimmar,RaidID1=Molten Core-230-63698,RaidID2=Blackwing Lair-214-63698,",
+		[1] = "Session:Info:Date=2018-01-30 16:57:15,ServerTime=17:55,Time=76994,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-230-57765,RaidID2=Blackwing Lair-214-57765,Zone=Orgrimmar,RaidID1=Molten Core-230-57758,RaidID2=Blackwing Lair-214-57758,",
 	},
 	[3] = {
-		[1] = "Session:Info:Date=2018-01-29 21:19:00,ServerTime=-1:-1,Time=6300,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Zul'Gurub-81441-42058,RaidID2=Onyxia's Lair-81154-42058,RaidID3=Blackwing Lair-782-128458,RaidID4=Molten Core-935-128458,Zone=Orgrimmar,RaidID1=Zul'Gurub-81441-42050,RaidID2=Onyxia's Lair-81154-42050,RaidID3=Blackwing Lair-782-128450,RaidID4=Molten Core-935-128450,",
+		[1] = "Session:Info:Date=2018-01-30 16:35:41,ServerTime=17:33,Time=75701,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-230-59056,RaidID2=Blackwing Lair-214-59056,Zone=Orgrimmar,RaidID1=Molten Core-230-59051,RaidID2=Blackwing Lair-214-59051,",
 	},
 	[4] = {
-		[1] = "Session:Info:Date=2018-01-29 21:10:03,ServerTime=-1:-1,Time=5763,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Zul'Gurub-81441-42593,RaidID2=Onyxia's Lair-81154-42593,RaidID3=Blackwing Lair-782-128993,RaidID4=Molten Core-935-128993,Zone=Orgrimmar,RaidID1=Zul'Gurub-81441-42587,RaidID2=Onyxia's Lair-81154-42587,RaidID3=Blackwing Lair-782-128987,RaidID4=Molten Core-935-128987,",
+		[1] = "Session:Info:Date=2018-01-30 16:06:26,ServerTime=-1:-1,Time=73945,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-230-60813,RaidID2=Blackwing Lair-214-60813,Zone=Orgrimmar,RaidID1=Molten Core-230-60807,RaidID2=Blackwing Lair-214-60807,",
 	},
 	[5] = {
-		[1] = "Session:Info:Date=2018-01-29 21:06:52,ServerTime=22:5,Time=5572,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Zul'Gurub-81441-42785,RaidID2=Onyxia's Lair-81154-42785,RaidID3=Blackwing Lair-782-129185,RaidID4=Molten Core-935-129185,Zone=Orgrimmar,",
+		[1] = "Session:Info:Date=2018-01-30 15:18:14,ServerTime=-1:-1,Time=71054,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-230-63705,RaidID2=Blackwing Lair-214-63705,Zone=Orgrimmar,RaidID1=Molten Core-230-63698,RaidID2=Blackwing Lair-214-63698,",
 	},
 	[6] = {
-		[1] = "Session:Info:Date=2018-01-29 21:04:50,ServerTime=-1:-1,Time=5450,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Zul'Gurub-81441-42908,RaidID2=Onyxia's Lair-81154-42908,RaidID3=Blackwing Lair-782-129308,RaidID4=Molten Core-935-129308,Zone=Orgrimmar,RaidID1=Zul'Gurub-81441-42900,RaidID2=Onyxia's Lair-81154-42900,RaidID3=Blackwing Lair-782-129300,RaidID4=Molten Core-935-129300,",
+		[1] = "Session:Info:Date=2018-01-29 21:19:00,ServerTime=-1:-1,Time=6300,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Zul'Gurub-81441-42058,RaidID2=Onyxia's Lair-81154-42058,RaidID3=Blackwing Lair-782-128458,RaidID4=Molten Core-935-128458,Zone=Orgrimmar,RaidID1=Zul'Gurub-81441-42050,RaidID2=Onyxia's Lair-81154-42050,RaidID3=Blackwing Lair-782-128450,RaidID4=Molten Core-935-128450,",
 	},
 	[7] = {
-		[1] = "Session:Info:Date=2018-01-29 21:01:41,ServerTime=-1:-1,Time=5261,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Zul'Gurub-81441-43096,RaidID2=Onyxia's Lair-81154-43096,RaidID3=Blackwing Lair-782-129496,RaidID4=Molten Core-935-129496,Zone=Orgrimmar,RaidID1=Zul'Gurub-81441-43089,RaidID2=Onyxia's Lair-81154-43089,RaidID3=Blackwing Lair-782-129489,RaidID4=Molten Core-935-129489,",
+		[1] = "Session:Info:Date=2018-01-29 21:10:03,ServerTime=-1:-1,Time=5763,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Zul'Gurub-81441-42593,RaidID2=Onyxia's Lair-81154-42593,RaidID3=Blackwing Lair-782-128993,RaidID4=Molten Core-935-128993,Zone=Orgrimmar,RaidID1=Zul'Gurub-81441-42587,RaidID2=Onyxia's Lair-81154-42587,RaidID3=Blackwing Lair-782-128987,RaidID4=Molten Core-935-128987,",
 	},
 	[8] = {
-		[1] = "Session:Info:Date=2018-01-29 20:12:44,ServerTime=21:11,Time=2323,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Zul'Gurub-81441-46035,RaidID2=Onyxia's Lair-81154-46035,RaidID3=Blackwing Lair-782-132435,RaidID4=Molten Core-935-132435,Zone=Orgrimmar,RaidID1=Zul'Gurub-81441-46027,RaidID2=Onyxia's Lair-81154-46027,RaidID3=Blackwing Lair-782-132427,RaidID4=Molten Core-935-132427,",
+		[1] = "Session:Info:Date=2018-01-29 21:06:52,ServerTime=22:5,Time=5572,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Zul'Gurub-81441-42785,RaidID2=Onyxia's Lair-81154-42785,RaidID3=Blackwing Lair-782-129185,RaidID4=Molten Core-935-129185,Zone=Orgrimmar,",
 	},
 	[9] = {
+		[1] = "Session:Info:Date=2018-01-29 21:04:50,ServerTime=-1:-1,Time=5450,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Zul'Gurub-81441-42908,RaidID2=Onyxia's Lair-81154-42908,RaidID3=Blackwing Lair-782-129308,RaidID4=Molten Core-935-129308,Zone=Orgrimmar,RaidID1=Zul'Gurub-81441-42900,RaidID2=Onyxia's Lair-81154-42900,RaidID3=Blackwing Lair-782-129300,RaidID4=Molten Core-935-129300,",
+	},
+	[10] = {
+		[1] = "Session:Info:Date=2018-01-29 21:01:41,ServerTime=-1:-1,Time=5261,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Zul'Gurub-81441-43096,RaidID2=Onyxia's Lair-81154-43096,RaidID3=Blackwing Lair-782-129496,RaidID4=Molten Core-935-129496,Zone=Orgrimmar,RaidID1=Zul'Gurub-81441-43089,RaidID2=Onyxia's Lair-81154-43089,RaidID3=Blackwing Lair-782-129489,RaidID4=Molten Core-935-129489,",
+	},
+	[11] = {
+		[1] = "Session:Info:Date=2018-01-29 20:12:44,ServerTime=21:11,Time=2323,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Zul'Gurub-81441-46035,RaidID2=Onyxia's Lair-81154-46035,RaidID3=Blackwing Lair-782-132435,RaidID4=Molten Core-935-132435,Zone=Orgrimmar,RaidID1=Zul'Gurub-81441-46027,RaidID2=Onyxia's Lair-81154-46027,RaidID3=Blackwing Lair-782-132427,RaidID4=Molten Core-935-132427,",
+	},
+	[12] = {
 		[1] = "Session:Info:Zone=Stranglethorn Vale,Zone=Badlands,Zone=Orgrimmar,",
 		[2] = "16967::Nezloben=6582,6582   51  0.00 0.00   0.00 0.00     0,Gucclgang=6581,6581 51    0.00 0.00   0.00 0.00     0,Raketauvugla=1201,1201   237  0.00 0.00   0.00 0.00     0,B6210.0..3 4 6 8 70 9 11 17.,B6222.8...20 70,B6228.0..3 4 5 14 11 13.,B1.6..161.,",
 		[3] = "Session:Info:Zone=Durotar,",
@@ -1210,139 +1215,139 @@ VF_RaidDamageData = {
 		[1177] = "8348::Actar=1,VF_PET_200_Thelvo_Actar=200,VF_PET_738_VFUnknown_Actar=738,1 6430 54404 4735 34202 23.50 196.80  1 0.00 0.00 3398 965 88606 4363 0,Schandorff=6213,6213 50905 2140 12118 551 233.50 9.80   0.00 0.00 13261 1355 2691 14616 0,Necromance=6215,6215 43570 1200 7014  159.00 4.40   0.00 0.00 12464 5433 1200 17897 0,Skarfacee=6216,6216 32476 1750 16370  97.20 5.20   0.00 0.00 8402 3949 1750 12351 0,Sagitaris=6206,VF_PET_6209_Default_Sagitaris=6209,6206  245   0.00 0.00   0.00 0.00   245  0,SW_PetDefault=6209,6209     0.00 0.00   0.00 0.00 245   245 0,Takashi=5531,5531 53962 2310 11646 502 212.40 4.80 2  0.00 0.00 6693 2145 2812 8838 0,B.ptRavenForm=1,B.bTrueShot=2,B.ptRegeneration=3,B.psPrayerOfFortitude=4,B.psPrayerofSpirit=5,B.no32=6,B.psMagicalSentry=7,B.nwMonsterScales_07=8,B.nGauntlets_19=9,B6206.9...1 2 3 4 5 6 7 8 9,B.nwHead_Dragon_01=10,B.pArcane_TeleportOrgrimmar=11,B.psWordFortitude=12,B6213.4...10 11 12 2,B.puRagingScream=13,B.psArcaneIntellect=14,B6215.5...5 13 14 4 3,B.no44=15,B.nz03=16,B.nwMonsterScales_11=17,B.no92=18,B6216.7...4 10 3 15 16 17 18,B.psInnerFire=19,B.puDeadofNight=20,B.nz18=21,B5531.4...3 19 20 21,B1.6...10 14 19 4 5 3,",
 		[1178] = "Session:Info:Date=2018-01-28 18:38:59,ServerTime=-1:-1,Time=8330,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Onyxia's Lair-81154-138057,RaidID2=Blackwing Lair-782-224457,RaidID3=Molten Core-935-224457,Zone=Onyxia's Lair,RaidID1=Onyxia's Lair-81154-138050,RaidID2=Blackwing Lair-782-224450,RaidID3=Molten Core-935-224450,",
 	},
-	[10] = {
+	[13] = {
 		[1] = "Session:Info:Date=2018-01-28 16:55:07,ServerTime=-1:-1,Time=2098,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-230689,RaidID2=Blackwing Lair-782-230689,Zone=Orgrimmar,RaidID1=Molten Core-935-230682,RaidID2=Blackwing Lair-782-230682,",
 	},
-	[11] = {
+	[14] = {
 		[1] = "Session:Info:Date=2018-01-28 15:26:10,ServerTime=-1:-1,Time=65641,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-236026,RaidID2=Blackwing Lair-782-236026,Zone=Orgrimmar,RaidID1=Molten Core-935-236019,RaidID2=Blackwing Lair-782-236019,",
 	},
-	[12] = {
+	[15] = {
 		[1] = "Session:Info:Date=2018-01-28 14:24:36,ServerTime=15:24,Time=61947,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-239721,RaidID2=Blackwing Lair-782-239721,Zone=Orgrimmar,",
 	},
-	[13] = {
+	[16] = {
 		[1] = "Session:Info:Date=2018-01-28 12:26:08,ServerTime=13:25,Time=54834,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-246833,RaidID2=Blackwing Lair-782-246833,Zone=Orgrimmar,RaidID1=Molten Core-935-246826,RaidID2=Blackwing Lair-782-246826,",
 	},
-	[14] = {
+	[17] = {
 		[1] = "Session:Info:Date=2018-01-28 12:05:01,ServerTime=-1:-1,Time=53568,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-248099,RaidID2=Blackwing Lair-782-248099,Zone=Orgrimmar,RaidID1=Molten Core-935-248092,RaidID2=Blackwing Lair-782-248092,",
 	},
-	[15] = {
+	[18] = {
 		[1] = "Session:Info:Date=2018-01-28 09:27:54,ServerTime=-1:-1,Time=44141,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-257527,RaidID2=Blackwing Lair-782-257527,Zone=Orgrimmar,RaidID1=Molten Core-935-257520,RaidID2=Blackwing Lair-782-257520,",
 	},
-	[16] = {
+	[19] = {
 		[1] = "Session:Info:Date=2018-01-28 09:25:02,ServerTime=10:25,Time=43969,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-257698,RaidID2=Blackwing Lair-782-257698,Zone=Orgrimmar,RaidID1=Molten Core-935-257691,RaidID2=Blackwing Lair-782-257691,",
 	},
-	[17] = {
+	[20] = {
 		[1] = "Session:Info:Date=2018-01-27 22:04:49,ServerTime=23:4,Time=3156,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-298512,RaidID2=Blackwing Lair-782-298512,Zone=Orgrimmar,RaidID1=Molten Core-935-298503,RaidID2=Blackwing Lair-782-298503,",
 	},
-	[18] = {
+	[21] = {
 		[1] = "Session:Info:Date=2018-01-27 20:24:52,ServerTime=21:19,Time=28477,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-304508,RaidID2=Blackwing Lair-782-304508,Zone=Orgrimmar,RaidID1=Molten Core-935-304501,RaidID2=Blackwing Lair-782-304501,",
 	},
-	[19] = {
+	[22] = {
 		[1] = "Session:Info:Date=2018-01-27 19:15:52,ServerTime=20:14,Time=24338,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-308645,RaidID2=Blackwing Lair-782-308645,Zone=Orgrimmar,RaidID1=Molten Core-935-308640,RaidID2=Blackwing Lair-782-308640,",
 	},
-	[20] = {
+	[23] = {
 		[1] = "Session:Info:Date=2018-01-27 18:50:30,ServerTime=19:49,Time=22816,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-310171,RaidID2=Blackwing Lair-782-310171,Zone=Orgrimmar,",
 	},
-	[21] = {
+	[24] = {
 		[1] = "Session:Info:Date=2018-01-27 18:30:29,ServerTime=-1:-1,Time=21615,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,Zone=Durotar,RaidID1=Molten Core-935-311369,RaidID2=Blackwing Lair-782-311369,RaidID1=Molten Core-935-311363,RaidID2=Blackwing Lair-782-311363,",
 	},
-	[22] = {
+	[25] = {
 		[1] = "Session:Info:Date=2018-01-27 18:29:37,ServerTime=-1:-1,Time=21563,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-311422,RaidID2=Blackwing Lair-782-311422,Zone=Durotar,RaidID1=Molten Core-935-311415,RaidID2=Blackwing Lair-782-311415,",
 	},
-	[23] = {
+	[26] = {
 		[1] = "Session:Info:Date=2018-01-27 18:25:53,ServerTime=-1:-1,Time=21339,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-311647,RaidID2=Blackwing Lair-782-311647,Zone=Durotar,",
 	},
-	[24] = {
+	[27] = {
 		[1] = "Session:Info:Date=2018-01-27 18:21:06,ServerTime=-1:-1,Time=21052,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-311934,RaidID2=Blackwing Lair-782-311934,Zone=Durotar,RaidID1=Molten Core-935-311926,RaidID2=Blackwing Lair-782-311926,",
 	},
-	[25] = {
+	[28] = {
 		[1] = "Session:Info:Date=2018-01-27 18:19:22,ServerTime=-1:-1,Time=20948,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-312038,RaidID2=Blackwing Lair-782-312038,Zone=Durotar,RaidID1=Molten Core-935-312030,RaidID2=Blackwing Lair-782-312030,",
 	},
-	[26] = {
+	[29] = {
 		[1] = "Session:Info:Date=2018-01-27 18:10:29,ServerTime=-1:-1,Time=20415,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-312570,RaidID2=Blackwing Lair-782-312570,Zone=Durotar,RaidID1=Molten Core-935-312563,RaidID2=Blackwing Lair-782-312563,",
 	},
-	[27] = {
+	[30] = {
 		[1] = "Session:Info:Date=2018-01-27 18:07:18,ServerTime=-1:-1,Time=20223,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-312762,RaidID2=Blackwing Lair-782-312762,Zone=Durotar,RaidID1=Molten Core-935-312755,RaidID2=Blackwing Lair-782-312755,",
 	},
-	[28] = {
+	[31] = {
 		[1] = "Session:Info:Date=2018-01-27 18:03:19,ServerTime=19:3,Time=19984,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,Zone=Durotar,RaidID1=Molten Core-935-313004,RaidID2=Blackwing Lair-782-313004,RaidID1=Molten Core-935-313004,RaidID2=Blackwing Lair-782-313004,RaidID1=Molten Core-935-312994,RaidID2=Blackwing Lair-782-312994,",
 	},
-	[29] = {
+	[32] = {
 		[1] = "Session:Info:Date=2018-01-27 17:56:07,ServerTime=-1:-1,Time=19552,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-313433,RaidID2=Blackwing Lair-782-313433,Zone=Durotar,RaidID1=Molten Core-935-313426,RaidID2=Blackwing Lair-782-313426,",
 	},
-	[30] = {
+	[33] = {
 		[1] = "Session:Info:Date=2018-01-27 17:55:31,ServerTime=-1:-1,Time=19516,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-313468,RaidID2=Blackwing Lair-782-313468,Zone=Durotar,RaidID1=Molten Core-935-313462,RaidID2=Blackwing Lair-782-313462,",
 	},
-	[31] = {
+	[34] = {
 		[1] = "Session:Info:Date=2018-01-27 17:52:17,ServerTime=-1:-1,Time=19323,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,Zone=Durotar,RaidID1=Molten Core-935-313662,RaidID2=Blackwing Lair-782-313662,RaidID1=Molten Core-935-313655,RaidID2=Blackwing Lair-782-313655,",
 	},
-	[32] = {
+	[35] = {
 		[1] = "Session:Info:Date=2018-01-27 17:49:27,ServerTime=-1:-1,Time=19152,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-313831,RaidID2=Blackwing Lair-782-313831,Zone=Orgrimmar,RaidID1=Molten Core-935-313826,RaidID2=Blackwing Lair-782-313826,Zone=Durotar,",
 	},
-	[33] = {
+	[36] = {
 		[1] = "Session:Info:Date=2018-01-27 17:45:35,ServerTime=-1:-1,Time=18921,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-314064,RaidID2=Blackwing Lair-782-314064,Zone=Orgrimmar,RaidID1=Molten Core-935-314057,RaidID2=Blackwing Lair-782-314057,",
 	},
-	[34] = {
+	[37] = {
 		[1] = "Session:Info:Date=2018-01-27 17:38:54,ServerTime=-1:-1,Time=18519,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-314466,RaidID2=Blackwing Lair-782-314466,Zone=Orgrimmar,RaidID1=Molten Core-935-314459,RaidID2=Blackwing Lair-782-314459,",
 	},
-	[35] = {
+	[38] = {
 		[1] = "Session:Info:Date=2018-01-27 17:29:34,ServerTime=-1:-1,Time=17960,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-315023,RaidID2=Blackwing Lair-782-315023,Zone=Orgrimmar,RaidID1=Molten Core-935-315018,RaidID2=Blackwing Lair-782-315018,",
 	},
-	[36] = {
+	[39] = {
 		[1] = "Session:Info:Date=2018-01-27 17:28:45,ServerTime=-1:-1,Time=17911,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-315074,RaidID2=Blackwing Lair-782-315074,Zone=Orgrimmar,RaidID1=Molten Core-935-315067,RaidID2=Blackwing Lair-782-315067,",
 	},
-	[37] = {
+	[40] = {
 		[1] = "Session:Info:Date=2018-01-27 17:27:57,ServerTime=-1:-1,Time=17862,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-315122,RaidID2=Blackwing Lair-782-315122,Zone=Orgrimmar,RaidID1=Molten Core-935-315116,RaidID2=Blackwing Lair-782-315116,",
 	},
-	[38] = {
+	[41] = {
 		[1] = "Session:Info:Date=2018-01-27 17:26:36,ServerTime=-1:-1,Time=17781,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-315204,RaidID2=Blackwing Lair-782-315204,Zone=Orgrimmar,RaidID1=Molten Core-935-315197,RaidID2=Blackwing Lair-782-315197,",
 	},
-	[39] = {
+	[42] = {
 		[1] = "Session:Info:Date=2018-01-27 17:25:14,ServerTime=-1:-1,Time=17699,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-315285,RaidID2=Blackwing Lair-782-315285,Zone=Orgrimmar,RaidID1=Molten Core-935-315279,RaidID2=Blackwing Lair-782-315279,",
 	},
-	[40] = {
+	[43] = {
 		[1] = "Session:Info:Date=2018-01-27 17:23:39,ServerTime=-1:-1,Time=17605,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,Zone=Orgrimmar,RaidID1=Molten Core-935-315380,RaidID2=Blackwing Lair-782-315380,RaidID1=Molten Core-935-315373,RaidID2=Blackwing Lair-782-315373,",
 	},
-	[41] = {
+	[44] = {
 		[1] = "Session:Info:Date=2018-01-27 17:19:58,ServerTime=-1:-1,Time=17384,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-315599,RaidID2=Blackwing Lair-782-315599,Zone=Orgrimmar,RaidID1=Molten Core-935-315594,RaidID2=Blackwing Lair-782-315594,",
 	},
-	[42] = {
+	[45] = {
 		[1] = "Session:Info:Date=2018-01-27 17:17:19,ServerTime=-1:-1,Time=17225,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-315758,RaidID2=Blackwing Lair-782-315758,Zone=Orgrimmar,RaidID1=Molten Core-935-315753,RaidID2=Blackwing Lair-782-315753,",
 	},
-	[43] = {
+	[46] = {
 		[1] = "Session:Info:Date=2018-01-27 17:15:12,ServerTime=-1:-1,Time=17097,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-315888,RaidID2=Blackwing Lair-782-315888,Zone=Orgrimmar,RaidID1=Molten Core-935-315881,RaidID2=Blackwing Lair-782-315881,",
 	},
-	[44] = {
+	[47] = {
 		[1] = "Session:Info:Date=2018-01-27 16:50:00,ServerTime=-1:-1,Time=15586,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-317399,RaidID2=Blackwing Lair-782-317399,Zone=Orgrimmar,RaidID1=Molten Core-935-317392,RaidID2=Blackwing Lair-782-317392,",
 	},
-	[45] = {
+	[48] = {
 		[1] = "Session:Info:Date=2018-01-27 16:42:00,ServerTime=-1:-1,Time=15106,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-317878,RaidID2=Blackwing Lair-782-317878,Zone=Orgrimmar,RaidID1=Molten Core-935-317872,RaidID2=Blackwing Lair-782-317872,",
 	},
-	[46] = {
+	[49] = {
 		[1] = "Session:Info:Date=2018-01-27 16:32:07,ServerTime=17:31,Time=14513,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-318474,RaidID2=Blackwing Lair-782-318474,Zone=Orgrimmar,RaidID1=Molten Core-935-318465,RaidID2=Blackwing Lair-782-318465,",
 	},
-	[47] = {
+	[50] = {
 		[1] = "Session:Info:Date=2018-01-27 15:52:50,ServerTime=-1:-1,Time=12155,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,Zone=Orgrimmar,RaidID1=Molten Core-935-320828,RaidID2=Blackwing Lair-782-320828,RaidID1=Molten Core-935-320823,RaidID2=Blackwing Lair-782-320823,",
 	},
-	[48] = {
+	[51] = {
 		[1] = "Session:Info:Date=2018-01-27 15:51:01,ServerTime=-1:-1,Time=12046,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-320938,RaidID2=Blackwing Lair-782-320938,Zone=Orgrimmar,RaidID1=Molten Core-935-320932,RaidID2=Blackwing Lair-782-320932,",
 	},
-	[49] = {
+	[52] = {
 		[1] = "Session:Info:Date=2018-01-27 15:42:11,ServerTime=16:41,Time=11516,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,Zone=Orgrimmar,RaidID1=Molten Core-935-321468,RaidID2=Blackwing Lair-782-321468,",
 	},
-	[50] = {
+	[53] = {
 		[1] = "Session:Info:Date=2018-01-27 14:34:57,ServerTime=15:35,Time=7483,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-325501,RaidID2=Blackwing Lair-782-325501,Zone=Orgrimmar,RaidID1=Molten Core-935-325495,RaidID2=Blackwing Lair-782-325495,",
 	},
-	[51] = {
+	[54] = {
 		[1] = "Session:Info:Date=2018-01-27 14:08:49,ServerTime=-1:-1,Time=5915,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,Zone=Badlands,RaidID1=Molten Core-935-327070,RaidID2=Blackwing Lair-782-327070,RaidID1=Molten Core-935-327063,RaidID2=Blackwing Lair-782-327063,",
 	},
-	[52] = {
+	[55] = {
 		[1] = "Session:Info:Date=2018-01-27 12:51:26,ServerTime=-1:-1,Time=1271,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,Zone=Orgrimmar,RaidID1=Molten Core-935-331713,RaidID2=Blackwing Lair-782-331713,RaidID1=Molten Core-935-331707,RaidID2=Blackwing Lair-782-331707,",
 	},
-	[53] = {
+	[56] = {
 		[1] = "Session:Info:Date=2018-01-27 12:35:03,ServerTime=-1:-1,Time=289,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,RaidID1=Molten Core-935-332696,RaidID2=Blackwing Lair-782-332696,Zone=Orgrimmar,RaidID1=Molten Core-935-332689,RaidID2=Blackwing Lair-782-332689,",
 	},
-	[54] = {
+	[57] = {
 		[1] = "Session:Info:Date=2018-01-27 10:42:28,ServerTime=-1:-1,Time=269426,Realm=Lightbringer,Player=Actar,AddonVersion=1.9.14,Zone=Orgrimmar,RaidID1=Molten Core-935-339451,RaidID2=Blackwing Lair-782-339451,RaidID1=Molten Core-935-339445,RaidID2=Blackwing Lair-782-339445,",
 	},
 }

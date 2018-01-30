@@ -263,7 +263,7 @@ AtlasLootCharDB = {
 	["PartialMatching"] = true,
 	["MinimapButtonRadius"] = 78,
 	["FirstTime"] = false,
-	["LastBoss"] = "RFCTaragaman",
+	["LootlinkTT"] = false,
 	["HidePanel"] = false,
 	["WishList"] = {
 		[1] = {
@@ -323,14 +323,14 @@ AtlasLootCharDB = {
 			[5] = "BWLNefarian|AtlasLootItems",
 		},
 	},
-	["MinimapButtonPosition"] = 315,
+	["LastSearchedText"] = "wolf",
 	["QuickLooks"] = {
 	},
 	["AllLinks"] = false,
 	["EquipCompare"] = false,
 	["AtlasLootVersion"] = "40605",
-	["LastSearchedText"] = "wolf",
+	["MinimapButtonPosition"] = 315,
 	["ItemSpam"] = true,
 	["MinimapButton"] = false,
-	["LootlinkTT"] = false,
+	["LastBoss"] = "RFCTaragaman",
 }

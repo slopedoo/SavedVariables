@@ -41,7 +41,7 @@ HonorSpy: disabled
 GroupCalendar: disabled
 CT_RaidAssist: disabled
 pfUI: enabled
-EQL3: disabled
+EQL3: enabled
 Bagnon: disabled
 Bagnon_Core: disabled
 Cartographer: enabled
@@ -150,3 +150,13 @@ AntiSpamStopCast: enabled
 SuperMacro: disabled
 CleverMacro: enabled
 Clique: enabled
+_LazyPig: enabled
+ActionBarSaver: enabled
+AdvancedTradeSkillWindow: enabled
+cyCircled: enabled
+ManaMinder: enabled
+MinimapButtonFrame: enabled
+VanillaRatingBuster: enabled
+VF_BGStats: enabled
+VF_CharacterStats: enabled
+modguide: disabled

@@ -6,10 +6,11 @@ postal_Characters = {
 		["Reare"] = 2970.64,
 	},
 	["Lightbringer|Horde"] = {
+		["Gitpull"] = 76700.906,
 		["Gitpush"] = 66514.984,
-		["Actar"] = 73950.359,
-		["Sqlite"] = 360982.25,
+		["Actar"] = 77025.546,
 		["Vocie"] = 102204.562,
-		["Bartharan"] = 29543.781,
+		["Bartharan"] = 75460.96800000001,
+		["Sqlite"] = 360982.25,
 	},
 }

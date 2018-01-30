@@ -1,0 +1,707 @@
+
+GridDB = {
+	["namespaces"] = {
+		["GridFrame"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+					["invertBarColor"] = false,
+					["debug"] = false,
+					["FrameSize"] = 26,
+					["statusmap"] = {
+						["corner2"] = {
+						},
+						["text"] = {
+							["unit_name"] = true,
+							["unit_healthDeficit"] = true,
+							["alert_death"] = true,
+						},
+						["border"] = {
+							["alert_lowHealth"] = true,
+							["alert_lowMana"] = true,
+						},
+						["corner4"] = {
+							["alert_aggro"] = true,
+						},
+						["corner1"] = {
+							["alert_heals"] = true,
+						},
+						["frameAlpha"] = {
+							["alert_offline"] = true,
+							["alert_death"] = true,
+						},
+						["icon"] = {
+							["debuff_curse"] = true,
+							["debuff_poison"] = true,
+							["debuff_disease"] = true,
+							["debuff_magic"] = true,
+						},
+						["corner3"] = {
+							["debuff_curse"] = true,
+							["debuff_poison"] = true,
+							["debuff_disease"] = true,
+							["debuff_magic"] = true,
+						},
+						["bar"] = {
+							["alert_offline"] = true,
+							["alert_death"] = true,
+							["unit_health"] = true,
+						},
+					},
+				},
+				["realm/Elysium - Horde"] = {
+					["invertBarColor"] = false,
+					["debug"] = false,
+					["FrameSize"] = 26,
+					["statusmap"] = {
+						["corner2"] = {
+						},
+						["text"] = {
+							["unit_name"] = true,
+							["unit_healthDeficit"] = true,
+							["alert_death"] = true,
+						},
+						["border"] = {
+							["alert_lowHealth"] = true,
+							["alert_lowMana"] = true,
+						},
+						["corner4"] = {
+							["alert_aggro"] = true,
+						},
+						["corner1"] = {
+							["alert_heals"] = true,
+						},
+						["frameAlpha"] = {
+							["alert_offline"] = true,
+							["alert_death"] = true,
+						},
+						["icon"] = {
+							["debuff_curse"] = true,
+							["debuff_poison"] = true,
+							["debuff_disease"] = true,
+							["debuff_magic"] = true,
+						},
+						["corner3"] = {
+							["debuff_curse"] = true,
+							["debuff_poison"] = true,
+							["debuff_disease"] = true,
+							["debuff_magic"] = true,
+						},
+						["bar"] = {
+							["alert_offline"] = true,
+							["alert_death"] = true,
+							["unit_health"] = true,
+						},
+					},
+				},
+			},
+		},
+		["GridStatus"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+					["debug"] = false,
+					["range"] = true,
+				},
+				["realm/Elysium - Horde"] = {
+					["debug"] = false,
+					["range"] = true,
+				},
+			},
+		},
+		["GridStatusAggro"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+					["debug"] = false,
+					["alert_aggro"] = {
+						["priority"] = 99,
+						["color"] = {
+							["a"] = 1,
+							["r"] = 1,
+							["g"] = 0,
+							["b"] = 0,
+						},
+						["text"] = "Aggro",
+						["range"] = true,
+						["enable"] = true,
+					},
+				},
+				["realm/Elysium - Horde"] = {
+					["debug"] = false,
+					["alert_aggro"] = {
+						["priority"] = 99,
+						["color"] = {
+							["a"] = 1,
+							["r"] = 1,
+							["g"] = 0,
+							["b"] = 0,
+						},
+						["text"] = "Aggro",
+						["range"] = true,
+						["enable"] = true,
+					},
+				},
+			},
+		},
+		["GridStatusHeals"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+					["alert_heals"] = {
+						["priority"] = 50,
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0,
+							["g"] = 1,
+							["b"] = 0,
+						},
+						["text"] = "incoming heals",
+						["range"] = true,
+						["enable"] = true,
+					},
+					["debug"] = false,
+				},
+				["realm/Elysium - Horde"] = {
+					["alert_heals"] = {
+						["priority"] = 50,
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0,
+							["g"] = 1,
+							["b"] = 0,
+						},
+						["text"] = "incoming heals",
+						["range"] = true,
+						["enable"] = true,
+					},
+					["debug"] = false,
+				},
+			},
+		},
+		["GridStatusHealth"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+					["alert_offline"] = {
+						["priority"] = 0,
+						["color"] = {
+							["a"] = 0.6,
+							["r"] = 0.5,
+							["g"] = 0.5,
+						},
+						["text"] = "Offline",
+						["range"] = false,
+						["enable"] = true,
+					},
+					["debug"] = false,
+					["unit_healthDeficit"] = {
+						["threshold"] = 20,
+						["useClassColors"] = true,
+						["enable"] = true,
+						["priority"] = 30,
+						["range"] = true,
+						["color"] = {
+							["a"] = 1,
+							["r"] = 1,
+							["g"] = 1,
+							["b"] = 1,
+						},
+					},
+					["alert_death"] = {
+						["priority"] = 50,
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0.5,
+							["g"] = 0.5,
+							["b"] = 0.5,
+						},
+						["text"] = "DEAD",
+						["range"] = false,
+						["enable"] = true,
+					},
+					["alert_lowHealth"] = {
+						["threshold"] = 80,
+						["priority"] = 30,
+						["enable"] = true,
+						["text"] = "Low HP",
+						["range"] = true,
+						["color"] = {
+							["a"] = 1,
+							["r"] = 1,
+							["g"] = 1,
+							["b"] = 1,
+						},
+					},
+					["unit_health"] = {
+						["useClassColors"] = true,
+						["deadAsFullHealth"] = true,
+						["enable"] = true,
+						["priority"] = 30,
+						["range"] = true,
+						["color"] = {
+							["a"] = 1,
+							["r"] = 1,
+							["g"] = 1,
+							["b"] = 1,
+						},
+					},
+				},
+				["realm/Elysium - Horde"] = {
+					["alert_offline"] = {
+						["priority"] = 0,
+						["color"] = {
+							["a"] = 0.6,
+							["r"] = 0.5,
+							["g"] = 0.5,
+						},
+						["text"] = "Offline",
+						["range"] = false,
+						["enable"] = true,
+					},
+					["debug"] = false,
+					["unit_healthDeficit"] = {
+						["threshold"] = 20,
+						["useClassColors"] = true,
+						["enable"] = true,
+						["priority"] = 30,
+						["range"] = true,
+						["color"] = {
+							["a"] = 1,
+							["r"] = 1,
+							["g"] = 1,
+							["b"] = 1,
+						},
+					},
+					["alert_death"] = {
+						["priority"] = 50,
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0.5,
+							["g"] = 0.5,
+							["b"] = 0.5,
+						},
+						["text"] = "DEAD",
+						["range"] = false,
+						["enable"] = true,
+					},
+					["alert_lowHealth"] = {
+						["threshold"] = 80,
+						["priority"] = 30,
+						["enable"] = true,
+						["text"] = "Low HP",
+						["range"] = true,
+						["color"] = {
+							["a"] = 1,
+							["r"] = 1,
+							["g"] = 1,
+							["b"] = 1,
+						},
+					},
+					["unit_health"] = {
+						["useClassColors"] = true,
+						["deadAsFullHealth"] = true,
+						["enable"] = true,
+						["priority"] = 30,
+						["range"] = true,
+						["color"] = {
+							["a"] = 1,
+							["r"] = 1,
+							["g"] = 1,
+							["b"] = 1,
+						},
+					},
+				},
+			},
+		},
+		["GridLayout"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+					["BorderB"] = 0.5,
+					["BackgroundR"] = 0.1,
+					["ScaleSize"] = 1,
+					["FrameLock"] = false,
+					["BorderA"] = 1,
+					["BorderR"] = 0.5,
+					["PosX"] = 499.9999675299858,
+					["BackgroundG"] = 0.1,
+					["debug"] = false,
+					["layout"] = "By Group 40",
+					["horizonal"] = false,
+					["showParty"] = true,
+					["BackgroundA"] = 0.65,
+					["BackgroundB"] = 0.1,
+					["BorderG"] = 0.5,
+					["FrameDisplay"] = "always",
+					["Padding"] = 1,
+					["Spacing"] = 10,
+					["PosY"] = 400.0000011670492,
+				},
+				["Default"] = {
+					["BorderB"] = 0.5019607843137255,
+					["BackgroundB"] = 0,
+					["showParty"] = false,
+					["BorderA"] = 0,
+					["BorderR"] = 0.5019607843137255,
+					["PosX"] = 564.6410925924405,
+					["BackgroundG"] = 0,
+					["PosY"] = 189.8871735695958,
+					["BackgroundA"] = 0,
+					["BorderG"] = 0.5019607843137255,
+					["Spacing"] = 11,
+					["horizontal"] = false,
+					["BackgroundR"] = 0,
+					["ScaleSize"] = 1.15,
+				},
+				["realm/Elysium - Horde"] = {
+					["BorderB"] = 0.5,
+					["BackgroundR"] = 0.1,
+					["ScaleSize"] = 1,
+					["FrameLock"] = false,
+					["BorderA"] = 1,
+					["BorderR"] = 0.5,
+					["PosX"] = 499.9999504941501,
+					["BackgroundG"] = 0.1,
+					["debug"] = false,
+					["layout"] = "By Group 40",
+					["horizonal"] = false,
+					["showParty"] = true,
+					["BackgroundA"] = 0.65,
+					["BackgroundB"] = 0.1,
+					["BorderG"] = 0.5,
+					["FrameDisplay"] = "always",
+					["Padding"] = 1,
+					["Spacing"] = 10,
+					["PosY"] = 399.9999976504993,
+				},
+			},
+		},
+		["GridStatusName"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+					["unit_name"] = {
+						["text"] = "Unit Name",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 1,
+							["g"] = 1,
+							["b"] = 1,
+						},
+						["enable"] = true,
+						["priority"] = 1,
+						["class"] = true,
+						["letters"] = 3,
+					},
+					["debug"] = false,
+				},
+				["realm/Elysium - Horde"] = {
+					["unit_name"] = {
+						["text"] = "Unit Name",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 1,
+							["g"] = 1,
+							["b"] = 1,
+						},
+						["enable"] = true,
+						["priority"] = 1,
+						["class"] = true,
+						["letters"] = 3,
+					},
+					["debug"] = false,
+				},
+			},
+		},
+		["GridStatusMana"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+					["debug"] = false,
+					["alert_lowMana"] = {
+						["threshold"] = 10,
+						["priority"] = 40,
+						["enable"] = true,
+						["text"] = "Low Mana",
+						["range"] = true,
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0.5,
+							["g"] = 0.5,
+							["b"] = 1,
+						},
+					},
+				},
+				["realm/Elysium - Horde"] = {
+					["debug"] = false,
+					["alert_lowMana"] = {
+						["threshold"] = 10,
+						["priority"] = 40,
+						["enable"] = true,
+						["text"] = "Low Mana",
+						["range"] = true,
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0.5,
+							["g"] = 0.5,
+							["b"] = 1,
+						},
+					},
+				},
+			},
+		},
+		["GridStatusAuras"] = {
+			["profiles"] = {
+				["class/Priest"] = {
+					["debuff_curse"] = {
+						["text"] = "Curse",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0.6,
+							["g"] = 0,
+							["b"] = 1,
+						},
+						["enable"] = true,
+						["priority"] = 90,
+						["range"] = true,
+						["desc"] = "Debuff type: Curse",
+					},
+					["debuff_poison"] = {
+						["text"] = "Poison",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0,
+							["g"] = 0.6,
+							["b"] = 0,
+						},
+						["enable"] = true,
+						["priority"] = 90,
+						["range"] = true,
+						["desc"] = "Debuff type: Poison",
+					},
+					["debug"] = false,
+					["debuff_WeakenedSoul"] = {
+						["text"] = "Weakened Soul",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0.5,
+							["g"] = 0.5,
+							["b"] = 0.5,
+						},
+						["enable"] = true,
+						["priority"] = 90,
+						["range"] = true,
+						["desc"] = "Debuff: Weakened Soul",
+					},
+					["buff_Rejuvenation"] = {
+						["text"] = "Rejuvenation",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0,
+							["g"] = 0.3,
+							["b"] = 0.7,
+						},
+						["enable"] = true,
+						["priority"] = 90,
+						["range"] = true,
+						["desc"] = "Buff: Rejuvenation",
+					},
+					["buff_PowerWordShield"] = {
+						["text"] = "Power Word: Shield",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0.8,
+							["g"] = 0.8,
+							["b"] = 0,
+						},
+						["enable"] = true,
+						["priority"] = 91,
+						["range"] = true,
+						["desc"] = "Buff: Power Word: Shield",
+					},
+					["buff_Renew"] = {
+						["text"] = "Renew",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0,
+							["g"] = 0.7,
+							["b"] = 0.3,
+						},
+						["enable"] = true,
+						["priority"] = 90,
+						["range"] = true,
+						["desc"] = "Buff: Renew",
+					},
+					["debuff_disease"] = {
+						["text"] = "Disease",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0.6,
+							["g"] = 0.4,
+							["b"] = 0,
+						},
+						["enable"] = true,
+						["priority"] = 90,
+						["range"] = true,
+						["desc"] = "Debuff type: Disease",
+					},
+					["debuff_MortalStrike"] = {
+						["text"] = "Mortal Strike",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0.8,
+							["g"] = 0.2,
+							["b"] = 0.2,
+						},
+						["enable"] = true,
+						["priority"] = 90,
+						["range"] = true,
+						["desc"] = "Debuff: Mortal Strike",
+					},
+					["debuff_magic"] = {
+						["text"] = "Magic",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0.2,
+							["g"] = 0.6,
+							["b"] = 1,
+						},
+						["enable"] = true,
+						["priority"] = 90,
+						["range"] = true,
+						["desc"] = "Debuff type: Magic",
+					},
+				},
+				["realm/Elysium - Horde"] = {
+					["debuff_curse"] = {
+						["text"] = "Curse",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0.6,
+							["g"] = 0,
+							["b"] = 1,
+						},
+						["enable"] = true,
+						["priority"] = 90,
+						["range"] = true,
+						["desc"] = "Debuff type: Curse",
+					},
+					["debuff_poison"] = {
+						["text"] = "Poison",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0,
+							["g"] = 0.6,
+							["b"] = 0,
+						},
+						["enable"] = true,
+						["priority"] = 90,
+						["range"] = true,
+						["desc"] = "Debuff type: Poison",
+					},
+					["debug"] = false,
+					["debuff_WeakenedSoul"] = {
+						["text"] = "Weakened Soul",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0.5,
+							["g"] = 0.5,
+							["b"] = 0.5,
+						},
+						["enable"] = true,
+						["priority"] = 90,
+						["range"] = true,
+						["desc"] = "Debuff: Weakened Soul",
+					},
+					["buff_Rejuvenation"] = {
+						["text"] = "Rejuvenation",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0,
+							["g"] = 0.3,
+							["b"] = 0.7,
+						},
+						["enable"] = true,
+						["priority"] = 90,
+						["range"] = true,
+						["desc"] = "Buff: Rejuvenation",
+					},
+					["buff_PowerWordShield"] = {
+						["text"] = "Power Word: Shield",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0.8,
+							["g"] = 0.8,
+							["b"] = 0,
+						},
+						["enable"] = true,
+						["priority"] = 91,
+						["range"] = true,
+						["desc"] = "Buff: Power Word: Shield",
+					},
+					["buff_Renew"] = {
+						["text"] = "Renew",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0,
+							["g"] = 0.7,
+							["b"] = 0.3,
+						},
+						["enable"] = true,
+						["priority"] = 90,
+						["range"] = true,
+						["desc"] = "Buff: Renew",
+					},
+					["debuff_disease"] = {
+						["text"] = "Disease",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0.6,
+							["g"] = 0.4,
+							["b"] = 0,
+						},
+						["enable"] = true,
+						["priority"] = 90,
+						["range"] = true,
+						["desc"] = "Debuff type: Disease",
+					},
+					["debuff_MortalStrike"] = {
+						["text"] = "Mortal Strike",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0.8,
+							["g"] = 0.2,
+							["b"] = 0.2,
+						},
+						["enable"] = true,
+						["priority"] = 90,
+						["range"] = true,
+						["desc"] = "Debuff: Mortal Strike",
+					},
+					["debuff_magic"] = {
+						["text"] = "Magic",
+						["color"] = {
+							["a"] = 1,
+							["r"] = 0.2,
+							["g"] = 0.6,
+							["b"] = 1,
+						},
+						["enable"] = true,
+						["priority"] = 90,
+						["range"] = true,
+						["desc"] = "Debuff type: Magic",
+					},
+				},
+			},
+		},
+	},
+	["profiles"] = {
+		["class/Priest"] = {
+			["detachedTooltip"] = {
+			},
+		},
+		["Default"] = {
+			["minimapPosition"] = 166.6794960393874,
+			["detachedTooltip"] = {
+				["fontSizePercent"] = 1,
+			},
+		},
+		["realm/Elysium - Horde"] = {
+			["detachedTooltip"] = {
+			},
+		},
+	},
+}

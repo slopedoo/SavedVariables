@@ -1,0 +1,2 @@
+
+CustomMenuFuCharDB = nil

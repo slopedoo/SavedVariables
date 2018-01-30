@@ -1,0 +1,2 @@
+
+ManaMinderDB = nil

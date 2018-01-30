@@ -1,0 +1,77 @@
+MACRO 16777235 "BROODLORD" Spell_Holy_PowerWordShield
+/run m=0 for i=1,40 do if(strfind(tostring(UnitDebuff("target",i)),"Ability_Warrior_SavageBlow"))then m=1 end end if m==1 then CastSpellByName("Power Word: Shield") end
+END
+MACRO 16777236 "DISPEL" Spell_Holy_DispelMagic
+#showtooltip Dispel Magic
+/cast [mod:shift] Holy Nova(Rank 1); [mod:alt] Power Word: Fortitude;
+/stopmacro [mod:shit/ctrl/alt]
+/lunamo Dispel Magic
+END
+MACRO 16777237 "DISPEL SELF" Spell_Holy_DispelMagic
+#showtooltip Dispel Magic
+/cast [mod:ctrl] Touch of Weakness; [mod:shift] Shoot; [@player] Dispel Magic
+END
+MACRO 16777221 "Ench" Spell_Shadow_Curse
+/1 Enchanter LFW. +4 stats, Lifestealing, 24 heal/4mp5 bracer ++
+END
+MACRO 16777238 "FH3" Spell_Holy_FlashHeal
+#showtooltip Flash Heal
+/cast [mod:shift,@mouseover,exists] Resurrection; [mod:shift] Resurrection; [mod:alt] Shadow Protection;
+/stopmacro [mod:shift]
+/lunamo Flash Heal(Rank 3)
+END
+MACRO 16777239 "FH7" Spell_Holy_FlashHeal
+#showtooltip Flash Heal
+/cast [mod:ctrl,@mouseover,exists] Heal(Rank 1);
+/lunamo Flash Heal
+END
+MACRO 16777240 "GH2" Spell_Holy_GreaterHeal
+#showtooltip Greater Heal(Rank 2)
+/cast [mod:shift,@mouseover,exists] Abolish Disease; [mod:ctrl] Devouring Plague; [mod:alt] Divine Spirit;
+/stopmacro [mod:shift/alt/ctrl]
+/lunamo Greater Heal(Rank 2)
+END
+MACRO 16777241 "GH4" Spell_Holy_GreaterHeal
+#showtooltip Greater Heal
+/cast [mod:shift] Mind Control;
+/stopmacro [mod:shift]
+/lunamo Greater Heal
+END
+MACRO 16777242 "HEAL3" Spell_Holy_Heal
+#showtooltip Heal(Rank 2)
+/cast [mod:shift] Fade
+/use [mod:ctrl] Heavy Runecloth Bandage
+/stopmacro [mod:shift/ctrl]
+/lunamo Heal(Rank 2)
+END
+MACRO 16777233 "HELM" Spell_Holy_SpiritualGuidence
+/script UseInventoryItem(1)
+END
+MACRO 16777243 "IF" Spell_Frost_WindWalkOn
+#showtooltip Inner Focus
+/cast [mod:shift] Shadow Word: Pain; Inner Focus
+END
+MACRO 16777244 "INNER FIRE" Spell_Holy_InnerFire
+#showtooltip Inner Fire
+/cast [mod:shift] Mana Burn; Inner Fire
+END
+MACRO 16777245 "POH" Spell_Holy_PrayerOfHealing02
+#showtooltip Prayer of Healing
+/cast [mod:shift] Holy Nova; Prayer of Healing
+END
+MACRO 16777228 "PW:S" Spell_Holy_PowerWordShield
+/cast [mod:shift] Smite
+/stopmacro [mod:shift]
+/script SpellStopCasting() 
+/cast [help,nodead][@targettarget,help,nodead] Power Word: Shield; [mod:alt,@player] Power Word: Shield;
+/stopmacro [mod:alt]
+/lunamo Power Word: Shield
+END
+MACRO 16777246 "SOOTHE" Spell_Holy_MindSooth
+#showtooltip Mind Soothe
+/cast [mod:ctrl] Mind Vision; Mind Soothe
+END
+MACRO 16777247 "WOTF" Spell_Shadow_RaiseDead
+#showtooltip Will of the Forsaken
+/cast [mod:shift] Mind Blast; Will of the Forsaken
+END

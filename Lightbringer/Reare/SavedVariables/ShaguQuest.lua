@@ -1,0 +1,2 @@
+
+ShaguQuest_AutoPlot = false

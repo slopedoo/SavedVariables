@@ -15,8 +15,8 @@ SW_Settings = {
 	},
 	["lastWOWBuild"] = "1.12.15875Sep 19 2006",
 	["RepTarget"] = "SW_RepTo_Whisper",
-	["SW_TL_AutoDelete"] = true,
-	["LAST_V_RUN"] = "2.0 Beta.7",
+	["IsRunning"] = true,
+	["OPT_ShowMainWinDPS"] = 1,
 	["InfoSettings"] = {
 		[1] = {
 			["CF"] = 1,
@@ -26,7 +26,7 @@ SW_Settings = {
 				[3] = 0,
 				[4] = 1,
 			},
-			["HealEff"] = true,
+			["OTF"] = "Damage",
 			["ShowPercent"] = 1,
 			["UCC"] = 1,
 			["OC"] = {
@@ -35,12 +35,12 @@ SW_Settings = {
 				[3] = 0,
 				[4] = 1,
 			},
-			["BFS"] = 11,
-			["BT"] = 13,
+			["SF"] = "SW_Filter_EverGroup",
+			["COLC"] = 1,
 			["PF"] = "SW_PF_Inactive",
 			["ShowRank"] = 1,
-			["BH"] = 10,
-			["OTF"] = "Damage",
+			["HealInF"] = true,
+			["IN"] = 1,
 			["ShowNumber"] = 1,
 			["BFC"] = {
 				[1] = 1,
@@ -48,10 +48,10 @@ SW_Settings = {
 				[3] = 1,
 				[4] = 1,
 			},
-			["SF"] = "SW_Filter_EverGroup",
-			["COLC"] = 1,
-			["IN"] = 1,
-			["HealInF"] = true,
+			["BFS"] = 11,
+			["BT"] = 13,
+			["HealEff"] = true,
+			["BH"] = 10,
 		},
 		[2] = {
 			["CF"] = 1,
@@ -62,7 +62,7 @@ SW_Settings = {
 				[3] = 0.9686274509803922,
 				[4] = 1,
 			},
-			["HealEff"] = true,
+			["OTF"] = "Healing",
 			["HealOH"] = false,
 			["ShowPercent"] = 1,
 			["HealInF"] = false,
@@ -76,8 +76,8 @@ SW_Settings = {
 			["COLC"] = 1,
 			["PF"] = "SW_PF_Inactive",
 			["ShowRank"] = 1,
-			["UCC"] = 1,
-			["OTF"] = "Healing",
+			["BH"] = 10,
+			["BT"] = 13,
 			["ShowNumber"] = 1,
 			["BFC"] = {
 				[1] = 1,
@@ -85,14 +85,14 @@ SW_Settings = {
 				[3] = 1,
 				[4] = 1,
 			},
-			["BFS"] = 11,
 			["IN"] = 2,
-			["BT"] = 13,
-			["BH"] = 10,
+			["BFS"] = 11,
+			["HealEff"] = true,
+			["UCC"] = 1,
 		},
 		[3] = {
-			["BFS"] = 10,
-			["BT"] = 3,
+			["IN"] = 1,
+			["COLC"] = 1,
 			["BC"] = {
 				[1] = 0,
 				[2] = 0.8,
@@ -105,8 +105,8 @@ SW_Settings = {
 				[3] = 1,
 				[4] = 1,
 			},
-			["IN"] = 1,
-			["COLC"] = 1,
+			["BFS"] = 10,
+			["BT"] = 3,
 			["BH"] = 10,
 			["OC"] = {
 				[1] = 1,
@@ -116,8 +116,8 @@ SW_Settings = {
 			},
 		},
 		[4] = {
-			["BFS"] = 10,
-			["BT"] = 3,
+			["IN"] = 1,
+			["COLC"] = 1,
 			["BC"] = {
 				[1] = 0,
 				[2] = 0.8,
@@ -130,8 +130,8 @@ SW_Settings = {
 				[3] = 1,
 				[4] = 1,
 			},
-			["IN"] = 1,
-			["COLC"] = 1,
+			["BFS"] = 10,
+			["BT"] = 3,
 			["BH"] = 10,
 			["OC"] = {
 				[1] = 1,
@@ -141,8 +141,8 @@ SW_Settings = {
 			},
 		},
 		[5] = {
-			["BFS"] = 10,
-			["BT"] = 3,
+			["IN"] = 1,
+			["COLC"] = 1,
 			["BC"] = {
 				[1] = 0,
 				[2] = 0.8,
@@ -155,8 +155,8 @@ SW_Settings = {
 				[3] = 1,
 				[4] = 1,
 			},
-			["IN"] = 1,
-			["COLC"] = 1,
+			["BFS"] = 10,
+			["BT"] = 3,
 			["BH"] = 10,
 			["OC"] = {
 				[1] = 1,
@@ -179,10 +179,10 @@ SW_Settings = {
 			[3] = 0.43,
 			[4] = 1,
 		},
-		["ROGUE"] = {
-			[1] = 1,
-			[2] = 0.96,
-			[3] = 0.41,
+		["SHAMAN"] = {
+			[1] = 0.14,
+			[2] = 0.35,
+			[3] = 1,
 			[4] = 1,
 		},
 		["MAGE"] = {
@@ -233,22 +233,10 @@ SW_Settings = {
 			[3] = 0.79,
 			[4] = 1,
 		},
-		["SHAMAN"] = {
-			[1] = 0.14,
-			[2] = 0.35,
-			[3] = 1,
-			[4] = 1,
-		},
-		["Backdrops"] = {
-			[1] = 0,
-			[2] = 0,
-			[3] = 0,
-			[4] = 0,
-		},
-		["TitleBars"] = {
-			[1] = 0,
-			[2] = 0,
-			[3] = 0,
+		["ROGUE"] = {
+			[1] = 1,
+			[2] = 0.96,
+			[3] = 0.41,
 			[4] = 1,
 		},
 		["PALADIN"] = {
@@ -257,29 +245,40 @@ SW_Settings = {
 			[3] = 0.73,
 			[4] = 1,
 		},
+		["TitleBars"] = {
+			[1] = 0,
+			[2] = 0,
+			[3] = 0,
+			[4] = 1,
+		},
+		["Backdrops"] = {
+			[1] = 0,
+			[2] = 0,
+			[3] = 0,
+			[4] = 0,
+		},
 	},
-	["IsRunning"] = true,
+	["SW_TL_AutoDelete"] = true,
 	["SW_IconPosR"] = 106,
-	["OPT_ShowMainWinDPS"] = 1,
+	["LAST_V_RUN"] = "2.0 Beta.7",
 }
 SW_RPS = {
-	["lastFightSecs"] = 1,
-	["allowLastFightUpdate"] = true,
+	["lastFightSecs"] = 0,
+	["allowLastFightUpdate"] = false,
 	["isRunning"] = false,
 	["startTimer"] = {
-		["uTS"] = 1549.610000000001,
-		["msO"] = -0.3899999999994179,
-		["epochTS"] = 1517327043,
+		["uTS"] = 52.92199999999139,
+		["msO"] = -0.07800000000861473,
+		["epochTS"] = 1517328438,
 	},
-	["uglyTruthStarted"] = true,
+	["uglyTruthStarted"] = false,
 	["lastFightDmg"] = 0,
 	["baseTimer"] = {
-		["uTS"] = 218.9850000000006,
-		["msO"] = -0.01499999999941792,
-		["epochTS"] = 1517325712,
+		["uTS"] = 52.92199999999139,
+		["msO"] = -0.07800000000861473,
+		["epochTS"] = 1517328438,
 	},
-	["lastEvent"] = 1549.610000000001,
-	["totalSecs"] = 28.07800000000862,
+	["totalSecs"] = 0,
 	["maxDPS"] = 0,
 	["startDmg"] = 0,
 	["currentSecs"] = 0,
@@ -7557,61 +7556,226 @@ SW_StrTable = {
 	[7270] = "Hisai",
 	[7271] = "Earthborer",
 	[7272] = "Molten Elemental",
+	[7273] = "Ildiaodadall",
+	[7274] = "Boujoujijou",
+	[7275] = "Crossrunes",
+	[7276] = "Sanboo",
+	[7277] = "Myezule",
+	[7278] = "Aruon",
+	[7279] = "Victivis",
+	[7280] = "Galskab",
+	[7281] = "Benergy",
+	[7282] = "Tcms",
+	[7283] = "Drivercc",
+	[7284] = "Stjarthalet",
+	[7285] = "Melphos",
+	[7286] = "Waxey",
+	[7287] = "Eyeer",
+	[7288] = "Willson",
+	[7289] = "Bluehorn",
+	[7290] = "Baoger",
+	[7291] = "Deathindin",
+	[7292] = "Biehoff",
+	[7293] = "Empathi",
+	[7294] = "Ancientlock",
+	[7295] = "Clakz",
+	[7296] = "Gruh",
+	[7297] = "Puzzlewell",
+	[7298] = "Apaha",
+	[7299] = "Tjubus",
+	[7300] = "Chinalvbu",
+	[7301] = "Wingss",
+	[7302] = "Finalli",
+	[7303] = "Azrot",
+	[7304] = "Dilven",
+	[7305] = "Kmiler",
+	[7306] = "Squido",
+	[7307] = "ColdRed",
+	[7308] = "Volaticus",
+	[7309] = "Swdmaster",
+	[7310] = "Lorespinner",
+	[7311] = "Sanjdao",
+	[7312] = "Magicboltz",
+	[7313] = "Oblivionthan",
+	[7314] = "Elding",
+	[7315] = "Kux",
+	[7316] = "Pivnoyxantep",
+	[7317] = "Scarlet Illusion",
+	[7318] = "Rilaowai",
+	[7319] = "Kstew",
+	[7320] = "Itowki",
+	[7321] = "Riwuwan",
+	[7322] = "Elsoldollo",
+	[7323] = "Shoother",
+	[7324] = "Shutu",
+	[7325] = "Mmapi",
+	[7326] = "Xequemates",
+	[7327] = "Kpm",
+	[7328] = "Jiaodun",
+	[7329] = "Garroshik",
+	[7330] = "Ipis",
+	[7331] = "Zgsqfs",
+	[7332] = "Bibibibiu",
+	[7333] = "Efeu",
+	[7334] = "Marcint",
+	[7335] = "Loveshoumen",
+	[7336] = "Anneira",
+	[7337] = "Gitz",
+	[7338] = "Dabancgunian",
+	[7339] = "Niaiqiu",
+	[7340] = "Coconuter",
+	[7341] = "Daellor",
+	[7342] = "Hollyboy",
+	[7343] = "Tattoowhy",
+	[7344] = "Scyntra",
+	[7345] = "Aziz",
+	[7346] = "Bigmiao",
+	[7347] = "Paccuct",
+	[7348] = "Biskuvi",
+	[7349] = "Quededede",
+	[7350] = "Yerli",
+	[7351] = "Nvsimple",
+	[7352] = "Warhighlord",
+	[7353] = "Akibebi",
+	[7354] = "Aftertankk",
+	[7355] = "Sendao",
+	[7356] = "Setheria",
+	[7357] = "Dyyhx",
+	[7358] = "LariLisko",
+	[7359] = "Tripwire",
+	[7360] = "Nachow",
+	[7361] = "Vasymys",
+	[7362] = "Pleig",
+	[7363] = "Yameteh",
+	[7364] = "Miketysons",
+	[7365] = "Nigewolaile",
+	[7366] = "Jongo",
+	[7367] = "Sheniao",
+	[7368] = "Laverre",
+	[7369] = "Aqiao",
+	[7370] = "Weiai",
+	[7371] = "Drzurgy",
+	[7372] = "Wiogs",
+	[7373] = "Narleeth",
+	[7374] = "Dagtip",
+	[7375] = "Artemchik",
+	[7376] = "Nattapong",
+	[7377] = "Caofuguen",
+	[7378] = "Waterxingzou",
+	[7379] = "Qmab",
+	[7380] = "Payup",
+	[7381] = "Wyao",
+	[7382] = "Freedomsm",
+	[7383] = "Rubiis",
+	[7384] = "Tokyy",
+	[7385] = "Leege",
+	[7386] = "Peklol",
+	[7387] = "Shcokong",
+	[7388] = "Druzz",
+	[7389] = "Gargius",
+	[7390] = "Calylith",
+	[7391] = "Glorycn",
+	[7392] = "Behinds",
+	[7393] = "Remstarhoof",
+	[7394] = "Zarkel",
+	[7395] = "Miesmann",
+	[7396] = "Drullis",
+	[7397] = "Khegg",
+	[7398] = "Vitamindark",
+	[7399] = "Heelysrlife",
+	[7400] = "Tankmc",
+	[7401] = "Jockers",
+	[7402] = "Totocangku",
+	[7403] = "Luvice",
+	[7404] = "Pechenuxa",
+	[7405] = "Yigede",
+	[7406] = "Arlenehi",
+	[7407] = "Jusan",
+	[7408] = "Qduck",
+	[7409] = "Healcrit",
+	[7410] = "Gemola",
+	[7411] = "Tianlingling",
+	[7412] = "Saryla",
+	[7413] = "Vesuva",
+	[7414] = "Asgrand",
+	[7415] = "Mopper",
+	[7416] = "Paintera",
+	[7417] = "Ghinggiskhan",
+	[7418] = "Sjz",
+	[7419] = "Warensembl",
+	[7420] = "Agropro",
+	[7421] = "Xionge",
+	[7422] = "Luckydog",
+	[7423] = "Vengeancer",
+	[7424] = "Jons",
+	[7425] = "Tamdam",
+	[7426] = "Ellayna",
+	[7427] = "Krowkie",
+	[7428] = "Argatha",
+	[7429] = "Occh",
+	[7430] = "Monz",
+	[7431] = "Stitchsplz",
+	[7432] = "Zurokrage",
+	[7433] = "Kajiadezhizi",
+	[7434] = "Mcstabbins",
+	[7435] = "Xniu",
+	[7436] = "Spartacusin",
+	[7437] = "Gilzonn",
 }
 SW_DataCollection = {
 	["settings"] = {
-		["smallestSelect"] = 0,
+		["isInRaid"] = false,
 		["isInGroup"] = false,
 		["lastZone"] = "",
-		["startMarker"] = 19,
+		["startMarker"] = 21,
 		["biggestSelect"] = 0,
-		["isInRaid"] = true,
-		["endMarker"] = 19,
+		["smallestSelect"] = 0,
+		["endMarker"] = 21,
 		["activeOnly"] = true,
 	},
 	["meta"] = {
 		[1] = {
-			["origName"] = "Actar",
+			["type"] = "PC",
 			["stringID"] = 1,
 			["everGroup"] = true,
-			["classE"] = "PRIEST",
 			["allPets"] = {
 				[738] = true,
 				[6521] = true,
 				[200] = true,
 			},
+			["classE"] = "PRIEST",
 			["level"] = 60,
-			["type"] = "PC",
-			["rank"] = 2,
+			["origName"] = "Actar",
+			["rank"] = 0,
 		},
 		[2] = {
-			["type"] = "PC",
+			["origName"] = "Naap",
 			["stringID"] = 2,
 			["everGroup"] = true,
 			["classE"] = "WARRIOR",
 			["raidIndex"] = 1,
 			["level"] = 60,
-			["origName"] = "Naap",
+			["type"] = "PC",
 			["rank"] = 2,
 		},
 		[3] = {
-			["type"] = "PC",
+			["origName"] = "Frostwolff",
 			["stringID"] = 3,
 			["everGroup"] = true,
 			["classE"] = "SHAMAN",
 			["raidIndex"] = 26,
 			["level"] = 0,
-			["origName"] = "Frostwolff",
+			["type"] = "PC",
 			["rank"] = 0,
 		},
 		[4] = {
-			["type"] = "PC",
+			["origName"] = "Weave",
 			["stringID"] = 4,
 			["everGroup"] = true,
 			["classE"] = "MAGE",
 			["raidIndex"] = 2,
 			["level"] = 0,
-			["origName"] = "Weave",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[5] = {
@@ -7619,84 +7783,84 @@ SW_DataCollection = {
 			["stringID"] = 5,
 			["everGroup"] = true,
 			["petID"] = 122,
-			["classE"] = "WARLOCK",
-			["raidIndex"] = 3,
 			["allPets"] = {
 				[122] = true,
 			},
+			["raidIndex"] = 3,
+			["classE"] = "WARLOCK",
 			["level"] = 60,
 			["origName"] = "Prefered",
 			["rank"] = 1,
 		},
 		[6] = {
-			["type"] = "PC",
+			["origName"] = "Fancypantsy",
 			["stringID"] = 6,
 			["everGroup"] = true,
 			["classE"] = "MAGE",
 			["raidIndex"] = 4,
 			["level"] = 0,
-			["origName"] = "Fancypantsy",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[7] = {
-			["type"] = "PC",
+			["origName"] = "Nehx",
 			["stringID"] = 7,
 			["everGroup"] = true,
 			["classE"] = "ROGUE",
 			["raidIndex"] = 5,
 			["level"] = 0,
-			["origName"] = "Nehx",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[8] = {
-			["type"] = "PC",
+			["origName"] = "Backdrunk",
 			["stringID"] = 8,
 			["everGroup"] = true,
 			["classE"] = "ROGUE",
 			["raidIndex"] = 6,
 			["level"] = 0,
-			["origName"] = "Backdrunk",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[9] = {
-			["type"] = "PC",
+			["origName"] = "Kazoo",
 			["stringID"] = 9,
 			["everGroup"] = true,
 			["classE"] = "MAGE",
 			["raidIndex"] = 7,
 			["level"] = 0,
-			["origName"] = "Kazoo",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[10] = {
-			["type"] = "PC",
+			["origName"] = "Exzo",
 			["stringID"] = 10,
 			["everGroup"] = true,
 			["classE"] = "PRIEST",
 			["raidIndex"] = 7,
 			["level"] = 60,
-			["origName"] = "Exzo",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[11] = {
-			["type"] = "PC",
+			["origName"] = "Helvetes",
 			["stringID"] = 11,
 			["everGroup"] = true,
 			["classE"] = "WARRIOR",
 			["raidIndex"] = 9,
 			["level"] = 0,
-			["origName"] = "Helvetes",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[12] = {
 			["type"] = "PC",
 			["stringID"] = 12,
 			["everGroup"] = true,
+			["classE"] = "WARLOCK",
+			["raidIndex"] = 8,
 			["allPets"] = {
 				[13] = true,
 			},
-			["raidIndex"] = 8,
-			["classE"] = "WARLOCK",
 			["level"] = 0,
 			["origName"] = "Domaa",
 			["rank"] = 1,
@@ -7708,84 +7872,84 @@ SW_DataCollection = {
 			["stringID"] = 13,
 		},
 		[14] = {
-			["type"] = "PC",
+			["origName"] = "Amtep",
 			["stringID"] = 14,
 			["everGroup"] = true,
 			["classE"] = "DRUID",
 			["raidIndex"] = 9,
 			["level"] = 0,
-			["origName"] = "Amtep",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[15] = {
-			["type"] = "PC",
+			["origName"] = "Nukk",
 			["stringID"] = 15,
 			["everGroup"] = true,
 			["classE"] = "SHAMAN",
 			["raidIndex"] = 28,
 			["level"] = 0,
-			["origName"] = "Nukk",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[16] = {
-			["type"] = "PC",
+			["origName"] = "Tribeone",
 			["stringID"] = 16,
 			["everGroup"] = true,
 			["classE"] = "SHAMAN",
 			["raidIndex"] = 10,
 			["level"] = 0,
-			["origName"] = "Tribeone",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[17] = {
-			["type"] = "PC",
+			["origName"] = "Clamsnout",
 			["stringID"] = 17,
 			["everGroup"] = true,
 			["classE"] = "ROGUE",
 			["raidIndex"] = 11,
 			["level"] = 60,
-			["origName"] = "Clamsnout",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[18] = {
-			["type"] = "PC",
+			["origName"] = "Freezma",
 			["stringID"] = 18,
 			["everGroup"] = true,
 			["classE"] = "MAGE",
 			["raidIndex"] = 12,
 			["level"] = 0,
-			["origName"] = "Freezma",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[19] = {
-			["type"] = "PC",
+			["origName"] = "Notdunem",
 			["stringID"] = 19,
 			["everGroup"] = true,
 			["classE"] = "WARLOCK",
 			["raidIndex"] = 14,
 			["level"] = 20,
-			["origName"] = "Notdunem",
+			["type"] = "PC",
 			["rank"] = 0,
 		},
 		[20] = {
-			["type"] = "PC",
+			["origName"] = "Vanweazl",
 			["stringID"] = 20,
 			["everGroup"] = true,
 			["classE"] = "WARLOCK",
 			["raidIndex"] = 15,
 			["level"] = 0,
-			["origName"] = "Vanweazl",
+			["type"] = "PC",
 			["rank"] = 0,
 		},
 		[21] = {
 			["type"] = "PC",
 			["stringID"] = 21,
 			["everGroup"] = true,
-			["classE"] = "WARLOCK",
-			["raidIndex"] = 16,
 			["allPets"] = {
 				[40] = true,
 			},
+			["raidIndex"] = 16,
+			["classE"] = "WARLOCK",
 			["level"] = 34,
 			["origName"] = "Jaxteller",
 			["rank"] = 0,
@@ -7794,11 +7958,11 @@ SW_DataCollection = {
 			["type"] = "PC",
 			["stringID"] = 22,
 			["everGroup"] = true,
+			["classE"] = "HUNTER",
+			["raidIndex"] = 13,
 			["allPets"] = {
 				[23] = true,
 			},
-			["raidIndex"] = 13,
-			["classE"] = "HUNTER",
 			["level"] = 0,
 			["origName"] = "Huntlex",
 			["rank"] = 1,
@@ -7810,63 +7974,63 @@ SW_DataCollection = {
 			["stringID"] = 23,
 		},
 		[24] = {
-			["type"] = "PC",
+			["origName"] = "Beleta",
 			["stringID"] = 24,
 			["everGroup"] = true,
 			["classE"] = "MAGE",
 			["raidIndex"] = 14,
 			["level"] = 0,
-			["origName"] = "Beleta",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[25] = {
-			["type"] = "PC",
+			["origName"] = "Lukagos",
 			["stringID"] = 25,
 			["everGroup"] = true,
 			["classE"] = "SHAMAN",
 			["raidIndex"] = 22,
 			["level"] = 60,
-			["origName"] = "Lukagos",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[26] = {
-			["type"] = "PC",
+			["origName"] = "Scrubnap",
 			["stringID"] = 26,
 			["everGroup"] = true,
 			["classE"] = "DRUID",
 			["raidIndex"] = 15,
 			["level"] = 0,
-			["origName"] = "Scrubnap",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[27] = {
-			["type"] = "PC",
+			["origName"] = "Bicepcurl",
 			["stringID"] = 27,
 			["everGroup"] = true,
 			["classE"] = "WARRIOR",
 			["raidIndex"] = 21,
 			["level"] = 60,
-			["origName"] = "Bicepcurl",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[28] = {
-			["type"] = "PC",
+			["origName"] = "Tancow",
 			["stringID"] = 28,
 			["everGroup"] = true,
 			["classE"] = "WARRIOR",
 			["raidIndex"] = 20,
 			["level"] = 60,
-			["origName"] = "Tancow",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[29] = {
-			["type"] = "PC",
+			["origName"] = "Mnementh",
 			["stringID"] = 29,
 			["everGroup"] = true,
 			["classE"] = "MAGE",
 			["raidIndex"] = 25,
 			["level"] = 60,
-			["origName"] = "Mnementh",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[30] = {
@@ -7889,13 +8053,13 @@ SW_DataCollection = {
 			["type"] = "NPC",
 		},
 		[64] = {
-			["type"] = "PC",
+			["origName"] = "Quinx",
 			["stringID"] = 64,
 			["everGroup"] = true,
 			["classE"] = "PRIEST",
 			["raidIndex"] = 20,
 			["level"] = 60,
-			["origName"] = "Quinx",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[6546] = {
@@ -7955,30 +8119,58 @@ SW_DataCollection = {
 			["type"] = "NPC",
 		},
 		[632] = {
-			["origName"] = "Harkie",
+			["type"] = "PC",
 			["stringID"] = 632,
 			["everGroup"] = true,
 			["classE"] = "DRUID",
 			["raidIndex"] = 27,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Harkie",
 			["rank"] = 1,
 		},
+		[4530] = {
+			["origName"] = "Warcaller Gorlach",
+			["classE"] = "WARRIOR",
+			["level"] = 3,
+			["stringID"] = 4530,
+			["type"] = "NPC",
+		},
+		[4532] = {
+			["origName"] = "Scout Tharr",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 4532,
+			["type"] = "NPC",
+		},
 		[508] = {
-			["origName"] = "Lilitz",
+			["type"] = "PC",
 			["stringID"] = 508,
 			["everGroup"] = true,
 			["classE"] = "WARRIOR",
 			["raidIndex"] = 7,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Lilitz",
 			["rank"] = 0,
+		},
+		[4542] = {
+			["origName"] = "Kseven",
+			["classE"] = "SHAMAN",
+			["level"] = 19,
+			["stringID"] = 4542,
+			["type"] = "PC",
 		},
 		[381] = {
 			["origName"] = "Bat",
 			["classE"] = "WARRIOR",
 			["level"] = 60,
 			["stringID"] = 381,
+			["type"] = "PC",
+		},
+		[2533] = {
+			["origName"] = "Scorpid",
+			["classE"] = "WARRIOR",
+			["level"] = 14,
+			["stringID"] = 2533,
 			["type"] = "PC",
 		},
 		[4552] = {
@@ -8002,6 +8194,13 @@ SW_DataCollection = {
 			["stringID"] = 891,
 			["type"] = "PC",
 		},
+		[2037] = {
+			["origName"] = "Fladder",
+			["classE"] = "PRIEST",
+			["level"] = 60,
+			["stringID"] = 2037,
+			["type"] = "PC",
+		},
 		[3563] = {
 			["origName"] = "Iceage",
 			["classE"] = "MAGE",
@@ -8014,6 +8213,20 @@ SW_DataCollection = {
 			["classE"] = "WARRIOR",
 			["level"] = 60,
 			["stringID"] = 3564,
+			["type"] = "PC",
+		},
+		[2544] = {
+			["origName"] = "Paglop",
+			["classE"] = "MAGE",
+			["level"] = 24,
+			["stringID"] = 2544,
+			["type"] = "PC",
+		},
+		[2545] = {
+			["origName"] = "Antihuman",
+			["classE"] = "WARLOCK",
+			["level"] = 24,
+			["stringID"] = 2545,
 			["type"] = "PC",
 		},
 		[1786] = {
@@ -8044,6 +8257,13 @@ SW_DataCollection = {
 			["stringID"] = 256,
 			["type"] = "PC",
 		},
+		[4088] = {
+			["origName"] = "Pretard",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 4088,
+			["type"] = "PC",
+		},
 		[768] = {
 			["origName"] = "Risen Warrior",
 			["classE"] = "WARRIOR",
@@ -8058,10 +8278,17 @@ SW_DataCollection = {
 			["stringID"] = 2557,
 			["type"] = "PC",
 		},
+		[1536] = {
+			["origName"] = "Nudelzwoelf",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 1536,
+			["type"] = "PC",
+		},
 		[2560] = {
 			["origName"] = "tayfun",
 			["classE"] = "WARRIOR",
-			["level"] = 18,
+			["level"] = 17,
 			["stringID"] = 2560,
 			["type"] = "PC",
 		},
@@ -8115,14 +8342,21 @@ SW_DataCollection = {
 			["type"] = "PC",
 		},
 		[96] = {
-			["type"] = "PC",
+			["origName"] = "Stoffi",
 			["stringID"] = 96,
 			["everGroup"] = true,
 			["classE"] = "PRIEST",
 			["raidIndex"] = 17,
 			["level"] = 60,
-			["origName"] = "Stoffi",
+			["type"] = "PC",
 			["rank"] = 1,
+		},
+		[6672] = {
+			["origName"] = "Fredswarrior",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 6672,
+			["type"] = "PC",
 		},
 		[193] = {
 			["origName"] = "Thelvo",
@@ -8152,6 +8386,20 @@ SW_DataCollection = {
 			["stringID"] = 3092,
 			["type"] = "PC",
 		},
+		[5668] = {
+			["origName"] = "Felous",
+			["classE"] = "PRIEST",
+			["level"] = 60,
+			["stringID"] = 5668,
+			["type"] = "PC",
+		},
+		[903] = {
+			["origName"] = "Cify",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 903,
+			["type"] = "PC",
+		},
 		[3609] = {
 			["origName"] = "Hypnopedia",
 			["classE"] = "MAGE",
@@ -8165,6 +8413,13 @@ SW_DataCollection = {
 			["level"] = 59,
 			["stringID"] = 777,
 			["type"] = "NPC",
+		},
+		[4157] = {
+			["origName"] = "Carrioffbird",
+			["classE"] = "WARRIOR",
+			["level"] = 40,
+			["stringID"] = 4157,
+			["type"] = "PC",
 		},
 		[4672] = {
 			["origName"] = "Maanom",
@@ -8187,96 +8442,93 @@ SW_DataCollection = {
 			["stringID"] = 6209,
 		},
 		[6211] = {
-			["origName"] = "Pantzer",
+			["type"] = "PC",
 			["stringID"] = 6211,
 			["everGroup"] = true,
 			["classE"] = "WARRIOR",
 			["raidIndex"] = 4,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Pantzer",
 			["rank"] = 1,
 		},
 		[6213] = {
-			["origName"] = "Schandorff",
+			["type"] = "PC",
 			["stringID"] = 6213,
 			["everGroup"] = true,
 			["classE"] = "WARRIOR",
 			["raidIndex"] = 6,
 			["level"] = 0,
-			["type"] = "PC",
+			["origName"] = "Schandorff",
 			["rank"] = 0,
 		},
 		[6215] = {
 			["type"] = "PC",
 			["stringID"] = 6215,
 			["everGroup"] = true,
+			["classE"] = "WARLOCK",
+			["raidIndex"] = 6,
 			["allPets"] = {
 				[6507] = true,
 			},
-			["raidIndex"] = 6,
-			["classE"] = "WARLOCK",
 			["level"] = 60,
 			["origName"] = "Necromance",
 			["rank"] = 0,
 		},
-		[6217] = {
-			["origName"] = "Hapu",
-			["stringID"] = 6217,
-			["everGroup"] = true,
-			["classE"] = "WARRIOR",
-			["raidIndex"] = 15,
+		[5706] = {
+			["origName"] = "Kreanlel",
+			["classE"] = "MAGE",
 			["level"] = 60,
+			["stringID"] = 5706,
 			["type"] = "PC",
-			["rank"] = 0,
 		},
 		[6219] = {
-			["origName"] = "Raynebaron",
+			["type"] = "PC",
 			["stringID"] = 6219,
 			["everGroup"] = true,
 			["classE"] = "WARRIOR",
 			["raidIndex"] = 9,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Raynebaron",
 			["rank"] = 0,
 		},
 		[6221] = {
-			["origName"] = "Zairo",
+			["type"] = "PC",
 			["stringID"] = 6221,
 			["everGroup"] = true,
 			["classE"] = "ROGUE",
 			["raidIndex"] = 19,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Zairo",
 			["rank"] = 0,
 		},
 		[6223] = {
-			["origName"] = "Pugz",
+			["type"] = "PC",
 			["stringID"] = 6223,
 			["everGroup"] = true,
 			["classE"] = "ROGUE",
 			["raidIndex"] = 12,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Pugz",
 			["rank"] = 1,
 		},
 		[6225] = {
-			["origName"] = "Zerkz",
+			["type"] = "PC",
 			["stringID"] = 6225,
 			["everGroup"] = true,
 			["classE"] = "MAGE",
 			["raidIndex"] = 17,
 			["level"] = 0,
-			["type"] = "PC",
+			["origName"] = "Zerkz",
 			["rank"] = 0,
 		},
 		[6227] = {
-			["origName"] = "Uknowit",
+			["type"] = "PC",
 			["stringID"] = 6227,
 			["everGroup"] = true,
 			["classE"] = "WARLOCK",
 			["raidIndex"] = 21,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Uknowit",
 			["rank"] = 0,
 		},
 		[6229] = {
@@ -8292,14 +8544,21 @@ SW_DataCollection = {
 			["stringID"] = 1306,
 			["type"] = "PC",
 		},
-		[2100] = {
+		[4702] = {
+			["origName"] = "Nattle",
+			["classE"] = "ROGUE",
+			["level"] = 60,
+			["stringID"] = 4702,
 			["type"] = "PC",
+		},
+		[2100] = {
+			["origName"] = "Motina",
 			["stringID"] = 2100,
 			["everGroup"] = true,
 			["classE"] = "MAGE",
 			["raidIndex"] = 1,
 			["level"] = 0,
-			["origName"] = "Motina",
+			["type"] = "PC",
 			["rank"] = 0,
 		},
 		[391] = {
@@ -8323,12 +8582,12 @@ SW_DataCollection = {
 			["stringID"] = 3638,
 			["type"] = "PC",
 		},
-		[6760] = {
-			["origName"] = "Gulash",
-			["classE"] = "WARLOCK",
-			["level"] = 60,
-			["stringID"] = 6760,
-			["type"] = "PC",
+		[7271] = {
+			["origName"] = "Earthborer",
+			["classE"] = "WARRIOR",
+			["level"] = 13,
+			["stringID"] = 7271,
+			["type"] = "NPC",
 		},
 		[1822] = {
 			["origName"] = "Eddywu",
@@ -8337,11 +8596,25 @@ SW_DataCollection = {
 			["stringID"] = 1822,
 			["type"] = "PC",
 		},
-		[164] = {
-			["origName"] = "Flashed",
-			["classE"] = "WARRIOR",
+		[7277] = {
+			["origName"] = "Myezule",
+			["classE"] = "SHAMAN",
 			["level"] = 60,
-			["stringID"] = 164,
+			["stringID"] = 7277,
+			["type"] = "PC",
+		},
+		[657] = {
+			["origName"] = "Gamon",
+			["classE"] = "WARRIOR",
+			["level"] = 12,
+			["stringID"] = 657,
+			["type"] = "NPC",
+		},
+		[1826] = {
+			["origName"] = "Dlimon",
+			["classE"] = "HUNTER",
+			["level"] = 60,
+			["stringID"] = 1826,
 			["type"] = "PC",
 		},
 		[786] = {
@@ -8359,31 +8632,44 @@ SW_DataCollection = {
 			["type"] = "PC",
 		},
 		[659] = {
-			["origName"] = "Chipone",
+			["type"] = "PC",
 			["stringID"] = 659,
 			["everGroup"] = true,
 			["classE"] = "WARRIOR",
 			["raidIndex"] = 29,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Chipone",
 			["rank"] = 1,
 		},
+		[7208] = {
+			["origName"] = "Kayj",
+			["classE"] = "SHAMAN",
+			["level"] = 11,
+			["stringID"] = 7208,
+			["type"] = "PC",
+		},
 		[660] = {
-			["origName"] = "Lasian",
+			["type"] = "PC",
 			["stringID"] = 660,
 			["everGroup"] = true,
 			["classE"] = "DRUID",
 			["raidIndex"] = 30,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Lasian",
 			["rank"] = 0,
 		},
-		[98] = {
-			["origName"] = "Horu",
-			["classE"] = "ROGUE",
+		[1064] = {
+			["origName"] = "Benys",
+			["classE"] = "WARRIOR",
 			["level"] = 60,
-			["stringID"] = 98,
+			["stringID"] = 1064,
 			["type"] = "PC",
+		},
+		[200] = {
+			["isPetData"] = true,
+			["origName"] = "Thelvo",
+			["classE"] = "PALADIN",
+			["stringID"] = 200,
 		},
 		[3149] = {
 			["origName"] = "Hute",
@@ -8406,14 +8692,28 @@ SW_DataCollection = {
 			["stringID"] = 789,
 			["type"] = "NPC",
 		},
+		[5906] = {
+			["origName"] = "Duranta",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 5906,
+			["type"] = "PC",
+		},
+		[1067] = {
+			["origName"] = "Alcomage",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 1067,
+			["type"] = "PC",
+		},
 		[662] = {
-			["origName"] = "Autumne",
+			["type"] = "PC",
 			["stringID"] = 662,
 			["everGroup"] = true,
 			["classE"] = "MAGE",
 			["raidIndex"] = 32,
 			["level"] = 0,
-			["type"] = "PC",
+			["origName"] = "Autumne",
 			["rank"] = 0,
 		},
 		[790] = {
@@ -8422,11 +8722,25 @@ SW_DataCollection = {
 			["classE"] = "MAGE",
 			["stringID"] = 790,
 		},
+		[2320] = {
+			["origName"] = "xigua",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 2320,
+			["type"] = "PC",
+		},
 		[2646] = {
 			["origName"] = "Moroa",
 			["classE"] = "ROGUE",
 			["level"] = 60,
 			["stringID"] = 2646,
+			["type"] = "PC",
+		},
+		[3110] = {
+			["origName"] = "Kyres",
+			["classE"] = "HUNTER",
+			["level"] = 56,
+			["stringID"] = 3110,
 			["type"] = "PC",
 		},
 		[791] = {
@@ -8435,11 +8749,46 @@ SW_DataCollection = {
 			["stringID"] = 791,
 			["type"] = "NPC",
 		},
+		[3806] = {
+			["origName"] = "Ilovejazzlxo",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 3806,
+			["type"] = "PC",
+		},
 		[5804] = {
 			["origName"] = "Qazer",
 			["classE"] = "WARLOCK",
 			["level"] = 9,
 			["stringID"] = 5804,
+			["type"] = "PC",
+		},
+		[2319] = {
+			["origName"] = "Xiaolizi",
+			["classE"] = "HUNTER",
+			["level"] = 60,
+			["stringID"] = 2319,
+			["type"] = "PC",
+		},
+		[2652] = {
+			["origName"] = "Vivop",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 2652,
+			["type"] = "PC",
+		},
+		[2884] = {
+			["origName"] = "Someidiot",
+			["classE"] = "SHAMAN",
+			["level"] = 60,
+			["stringID"] = 2884,
+			["type"] = "PC",
+		},
+		[2094] = {
+			["origName"] = "Brexitplz",
+			["classE"] = "ROGUE",
+			["level"] = 35,
+			["stringID"] = 2094,
 			["type"] = "PC",
 		},
 		[166] = {
@@ -8449,11 +8798,32 @@ SW_DataCollection = {
 			["stringID"] = 166,
 			["type"] = "PC",
 		},
+		[7238] = {
+			["origName"] = "Niklapolis",
+			["classE"] = "SHAMAN",
+			["level"] = 26,
+			["stringID"] = 7238,
+			["type"] = "PC",
+		},
 		[3679] = {
 			["origName"] = "Nosleep",
 			["classE"] = "HUNTER",
 			["level"] = 60,
 			["stringID"] = 3679,
+			["type"] = "PC",
+		},
+		[3096] = {
+			["origName"] = "Ilundeadll",
+			["classE"] = "ROGUE",
+			["level"] = 60,
+			["stringID"] = 3096,
+			["type"] = "PC",
+		},
+		[2558] = {
+			["origName"] = "Fenasi",
+			["classE"] = "HUNTER",
+			["level"] = 19,
+			["stringID"] = 2558,
 			["type"] = "PC",
 		},
 		[3682] = {
@@ -8463,6 +8833,27 @@ SW_DataCollection = {
 			["stringID"] = 3682,
 			["type"] = "PC",
 		},
+		[1336] = {
+			["origName"] = "Kikitata",
+			["classE"] = "ROGUE",
+			["level"] = 60,
+			["stringID"] = 1336,
+			["type"] = "PC",
+		},
+		[6456] = {
+			["origName"] = "Withered Mistress",
+			["classE"] = "PALADIN",
+			["level"] = 60,
+			["stringID"] = 6456,
+			["type"] = "NPC",
+		},
+		[1333] = {
+			["origName"] = "Darkjx",
+			["classE"] = "WARLOCK",
+			["level"] = 60,
+			["stringID"] = 1333,
+			["type"] = "PC",
+		},
 		[2664] = {
 			["origName"] = "Turtle",
 			["classE"] = "WARRIOR",
@@ -8470,14 +8861,21 @@ SW_DataCollection = {
 			["stringID"] = 2664,
 			["type"] = "PC",
 		},
+		[1657] = {
+			["origName"] = "Madrox",
+			["classE"] = "ROGUE",
+			["level"] = 60,
+			["stringID"] = 1657,
+			["type"] = "PC",
+		},
 		[6347] = {
-			["origName"] = "Orzuk",
+			["type"] = "PC",
 			["stringID"] = 6347,
 			["everGroup"] = true,
 			["classE"] = "WARRIOR",
 			["raidIndex"] = 17,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Orzuk",
 			["rank"] = 0,
 		},
 		[4305] = {
@@ -8487,11 +8885,25 @@ SW_DataCollection = {
 			["stringID"] = 4305,
 			["type"] = "PC",
 		},
+		[4474] = {
+			["origName"] = "Bulbus",
+			["classE"] = "WARLOCK",
+			["level"] = 60,
+			["stringID"] = 4474,
+			["type"] = "PC",
+		},
 		[3691] = {
 			["origName"] = "Prozaca",
 			["classE"] = "ROGUE",
 			["level"] = 60,
 			["stringID"] = 3691,
+			["type"] = "PC",
+		},
+		[1592] = {
+			["origName"] = "Takast",
+			["classE"] = "MAGE",
+			["level"] = 10,
+			["stringID"] = 1592,
 			["type"] = "PC",
 		},
 		[167] = {
@@ -8501,6 +8913,13 @@ SW_DataCollection = {
 			["stringID"] = 167,
 			["type"] = "PC",
 		},
+		[717] = {
+			["origName"] = "Risen Lackey",
+			["classE"] = "WARRIOR",
+			["level"] = 55,
+			["stringID"] = 717,
+			["type"] = "NPC",
+		},
 		[4317] = {
 			["origName"] = "Cangkuhaoo",
 			["classE"] = "WARRIOR",
@@ -8508,14 +8927,21 @@ SW_DataCollection = {
 			["stringID"] = 4317,
 			["type"] = "PC",
 		},
+		[3443] = {
+			["origName"] = "Testblood",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 3443,
+			["type"] = "PC",
+		},
 		[670] = {
-			["origName"] = "Sekuritaz",
+			["type"] = "PC",
 			["stringID"] = 670,
 			["everGroup"] = true,
 			["classE"] = "WARRIOR",
 			["raidIndex"] = 8,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Sekuritaz",
 			["rank"] = 1,
 		},
 		[4323] = {
@@ -8540,19 +8966,40 @@ SW_DataCollection = {
 			["type"] = "PC",
 		},
 		[671] = {
-			["origName"] = "Pheebz",
+			["type"] = "PC",
 			["stringID"] = 671,
 			["everGroup"] = true,
 			["classE"] = "MAGE",
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Pheebz",
 			["rank"] = 0,
+		},
+		[5520] = {
+			["origName"] = "Yeadly",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 5520,
+			["type"] = "PC",
 		},
 		[3192] = {
 			["origName"] = "Thememories",
 			["classE"] = "PRIEST",
 			["level"] = 60,
 			["stringID"] = 3192,
+			["type"] = "PC",
+		},
+		[2395] = {
+			["origName"] = "Xiaoxiaojian",
+			["classE"] = "HUNTER",
+			["level"] = 60,
+			["stringID"] = 2395,
+			["type"] = "PC",
+		},
+		[515] = {
+			["origName"] = "Ducatio",
+			["classE"] = "ROGUE",
+			["level"] = 60,
+			["stringID"] = 515,
 			["type"] = "PC",
 		},
 		[4339] = {
@@ -8569,14 +9016,21 @@ SW_DataCollection = {
 			["stringID"] = 4341,
 			["type"] = "PC",
 		},
-		[168] = {
+		[420] = {
+			["origName"] = "Bis",
+			["classE"] = "HUNTER",
+			["level"] = 60,
+			["stringID"] = 420,
 			["type"] = "PC",
+		},
+		[168] = {
+			["origName"] = "Hellrobot",
 			["stringID"] = 168,
 			["everGroup"] = true,
 			["classE"] = "WARRIOR",
 			["raidIndex"] = 21,
 			["level"] = 0,
-			["origName"] = "Hellrobot",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[3710] = {
@@ -8607,6 +9061,13 @@ SW_DataCollection = {
 			["stringID"] = 4353,
 			["type"] = "PC",
 		},
+		[2414] = {
+			["origName"] = "Bulzao",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 2414,
+			["type"] = "PC",
+		},
 		[465] = {
 			["origName"] = "Blue Scalebane",
 			["classE"] = "WARRIOR",
@@ -8614,11 +9075,25 @@ SW_DataCollection = {
 			["stringID"] = 465,
 			["type"] = "NPC",
 		},
+		[3472] = {
+			["origName"] = "Irrefutable",
+			["classE"] = "PRIEST",
+			["level"] = 60,
+			["stringID"] = 3472,
+			["type"] = "PC",
+		},
 		[4361] = {
 			["origName"] = "Vilaine",
 			["classE"] = "WARRIOR",
 			["level"] = 60,
 			["stringID"] = 4361,
+			["type"] = "PC",
+		},
+		[1818] = {
+			["origName"] = "Niivzs",
+			["classE"] = "WARLOCK",
+			["level"] = 60,
+			["stringID"] = 1818,
 			["type"] = "PC",
 		},
 		[931] = {
@@ -8628,14 +9103,28 @@ SW_DataCollection = {
 			["stringID"] = 931,
 			["type"] = "PC",
 		},
-		[402] = {
+		[4994] = {
+			["origName"] = "Tryxus",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 4994,
 			["type"] = "PC",
+		},
+		[7283] = {
+			["origName"] = "Drivercc",
+			["classE"] = "PRIEST",
+			["level"] = 60,
+			["stringID"] = 7283,
+			["type"] = "PC",
+		},
+		[402] = {
+			["origName"] = "Mingrien",
 			["stringID"] = 402,
 			["everGroup"] = true,
 			["classE"] = "MAGE",
 			["raidIndex"] = 30,
 			["level"] = 60,
-			["origName"] = "Mingrien",
+			["type"] = "PC",
 			["rank"] = 1,
 		},
 		[6417] = {
@@ -8656,56 +9145,77 @@ SW_DataCollection = {
 			["type"] = "PC",
 			["stringID"] = 677,
 			["everGroup"] = true,
+			["classE"] = "WARLOCK",
+			["raidIndex"] = 15,
 			["allPets"] = {
 				[682] = true,
-				[826] = true,
 				[6507] = true,
+				[826] = true,
 				[829] = true,
 			},
-			["raidIndex"] = 15,
-			["classE"] = "WARLOCK",
 			["level"] = 60,
 			["origName"] = "Flowerss",
 			["rank"] = 0,
 		},
 		[2193] = {
-			["type"] = "PC",
+			["origName"] = "Racta",
 			["stringID"] = 2193,
 			["everGroup"] = true,
-			["classE"] = "HUNTER",
 			["allPets"] = {
 				[2200] = true,
 			},
+			["classE"] = "HUNTER",
 			["level"] = 60,
-			["origName"] = "Racta",
+			["type"] = "PC",
 			["rank"] = 0,
+		},
+		[1354] = {
+			["origName"] = "Midcool",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 1354,
+			["type"] = "PC",
+		},
+		[3267] = {
+			["origName"] = "Cacai",
+			["classE"] = "MAGE",
+			["level"] = 58,
+			["stringID"] = 3267,
+			["type"] = "PC",
 		},
 		[678] = {
 			["type"] = "PC",
 			["stringID"] = 678,
 			["everGroup"] = true,
-			["classE"] = "WARLOCK",
-			["raidIndex"] = 10,
 			["allPets"] = {
 				[6511] = true,
 				[790] = true,
 				[679] = true,
-				[6507] = true,
 				[6220] = true,
+				[6507] = true,
 			},
+			["raidIndex"] = 10,
+			["classE"] = "WARLOCK",
 			["level"] = 60,
 			["origName"] = "Kontaz",
 			["rank"] = 1,
 		},
 		[403] = {
-			["type"] = "PC",
+			["origName"] = "Dylun",
 			["stringID"] = 403,
 			["everGroup"] = true,
 			["classE"] = "WARRIOR",
 			["raidIndex"] = 25,
 			["level"] = 0,
-			["origName"] = "Dylun",
+			["type"] = "PC",
 			["rank"] = 1,
+		},
+		[3489] = {
+			["origName"] = "Cafetiere",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 3489,
+			["type"] = "PC",
 		},
 		[6435] = {
 			["origName"] = "Bizgup",
@@ -8727,6 +9237,13 @@ SW_DataCollection = {
 			["stringID"] = 6950,
 			["type"] = "PC",
 		},
+		[1502] = {
+			["origName"] = "Guslli",
+			["classE"] = "HUNTER",
+			["level"] = 54,
+			["stringID"] = 1502,
+			["type"] = "PC",
+		},
 		[6443] = {
 			["origName"] = "Hakkari Priest",
 			["classE"] = "PALADIN",
@@ -8734,14 +9251,63 @@ SW_DataCollection = {
 			["stringID"] = 6443,
 			["type"] = "NPC",
 		},
+		[6373] = {
+			["origName"] = "Fintepikken",
+			["classE"] = "PRIEST",
+			["level"] = 60,
+			["stringID"] = 6373,
+			["type"] = "PC",
+		},
+		[3849] = {
+			["origName"] = "Sdgundam",
+			["classE"] = "WARLOCK",
+			["level"] = 60,
+			["stringID"] = 3849,
+			["type"] = "PC",
+		},
+		[2003] = {
+			["origName"] = "Bobleeswager",
+			["classE"] = "HUNTER",
+			["level"] = 60,
+			["stringID"] = 2003,
+			["type"] = "PC",
+		},
+		[772] = {
+			["origName"] = "The Ravenian",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 772,
+			["type"] = "NPC",
+		},
+		[2141] = {
+			["origName"] = "Valorrabbit",
+			["classE"] = "WARLOCK",
+			["level"] = 60,
+			["stringID"] = 2141,
+			["type"] = "PC",
+		},
 		[2209] = {
-			["origName"] = "Artlizard",
+			["type"] = "PC",
 			["stringID"] = 2209,
 			["everGroup"] = true,
 			["classE"] = "MAGE",
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Artlizard",
 			["rank"] = 0,
+		},
+		[3450] = {
+			["origName"] = "Warfix",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 3450,
+			["type"] = "PC",
+		},
+		[4675] = {
+			["origName"] = "Timmsta",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 4675,
+			["type"] = "PC",
 		},
 		[682] = {
 			["isPetData"] = true,
@@ -8749,12 +9315,33 @@ SW_DataCollection = {
 			["classE"] = "MAGE",
 			["stringID"] = 682,
 		},
+		[1108] = {
+			["origName"] = "Elliestrasza",
+			["classE"] = "ROGUE",
+			["level"] = 60,
+			["stringID"] = 1108,
+			["type"] = "PC",
+		},
 		[6465] = {
 			["origName"] = "Jin'do the Hexxer",
 			["classE"] = "PALADIN",
 			["level"] = -1,
 			["stringID"] = 6465,
 			["type"] = "NPC",
+		},
+		[6978] = {
+			["origName"] = "Cristna",
+			["classE"] = "WARLOCK",
+			["level"] = 60,
+			["stringID"] = 6978,
+			["type"] = "PC",
+		},
+		[3147] = {
+			["origName"] = "Mihunmm",
+			["classE"] = "PRIEST",
+			["level"] = 60,
+			["stringID"] = 3147,
+			["type"] = "PC",
 		},
 		[811] = {
 			["origName"] = "Greater Duskbat",
@@ -8777,6 +9364,13 @@ SW_DataCollection = {
 			["stringID"] = 6475,
 			["type"] = "NPC",
 		},
+		[457] = {
+			["origName"] = "Cntank",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 457,
+			["type"] = "PC",
+		},
 		[6479] = {
 			["origName"] = "Zulian Panther",
 			["classE"] = "WARRIOR",
@@ -8784,15 +9378,43 @@ SW_DataCollection = {
 			["stringID"] = 6479,
 			["type"] = "NPC",
 		},
-		[171] = {
+		[4948] = {
+			["origName"] = "Dvln",
+			["classE"] = "ROGUE",
+			["level"] = 60,
+			["stringID"] = 4948,
 			["type"] = "PC",
+		},
+		[4973] = {
+			["origName"] = "Sxs",
+			["classE"] = "WARLOCK",
+			["level"] = 60,
+			["stringID"] = 4973,
+			["type"] = "PC",
+		},
+		[171] = {
+			["origName"] = "Lucretive",
 			["stringID"] = 171,
 			["everGroup"] = true,
 			["classE"] = "MAGE",
 			["raidIndex"] = 28,
 			["level"] = 60,
-			["origName"] = "Lucretive",
+			["type"] = "PC",
 			["rank"] = 1,
+		},
+		[6228] = {
+			["type"] = "PC",
+			["stringID"] = 6228,
+			["everGroup"] = true,
+			["classE"] = "WARLOCK",
+			["raidIndex"] = 13,
+			["allPets"] = {
+				[6507] = true,
+				[6432] = true,
+			},
+			["level"] = 60,
+			["origName"] = "Brunkkillen",
+			["rank"] = 0,
 		},
 		[6489] = {
 			["origName"] = "Hooktooth Frenzy",
@@ -8808,6 +9430,13 @@ SW_DataCollection = {
 			["stringID"] = 1626,
 			["type"] = "PC",
 		},
+		[1203] = {
+			["origName"] = "Iamcold",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 1203,
+			["type"] = "PC",
+		},
 		[814] = {
 			["origName"] = "Durrn",
 			["classE"] = "HUNTER",
@@ -8815,11 +9444,39 @@ SW_DataCollection = {
 			["stringID"] = 814,
 			["type"] = "PC",
 		},
+		[4494] = {
+			["origName"] = "Goldstyn",
+			["classE"] = "WARRIOR",
+			["level"] = 10,
+			["stringID"] = 4494,
+			["type"] = "PC",
+		},
+		[3075] = {
+			["origName"] = "Panagos",
+			["classE"] = "SHAMAN",
+			["level"] = 55,
+			["stringID"] = 3075,
+			["type"] = "PC",
+		},
+		[2001] = {
+			["origName"] = "Jlne",
+			["classE"] = "ROGUE",
+			["level"] = 31,
+			["stringID"] = 2001,
+			["type"] = "PC",
+		},
 		[815] = {
 			["origName"] = "Xicnmengbi",
 			["classE"] = "HUNTER",
 			["level"] = 60,
 			["stringID"] = 815,
+			["type"] = "PC",
+		},
+		[3311] = {
+			["origName"] = "Thelionkin",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 3311,
 			["type"] = "PC",
 		},
 		[6507] = {
@@ -8848,15 +9505,21 @@ SW_DataCollection = {
 			["stringID"] = 1887,
 			["type"] = "PC",
 		},
+		[6432] = {
+			["isPetData"] = true,
+			["origName"] = "Garham",
+			["classE"] = "MAGE",
+			["stringID"] = 6432,
+		},
 		[172] = {
 			["type"] = "PC",
 			["stringID"] = 172,
 			["everGroup"] = true,
-			["classE"] = "HUNTER",
-			["raidIndex"] = 22,
 			["allPets"] = {
 				[283] = true,
 			},
+			["raidIndex"] = 22,
+			["classE"] = "HUNTER",
 			["level"] = 0,
 			["origName"] = "Ducktales",
 			["rank"] = 1,
@@ -8881,6 +9544,41 @@ SW_DataCollection = {
 			["stringID"] = 6523,
 			["type"] = "NPC",
 		},
+		[3732] = {
+			["origName"] = "Bruisser",
+			["classE"] = "ROGUE",
+			["level"] = 52,
+			["stringID"] = 3732,
+			["type"] = "PC",
+		},
+		[1635] = {
+			["origName"] = "Skillbank",
+			["classE"] = "WARLOCK",
+			["level"] = 5,
+			["stringID"] = 1635,
+			["type"] = "PC",
+		},
+		[2241] = {
+			["origName"] = "Laowangdog",
+			["classE"] = "SHAMAN",
+			["level"] = 60,
+			["stringID"] = 2241,
+			["type"] = "PC",
+		},
+		[6526] = {
+			["origName"] = "High Priestess Mar'li",
+			["classE"] = "PALADIN",
+			["level"] = -1,
+			["stringID"] = 6526,
+			["type"] = "NPC",
+		},
+		[840] = {
+			["origName"] = "Thender",
+			["classE"] = "SHAMAN",
+			["level"] = 60,
+			["stringID"] = 840,
+			["type"] = "PC",
+		},
 		[2249] = {
 			["origName"] = "Corrupted Mottled Boar",
 			["classE"] = "WARRIOR",
@@ -8895,12 +9593,26 @@ SW_DataCollection = {
 			["stringID"] = 6537,
 			["type"] = "NPC",
 		},
+		[1249] = {
+			["origName"] = "Xbang",
+			["classE"] = "ROGUE",
+			["level"] = 60,
+			["stringID"] = 1249,
+			["type"] = "PC",
+		},
 		[692] = {
 			["origName"] = "Scholomance Neophyte",
 			["classE"] = "MAGE",
 			["level"] = 57,
 			["stringID"] = 692,
 			["type"] = "NPC",
+		},
+		[3874] = {
+			["origName"] = "Zhangdaye",
+			["classE"] = "ROGUE",
+			["level"] = 60,
+			["stringID"] = 3874,
+			["type"] = "PC",
 		},
 		[6545] = {
 			["origName"] = "High Priest Venoxis",
@@ -8909,11 +9621,25 @@ SW_DataCollection = {
 			["stringID"] = 6545,
 			["type"] = "NPC",
 		},
+		[939] = {
+			["origName"] = "Oxikontti",
+			["classE"] = "ROGUE",
+			["level"] = 35,
+			["stringID"] = 939,
+			["type"] = "PC",
+		},
 		[173] = {
 			["origName"] = "Drakonis",
 			["classE"] = "WARLOCK",
 			["level"] = 60,
 			["stringID"] = 173,
+			["type"] = "PC",
+		},
+		[4063] = {
+			["origName"] = "Noiro",
+			["classE"] = "ROGUE",
+			["level"] = 60,
+			["stringID"] = 4063,
 			["type"] = "PC",
 		},
 		[6553] = {
@@ -8935,6 +9661,13 @@ SW_DataCollection = {
 			["stringID"] = 694,
 			["type"] = "NPC",
 		},
+		[2772] = {
+			["origName"] = "Bravegirl",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 2772,
+			["type"] = "PC",
+		},
 		[2262] = {
 			["origName"] = "Venomtail Scorpid",
 			["classE"] = "WARRIOR",
@@ -8942,12 +9675,40 @@ SW_DataCollection = {
 			["stringID"] = 2262,
 			["type"] = "NPC",
 		},
+		[1851] = {
+			["origName"] = "Dogmayi",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 1851,
+			["type"] = "PC",
+		},
+		[3286] = {
+			["origName"] = "Losientoo",
+			["classE"] = "ROGUE",
+			["level"] = 60,
+			["stringID"] = 3286,
+			["type"] = "PC",
+		},
 		[2265] = {
 			["origName"] = "Corrupted Bloodtalon Scythemaw",
 			["classE"] = "WARRIOR",
 			["level"] = 11,
 			["stringID"] = 2265,
 			["type"] = "NPC",
+		},
+		[227] = {
+			["origName"] = "Uhrawruh",
+			["classE"] = "ROGUE",
+			["level"] = 60,
+			["stringID"] = 227,
+			["type"] = "PC",
+		},
+		[950] = {
+			["origName"] = "Jiujiu",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 950,
+			["type"] = "PC",
 		},
 		[3801] = {
 			["origName"] = "Flamearrow",
@@ -8957,14 +9718,28 @@ SW_DataCollection = {
 			["type"] = "PC",
 		},
 		[412] = {
-			["type"] = "PC",
+			["origName"] = "Chapsterz",
 			["stringID"] = 412,
 			["everGroup"] = true,
 			["classE"] = "WARRIOR",
 			["raidIndex"] = 31,
 			["level"] = 60,
-			["origName"] = "Chapsterz",
+			["type"] = "PC",
 			["rank"] = 1,
+		},
+		[7234] = {
+			["origName"] = "Carayuer",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 7234,
+			["type"] = "PC",
+		},
+		[6068] = {
+			["origName"] = "Camellias",
+			["classE"] = "WARLOCK",
+			["level"] = 60,
+			["stringID"] = 6068,
+			["type"] = "PC",
 		},
 		[3294] = {
 			["origName"] = "Magihuana",
@@ -8980,6 +9755,20 @@ SW_DataCollection = {
 			["stringID"] = 206,
 			["type"] = "NPC",
 		},
+		[7230] = {
+			["origName"] = "Seele",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 7230,
+			["type"] = "PC",
+		},
+		[7241] = {
+			["origName"] = "Fraer",
+			["classE"] = "SHAMAN",
+			["level"] = 56,
+			["stringID"] = 7241,
+			["type"] = "PC",
+		},
 		[6589] = {
 			["origName"] = "Weezil",
 			["classE"] = "MAGE",
@@ -8993,12 +9782,33 @@ SW_DataCollection = {
 			["classE"] = "MAGE",
 			["stringID"] = 826,
 		},
+		[239] = {
+			["origName"] = "Wind Serpent",
+			["classE"] = "WARRIOR",
+			["level"] = 38,
+			["stringID"] = 239,
+			["type"] = "PC",
+		},
+		[5792] = {
+			["origName"] = "Garpit",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 5792,
+			["type"] = "PC",
+		},
 		[2791] = {
 			["origName"] = "Tusyan",
 			["classE"] = "HUNTER",
 			["level"] = 60,
 			["stringID"] = 2791,
 			["type"] = "PC",
+		},
+		[2281] = {
+			["origName"] = "Soran",
+			["classE"] = "WARRIOR",
+			["level"] = 45,
+			["stringID"] = 2281,
+			["type"] = "NPC",
 		},
 		[3815] = {
 			["origName"] = "Loomo",
@@ -9021,15 +9831,36 @@ SW_DataCollection = {
 			["stringID"] = 700,
 			["type"] = "NPC",
 		},
+		[4168] = {
+			["origName"] = "Dabaoma",
+			["classE"] = "WARRIOR",
+			["level"] = 22,
+			["stringID"] = 4168,
+			["type"] = "PC",
+		},
 		[5076] = {
-			["origName"] = "Msexedead",
+			["type"] = "PC",
 			["stringID"] = 5076,
 			["everGroup"] = true,
 			["classE"] = "WARRIOR",
 			["raidIndex"] = 11,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Msexedead",
 			["rank"] = 0,
+		},
+		[3206] = {
+			["origName"] = "Saltwater Crocolisk",
+			["classE"] = "WARRIOR",
+			["level"] = 35,
+			["stringID"] = 3206,
+			["type"] = "NPC",
+		},
+		[7276] = {
+			["origName"] = "Sanboo",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 7276,
+			["type"] = "PC",
 		},
 		[829] = {
 			["isPetData"] = true,
@@ -9044,11 +9875,67 @@ SW_DataCollection = {
 			["stringID"] = 3823,
 			["type"] = "PC",
 		},
+		[6516] = {
+			["origName"] = "Razzashi Skitterer",
+			["classE"] = "WARRIOR",
+			["level"] = 58,
+			["stringID"] = 6516,
+			["type"] = "NPC",
+		},
 		[7132] = {
 			["origName"] = "Zeezeer",
 			["classE"] = "SHAMAN",
 			["level"] = 60,
 			["stringID"] = 7132,
+			["type"] = "PC",
+		},
+		[2386] = {
+			["origName"] = "nanzhua",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 2386,
+			["type"] = "PC",
+		},
+		[164] = {
+			["origName"] = "Flashed",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 164,
+			["type"] = "PC",
+		},
+		[575] = {
+			["origName"] = "Viila",
+			["classE"] = "ROGUE",
+			["level"] = 60,
+			["stringID"] = 575,
+			["type"] = "PC",
+		},
+		[6343] = {
+			["origName"] = "Sharphealz",
+			["classE"] = "PRIEST",
+			["level"] = 60,
+			["stringID"] = 6343,
+			["type"] = "PC",
+		},
+		[535] = {
+			["origName"] = "Sotakone",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 535,
+			["type"] = "PC",
+		},
+		[3460] = {
+			["origName"] = "Immortalxx",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 3460,
+			["type"] = "PC",
+		},
+		[7242] = {
+			["origName"] = "Manunited",
+			["classE"] = "WARRIOR",
+			["level"] = 28,
+			["stringID"] = 7242,
 			["type"] = "PC",
 		},
 		[7148] = {
@@ -9068,6 +9955,13 @@ SW_DataCollection = {
 			["stringID"] = 416,
 			["type"] = "NPC",
 		},
+		[4884] = {
+			["origName"] = "Rake",
+			["classE"] = "WARRIOR",
+			["level"] = 51,
+			["stringID"] = 4884,
+			["type"] = "PC",
+		},
 		[7154] = {
 			["origName"] = "Cruzitas",
 			["classE"] = "SHAMAN",
@@ -9082,6 +9976,13 @@ SW_DataCollection = {
 			["stringID"] = 705,
 			["type"] = "NPC",
 		},
+		[1612] = {
+			["origName"] = "Feiyangcc",
+			["classE"] = "MAGE",
+			["level"] = 22,
+			["stringID"] = 1612,
+			["type"] = "PC",
+		},
 		[2306] = {
 			["origName"] = "xiuxiu",
 			["classE"] = "WARRIOR",
@@ -9089,15 +9990,64 @@ SW_DataCollection = {
 			["stringID"] = 2306,
 			["type"] = "PC",
 		},
+		[3116] = {
+			["origName"] = "Instagibb",
+			["classE"] = "ROGUE",
+			["level"] = 60,
+			["stringID"] = 3116,
+			["type"] = "PC",
+		},
+		[4049] = {
+			["origName"] = "Smelthead",
+			["classE"] = "HUNTER",
+			["level"] = 40,
+			["stringID"] = 4049,
+			["type"] = "PC",
+		},
+		[1421] = {
+			["origName"] = "Davveed",
+			["classE"] = "ROGUE",
+			["level"] = 60,
+			["stringID"] = 1421,
+			["type"] = "PC",
+		},
+		[1286] = {
+			["origName"] = "Deepriver",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 1286,
+			["type"] = "PC",
+		},
+		[4615] = {
+			["origName"] = "Xanter",
+			["classE"] = "HUNTER",
+			["level"] = 60,
+			["stringID"] = 4615,
+			["type"] = "PC",
+		},
 		[4617] = {
-			["origName"] = "Anatiah",
+			["type"] = "PC",
 			["stringID"] = 4617,
 			["everGroup"] = true,
 			["classE"] = "MAGE",
 			["raidIndex"] = 24,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Anatiah",
 			["rank"] = 1,
+		},
+		[7174] = {
+			["origName"] = "Healxy",
+			["classE"] = "PRIEST",
+			["level"] = 60,
+			["stringID"] = 7174,
+			["type"] = "PC",
+		},
+		[7275] = {
+			["origName"] = "Crossrunes",
+			["classE"] = "HUNTER",
+			["level"] = 12,
+			["stringID"] = 7275,
+			["type"] = "PC",
 		},
 		[580] = {
 			["origName"] = "Muldred",
@@ -9113,6 +10063,13 @@ SW_DataCollection = {
 			["stringID"] = 708,
 			["type"] = "NPC",
 		},
+		[311] = {
+			["origName"] = "Ennokok",
+			["classE"] = "DRUID",
+			["level"] = 59,
+			["stringID"] = 311,
+			["type"] = "PC",
+		},
 		[7184] = {
 			["origName"] = "Fiatpunto",
 			["classE"] = "WARLOCK",
@@ -9125,38 +10082,41 @@ SW_DataCollection = {
 			["stringID"] = 145,
 			["everGroup"] = true,
 			["petID"] = 146,
+			["classE"] = "WARLOCK",
+			["raidIndex"] = 24,
 			["allPets"] = {
 				[146] = true,
 			},
-			["raidIndex"] = 24,
-			["classE"] = "WARLOCK",
 			["level"] = 60,
 			["origName"] = "Gangmember",
 			["rank"] = 1,
 		},
-		[7271] = {
-			["origName"] = "Earthborer",
+		[1417] = {
+			["origName"] = "Streetjames",
 			["classE"] = "WARRIOR",
-			["level"] = 13,
-			["stringID"] = 7271,
-			["type"] = "NPC",
-		},
-		[604] = {
+			["level"] = 60,
+			["stringID"] = 1417,
 			["type"] = "PC",
-			["stringID"] = 604,
-			["everGroup"] = true,
-			["classE"] = "ROGUE",
-			["raidIndex"] = 34,
-			["level"] = 60,
-			["origName"] = "Fyky",
-			["rank"] = 0,
 		},
-		[730] = {
-			["origName"] = "Spectral Tutor",
-			["classE"] = "PALADIN",
+		[577] = {
+			["origName"] = "Miasm",
+			["classE"] = "PRIEST",
 			["level"] = 60,
-			["stringID"] = 730,
-			["type"] = "NPC",
+			["stringID"] = 577,
+			["type"] = "PC",
+		},
+		[5531] = {
+			["type"] = "PC",
+			["stringID"] = 5531,
+			["everGroup"] = true,
+			["classE"] = "PRIEST",
+			["raidIndex"] = 14,
+			["allPets"] = {
+				[6521] = true,
+			},
+			["level"] = 60,
+			["origName"] = "Takashi",
+			["rank"] = 0,
 		},
 		[1674] = {
 			["origName"] = "Sanyuechusan",
@@ -9179,22 +10139,19 @@ SW_DataCollection = {
 			["stringID"] = 4132,
 			["type"] = "PC",
 		},
-		[857] = {
-			["origName"] = "Fillysteak",
-			["classE"] = "WARLOCK",
+		[1855] = {
+			["origName"] = "Sneakyfox",
+			["classE"] = "ROGUE",
 			["level"] = 60,
-			["stringID"] = 857,
+			["stringID"] = 1855,
 			["type"] = "PC",
 		},
-		[661] = {
-			["origName"] = "Hindo",
-			["stringID"] = 661,
-			["everGroup"] = true,
-			["classE"] = "SHAMAN",
-			["raidIndex"] = 31,
+		[3022] = {
+			["origName"] = "Golfee",
+			["classE"] = "DRUID",
 			["level"] = 60,
+			["stringID"] = 3022,
 			["type"] = "PC",
-			["rank"] = 0,
 		},
 		[711] = {
 			["origName"] = "Scholomance Dark Summoner",
@@ -9224,17 +10181,14 @@ SW_DataCollection = {
 			["stringID"] = 5166,
 			["type"] = "PC",
 		},
-		[5531] = {
+		[661] = {
 			["type"] = "PC",
-			["stringID"] = 5531,
+			["stringID"] = 661,
 			["everGroup"] = true,
-			["allPets"] = {
-				[6521] = true,
-			},
-			["raidIndex"] = 14,
-			["classE"] = "PRIEST",
+			["classE"] = "SHAMAN",
+			["raidIndex"] = 31,
 			["level"] = 60,
-			["origName"] = "Takashi",
+			["origName"] = "Hindo",
 			["rank"] = 0,
 		},
 		[5170] = {
@@ -9263,12 +10217,12 @@ SW_DataCollection = {
 			["stringID"] = 178,
 			["type"] = "PC",
 		},
-		[3022] = {
-			["origName"] = "Golfee",
-			["classE"] = "DRUID",
-			["level"] = 60,
-			["stringID"] = 3022,
-			["type"] = "PC",
+		[2243] = {
+			["origName"] = "Elder Mottled Boar",
+			["classE"] = "WARRIOR",
+			["level"] = 9,
+			["stringID"] = 2243,
+			["type"] = "NPC",
 		},
 		[3360] = {
 			["origName"] = "Unresonable",
@@ -9277,82 +10231,83 @@ SW_DataCollection = {
 			["stringID"] = 3360,
 			["type"] = "PC",
 		},
-		[200] = {
-			["isPetData"] = true,
-			["origName"] = "Thelvo",
-			["classE"] = "PALADIN",
-			["stringID"] = 200,
+		[6532] = {
+			["origName"] = "Gurubashi Champion",
+			["classE"] = "WARRIOR",
+			["level"] = 61,
+			["stringID"] = 6532,
+			["type"] = "NPC",
 		},
 		[6206] = {
 			["type"] = "PC",
 			["stringID"] = 6206,
 			["everGroup"] = true,
-			["classE"] = "HUNTER",
-			["raidIndex"] = 2,
 			["allPets"] = {
 				[6209] = true,
 			},
+			["raidIndex"] = 2,
+			["classE"] = "HUNTER",
 			["level"] = 60,
 			["origName"] = "Sagitaris",
 			["rank"] = 0,
 		},
 		[6208] = {
-			["origName"] = "Reil",
+			["type"] = "PC",
 			["stringID"] = 6208,
 			["everGroup"] = true,
 			["classE"] = "DRUID",
 			["raidIndex"] = 1,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Reil",
 			["rank"] = 2,
 		},
 		[6210] = {
-			["origName"] = "Kinte",
+			["type"] = "PC",
 			["stringID"] = 6210,
 			["everGroup"] = true,
 			["classE"] = "ROGUE",
 			["raidIndex"] = 3,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Kinte",
 			["rank"] = 0,
 		},
 		[6212] = {
-			["origName"] = "Kopanos",
+			["type"] = "PC",
 			["stringID"] = 6212,
 			["everGroup"] = true,
 			["classE"] = "WARRIOR",
 			["raidIndex"] = 5,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Kopanos",
 			["rank"] = 0,
 		},
 		[6214] = {
-			["origName"] = "Iamkush",
+			["type"] = "PC",
 			["stringID"] = 6214,
 			["everGroup"] = true,
 			["classE"] = "MAGE",
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Iamkush",
 			["rank"] = 0,
 		},
 		[6216] = {
-			["origName"] = "Skarfacee",
+			["type"] = "PC",
 			["stringID"] = 6216,
 			["everGroup"] = true,
 			["classE"] = "ROGUE",
 			["raidIndex"] = 8,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Skarfacee",
 			["rank"] = 0,
 		},
 		[6218] = {
-			["origName"] = "Lingzor",
+			["type"] = "PC",
 			["stringID"] = 6218,
 			["everGroup"] = true,
 			["classE"] = "SHAMAN",
 			["raidIndex"] = 9,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Lingzor",
 			["rank"] = 0,
 		},
 		[6220] = {
@@ -9362,32 +10317,32 @@ SW_DataCollection = {
 			["stringID"] = 6220,
 		},
 		[6222] = {
-			["origName"] = "Sandropriest",
+			["type"] = "PC",
 			["stringID"] = 6222,
 			["everGroup"] = true,
 			["classE"] = "PRIEST",
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Sandropriest",
 			["rank"] = 0,
 		},
 		[6224] = {
-			["origName"] = "Balm",
+			["type"] = "PC",
 			["stringID"] = 6224,
 			["everGroup"] = true,
 			["classE"] = "PRIEST",
 			["raidIndex"] = 19,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Balm",
 			["rank"] = 0,
 		},
 		[6226] = {
-			["origName"] = "Undralat",
+			["type"] = "PC",
 			["stringID"] = 6226,
 			["everGroup"] = true,
 			["classE"] = "ROGUE",
 			["raidIndex"] = 23,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Undralat",
 			["rank"] = 0,
 		},
 		[147] = {
@@ -9403,24 +10358,25 @@ SW_DataCollection = {
 			["stringID"] = 6230,
 			["type"] = "NPC",
 		},
-		[4036] = {
-			["origName"] = "Piingguoniu",
-			["classE"] = "WARRIOR",
-			["level"] = 51,
-			["stringID"] = 4036,
+		[5721] = {
+			["origName"] = "Talaninggar",
+			["classE"] = "PRIEST",
+			["level"] = 60,
+			["stringID"] = 5721,
 			["type"] = "PC",
 		},
-		[122] = {
-			["isPetData"] = true,
-			["origName"] = "Zahriana",
+		[176] = {
+			["origName"] = "Bruunom",
 			["classE"] = "MAGE",
-			["stringID"] = 122,
+			["level"] = 60,
+			["stringID"] = 176,
+			["type"] = "PC",
 		},
-		[1064] = {
-			["origName"] = "Benys",
+		[295] = {
+			["origName"] = "Handares",
 			["classE"] = "WARRIOR",
 			["level"] = 60,
-			["stringID"] = 1064,
+			["stringID"] = 295,
 			["type"] = "PC",
 		},
 		[718] = {
@@ -9429,15 +10385,12 @@ SW_DataCollection = {
 			["stringID"] = 718,
 			["type"] = "NPC",
 		},
-		[4033] = {
-			["origName"] = "Zarkom",
-			["stringID"] = 4033,
-			["everGroup"] = true,
-			["classE"] = "PRIEST",
-			["raidIndex"] = 5,
+		[4032] = {
+			["origName"] = "Forestzz",
+			["classE"] = "WARRIOR",
 			["level"] = 60,
+			["stringID"] = 4032,
 			["type"] = "PC",
-			["rank"] = 0,
 		},
 		[6242] = {
 			["origName"] = "Blitz",
@@ -9446,25 +10399,25 @@ SW_DataCollection = {
 			["stringID"] = 6242,
 			["type"] = "PC",
 		},
-		[1251] = {
-			["origName"] = "Bitcoiner",
-			["classE"] = "HUNTER",
+		[3537] = {
+			["origName"] = "Resham",
+			["classE"] = "MAGE",
 			["level"] = 60,
-			["stringID"] = 1251,
+			["stringID"] = 3537,
 			["type"] = "PC",
 		},
-		[657] = {
-			["origName"] = "Gamon",
-			["classE"] = "WARRIOR",
-			["level"] = 12,
-			["stringID"] = 657,
-			["type"] = "NPC",
-		},
-		[88] = {
-			["origName"] = "Dibert",
-			["classE"] = "PALADIN",
+		[98] = {
+			["origName"] = "Horu",
+			["classE"] = "ROGUE",
 			["level"] = 60,
-			["stringID"] = 88,
+			["stringID"] = 98,
+			["type"] = "PC",
+		},
+		[5675] = {
+			["origName"] = "Xiaqi",
+			["classE"] = "DRUID",
+			["level"] = 60,
+			["stringID"] = 5675,
 			["type"] = "PC",
 		},
 		[2873] = {
@@ -9495,21 +10448,18 @@ SW_DataCollection = {
 			["stringID"] = 4212,
 			["type"] = "PC",
 		},
+		[6258] = {
+			["origName"] = "Frostflygarn",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 6258,
+			["type"] = "PC",
+		},
 		[6491] = {
 			["origName"] = "Gahz'ranka",
 			["level"] = -1,
 			["stringID"] = 6491,
 			["type"] = "NPC",
-		},
-		[156] = {
-			["type"] = "PC",
-			["stringID"] = 156,
-			["everGroup"] = true,
-			["classE"] = "SHAMAN",
-			["raidIndex"] = 20,
-			["level"] = 0,
-			["origName"] = "Numsegass",
-			["rank"] = 1,
 		},
 		[1952] = {
 			["origName"] = "Tatafar",
@@ -9525,13 +10475,6 @@ SW_DataCollection = {
 			["stringID"] = 212,
 			["type"] = "PC",
 		},
-		[176] = {
-			["origName"] = "Bruunom",
-			["classE"] = "MAGE",
-			["level"] = 60,
-			["stringID"] = 176,
-			["type"] = "PC",
-		},
 		[1565] = {
 			["origName"] = "Maxsms",
 			["classE"] = "MAGE",
@@ -9539,19 +10482,19 @@ SW_DataCollection = {
 			["stringID"] = 1565,
 			["type"] = "PC",
 		},
-		[6228] = {
-			["type"] = "PC",
-			["stringID"] = 6228,
-			["everGroup"] = true,
-			["allPets"] = {
-				[6432] = true,
-				[6507] = true,
-			},
-			["raidIndex"] = 13,
-			["classE"] = "WARLOCK",
+		[3393] = {
+			["origName"] = "Kissxixi",
+			["classE"] = "MAGE",
 			["level"] = 60,
-			["origName"] = "Brunkkillen",
-			["rank"] = 0,
+			["stringID"] = 3393,
+			["type"] = "PC",
+		},
+		[2372] = {
+			["origName"] = "Alonelonely",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 2372,
+			["type"] = "PC",
 		},
 		[4228] = {
 			["origName"] = "Woratank",
@@ -9560,18 +10503,21 @@ SW_DataCollection = {
 			["stringID"] = 4228,
 			["type"] = "PC",
 		},
-		[5706] = {
-			["origName"] = "Kreanlel",
-			["classE"] = "MAGE",
-			["level"] = 60,
-			["stringID"] = 5706,
+		[6217] = {
 			["type"] = "PC",
-		},
-		[717] = {
-			["origName"] = "Risen Lackey",
+			["stringID"] = 6217,
+			["everGroup"] = true,
 			["classE"] = "WARRIOR",
-			["level"] = 55,
-			["stringID"] = 717,
+			["raidIndex"] = 15,
+			["level"] = 60,
+			["origName"] = "Hapu",
+			["rank"] = 0,
+		},
+		[685] = {
+			["origName"] = "Risen Guard",
+			["classE"] = "WARRIOR",
+			["level"] = 57,
+			["stringID"] = 685,
 			["type"] = "NPC",
 		},
 		[1445] = {
@@ -9581,11 +10527,11 @@ SW_DataCollection = {
 			["stringID"] = 1445,
 			["type"] = "PC",
 		},
-		[5675] = {
-			["origName"] = "Xiaqi",
-			["classE"] = "DRUID",
+		[7013] = {
+			["origName"] = "Enerjizzeer",
+			["classE"] = "SHAMAN",
 			["level"] = 60,
-			["stringID"] = 5675,
+			["stringID"] = 7013,
 			["type"] = "PC",
 		},
 		[4238] = {
@@ -9595,11 +10541,11 @@ SW_DataCollection = {
 			["stringID"] = 4238,
 			["type"] = "PC",
 		},
-		[751] = {
-			["origName"] = "Risen Aberration",
+		[812] = {
+			["origName"] = "Venom Mist Lurker",
 			["classE"] = "WARRIOR",
-			["level"] = 58,
-			["stringID"] = 751,
+			["level"] = 50,
+			["stringID"] = 812,
 			["type"] = "NPC",
 		},
 		[4242] = {
@@ -9609,12 +10555,12 @@ SW_DataCollection = {
 			["stringID"] = 4242,
 			["type"] = "PC",
 		},
-		[5567] = {
-			["origName"] = "Aoelol",
-			["classE"] = "MAGE",
-			["level"] = 60,
-			["stringID"] = 5567,
-			["type"] = "PC",
+		[788] = {
+			["origName"] = "Scholomance Occultist",
+			["classE"] = "PALADIN",
+			["level"] = 59,
+			["stringID"] = 788,
+			["type"] = "NPC",
 		},
 		[3915] = {
 			["origName"] = "Baeked",
@@ -9630,35 +10576,25 @@ SW_DataCollection = {
 			["stringID"] = 597,
 			["type"] = "PC",
 		},
-		[97] = {
-			["type"] = "PC",
-			["stringID"] = 97,
-			["everGroup"] = true,
+		[5272] = {
+			["origName"] = "Koma",
 			["classE"] = "WARRIOR",
-			["raidIndex"] = 18,
-			["level"] = 60,
-			["origName"] = "Bruteforge",
-			["rank"] = 1,
+			["level"] = 45,
+			["stringID"] = 5272,
+			["type"] = "NPC",
 		},
-		[1637] = {
-			["origName"] = "Gucci",
+		[750] = {
+			["origName"] = "Reanimated Corpse",
 			["classE"] = "WARRIOR",
-			["level"] = 58,
-			["stringID"] = 1637,
-			["type"] = "PC",
+			["level"] = 59,
+			["stringID"] = 750,
+			["type"] = "NPC",
 		},
 		[6809] = {
 			["origName"] = "Naori",
 			["classE"] = "SHAMAN",
 			["level"] = 60,
 			["stringID"] = 6809,
-			["type"] = "PC",
-		},
-		[2010] = {
-			["origName"] = "Wcrow",
-			["classE"] = "HUNTER",
-			["level"] = 60,
-			["stringID"] = 2010,
 			["type"] = "PC",
 		},
 		[782] = {
@@ -9668,11 +10604,18 @@ SW_DataCollection = {
 			["stringID"] = 782,
 			["type"] = "NPC",
 		},
-		[1048] = {
-			["origName"] = "rollOnehund",
+		[5791] = {
+			["origName"] = "Undeadqt",
+			["classE"] = "WARLOCK",
+			["level"] = 60,
+			["stringID"] = 5791,
+			["type"] = "PC",
+		},
+		[639] = {
+			["origName"] = "Flappynoodle",
 			["classE"] = "WARRIOR",
 			["level"] = 60,
-			["stringID"] = 1048,
+			["stringID"] = 639,
 			["type"] = "PC",
 		},
 		[4262] = {
@@ -9682,41 +10625,44 @@ SW_DataCollection = {
 			["stringID"] = 4262,
 			["type"] = "PC",
 		},
-		[729] = {
-			["origName"] = "Scholomance Adept",
-			["classE"] = "PALADIN",
-			["level"] = 59,
-			["stringID"] = 729,
-			["type"] = "NPC",
-		},
-		[6439] = {
-			["origName"] = "Razzashi Serpent",
-			["classE"] = "WARRIOR",
-			["level"] = 60,
-			["stringID"] = 6439,
-			["type"] = "NPC",
-		},
-		[155] = {
-			["isPetData"] = true,
-			["origName"] = "Droodon",
-			["classE"] = "MAGE",
-			["stringID"] = 155,
-		},
 		[3736] = {
-			["origName"] = "Phoee",
+			["type"] = "PC",
 			["stringID"] = 3736,
 			["everGroup"] = true,
 			["classE"] = "DRUID",
 			["raidIndex"] = 22,
 			["level"] = 60,
+			["origName"] = "Phoee",
+			["rank"] = 1,
+		},
+		[6484] = {
+			["origName"] = "High Priestess Arlokk",
+			["level"] = -1,
+			["stringID"] = 6484,
+			["type"] = "NPC",
+		},
+		[245] = {
+			["origName"] = "Krokaln",
+			["stringID"] = 245,
+			["everGroup"] = true,
+			["classE"] = "ROGUE",
+			["raidIndex"] = 23,
+			["level"] = 0,
 			["type"] = "PC",
 			["rank"] = 1,
 		},
-		[1751] = {
-			["origName"] = "Playforfun",
-			["classE"] = "MAGE",
+		[109] = {
+			["origName"] = "Cliff Thunderer",
+			["classE"] = "WARRIOR",
+			["level"] = 54,
+			["stringID"] = 109,
+			["type"] = "NPC",
+		},
+		[4783] = {
+			["origName"] = "Niubzhan",
+			["classE"] = "WARRIOR",
 			["level"] = 60,
-			["stringID"] = 1751,
+			["stringID"] = 4783,
 			["type"] = "PC",
 		},
 		[728] = {
@@ -9733,15 +10679,12 @@ SW_DataCollection = {
 			["stringID"] = 856,
 			["type"] = "PC",
 		},
-		[245] = {
-			["type"] = "PC",
-			["stringID"] = 245,
-			["everGroup"] = true,
-			["classE"] = "ROGUE",
-			["raidIndex"] = 23,
-			["level"] = 0,
-			["origName"] = "Krokaln",
-			["rank"] = 1,
+		[6476] = {
+			["origName"] = "Gurubashi Blood Drinker",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 6476,
+			["type"] = "NPC",
 		},
 		[3932] = {
 			["origName"] = "Wendybendy",
@@ -9750,32 +10693,26 @@ SW_DataCollection = {
 			["stringID"] = 3932,
 			["type"] = "PC",
 		},
-		[182] = {
-			["type"] = "PC",
-			["stringID"] = 182,
-			["everGroup"] = true,
-			["classE"] = "MAGE",
-			["raidIndex"] = 32,
-			["level"] = 60,
-			["origName"] = "Numbale",
-			["rank"] = 1,
+		[729] = {
+			["origName"] = "Scholomance Adept",
+			["classE"] = "PALADIN",
+			["level"] = 59,
+			["stringID"] = 729,
+			["type"] = "NPC",
 		},
-		[3423] = {
-			["origName"] = "Chapapa",
+		[857] = {
+			["origName"] = "Fillysteak",
+			["classE"] = "WARLOCK",
+			["level"] = 60,
+			["stringID"] = 857,
+			["type"] = "PC",
+		},
+		[65] = {
+			["origName"] = "Crzz",
 			["classE"] = "WARRIOR",
 			["level"] = 60,
-			["stringID"] = 3423,
+			["stringID"] = 65,
 			["type"] = "PC",
-		},
-		[77] = {
-			["type"] = "PC",
-			["stringID"] = 77,
-			["everGroup"] = true,
-			["classE"] = "SHAMAN",
-			["raidIndex"] = 16,
-			["level"] = 0,
-			["origName"] = "Orcbit",
-			["rank"] = 1,
 		},
 		[1714] = {
 			["origName"] = "Sandalphone",
@@ -9785,13 +10722,13 @@ SW_DataCollection = {
 			["type"] = "PC",
 		},
 		[3426] = {
-			["origName"] = "Gigalul",
+			["type"] = "PC",
 			["stringID"] = 3426,
 			["everGroup"] = true,
 			["classE"] = "ROGUE",
 			["raidIndex"] = 19,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Gigalul",
 			["rank"] = 0,
 		},
 		[3938] = {
@@ -9801,18 +10738,18 @@ SW_DataCollection = {
 			["stringID"] = 3938,
 			["type"] = "PC",
 		},
-		[1186] = {
-			["origName"] = "Azraelt",
-			["classE"] = "WARRIOR",
+		[5656] = {
+			["origName"] = "Eclefaustio",
+			["classE"] = "DRUID",
 			["level"] = 60,
-			["stringID"] = 1186,
+			["stringID"] = 5656,
 			["type"] = "PC",
 		},
-		[4884] = {
-			["origName"] = "Rake",
-			["classE"] = "WARRIOR",
-			["level"] = 51,
-			["stringID"] = 4884,
+		[3762] = {
+			["origName"] = "Zederic",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 3762,
 			["type"] = "PC",
 		},
 		[731] = {
@@ -9822,11 +10759,11 @@ SW_DataCollection = {
 			["stringID"] = 731,
 			["type"] = "NPC",
 		},
-		[3762] = {
-			["origName"] = "Zederic",
-			["classE"] = "MAGE",
+		[3431] = {
+			["origName"] = "Hydrocodeine",
+			["classE"] = "WARLOCK",
 			["level"] = 60,
-			["stringID"] = 3762,
+			["stringID"] = 3431,
 			["type"] = "PC",
 		},
 		[3432] = {
@@ -9850,12 +10787,12 @@ SW_DataCollection = {
 			["stringID"] = 732,
 			["type"] = "NPC",
 		},
-		[227] = {
-			["origName"] = "Uhrawruh",
-			["classE"] = "ROGUE",
+		[6466] = {
+			["origName"] = "Sacrificed Troll",
+			["classE"] = "WARRIOR",
 			["level"] = 60,
-			["stringID"] = 227,
-			["type"] = "PC",
+			["stringID"] = 6466,
+			["type"] = "NPC",
 		},
 		[988] = {
 			["origName"] = "Xail",
@@ -9871,11 +10808,11 @@ SW_DataCollection = {
 			["stringID"] = 3948,
 			["type"] = "PC",
 		},
-		[3492] = {
-			["origName"] = "Larauna",
-			["classE"] = "DRUID",
+		[1291] = {
+			["origName"] = "Bloodtroll",
+			["classE"] = "HUNTER",
 			["level"] = 60,
-			["stringID"] = 3492,
+			["stringID"] = 1291,
 			["type"] = "PC",
 		},
 		[1280] = {
@@ -9906,56 +10843,53 @@ SW_DataCollection = {
 			["stringID"] = 4322,
 			["type"] = "PC",
 		},
-		[1249] = {
-			["origName"] = "Xbang",
-			["classE"] = "ROGUE",
+		[2932] = {
+			["origName"] = "Mghunter",
+			["classE"] = "HUNTER",
 			["level"] = 60,
-			["stringID"] = 1249,
+			["stringID"] = 2932,
 			["type"] = "PC",
 		},
-		[250] = {
-			["origName"] = "Boar",
-			["classE"] = "WARRIOR",
-			["level"] = 18,
-			["stringID"] = 250,
-			["type"] = "PC",
-		},
-		[218] = {
-			["type"] = "PC",
-			["stringID"] = 218,
-			["everGroup"] = true,
-			["classE"] = "MAGE",
-			["raidIndex"] = 24,
-			["level"] = 60,
-			["origName"] = "Essgee",
-			["rank"] = 1,
-		},
-		[745] = {
-			["origName"] = "Rattlegore",
-			["classE"] = "PALADIN",
-			["level"] = 61,
-			["stringID"] = 745,
-			["type"] = "NPC",
-		},
-		[154] = {
-			["type"] = "PC",
-			["stringID"] = 154,
-			["everGroup"] = true,
-			["allPets"] = {
-				[155] = true,
-			},
-			["raidIndex"] = 19,
+		[4326] = {
+			["origName"] = "Kadaverbengt",
 			["classE"] = "WARLOCK",
 			["level"] = 60,
-			["origName"] = "Dorill",
-			["rank"] = 1,
+			["stringID"] = 4326,
+			["type"] = "PC",
 		},
-		[737] = {
-			["origName"] = "Scholomance Handler",
-			["classE"] = "PALADIN",
-			["level"] = 59,
-			["stringID"] = 737,
+		[6454] = {
+			["origName"] = "Gurubashi Headhunter",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 6454,
 			["type"] = "NPC",
+		},
+		[6452] = {
+			["origName"] = "Gurubashi Berserker",
+			["classE"] = "WARRIOR",
+			["level"] = 62,
+			["stringID"] = 6452,
+			["type"] = "NPC",
+		},
+		[1683] = {
+			["origName"] = "Strangerk",
+			["classE"] = "DRUID",
+			["level"] = 60,
+			["stringID"] = 1683,
+			["type"] = "PC",
+		},
+		[1981] = {
+			["origName"] = "Abertay",
+			["classE"] = "PRIEST",
+			["level"] = 60,
+			["stringID"] = 1981,
+			["type"] = "PC",
+		},
+		[2200] = {
+			["isPetData"] = true,
+			["origName"] = "Pelle",
+			["classE"] = "WARRIOR",
+			["stringID"] = 2200,
 		},
 		[736] = {
 			["origName"] = "Plagued Hatchling",
@@ -9964,19 +10898,11 @@ SW_DataCollection = {
 			["stringID"] = 736,
 			["type"] = "NPC",
 		},
-		[3450] = {
-			["origName"] = "Warfix",
-			["classE"] = "WARRIOR",
-			["level"] = 60,
-			["stringID"] = 3450,
-			["type"] = "PC",
-		},
-		[3971] = {
-			["origName"] = "Superfreet",
-			["classE"] = "ROGUE",
-			["level"] = 60,
-			["stringID"] = 3971,
-			["type"] = "PC",
+		[738] = {
+			["isPetData"] = true,
+			["origName"] = "Scholomance Handler",
+			["classE"] = "PALADIN",
+			["stringID"] = 738,
 		},
 		[4342] = {
 			["origName"] = "Thanoth",
@@ -9985,36 +10911,26 @@ SW_DataCollection = {
 			["stringID"] = 4342,
 			["type"] = "PC",
 		},
-		[4354] = {
-			["origName"] = "Pewpsplosion",
-			["classE"] = "DRUID",
-			["level"] = 60,
-			["stringID"] = 4354,
-			["type"] = "PC",
-		},
-		[184] = {
-			["type"] = "PC",
-			["stringID"] = 184,
-			["everGroup"] = true,
+		[497] = {
+			["origName"] = "Adcwang",
 			["classE"] = "MAGE",
-			["raidIndex"] = 28,
 			["level"] = 60,
-			["origName"] = "Rallus",
-			["rank"] = 1,
-		},
-		[867] = {
+			["stringID"] = 497,
 			["type"] = "PC",
-			["stringID"] = 867,
-			["everGroup"] = true,
-			["petID"] = 6229,
-			["classE"] = "WARLOCK",
-			["raidIndex"] = 23,
-			["allPets"] = {
-				[6229] = true,
-			},
+		},
+		[737] = {
+			["origName"] = "Scholomance Handler",
+			["classE"] = "PALADIN",
+			["level"] = 59,
+			["stringID"] = 737,
+			["type"] = "NPC",
+		},
+		[325] = {
+			["origName"] = "Buffalobill",
+			["classE"] = "HUNTER",
 			["level"] = 60,
-			["origName"] = "Nies",
-			["rank"] = 0,
+			["stringID"] = 325,
+			["type"] = "PC",
 		},
 		[3967] = {
 			["origName"] = "Kielkenny",
@@ -10030,11 +10946,12 @@ SW_DataCollection = {
 			["stringID"] = 4352,
 			["type"] = "PC",
 		},
-		[738] = {
-			["isPetData"] = true,
-			["origName"] = "Scholomance Handler",
-			["classE"] = "PALADIN",
-			["stringID"] = 738,
+		[4354] = {
+			["origName"] = "Pewpsplosion",
+			["classE"] = "DRUID",
+			["level"] = 60,
+			["stringID"] = 4354,
+			["type"] = "PC",
 		},
 		[433] = {
 			["origName"] = "Thadros",
@@ -10043,11 +10960,11 @@ SW_DataCollection = {
 			["stringID"] = 433,
 			["type"] = "PC",
 		},
-		[497] = {
-			["origName"] = "Adcwang",
-			["classE"] = "MAGE",
+		[3971] = {
+			["origName"] = "Superfreet",
+			["classE"] = "ROGUE",
 			["level"] = 60,
-			["stringID"] = 497,
+			["stringID"] = 3971,
 			["type"] = "PC",
 		},
 		[4360] = {
@@ -10064,12 +10981,19 @@ SW_DataCollection = {
 			["stringID"] = 3973,
 			["type"] = "PC",
 		},
-		[4364] = {
-			["origName"] = "Gnory",
-			["classE"] = "ROGUE",
-			["level"] = 60,
-			["stringID"] = 4364,
+		[867] = {
 			["type"] = "PC",
+			["stringID"] = 867,
+			["everGroup"] = true,
+			["petID"] = 6229,
+			["allPets"] = {
+				[6229] = true,
+			},
+			["raidIndex"] = 23,
+			["classE"] = "WARLOCK",
+			["level"] = 60,
+			["origName"] = "Nies",
+			["rank"] = 0,
 		},
 		[4366] = {
 			["origName"] = "Shamylicious",
@@ -10099,12 +11023,57 @@ SW_DataCollection = {
 			["stringID"] = 6495,
 			["type"] = "NPC",
 		},
-		[1096] = {
-			["origName"] = "Omecron",
+		[713] = {
+			["origName"] = "Scholomance Necrolyte",
+			["classE"] = "PALADIN",
+			["level"] = 57,
+			["stringID"] = 713,
+			["type"] = "NPC",
+		},
+		[1995] = {
+			["origName"] = "Elektrikern",
 			["classE"] = "WARRIOR",
 			["level"] = 60,
-			["stringID"] = 1096,
+			["stringID"] = 1995,
 			["type"] = "PC",
+		},
+		[4378] = {
+			["origName"] = "Segulko",
+			["classE"] = "HUNTER",
+			["level"] = 60,
+			["stringID"] = 4378,
+			["type"] = "PC",
+		},
+		[217] = {
+			["origName"] = "Cat",
+			["classE"] = "WARRIOR",
+			["level"] = 40,
+			["stringID"] = 217,
+			["type"] = "PC",
+		},
+		[6426] = {
+			["type"] = "PC",
+			["stringID"] = 6426,
+			["everGroup"] = true,
+			["classE"] = "MAGE",
+			["raidIndex"] = 18,
+			["level"] = 60,
+			["origName"] = "Pingaan",
+			["rank"] = 2,
+		},
+		[5406] = {
+			["origName"] = "Circleoo",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 5406,
+			["type"] = "PC",
+		},
+		[742] = {
+			["origName"] = "Risen Construct",
+			["classE"] = "WARRIOR",
+			["level"] = 61,
+			["stringID"] = 742,
+			["type"] = "NPC",
 		},
 		[3475] = {
 			["origName"] = "Latchz",
@@ -10120,56 +11089,12 @@ SW_DataCollection = {
 			["stringID"] = 3987,
 			["type"] = "PC",
 		},
-		[217] = {
-			["origName"] = "Cat",
-			["classE"] = "WARRIOR",
-			["level"] = 40,
-			["stringID"] = 217,
-			["type"] = "PC",
-		},
-		[6426] = {
-			["origName"] = "Pingaan",
-			["stringID"] = 6426,
-			["everGroup"] = true,
-			["classE"] = "MAGE",
-			["raidIndex"] = 18,
-			["level"] = 60,
-			["type"] = "PC",
-			["rank"] = 2,
-		},
-		[3472] = {
-			["origName"] = "Irrefutable",
-			["classE"] = "PRIEST",
-			["level"] = 60,
-			["stringID"] = 3472,
-			["type"] = "PC",
-		},
-		[742] = {
-			["origName"] = "Risen Construct",
-			["classE"] = "WARRIOR",
-			["level"] = 61,
-			["stringID"] = 742,
-			["type"] = "NPC",
-		},
-		[6432] = {
-			["isPetData"] = true,
-			["origName"] = "Garham",
-			["classE"] = "MAGE",
-			["stringID"] = 6432,
-		},
-		[1995] = {
-			["origName"] = "Elektrikern",
+		[1096] = {
+			["origName"] = "Omecron",
 			["classE"] = "WARRIOR",
 			["level"] = 60,
-			["stringID"] = 1995,
+			["stringID"] = 1096,
 			["type"] = "PC",
-		},
-		[713] = {
-			["origName"] = "Scholomance Necrolyte",
-			["classE"] = "PALADIN",
-			["level"] = 57,
-			["stringID"] = 713,
-			["type"] = "NPC",
 		},
 		[6438] = {
 			["origName"] = "Razzashi Adder",
@@ -10178,11 +11103,11 @@ SW_DataCollection = {
 			["stringID"] = 6438,
 			["type"] = "NPC",
 		},
-		[325] = {
-			["origName"] = "Buffalobill",
-			["classE"] = "HUNTER",
+		[4364] = {
+			["origName"] = "Gnory",
+			["classE"] = "ROGUE",
 			["level"] = 60,
-			["stringID"] = 325,
+			["stringID"] = 4364,
 			["type"] = "PC",
 		},
 		[6442] = {
@@ -10199,55 +11124,68 @@ SW_DataCollection = {
 			["stringID"] = 3992,
 			["type"] = "PC",
 		},
-		[2200] = {
-			["isPetData"] = true,
-			["origName"] = "Pelle",
-			["classE"] = "WARRIOR",
-			["stringID"] = 2200,
+		[184] = {
+			["origName"] = "Rallus",
+			["stringID"] = 184,
+			["everGroup"] = true,
+			["classE"] = "MAGE",
+			["raidIndex"] = 28,
+			["level"] = 60,
+			["type"] = "PC",
+			["rank"] = 1,
 		},
 		[872] = {
-			["origName"] = "Meffo",
+			["type"] = "PC",
 			["stringID"] = 872,
 			["everGroup"] = true,
 			["classE"] = "WARRIOR",
 			["raidIndex"] = 29,
 			["level"] = 60,
+			["origName"] = "Meffo",
+			["rank"] = 1,
+		},
+		[3484] = {
+			["origName"] = "Imwarlock",
+			["classE"] = "WARLOCK",
+			["level"] = 60,
+			["stringID"] = 3484,
+			["type"] = "PC",
+		},
+		[154] = {
+			["type"] = "PC",
+			["stringID"] = 154,
+			["everGroup"] = true,
+			["classE"] = "WARLOCK",
+			["raidIndex"] = 19,
+			["allPets"] = {
+				[155] = true,
+			},
+			["level"] = 60,
+			["origName"] = "Dorill",
+			["rank"] = 1,
+		},
+		[745] = {
+			["origName"] = "Rattlegore",
+			["classE"] = "PALADIN",
+			["level"] = 61,
+			["stringID"] = 745,
+			["type"] = "NPC",
+		},
+		[218] = {
+			["origName"] = "Essgee",
+			["stringID"] = 218,
+			["everGroup"] = true,
+			["classE"] = "MAGE",
+			["raidIndex"] = 24,
+			["level"] = 60,
 			["type"] = "PC",
 			["rank"] = 1,
 		},
-		[1683] = {
-			["origName"] = "Strangerk",
-			["classE"] = "DRUID",
-			["level"] = 60,
-			["stringID"] = 1683,
-			["type"] = "PC",
-		},
-		[6452] = {
-			["origName"] = "Gurubashi Berserker",
+		[250] = {
+			["origName"] = "Boar",
 			["classE"] = "WARRIOR",
-			["level"] = 62,
-			["stringID"] = 6452,
-			["type"] = "NPC",
-		},
-		[6454] = {
-			["origName"] = "Gurubashi Headhunter",
-			["classE"] = "WARRIOR",
-			["level"] = 60,
-			["stringID"] = 6454,
-			["type"] = "NPC",
-		},
-		[6456] = {
-			["origName"] = "Withered Mistress",
-			["classE"] = "PALADIN",
-			["level"] = 60,
-			["stringID"] = 6456,
-			["type"] = "NPC",
-		},
-		[2001] = {
-			["origName"] = "Jlne",
-			["classE"] = "ROGUE",
-			["level"] = 31,
-			["stringID"] = 2001,
+			["level"] = 18,
+			["stringID"] = 250,
 			["type"] = "PC",
 		},
 		[6460] = {
@@ -10264,25 +11202,25 @@ SW_DataCollection = {
 			["stringID"] = 6462,
 			["type"] = "NPC",
 		},
-		[1291] = {
-			["origName"] = "Bloodtroll",
-			["classE"] = "HUNTER",
+		[1236] = {
+			["origName"] = "Kabior",
+			["classE"] = "PRIEST",
 			["level"] = 60,
-			["stringID"] = 1291,
+			["stringID"] = 1236,
 			["type"] = "PC",
 		},
-		[6466] = {
-			["origName"] = "Sacrificed Troll",
-			["classE"] = "WARRIOR",
+		[3492] = {
+			["origName"] = "Larauna",
+			["classE"] = "DRUID",
 			["level"] = 60,
-			["stringID"] = 6466,
-			["type"] = "NPC",
+			["stringID"] = 3492,
+			["type"] = "PC",
 		},
-		[420] = {
-			["origName"] = "Bis",
-			["classE"] = "HUNTER",
+		[6979] = {
+			["origName"] = "Jhaanum",
+			["classE"] = "MAGE",
 			["level"] = 60,
-			["stringID"] = 420,
+			["stringID"] = 6979,
 			["type"] = "PC",
 		},
 		[1493] = {
@@ -10292,40 +11230,46 @@ SW_DataCollection = {
 			["stringID"] = 1493,
 			["type"] = "PC",
 		},
-		[5656] = {
-			["origName"] = "Eclefaustio",
-			["classE"] = "DRUID",
-			["level"] = 60,
-			["stringID"] = 5656,
-			["type"] = "PC",
-		},
-		[65] = {
-			["origName"] = "Crzz",
+		[1186] = {
+			["origName"] = "Azraelt",
 			["classE"] = "WARRIOR",
 			["level"] = 60,
-			["stringID"] = 65,
+			["stringID"] = 1186,
 			["type"] = "PC",
 		},
-		[6476] = {
-			["origName"] = "Gurubashi Blood Drinker",
+		[3423] = {
+			["origName"] = "Chapapa",
 			["classE"] = "WARRIOR",
 			["level"] = 60,
-			["stringID"] = 6476,
-			["type"] = "NPC",
+			["stringID"] = 3423,
+			["type"] = "PC",
 		},
-		[840] = {
-			["origName"] = "Thender",
+		[77] = {
+			["origName"] = "Orcbit",
+			["stringID"] = 77,
+			["everGroup"] = true,
 			["classE"] = "SHAMAN",
-			["level"] = 60,
-			["stringID"] = 840,
+			["raidIndex"] = 16,
+			["level"] = 0,
 			["type"] = "PC",
+			["rank"] = 1,
 		},
-		[109] = {
-			["origName"] = "Cliff Thunderer",
-			["classE"] = "WARRIOR",
-			["level"] = 54,
-			["stringID"] = 109,
-			["type"] = "NPC",
+		[182] = {
+			["origName"] = "Numbale",
+			["stringID"] = 182,
+			["everGroup"] = true,
+			["classE"] = "MAGE",
+			["raidIndex"] = 32,
+			["level"] = 60,
+			["type"] = "PC",
+			["rank"] = 1,
+		},
+		[1751] = {
+			["origName"] = "Playforfun",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 1751,
+			["type"] = "PC",
 		},
 		[4011] = {
 			["origName"] = "Forwardm",
@@ -10334,11 +11278,11 @@ SW_DataCollection = {
 			["stringID"] = 4011,
 			["type"] = "PC",
 		},
-		[6484] = {
-			["origName"] = "High Priestess Arlokk",
-			["level"] = -1,
-			["stringID"] = 6484,
-			["type"] = "NPC",
+		[155] = {
+			["isPetData"] = true,
+			["origName"] = "Droodon",
+			["classE"] = "MAGE",
+			["stringID"] = 155,
 		},
 		[749] = {
 			["origName"] = "Diseased Ghoul",
@@ -10347,18 +11291,18 @@ SW_DataCollection = {
 			["stringID"] = 749,
 			["type"] = "NPC",
 		},
-		[639] = {
-			["origName"] = "Flappynoodle",
+		[6439] = {
+			["origName"] = "Razzashi Serpent",
 			["classE"] = "WARRIOR",
 			["level"] = 60,
-			["stringID"] = 639,
-			["type"] = "PC",
+			["stringID"] = 6439,
+			["type"] = "NPC",
 		},
-		[239] = {
-			["origName"] = "Wind Serpent",
+		[1048] = {
+			["origName"] = "rollOnehund",
 			["classE"] = "WARRIOR",
-			["level"] = 25,
-			["stringID"] = 239,
+			["level"] = 60,
+			["stringID"] = 1048,
 			["type"] = "PC",
 		},
 		[622] = {
@@ -10368,47 +11312,50 @@ SW_DataCollection = {
 			["stringID"] = 622,
 			["type"] = "NPC",
 		},
-		[750] = {
-			["origName"] = "Reanimated Corpse",
-			["classE"] = "WARRIOR",
-			["level"] = 59,
-			["stringID"] = 750,
-			["type"] = "NPC",
-		},
-		[772] = {
-			["origName"] = "The Ravenian",
-			["classE"] = "WARRIOR",
+		[2010] = {
+			["origName"] = "Wcrow",
+			["classE"] = "HUNTER",
 			["level"] = 60,
-			["stringID"] = 772,
-			["type"] = "NPC",
-		},
-		[788] = {
-			["origName"] = "Scholomance Occultist",
-			["classE"] = "PALADIN",
-			["level"] = 59,
-			["stringID"] = 788,
-			["type"] = "NPC",
-		},
-		[812] = {
-			["origName"] = "Venom Mist Lurker",
-			["classE"] = "WARRIOR",
-			["level"] = 50,
-			["stringID"] = 812,
-			["type"] = "NPC",
-		},
-		[7013] = {
-			["origName"] = "Enerjizzeer",
-			["classE"] = "SHAMAN",
-			["level"] = 60,
-			["stringID"] = 7013,
+			["stringID"] = 2010,
 			["type"] = "PC",
 		},
-		[685] = {
-			["origName"] = "Risen Guard",
+		[1637] = {
+			["origName"] = "Gucci",
 			["classE"] = "WARRIOR",
-			["level"] = 57,
-			["stringID"] = 685,
+			["level"] = 54,
+			["stringID"] = 1637,
+			["type"] = "PC",
+		},
+		[97] = {
+			["origName"] = "Bruteforge",
+			["stringID"] = 97,
+			["everGroup"] = true,
+			["classE"] = "WARRIOR",
+			["raidIndex"] = 18,
+			["level"] = 60,
+			["type"] = "PC",
+			["rank"] = 1,
+		},
+		[5567] = {
+			["origName"] = "Aoelol",
+			["classE"] = "MAGE",
+			["level"] = 60,
+			["stringID"] = 5567,
+			["type"] = "PC",
+		},
+		[751] = {
+			["origName"] = "Risen Aberration",
+			["classE"] = "WARRIOR",
+			["level"] = 58,
+			["stringID"] = 751,
 			["type"] = "NPC",
+		},
+		[5482] = {
+			["origName"] = "Threeshadows",
+			["classE"] = "WARRIOR",
+			["level"] = 60,
+			["stringID"] = 5482,
+			["type"] = "PC",
 		},
 		[6506] = {
 			["origName"] = "Mad Servant",
@@ -10438,21 +11385,24 @@ SW_DataCollection = {
 			["type"] = "NPC",
 		},
 		[4981] = {
-			["origName"] = "Areaofeffect",
+			["type"] = "PC",
 			["stringID"] = 4981,
 			["everGroup"] = true,
 			["classE"] = "MAGE",
 			["raidIndex"] = 7,
 			["level"] = 60,
-			["type"] = "PC",
+			["origName"] = "Areaofeffect",
 			["rank"] = 0,
 		},
-		[6516] = {
-			["origName"] = "Razzashi Skitterer",
-			["classE"] = "WARRIOR",
-			["level"] = 58,
-			["stringID"] = 6516,
-			["type"] = "NPC",
+		[156] = {
+			["origName"] = "Numsegass",
+			["stringID"] = 156,
+			["everGroup"] = true,
+			["classE"] = "SHAMAN",
+			["raidIndex"] = 20,
+			["level"] = 0,
+			["type"] = "PC",
+			["rank"] = 1,
 		},
 		[753] = {
 			["origName"] = "Spectral Teacher",
@@ -10468,26 +11418,28 @@ SW_DataCollection = {
 			["stringID"] = 6520,
 			["type"] = "NPC",
 		},
-		[3537] = {
-			["origName"] = "Resham",
+		[122] = {
+			["isPetData"] = true,
+			["origName"] = "Zahriana",
 			["classE"] = "MAGE",
+			["stringID"] = 122,
+		},
+		[1251] = {
+			["origName"] = "Bitcoiner",
+			["classE"] = "HUNTER",
 			["level"] = 60,
-			["stringID"] = 3537,
+			["stringID"] = 1251,
 			["type"] = "PC",
 		},
-		[4032] = {
-			["origName"] = "Forestzz",
-			["classE"] = "WARRIOR",
-			["level"] = 60,
-			["stringID"] = 4032,
+		[4033] = {
 			["type"] = "PC",
-		},
-		[6526] = {
-			["origName"] = "High Priestess Mar'li",
-			["classE"] = "PALADIN",
-			["level"] = -1,
-			["stringID"] = 6526,
-			["type"] = "NPC",
+			["stringID"] = 4033,
+			["everGroup"] = true,
+			["classE"] = "PRIEST",
+			["raidIndex"] = 5,
+			["level"] = 60,
+			["origName"] = "Zarkom",
+			["rank"] = 0,
 		},
 		[441] = {
 			["origName"] = "Draconic Mageweaver",
@@ -10496,26 +11448,26 @@ SW_DataCollection = {
 			["stringID"] = 441,
 			["type"] = "NPC",
 		},
-		[2386] = {
-			["origName"] = "nanzhua",
-			["classE"] = "WARRIOR",
+		[6760] = {
+			["origName"] = "Gulash",
+			["classE"] = "WARLOCK",
 			["level"] = 60,
-			["stringID"] = 2386,
+			["stringID"] = 6760,
 			["type"] = "PC",
 		},
-		[6532] = {
-			["origName"] = "Gurubashi Champion",
+		[4036] = {
+			["origName"] = "Piingguoniu",
 			["classE"] = "WARRIOR",
-			["level"] = 61,
-			["stringID"] = 6532,
-			["type"] = "NPC",
+			["level"] = 51,
+			["stringID"] = 4036,
+			["type"] = "PC",
 		},
-		[2243] = {
-			["origName"] = "Elder Mottled Boar",
-			["classE"] = "WARRIOR",
-			["level"] = 9,
-			["stringID"] = 2243,
-			["type"] = "NPC",
+		[88] = {
+			["origName"] = "Dibert",
+			["classE"] = "PALADIN",
+			["level"] = 60,
+			["stringID"] = 88,
+			["type"] = "PC",
 		},
 		[6536] = {
 			["origName"] = "Vilebranch Speaker",
@@ -10530,11 +11482,11 @@ SW_DataCollection = {
 			["stringID"] = 6538,
 			["type"] = "NPC",
 		},
-		[1855] = {
-			["origName"] = "Sneakyfox",
-			["classE"] = "ROGUE",
+		[4040] = {
+			["origName"] = "Estas",
+			["classE"] = "WARRIOR",
 			["level"] = 60,
-			["stringID"] = 1855,
+			["stringID"] = 4040,
 			["type"] = "PC",
 		},
 		[756] = {
@@ -10544,19 +11496,22 @@ SW_DataCollection = {
 			["stringID"] = 756,
 			["type"] = "NPC",
 		},
-		[577] = {
-			["origName"] = "Miasm",
-			["classE"] = "PRIEST",
+		[730] = {
+			["origName"] = "Spectral Tutor",
+			["classE"] = "PALADIN",
 			["level"] = 60,
-			["stringID"] = 577,
-			["type"] = "PC",
-		},
-		[3206] = {
-			["origName"] = "Saltwater Crocolisk",
-			["classE"] = "WARRIOR",
-			["level"] = 35,
-			["stringID"] = 3206,
+			["stringID"] = 730,
 			["type"] = "NPC",
+		},
+		[604] = {
+			["origName"] = "Fyky",
+			["stringID"] = 604,
+			["everGroup"] = true,
+			["classE"] = "ROGUE",
+			["raidIndex"] = 34,
+			["level"] = 60,
+			["type"] = "PC",
+			["rank"] = 0,
 		},
 	},
 	["data"] = {
@@ -10604,10 +11559,10 @@ SW_DataCollection = {
 						[3] = {
 							[2] = 200,
 							[5] = 32,
-							[6] = 6350,
 							[30] = {
 								[5] = 50,
 							},
+							[6] = 6350,
 						},
 						[5] = {
 							[1] = 2979,
@@ -10882,10 +11837,10 @@ SW_DataCollection = {
 								[9] = 4,
 							},
 						},
-						[58] = {
+						[150] = {
 							[6] = {
-								[10] = 566,
-								[9] = 2,
+								[10] = 5568,
+								[9] = 24,
 							},
 						},
 						[819] = {
@@ -10940,10 +11895,10 @@ SW_DataCollection = {
 								[9] = 1,
 							},
 						},
-						[150] = {
+						[58] = {
 							[6] = {
-								[10] = 5568,
-								[9] = 24,
+								[10] = 566,
+								[9] = 2,
 							},
 						},
 					},
@@ -11030,18 +11985,18 @@ SW_DataCollection = {
 								[3] = 2,
 							},
 						},
-						[0] = {
-							[20] = {
-								[1] = 4,
-								[5] = 4,
-							},
-						},
 						[300] = {
 							[1] = 2027,
 							[2] = 442,
 							[3] = 7,
 							[30] = {
 								[5] = 2,
+							},
+						},
+						[0] = {
+							[20] = {
+								[1] = 4,
+								[5] = 4,
 							},
 						},
 					},
@@ -11122,8 +12077,8 @@ SW_DataCollection = {
 					},
 					[508] = {
 						[7] = 67893,
-						[8] = 11378,
 						[4] = 1,
+						[8] = 11378,
 					},
 					[6218] = {
 						[2] = 268,
@@ -11202,13 +12157,13 @@ SW_DataCollection = {
 						[7] = 25639,
 						[8] = 9107,
 					},
-					[6208] = {
-						[7] = 9662,
-						[8] = 2278,
+					[6442] = {
+						[1] = 1255,
+						[5] = 4,
 					},
-					[6519] = {
-						[1] = 4537,
-						[5] = 8,
+					[6538] = {
+						[10] = 384,
+						[9] = 2,
 					},
 					[6534] = {
 						[1] = 2343,
@@ -11225,13 +12180,13 @@ SW_DataCollection = {
 						[2] = 1765,
 						[6] = 289,
 					},
-					[6538] = {
-						[10] = 384,
-						[9] = 2,
+					[6519] = {
+						[1] = 4537,
+						[5] = 8,
 					},
-					[6442] = {
-						[1] = 1255,
-						[5] = 4,
+					[6208] = {
+						[7] = 9662,
+						[8] = 2278,
 					},
 				},
 			},
@@ -11342,15 +12297,20 @@ SW_DataCollection = {
 						[4] = {
 							[2] = 185,
 							[5] = 116,
-							[6] = 21038,
 							[30] = {
 								[5] = 182,
 							},
+							[6] = 21038,
 						},
 						[5] = {
 							[2] = 312,
 							[5] = 17,
 							[6] = 5033,
+						},
+						[0] = {
+							[2] = 88,
+							[5] = 14,
+							[6] = 894,
 						},
 						[200] = {
 							[1] = 32272,
@@ -11367,11 +12327,6 @@ SW_DataCollection = {
 								[2] = 30,
 								[4] = 5,
 							},
-						},
-						[0] = {
-							[2] = 88,
-							[5] = 14,
-							[6] = 894,
 						},
 					},
 				},
@@ -11555,11 +12510,6 @@ SW_DataCollection = {
 								[5] = 49,
 							},
 						},
-						[0] = {
-							[2] = 126,
-							[5] = 44,
-							[6] = 1725,
-						},
 						[200] = {
 							[1] = 79218,
 							[2] = 1275,
@@ -11579,6 +12529,11 @@ SW_DataCollection = {
 								[4] = 43,
 							},
 						},
+						[0] = {
+							[2] = 126,
+							[5] = 44,
+							[6] = 1725,
+						},
 					},
 				},
 				[3] = {
@@ -11586,17 +12541,17 @@ SW_DataCollection = {
 						[1] = 2856,
 						[5] = 1,
 					},
-					[6211] = {
-						[1] = 17105,
-						[5] = 30,
+					[670] = {
+						[1] = 12848,
+						[5] = 25,
 					},
 					[6222] = {
 						[1] = 4137,
 						[5] = 1,
 					},
-					[670] = {
-						[1] = 12848,
-						[5] = 25,
+					[6211] = {
+						[1] = 17105,
+						[5] = 30,
 					},
 				},
 			},
@@ -11748,26 +12703,22 @@ SW_DataCollection = {
 						[5] = {
 							[2] = 825,
 							[5] = 35,
-							[6] = 20890,
+							[30] = {
+								[5] = 233,
+							},
 							[20] = {
 								[1] = 1,
 								[2] = 1,
 							},
-							[30] = {
-								[5] = 233,
-							},
+							[6] = 20890,
 						},
 					},
 					[3] = {
-						[820] = {
+						[102] = {
 							[1] = {
-								[1] = 9700,
-								[2] = 2045,
-								[3] = 6,
-							},
-							[4] = {
-								[1] = 1,
-								[7] = 1,
+								[1] = 4718,
+								[2] = 2392,
+								[3] = 2,
 							},
 						},
 						[31] = {
@@ -11787,18 +12738,26 @@ SW_DataCollection = {
 								[3] = 8,
 							},
 						},
-						[6559] = {
+						[696] = {
 							[1] = {
-								[1] = 22434,
-								[2] = 1705,
-								[3] = 17,
+								[2] = 825,
+								[7] = 17,
+								[8] = 12900,
+							},
+							[4] = {
+								[1] = 1,
+								[2] = 1,
 							},
 						},
-						[102] = {
+						[820] = {
 							[1] = {
-								[1] = 4718,
-								[2] = 2392,
-								[3] = 2,
+								[1] = 9700,
+								[2] = 2045,
+								[3] = 6,
+							},
+							[4] = {
+								[1] = 1,
+								[7] = 1,
 							},
 						},
 						[68] = {
@@ -11811,15 +12770,11 @@ SW_DataCollection = {
 								[5] = 233,
 							},
 						},
-						[696] = {
+						[6559] = {
 							[1] = {
-								[2] = 825,
-								[7] = 17,
-								[8] = 12900,
-							},
-							[4] = {
-								[1] = 1,
-								[2] = 1,
+								[1] = 22434,
+								[2] = 1705,
+								[3] = 17,
 							},
 						},
 					},
@@ -11887,6 +12842,11 @@ SW_DataCollection = {
 								[5] = 7048,
 							},
 						},
+						[0] = {
+							[2] = 120,
+							[5] = 129,
+							[6] = 8571,
+						},
 						[200] = {
 							[1] = 235423,
 							[2] = 2126,
@@ -11904,11 +12864,6 @@ SW_DataCollection = {
 								[2] = 248,
 								[4] = 194,
 							},
-						},
-						[0] = {
-							[2] = 120,
-							[5] = 129,
-							[6] = 8571,
 						},
 					},
 				},
@@ -11981,17 +12936,17 @@ SW_DataCollection = {
 						[1] = 2969,
 						[5] = 2,
 					},
-					[6223] = {
-						[1] = 4307,
-						[5] = 3,
+					[6347] = {
+						[1] = 3289,
+						[5] = 2,
 					},
 					[5531] = {
 						[10] = 3000,
 						[9] = 4,
 					},
-					[6347] = {
-						[1] = 3289,
-						[5] = 2,
+					[6223] = {
+						[1] = 4307,
+						[5] = 3,
 					},
 				},
 			},
@@ -12178,6 +13133,11 @@ SW_DataCollection = {
 							[2] = 149,
 							[3] = 5,
 						},
+						[0] = {
+							[2] = 130,
+							[5] = 68,
+							[6] = 4003,
+						},
 						[200] = {
 							[1] = 190952,
 							[2] = 2421,
@@ -12195,11 +13155,6 @@ SW_DataCollection = {
 								[2] = 270,
 								[4] = 104,
 							},
-						},
-						[0] = {
-							[2] = 130,
-							[5] = 68,
-							[6] = 4003,
 						},
 					},
 				},
@@ -12228,17 +13183,17 @@ SW_DataCollection = {
 						[1] = 1052,
 						[5] = 6,
 					},
-					[4033] = {
-						[1] = 2922,
-						[5] = 2,
+					[5531] = {
+						[1] = 2000,
+						[5] = 4,
 					},
 					[6219] = {
 						[1] = 3653,
 						[5] = 3,
 					},
-					[5531] = {
-						[1] = 2000,
-						[5] = 4,
+					[4033] = {
+						[1] = 2922,
+						[5] = 2,
 					},
 				},
 			},
@@ -12271,15 +13226,15 @@ SW_DataCollection = {
 						[3] = {
 							[2] = 110,
 							[5] = 580,
-							[6] = 56656,
-							[20] = {
-								[1] = 27,
-								[5] = 27,
-							},
 							[30] = {
 								[1] = 48,
 								[5] = 1032,
 							},
+							[20] = {
+								[1] = 27,
+								[5] = 27,
+							},
+							[6] = 56656,
 						},
 					},
 					[3] = {
@@ -12417,6 +13372,11 @@ SW_DataCollection = {
 								[2] = 30,
 							},
 						},
+						[0] = {
+							[2] = 90,
+							[5] = 39,
+							[6] = 1659,
+						},
 						[200] = {
 							[1] = 82530,
 							[2] = 1064,
@@ -12434,11 +13394,6 @@ SW_DataCollection = {
 								[2] = 450,
 								[4] = 40,
 							},
-						},
-						[0] = {
-							[2] = 90,
-							[5] = 39,
-							[6] = 1659,
 						},
 					},
 				},
@@ -12531,11 +13486,11 @@ SW_DataCollection = {
 						[9] = 29,
 						[10] = 2850,
 					},
-					[6223] = {
-						[1] = 4138,
-						[5] = 8,
-						[9] = 19,
-						[10] = 1875,
+					[6347] = {
+						[1] = 105,
+						[5] = 1,
+						[9] = 42,
+						[10] = 4375,
 					},
 					[508] = {
 						[1] = 477,
@@ -12553,11 +13508,11 @@ SW_DataCollection = {
 						[10] = 1425,
 						[9] = 15,
 					},
-					[6347] = {
-						[1] = 105,
-						[5] = 1,
-						[9] = 42,
-						[10] = 4375,
+					[6223] = {
+						[1] = 4138,
+						[5] = 8,
+						[9] = 19,
+						[10] = 1875,
 					},
 				},
 			},
@@ -12604,6 +13559,22 @@ SW_DataCollection = {
 						},
 					},
 					[3] = {
+						[6569] = {
+							[1] = {
+								[1] = 94544,
+								[2] = 1180,
+								[3] = 111,
+								[7] = 511,
+								[8] = 99782,
+							},
+							[4] = {
+								[1] = 3,
+								[5] = 3,
+							},
+							[5] = {
+								[5] = 18436,
+							},
+						},
 						[31] = {
 							[1] = {
 								[1] = 261442,
@@ -12621,22 +13592,6 @@ SW_DataCollection = {
 								[1] = 5911,
 								[2] = 8031,
 								[3] = 21,
-							},
-						},
-						[6569] = {
-							[1] = {
-								[1] = 94544,
-								[2] = 1180,
-								[3] = 111,
-								[7] = 511,
-								[8] = 99782,
-							},
-							[4] = {
-								[1] = 3,
-								[5] = 3,
-							},
-							[5] = {
-								[5] = 18436,
 							},
 						},
 					},
@@ -12714,6 +13669,11 @@ SW_DataCollection = {
 								[5] = 39,
 							},
 						},
+						[0] = {
+							[2] = 130,
+							[5] = 373,
+							[6] = 18377,
+						},
 						[200] = {
 							[1] = 658632,
 							[2] = 2477,
@@ -12731,11 +13691,6 @@ SW_DataCollection = {
 								[2] = 1147,
 								[4] = 630,
 							},
-						},
-						[0] = {
-							[2] = 130,
-							[5] = 373,
-							[6] = 18377,
 						},
 					},
 				},
@@ -12830,11 +13785,11 @@ SW_DataCollection = {
 						[9] = 25,
 						[10] = 4800,
 					},
-					[6223] = {
-						[1] = 10991,
-						[5] = 7,
-						[9] = 25,
-						[10] = 4900,
+					[6347] = {
+						[1] = 23005,
+						[5] = 15,
+						[9] = 32,
+						[10] = 6760,
 					},
 					[508] = {
 						[1] = 16089,
@@ -12854,11 +13809,11 @@ SW_DataCollection = {
 						[9] = 10,
 						[10] = 2000,
 					},
-					[6347] = {
-						[1] = 23005,
-						[5] = 15,
-						[9] = 32,
-						[10] = 6760,
+					[6223] = {
+						[1] = 10991,
+						[5] = 7,
+						[9] = 25,
+						[10] = 4900,
 					},
 				},
 			},
@@ -13171,10 +14126,10 @@ SW_DataCollection = {
 						[3] = {
 							[2] = 200,
 							[5] = 32,
-							[6] = 6300,
 							[30] = {
 								[5] = 100,
 							},
+							[6] = 6300,
 						},
 						[5] = {
 							[1] = 447611,
@@ -13236,15 +14191,21 @@ SW_DataCollection = {
 								[3] = 3,
 							},
 						},
-						[598] = {
+						[76] = {
 							[1] = {
-								[1] = 8502,
-								[2] = 218,
-								[3] = 39,
+								[1] = 427549,
+								[2] = 2832,
+								[3] = 338,
+								[4] = 70,
 							},
 							[4] = {
-								[1] = 1,
-								[2] = 1,
+								[1] = 77,
+								[2] = 37,
+								[5] = 34,
+								[8] = 6,
+							},
+							[5] = {
+								[5] = 28401,
 							},
 						},
 						[6563] = {
@@ -13272,12 +14233,19 @@ SW_DataCollection = {
 								[8] = 24552,
 							},
 						},
-						[382] = {
+						[179] = {
+							[1] = {
+								[1] = 924,
+								[2] = 158,
+								[3] = 7,
+							},
 							[2] = {
-								[1] = 10000,
-								[2] = 250,
-								[3] = 40,
-								[5] = 314,
+								[1] = 924,
+								[2] = 158,
+								[3] = 7,
+							},
+							[5] = {
+								[5] = 152,
 							},
 						},
 						[75] = {
@@ -13300,36 +14268,23 @@ SW_DataCollection = {
 								[6] = 115,
 							},
 						},
-						[179] = {
-							[1] = {
-								[1] = 924,
-								[2] = 158,
-								[3] = 7,
-							},
+						[382] = {
 							[2] = {
-								[1] = 924,
-								[2] = 158,
-								[3] = 7,
-							},
-							[5] = {
-								[5] = 152,
+								[1] = 10000,
+								[2] = 250,
+								[3] = 40,
+								[5] = 314,
 							},
 						},
-						[76] = {
+						[598] = {
 							[1] = {
-								[1] = 427549,
-								[2] = 2832,
-								[3] = 338,
-								[4] = 70,
+								[1] = 8502,
+								[2] = 218,
+								[3] = 39,
 							},
 							[4] = {
-								[1] = 77,
-								[2] = 37,
-								[5] = 34,
-								[8] = 6,
-							},
-							[5] = {
-								[5] = 28401,
+								[1] = 1,
+								[2] = 1,
 							},
 						},
 					},
@@ -13395,10 +14350,10 @@ SW_DataCollection = {
 						[6] = {
 							[2] = 300,
 							[5] = 9,
-							[6] = 2625,
 							[30] = {
 								[5] = 75,
 							},
+							[6] = 2625,
 						},
 						[200] = {
 							[1] = 65119,
@@ -13419,15 +14374,15 @@ SW_DataCollection = {
 								[5] = 247,
 							},
 						},
-						[300] = {
-							[1] = 1416,
-							[2] = 1322,
-							[3] = 2,
-						},
 						[0] = {
 							[2] = 40,
 							[5] = 4,
 							[6] = 160,
+						},
+						[300] = {
+							[1] = 1416,
+							[2] = 1322,
+							[3] = 2,
 						},
 					},
 				},
@@ -13554,9 +14509,9 @@ SW_DataCollection = {
 						[9] = 2,
 						[10] = 507,
 					},
-					[6511] = {
-						[1] = 920,
-						[5] = 1,
+					[6558] = {
+						[1] = 21769,
+						[5] = 16,
 					},
 					[6439] = {
 						[1] = 6935,
@@ -13592,11 +14547,13 @@ SW_DataCollection = {
 						[9] = 31,
 						[10] = 7920,
 					},
-					[6545] = {
-						[1] = 10487,
-						[5] = 11,
+					[6456] = {
+						[1] = 1109,
+						[5] = 3,
+						[9] = 57,
+						[10] = 14182,
 					},
-					[6528] = {
+					[6489] = {
 						[10] = 753,
 						[9] = 3,
 					},
@@ -13606,11 +14563,11 @@ SW_DataCollection = {
 						[9] = 4,
 						[10] = 1004,
 					},
-					[6442] = {
-						[1] = 11445,
-						[5] = 10,
-						[9] = 13,
-						[10] = 3159,
+					[6568] = {
+						[1] = 73384,
+						[5] = 58,
+						[9] = 32,
+						[10] = 6300,
 					},
 					[6552] = {
 						[1] = 2813,
@@ -13618,11 +14575,11 @@ SW_DataCollection = {
 						[9] = 13,
 						[10] = 3363,
 					},
-					[6568] = {
-						[1] = 73384,
-						[5] = 58,
-						[9] = 32,
-						[10] = 6300,
+					[6442] = {
+						[1] = 11445,
+						[5] = 10,
+						[9] = 13,
+						[10] = 3159,
 					},
 					[6521] = {
 						[10] = 1757,
@@ -13642,8 +14599,8 @@ SW_DataCollection = {
 						[9] = 1,
 						[10] = 196,
 					},
-					[6210] = {
-						[1] = 768,
+					[670] = {
+						[1] = 1266,
 						[5] = 1,
 					},
 					[6475] = {
@@ -13672,23 +14629,21 @@ SW_DataCollection = {
 						[9] = 24,
 						[10] = 6049,
 					},
-					[670] = {
-						[1] = 1266,
+					[6210] = {
+						[1] = 768,
 						[5] = 1,
 					},
 					[6508] = {
 						[1] = 2924,
 						[5] = 3,
 					},
-					[6489] = {
+					[6528] = {
 						[10] = 753,
 						[9] = 3,
 					},
-					[6456] = {
-						[1] = 1109,
-						[5] = 3,
-						[9] = 57,
-						[10] = 14182,
+					[6545] = {
+						[1] = 10487,
+						[5] = 11,
 					},
 					[6556] = {
 						[1] = 2291,
@@ -13698,9 +14653,9 @@ SW_DataCollection = {
 						[10] = 2510,
 						[9] = 10,
 					},
-					[6558] = {
-						[1] = 21769,
-						[5] = 16,
+					[6511] = {
+						[1] = 920,
+						[5] = 1,
 					},
 				},
 			},
@@ -14020,12 +14975,11 @@ SW_DataCollection = {
 								[2] = 90,
 							},
 						},
-						[119] = {
+						[715] = {
 							[1] = {
-								[1] = 14663,
-								[2] = 1302,
-								[3] = 16,
-								[4] = 13,
+								[1] = 114,
+								[2] = 114,
+								[3] = 1,
 							},
 						},
 						[689] = {
@@ -14041,6 +14995,44 @@ SW_DataCollection = {
 								[1] = 22,
 								[2] = 22,
 								[3] = 1,
+							},
+						},
+						[114] = {
+							[1] = {
+								[1] = 1365,
+								[2] = 94,
+								[3] = 30,
+								[4] = 6,
+							},
+							[2] = {
+								[1] = 60,
+								[2] = 20,
+								[3] = 3,
+								[6] = 20,
+							},
+							[4] = {
+								[1] = 2,
+								[6] = 2,
+							},
+						},
+						[6542] = {
+							[2] = {
+								[1] = 609,
+								[2] = 609,
+								[3] = 1,
+								[4] = 1,
+							},
+						},
+						[180] = {
+							[1] = {
+								[1] = 1197,
+								[2] = 88,
+								[3] = 24,
+								[4] = 7,
+							},
+							[4] = {
+								[1] = 1,
+								[6] = 1,
 							},
 						},
 						[133] = {
@@ -14065,44 +15057,6 @@ SW_DataCollection = {
 								[2] = 89,
 							},
 						},
-						[6542] = {
-							[2] = {
-								[1] = 609,
-								[2] = 609,
-								[3] = 1,
-								[4] = 1,
-							},
-						},
-						[180] = {
-							[1] = {
-								[1] = 1197,
-								[2] = 88,
-								[3] = 24,
-								[4] = 7,
-							},
-							[4] = {
-								[1] = 1,
-								[6] = 1,
-							},
-						},
-						[114] = {
-							[1] = {
-								[1] = 1365,
-								[2] = 94,
-								[3] = 30,
-								[4] = 6,
-							},
-							[2] = {
-								[1] = 60,
-								[2] = 20,
-								[3] = 3,
-								[6] = 20,
-							},
-							[4] = {
-								[1] = 2,
-								[6] = 2,
-							},
-						},
 						[111] = {
 							[1] = {
 								[1] = 114,
@@ -14110,11 +15064,12 @@ SW_DataCollection = {
 								[3] = 57,
 							},
 						},
-						[715] = {
+						[119] = {
 							[1] = {
-								[1] = 114,
-								[2] = 114,
-								[3] = 1,
+								[1] = 14663,
+								[2] = 1302,
+								[3] = 16,
+								[4] = 13,
 							},
 						},
 					},
@@ -14253,11 +15208,11 @@ SW_DataCollection = {
 						[9] = 6,
 						[10] = 631,
 					},
-					[6465] = {
-						[1] = 23954,
-						[5] = 51,
-						[9] = 17,
-						[10] = 1982,
+					[6528] = {
+						[1] = 1838,
+						[5] = 3,
+						[9] = 1,
+						[10] = 106,
 					},
 					[6497] = {
 						[1] = 537,
@@ -14267,11 +15222,11 @@ SW_DataCollection = {
 						[1] = 4823,
 						[5] = 9,
 					},
-					[6498] = {
-						[1] = 8265,
-						[5] = 63,
-						[9] = 8,
-						[10] = 256,
+					[670] = {
+						[1] = 1191,
+						[5] = 2,
+						[9] = 4,
+						[10] = 264,
 					},
 					[6499] = {
 						[1] = 2341,
@@ -14285,9 +15240,11 @@ SW_DataCollection = {
 						[9] = 35,
 						[10] = 3401,
 					},
-					[508] = {
-						[1] = 825,
-						[5] = 1,
+					[6456] = {
+						[1] = 28883,
+						[5] = 43,
+						[9] = 12,
+						[10] = 1320,
 					},
 					[6484] = {
 						[1] = 18357,
@@ -14295,11 +15252,11 @@ SW_DataCollection = {
 						[9] = 4,
 						[10] = 537,
 					},
-					[670] = {
-						[1] = 1191,
-						[5] = 2,
-						[9] = 4,
-						[10] = 264,
+					[6219] = {
+						[1] = 825,
+						[5] = 1,
+						[7] = 15144,
+						[8] = 9120,
 					},
 					[6516] = {
 						[1] = 8089,
@@ -14317,11 +15274,9 @@ SW_DataCollection = {
 						[9] = 6,
 						[10] = 938,
 					},
-					[6564] = {
-						[1] = 29211,
-						[5] = 51,
-						[9] = 18,
-						[10] = 1684,
+					[508] = {
+						[1] = 825,
+						[5] = 1,
 					},
 					[6454] = {
 						[1] = 6907,
@@ -14329,17 +15284,17 @@ SW_DataCollection = {
 						[9] = 5,
 						[10] = 419,
 					},
-					[6219] = {
-						[1] = 825,
-						[5] = 1,
-						[7] = 15144,
-						[8] = 9120,
+					[6498] = {
+						[1] = 8265,
+						[5] = 63,
+						[9] = 8,
+						[10] = 256,
 					},
-					[6528] = {
-						[1] = 1838,
-						[5] = 3,
-						[9] = 1,
-						[10] = 106,
+					[6566] = {
+						[1] = 8027,
+						[5] = 30,
+						[9] = 4,
+						[10] = 124,
 					},
 					[6439] = {
 						[1] = 17833,
@@ -14359,11 +15314,11 @@ SW_DataCollection = {
 						[9] = 3,
 						[10] = 387,
 					},
-					[6438] = {
-						[1] = 11517,
-						[5] = 21,
-						[9] = 8,
-						[10] = 761,
+					[6558] = {
+						[1] = 30180,
+						[5] = 47,
+						[9] = 21,
+						[10] = 1950,
 					},
 					[6503] = {
 						[1] = 1872,
@@ -14375,6 +15330,26 @@ SW_DataCollection = {
 						[9] = 27,
 						[10] = 2673,
 					},
+					[6536] = {
+						[1] = 330,
+						[5] = 1,
+					},
+					[6568] = {
+						[1] = 61106,
+						[5] = 115,
+						[9] = 65,
+						[10] = 7241,
+					},
+					[6475] = {
+						[1] = 21443,
+						[5] = 37,
+						[9] = 8,
+						[10] = 710,
+					},
+					[6520] = {
+						[1] = 4241,
+						[5] = 14,
+					},
 					[6347] = {
 						[1] = 825,
 						[5] = 1,
@@ -14382,24 +15357,6 @@ SW_DataCollection = {
 					[6489] = {
 						[1] = 326,
 						[5] = 1,
-					},
-					[6538] = {
-						[1] = 12367,
-						[5] = 30,
-						[9] = 14,
-						[10] = 1202,
-					},
-					[6520] = {
-						[1] = 4241,
-						[5] = 14,
-					},
-					[6536] = {
-						[1] = 330,
-						[5] = 1,
-					},
-					[6552] = {
-						[1] = 928,
-						[5] = 2,
 					},
 					[6442] = {
 						[1] = 13304,
@@ -14431,15 +15388,15 @@ SW_DataCollection = {
 						[9] = 9,
 						[10] = 860,
 					},
-					[6475] = {
-						[1] = 21443,
-						[5] = 37,
-						[9] = 8,
-						[10] = 710,
-					},
 					[6223] = {
 						[1] = 750,
 						[5] = 1,
+					},
+					[6538] = {
+						[1] = 12367,
+						[5] = 30,
+						[9] = 14,
+						[10] = 1202,
 					},
 					[6491] = {
 						[1] = 26180,
@@ -14465,11 +15422,9 @@ SW_DataCollection = {
 						[9] = 10,
 						[10] = 984,
 					},
-					[6568] = {
-						[1] = 61106,
-						[5] = 115,
-						[9] = 65,
-						[10] = 7241,
+					[6552] = {
+						[1] = 928,
+						[5] = 2,
 					},
 					[6508] = {
 						[1] = 13130,
@@ -14477,17 +15432,17 @@ SW_DataCollection = {
 						[9] = 4,
 						[10] = 328,
 					},
-					[6558] = {
-						[1] = 30180,
-						[5] = 47,
-						[9] = 21,
-						[10] = 1950,
+					[6465] = {
+						[1] = 23954,
+						[5] = 51,
+						[9] = 17,
+						[10] = 1982,
 					},
-					[6566] = {
-						[1] = 8027,
-						[5] = 30,
-						[9] = 4,
-						[10] = 124,
+					[6438] = {
+						[1] = 11517,
+						[5] = 21,
+						[9] = 8,
+						[10] = 761,
 					},
 					[6556] = {
 						[1] = 2668,
@@ -14499,11 +15454,11 @@ SW_DataCollection = {
 						[1] = 2399,
 						[5] = 6,
 					},
-					[6456] = {
-						[1] = 28883,
-						[5] = 43,
-						[9] = 12,
-						[10] = 1320,
+					[6564] = {
+						[1] = 29211,
+						[5] = 51,
+						[9] = 18,
+						[10] = 1684,
 					},
 				},
 			},
@@ -14638,6 +15593,11 @@ SW_DataCollection = {
 								[5] = 1658,
 							},
 						},
+						[0] = {
+							[2] = 157,
+							[5] = 5,
+							[6] = 779,
+						},
 						[200] = {
 							[1] = 938485,
 							[2] = 1897,
@@ -14655,11 +15615,6 @@ SW_DataCollection = {
 								[2] = 668,
 								[4] = 766,
 							},
-						},
-						[0] = {
-							[2] = 157,
-							[5] = 5,
-							[6] = 779,
 						},
 					},
 					[3] = {
@@ -14799,19 +15754,30 @@ SW_DataCollection = {
 								[5] = 321,
 							},
 						},
-						[1807] = {
-							[1] = {
-								[1] = 19699,
-								[2] = 1178,
-								[3] = 76,
+						[115] = {
+							[2] = {
+								[1] = 5055,
+								[2] = 125,
+								[3] = 51,
+								[6] = 3543,
 							},
 						},
-						[3447] = {
+						[2341] = {
 							[1] = {
-								[1] = 10922,
-								[2] = 1304,
-								[3] = 14,
-								[4] = 1,
+								[1] = 360557,
+								[2] = 1580,
+								[3] = 405,
+								[4] = 247,
+							},
+							[2] = {
+								[1] = 92,
+								[2] = 92,
+								[3] = 1,
+							},
+							[4] = {
+								[1] = 15,
+								[11] = 1,
+								[6] = 14,
 							},
 						},
 						[376] = {
@@ -14840,6 +15806,14 @@ SW_DataCollection = {
 								[5] = 50,
 							},
 						},
+						[3447] = {
+							[1] = {
+								[1] = 10922,
+								[2] = 1304,
+								[3] = 14,
+								[4] = 1,
+							},
+						},
 						[6457] = {
 							[1] = {
 								[1] = 4097,
@@ -14847,30 +15821,11 @@ SW_DataCollection = {
 								[3] = 8,
 							},
 						},
-						[2341] = {
+						[1807] = {
 							[1] = {
-								[1] = 360557,
-								[2] = 1580,
-								[3] = 405,
-								[4] = 247,
-							},
-							[2] = {
-								[1] = 92,
-								[2] = 92,
-								[3] = 1,
-							},
-							[4] = {
-								[1] = 15,
-								[6] = 14,
-								[11] = 1,
-							},
-						},
-						[115] = {
-							[2] = {
-								[1] = 5055,
-								[2] = 125,
-								[3] = 51,
-								[6] = 3543,
+								[1] = 19699,
+								[2] = 1178,
+								[3] = 76,
 							},
 						},
 					},
@@ -14960,15 +15915,15 @@ SW_DataCollection = {
 								[3] = 2,
 							},
 						},
-						[0] = {
-							[2] = 46,
-							[5] = 5,
-							[6] = 202,
-						},
 						[300] = {
 							[1] = 82,
 							[2] = 42,
 							[3] = 3,
+						},
+						[0] = {
+							[2] = 46,
+							[5] = 5,
+							[6] = 202,
 						},
 					},
 				},
@@ -15025,9 +15980,9 @@ SW_DataCollection = {
 						[1] = 894,
 						[5] = 8,
 					},
-					[6498] = {
-						[1] = 2550,
-						[5] = 8,
+					[6558] = {
+						[1] = 45403,
+						[5] = 150,
 					},
 					[6230] = {
 						[1] = 3536,
@@ -15053,9 +16008,9 @@ SW_DataCollection = {
 						[1] = 23747,
 						[5] = 84,
 					},
-					[6566] = {
-						[1] = 18793,
-						[5] = 90,
+					[6438] = {
+						[1] = 25471,
+						[5] = 103,
 					},
 					[6516] = {
 						[1] = 7312,
@@ -15083,9 +16038,9 @@ SW_DataCollection = {
 						[1] = 2177,
 						[5] = 4,
 					},
-					[6456] = {
-						[1] = 19704,
-						[5] = 49,
+					[6469] = {
+						[1] = 1756,
+						[5] = 7,
 					},
 					[6439] = {
 						[1] = 9927,
@@ -15099,27 +16054,25 @@ SW_DataCollection = {
 						[1] = 8412,
 						[5] = 32,
 					},
-					[6552] = {
-						[1] = 16856,
-						[5] = 55,
+					[6489] = {
+						[1] = 621,
+						[5] = 2,
 					},
-					[6503] = {
-						[1] = 932,
-						[5] = 4,
+					[6566] = {
+						[1] = 18793,
+						[5] = 90,
 					},
-					[6519] = {
-						[1] = 8451,
-						[5] = 24,
+					[6456] = {
+						[1] = 19704,
+						[5] = 49,
 					},
-					[6568] = {
-						[1] = 131795,
-						[5] = 387,
-						[9] = 16,
-						[10] = 3150,
-					},
-					[6443] = {
-						[1] = 40763,
+					[6538] = {
+						[1] = 30288,
 						[5] = 115,
+					},
+					[6506] = {
+						[1] = 348,
+						[5] = 1,
 					},
 					[6441] = {
 						[1] = 508,
@@ -15133,18 +16086,19 @@ SW_DataCollection = {
 						[1] = 1200,
 						[5] = 8,
 					},
-					[6489] = {
-						[1] = 621,
-						[5] = 2,
+					[6552] = {
+						[1] = 16856,
+						[5] = 55,
 					},
-					[6442] = {
-						[1] = 28782,
-						[5] = 98,
+					[6568] = {
+						[1] = 131795,
+						[5] = 387,
+						[9] = 16,
+						[10] = 3150,
 					},
-					[6223] = {
-						[2] = 2719,
-						[7] = 10589,
-						[8] = 3543,
+					[6475] = {
+						[1] = 23346,
+						[5] = 65,
 					},
 					[6537] = {
 						[1] = 54179,
@@ -15154,21 +16108,22 @@ SW_DataCollection = {
 						[1] = 441,
 						[5] = 1,
 					},
-					[6506] = {
-						[1] = 348,
-						[5] = 1,
-					},
-					[4033] = {
-						[1] = 4826,
-						[5] = 8,
-					},
-					[6475] = {
-						[1] = 23346,
-						[5] = 65,
+					[6443] = {
+						[1] = 40763,
+						[5] = 115,
 					},
 					[6491] = {
 						[1] = 24973,
 						[5] = 78,
+					},
+					[6223] = {
+						[2] = 2719,
+						[7] = 10589,
+						[8] = 3543,
+					},
+					[4033] = {
+						[1] = 4826,
+						[5] = 8,
 					},
 					[6507] = {
 						[1] = 517,
@@ -15184,21 +16139,21 @@ SW_DataCollection = {
 						[1] = 21212,
 						[5] = 69,
 					},
-					[6538] = {
-						[1] = 30288,
-						[5] = 115,
+					[6442] = {
+						[1] = 28782,
+						[5] = 98,
 					},
 					[6508] = {
 						[1] = 9962,
 						[5] = 30,
 					},
-					[6469] = {
-						[1] = 1756,
-						[5] = 7,
+					[6519] = {
+						[1] = 8451,
+						[5] = 24,
 					},
-					[6438] = {
-						[1] = 25471,
-						[5] = 103,
+					[6503] = {
+						[1] = 932,
+						[5] = 4,
 					},
 					[6556] = {
 						[1] = 1548,
@@ -15208,9 +16163,9 @@ SW_DataCollection = {
 						[1] = 1310,
 						[5] = 6,
 					},
-					[6558] = {
-						[1] = 45403,
-						[5] = 150,
+					[6498] = {
+						[1] = 2550,
+						[5] = 8,
 					},
 				},
 			},
@@ -15282,16 +16237,12 @@ SW_DataCollection = {
 								[3] = 1,
 							},
 						},
-						[158] = {
+						[31] = {
 							[1] = {
-								[1] = 15379,
-								[2] = 502,
-								[3] = 42,
-								[4] = 10,
-							},
-							[4] = {
-								[1] = 3,
-								[2] = 3,
+								[1] = 168,
+								[2] = 168,
+								[3] = 1,
+								[4] = 1,
 							},
 						},
 						[82] = {
@@ -15304,12 +16255,16 @@ SW_DataCollection = {
 								[5] = 865,
 							},
 						},
-						[31] = {
+						[158] = {
 							[1] = {
-								[1] = 168,
-								[2] = 168,
-								[3] = 1,
-								[4] = 1,
+								[1] = 15379,
+								[2] = 502,
+								[3] = 42,
+								[4] = 10,
+							},
+							[4] = {
+								[1] = 3,
+								[2] = 3,
 							},
 						},
 					},
@@ -15360,10 +16315,10 @@ SW_DataCollection = {
 						[2] = {
 							[2] = 265,
 							[5] = 38,
-							[6] = 9806,
 							[30] = {
 								[5] = 264,
 							},
+							[6] = 9806,
 						},
 						[5] = {
 							[2] = 162,
@@ -15372,6 +16327,13 @@ SW_DataCollection = {
 						},
 					},
 					[3] = {
+						[75] = {
+							[1] = {
+								[2] = 162,
+								[7] = 2,
+								[8] = 324,
+							},
+						},
 						[610] = {
 							[1] = {
 								[2] = 265,
@@ -15380,13 +16342,6 @@ SW_DataCollection = {
 							},
 							[5] = {
 								[5] = 264,
-							},
-						},
-						[75] = {
-							[1] = {
-								[2] = 162,
-								[7] = 2,
-								[8] = 324,
 							},
 						},
 					},
@@ -15567,16 +16522,19 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[6261] = {
+			[657] = {
 				[2] = {
 					[1] = {
+						[1] = 966,
+						[3] = 2,
+						[5] = 1,
 					},
 					[2] = {
-						[200] = {
-							[20] = {
-								[1] = 1,
-								[3] = 1,
-							},
+						[2] = {
+							[1] = 966,
+							[2] = 966,
+							[3] = 1,
+							[4] = 1,
 						},
 					},
 				},
@@ -16048,6 +17006,40 @@ SW_DataCollection = {
 								[2] = 91,
 							},
 						},
+						[689] = {
+							[1] = {
+								[1] = 256,
+								[2] = 114,
+								[3] = 4,
+								[4] = 1,
+							},
+						},
+						[180] = {
+							[1] = {
+								[1] = 147,
+								[2] = 55,
+								[3] = 4,
+								[4] = 1,
+							},
+						},
+						[695] = {
+							[1] = {
+								[2] = 28,
+								[7] = 7,
+								[8] = 196,
+							},
+						},
+						[114] = {
+							[1] = {
+								[1] = 62,
+								[2] = 31,
+								[3] = 3,
+							},
+							[4] = {
+								[1] = 1,
+								[6] = 1,
+							},
+						},
 						[591] = {
 							[1] = {
 								[1] = 13356,
@@ -16062,40 +17054,6 @@ SW_DataCollection = {
 							},
 							[5] = {
 								[2] = 30,
-							},
-						},
-						[180] = {
-							[1] = {
-								[1] = 147,
-								[2] = 55,
-								[3] = 4,
-								[4] = 1,
-							},
-						},
-						[114] = {
-							[1] = {
-								[1] = 62,
-								[2] = 31,
-								[3] = 3,
-							},
-							[4] = {
-								[1] = 1,
-								[6] = 1,
-							},
-						},
-						[695] = {
-							[1] = {
-								[2] = 28,
-								[7] = 7,
-								[8] = 196,
-							},
-						},
-						[689] = {
-							[1] = {
-								[1] = 256,
-								[2] = 114,
-								[3] = 4,
-								[4] = 1,
 							},
 						},
 					},
@@ -16280,11 +17238,9 @@ SW_DataCollection = {
 						[9] = 30,
 						[10] = 1166,
 					},
-					[6498] = {
-						[1] = 7384,
-						[5] = 26,
-						[9] = 14,
-						[10] = 592,
+					[6211] = {
+						[1] = 126,
+						[5] = 2,
 					},
 					[6484] = {
 						[1] = 14768,
@@ -16292,11 +17248,11 @@ SW_DataCollection = {
 						[9] = 7,
 						[10] = 352,
 					},
-					[6465] = {
-						[1] = 14001,
-						[5] = 46,
-						[9] = 18,
-						[10] = 796,
+					[6498] = {
+						[1] = 7384,
+						[5] = 26,
+						[9] = 14,
+						[10] = 592,
 					},
 					[6516] = {
 						[1] = 1002,
@@ -16356,11 +17312,11 @@ SW_DataCollection = {
 						[9] = 6,
 						[10] = 263,
 					},
-					[6503] = {
-						[1] = 2394,
-						[5] = 9,
-						[9] = 5,
-						[10] = 300,
+					[6438] = {
+						[1] = 11836,
+						[5] = 51,
+						[9] = 10,
+						[10] = 395,
 					},
 					[6566] = {
 						[1] = 7223,
@@ -16374,31 +17330,31 @@ SW_DataCollection = {
 						[9] = 6,
 						[10] = 225,
 					},
-					[6519] = {
-						[1] = 8250,
-						[5] = 38,
-						[9] = 14,
-						[10] = 582,
+					[6558] = {
+						[1] = 23812,
+						[5] = 80,
+						[9] = 30,
+						[10] = 1216,
+					},
+					[6347] = {
+						[7] = 15251,
+						[8] = 7989,
+					},
+					[6568] = {
+						[1] = 104018,
+						[5] = 318,
+						[9] = 149,
+						[10] = 10756,
+					},
+					[6520] = {
+						[1] = 1740,
+						[5] = 10,
 					},
 					[6536] = {
 						[1] = 2347,
 						[5] = 11,
 						[9] = 1,
 						[10] = 44,
-					},
-					[6475] = {
-						[1] = 17039,
-						[5] = 47,
-						[9] = 9,
-						[10] = 347,
-					},
-					[6520] = {
-						[1] = 1740,
-						[5] = 10,
-					},
-					[6347] = {
-						[7] = 15251,
-						[8] = 7989,
 					},
 					[6552] = {
 						[1] = 7603,
@@ -16434,15 +17390,17 @@ SW_DataCollection = {
 						[9] = 12,
 						[10] = 449,
 					},
-					[6223] = {
-						[1] = 615,
-						[5] = 2,
-					},
 					[6538] = {
 						[1] = 8131,
 						[5] = 33,
 						[9] = 18,
 						[10] = 719,
+					},
+					[6475] = {
+						[1] = 17039,
+						[5] = 47,
+						[9] = 9,
+						[10] = 347,
 					},
 					[6491] = {
 						[1] = 21726,
@@ -16466,11 +17424,9 @@ SW_DataCollection = {
 						[9] = 20,
 						[10] = 769,
 					},
-					[6568] = {
-						[1] = 104018,
-						[5] = 318,
-						[9] = 149,
-						[10] = 10756,
+					[6223] = {
+						[1] = 615,
+						[5] = 2,
 					},
 					[6508] = {
 						[1] = 12455,
@@ -16478,17 +17434,17 @@ SW_DataCollection = {
 						[9] = 12,
 						[10] = 446,
 					},
-					[6558] = {
-						[1] = 23812,
-						[5] = 80,
-						[9] = 30,
-						[10] = 1216,
+					[6519] = {
+						[1] = 8250,
+						[5] = 38,
+						[9] = 14,
+						[10] = 582,
 					},
-					[6438] = {
-						[1] = 11836,
-						[5] = 51,
-						[9] = 10,
-						[10] = 395,
+					[6503] = {
+						[1] = 2394,
+						[5] = 9,
+						[9] = 5,
+						[10] = 300,
 					},
 					[6556] = {
 						[1] = 2700,
@@ -16502,9 +17458,11 @@ SW_DataCollection = {
 						[9] = 4,
 						[10] = 112,
 					},
-					[6211] = {
-						[1] = 126,
-						[5] = 2,
+					[6465] = {
+						[1] = 14001,
+						[5] = 46,
+						[9] = 18,
+						[10] = 796,
 					},
 				},
 			},
@@ -16971,13 +17929,11 @@ SW_DataCollection = {
 								[8] = 342,
 							},
 						},
-						[93] = {
-							[1] = {
-								[1] = 263,
-								[2] = 263,
-								[3] = 1,
-								[7] = 1,
-								[8] = 107,
+						[602] = {
+							[2] = {
+								[1] = 4320,
+								[2] = 1440,
+								[3] = 3,
 							},
 						},
 						[74] = {
@@ -17006,6 +17962,13 @@ SW_DataCollection = {
 								[5] = 561,
 							},
 						},
+						[382] = {
+							[2] = {
+								[1] = 2750,
+								[2] = 250,
+								[3] = 11,
+							},
+						},
 						[76] = {
 							[1] = {
 								[1] = 478901,
@@ -17023,18 +17986,13 @@ SW_DataCollection = {
 								[5] = 23384,
 							},
 						},
-						[382] = {
-							[2] = {
-								[1] = 2750,
-								[2] = 250,
-								[3] = 11,
-							},
-						},
-						[602] = {
-							[2] = {
-								[1] = 4320,
-								[2] = 1440,
-								[3] = 3,
+						[93] = {
+							[1] = {
+								[1] = 263,
+								[2] = 263,
+								[3] = 1,
+								[7] = 1,
+								[8] = 107,
 							},
 						},
 					},
@@ -17200,11 +18158,11 @@ SW_DataCollection = {
 						[1] = 7822,
 						[5] = 10,
 					},
-					[6456] = {
-						[1] = 5238,
-						[5] = 23,
-						[9] = 65,
-						[10] = 15870,
+					[6498] = {
+						[1] = 11388,
+						[5] = 18,
+						[9] = 3,
+						[10] = 747,
 					},
 					[6516] = {
 						[1] = 3191,
@@ -17258,11 +18216,9 @@ SW_DataCollection = {
 						[10] = 6888,
 						[9] = 28,
 					},
-					[6438] = {
-						[1] = 7314,
-						[5] = 8,
-						[9] = 40,
-						[10] = 10091,
+					[6469] = {
+						[1] = 726,
+						[5] = 1,
 					},
 					[6566] = {
 						[1] = 10786,
@@ -17272,15 +18228,16 @@ SW_DataCollection = {
 						[10] = 40216,
 						[9] = 164,
 					},
-					[6469] = {
-						[1] = 726,
-						[5] = 1,
+					[6568] = {
+						[1] = 75425,
+						[10] = 6426,
+						[7] = 8000,
+						[9] = 32,
+						[5] = 70,
 					},
-					[6528] = {
-						[1] = 1592,
-						[5] = 1,
-						[9] = 2,
-						[10] = 492,
+					[732] = {
+						[1] = 257,
+						[5] = 2,
 					},
 					[6441] = {
 						[1] = 1241,
@@ -17292,11 +18249,9 @@ SW_DataCollection = {
 						[9] = 2,
 						[10] = 498,
 					},
-					[6475] = {
-						[1] = 8596,
-						[5] = 10,
-						[9] = 4,
-						[10] = 934,
+					[6223] = {
+						[1] = 968,
+						[5] = 2,
 					},
 					[6489] = {
 						[1] = 3273,
@@ -17328,13 +18283,21 @@ SW_DataCollection = {
 						[1] = 9536,
 						[5] = 10,
 					},
-					[6223] = {
-						[1] = 968,
-						[5] = 2,
+					[677] = {
+						[1] = 2264,
+						[2] = 7541,
+						[5] = 3,
+						[6] = 305,
+						[7] = 24432,
+						[8] = 9307,
+						[9] = 30,
+						[10] = 5998,
 					},
-					[6538] = {
-						[1] = 21583,
-						[5] = 19,
+					[6475] = {
+						[1] = 8596,
+						[5] = 10,
+						[9] = 4,
+						[10] = 934,
 					},
 					[6491] = {
 						[1] = 20910,
@@ -17360,30 +18323,25 @@ SW_DataCollection = {
 						[9] = 30,
 						[10] = 7314,
 					},
-					[677] = {
-						[1] = 2264,
-						[2] = 7541,
-						[5] = 3,
-						[6] = 305,
-						[7] = 24432,
-						[8] = 9307,
-						[9] = 30,
-						[10] = 5998,
+					[6538] = {
+						[1] = 21583,
+						[5] = 19,
 					},
 					[6508] = {
 						[1] = 8384,
 						[5] = 9,
 					},
-					[732] = {
-						[1] = 257,
-						[5] = 2,
+					[6528] = {
+						[1] = 1592,
+						[5] = 1,
+						[9] = 2,
+						[10] = 492,
 					},
-					[6568] = {
-						[1] = 75425,
-						[10] = 6426,
-						[7] = 8000,
-						[9] = 32,
-						[5] = 70,
+					[6438] = {
+						[1] = 7314,
+						[5] = 8,
+						[9] = 40,
+						[10] = 10091,
 					},
 					[6556] = {
 						[1] = 2811,
@@ -17393,11 +18351,11 @@ SW_DataCollection = {
 						[10] = 1245,
 						[9] = 5,
 					},
-					[6498] = {
-						[1] = 11388,
-						[5] = 18,
-						[9] = 3,
-						[10] = 747,
+					[6456] = {
+						[1] = 5238,
+						[5] = 23,
+						[9] = 65,
+						[10] = 15870,
 					},
 				},
 			},
@@ -17588,6 +18546,20 @@ SW_DataCollection = {
 								[2] = 2,
 							},
 						},
+						[6571] = {
+							[1] = {
+								[2] = 200,
+								[7] = 16,
+								[8] = 3200,
+							},
+						},
+						[598] = {
+							[1] = {
+								[1] = 888,
+								[2] = 222,
+								[3] = 4,
+							},
+						},
 						[702] = {
 							[1] = {
 								[1] = 10048,
@@ -17601,20 +18573,6 @@ SW_DataCollection = {
 							},
 							[5] = {
 								[5] = 326,
-							},
-						},
-						[598] = {
-							[1] = {
-								[1] = 888,
-								[2] = 222,
-								[3] = 4,
-							},
-						},
-						[6571] = {
-							[1] = {
-								[2] = 200,
-								[7] = 16,
-								[8] = 3200,
 							},
 						},
 					},
@@ -17690,16 +18648,16 @@ SW_DataCollection = {
 								[5] = 381,
 							},
 						},
-						[300] = {
-							[1] = 1385,
-							[2] = 635,
-							[3] = 4,
-						},
 						[0] = {
 							[20] = {
 								[1] = 1,
 								[3] = 1,
 							},
+						},
+						[300] = {
+							[1] = 1385,
+							[2] = 635,
+							[3] = 4,
 						},
 					},
 				},
@@ -17844,11 +18802,9 @@ SW_DataCollection = {
 						[9] = 182,
 						[10] = 48032,
 					},
-					[6456] = {
-						[1] = 2942,
-						[5] = 2,
-						[9] = 77,
-						[10] = 19720,
+					[6528] = {
+						[10] = 795,
+						[9] = 3,
 					},
 					[6545] = {
 						[1] = 14103,
@@ -17866,11 +18822,11 @@ SW_DataCollection = {
 						[9] = 5,
 						[10] = 1322,
 					},
-					[6438] = {
-						[1] = 13362,
-						[5] = 11,
-						[9] = 32,
-						[10] = 8714,
+					[6568] = {
+						[1] = 59362,
+						[5] = 40,
+						[9] = 49,
+						[10] = 11859,
 					},
 					[6552] = {
 						[1] = 2865,
@@ -17902,17 +18858,17 @@ SW_DataCollection = {
 						[1] = 16500,
 						[5] = 17,
 					},
+					[6489] = {
+						[1] = 1041,
+						[5] = 1,
+						[9] = 2,
+						[10] = 530,
+					},
 					[6475] = {
 						[1] = 11413,
 						[5] = 9,
 						[9] = 6,
 						[10] = 1590,
-					},
-					[6538] = {
-						[1] = 27669,
-						[5] = 19,
-						[9] = 6,
-						[10] = 1865,
 					},
 					[6491] = {
 						[1] = 33785,
@@ -17951,17 +18907,17 @@ SW_DataCollection = {
 						[1] = 3710,
 						[5] = 2,
 					},
-					[6489] = {
-						[1] = 1041,
-						[5] = 1,
-						[9] = 2,
-						[10] = 530,
+					[6538] = {
+						[1] = 27669,
+						[5] = 19,
+						[9] = 6,
+						[10] = 1865,
 					},
-					[6568] = {
-						[1] = 59362,
-						[5] = 40,
-						[9] = 49,
-						[10] = 11859,
+					[6438] = {
+						[1] = 13362,
+						[5] = 11,
+						[9] = 32,
+						[10] = 8714,
 					},
 					[6556] = {
 						[1] = 5165,
@@ -17973,9 +18929,11 @@ SW_DataCollection = {
 						[9] = 16,
 						[10] = 4174,
 					},
-					[6528] = {
-						[10] = 795,
-						[9] = 3,
+					[6456] = {
+						[1] = 2942,
+						[5] = 2,
+						[9] = 77,
+						[10] = 19720,
 					},
 				},
 			},
@@ -18148,6 +19106,11 @@ SW_DataCollection = {
 								[5] = 271,
 							},
 						},
+						[0] = {
+							[2] = 130,
+							[5] = 81,
+							[6] = 4180,
+						},
 						[200] = {
 							[1] = 121435,
 							[2] = 2983,
@@ -18165,11 +19128,6 @@ SW_DataCollection = {
 								[2] = 330,
 								[4] = 34,
 							},
-						},
-						[0] = {
-							[2] = 130,
-							[5] = 81,
-							[6] = 4180,
 						},
 					},
 				},
@@ -18198,37 +19156,37 @@ SW_DataCollection = {
 						[1] = 3787,
 						[5] = 5,
 					},
-					[677] = {
-						[1] = 6018,
-						[5] = 7,
+					[508] = {
+						[1] = 2774,
+						[5] = 4,
 					},
 					[670] = {
 						[1] = 8961,
 						[5] = 16,
 					},
-					[6219] = {
-						[1] = 4367,
-						[5] = 6,
+					[4033] = {
+						[1] = 1860,
+						[5] = 2,
 					},
 					[6206] = {
 						[1] = 2730,
 						[5] = 5,
 					},
-					[6208] = {
-						[1] = 2143,
-						[5] = 3,
-					},
 					[678] = {
 						[1] = 1368,
 						[5] = 2,
 					},
-					[4033] = {
-						[1] = 1860,
-						[5] = 2,
+					[6208] = {
+						[1] = 2143,
+						[5] = 3,
 					},
-					[508] = {
-						[1] = 2774,
-						[5] = 4,
+					[6219] = {
+						[1] = 4367,
+						[5] = 6,
+					},
+					[677] = {
+						[1] = 6018,
+						[5] = 7,
 					},
 				},
 			},
@@ -18347,6 +19305,9 @@ SW_DataCollection = {
 						[7] = 1474,
 						[8] = 223,
 					},
+					[6226] = {
+						[7] = 769,
+					},
 					[6230] = {
 						[1] = 69,
 						[5] = 1,
@@ -18364,9 +19325,6 @@ SW_DataCollection = {
 					[3426] = {
 						[7] = 2435,
 						[8] = 762,
-					},
-					[6226] = {
-						[7] = 769,
 					},
 				},
 			},
@@ -18409,10 +19367,10 @@ SW_DataCollection = {
 						[5] = {
 							[2] = 208,
 							[5] = 69,
-							[6] = 13495,
 							[30] = {
 								[5] = 237,
 							},
+							[6] = 13495,
 						},
 					},
 					[3] = {
@@ -18504,6 +19462,11 @@ SW_DataCollection = {
 							[2] = 216,
 							[3] = 1,
 						},
+						[0] = {
+							[2] = 159,
+							[5] = 89,
+							[6] = 6155,
+						},
 						[200] = {
 							[1] = 164244,
 							[2] = 2023,
@@ -18521,11 +19484,6 @@ SW_DataCollection = {
 								[2] = 217,
 								[4] = 136,
 							},
-						},
-						[0] = {
-							[2] = 159,
-							[5] = 89,
-							[6] = 6155,
 						},
 					},
 				},
@@ -18663,11 +19621,11 @@ SW_DataCollection = {
 						[6] = {
 							[2] = 330,
 							[5] = 117,
-							[6] = 34544,
 							[30] = {
 								[1] = 61,
 								[5] = 375,
 							},
+							[6] = 34544,
 						},
 					},
 					[3] = {
@@ -18786,6 +19744,11 @@ SW_DataCollection = {
 							[3] = 10,
 							[4] = 2,
 						},
+						[0] = {
+							[2] = 94,
+							[5] = 33,
+							[6] = 1563,
+						},
 						[200] = {
 							[1] = 133159,
 							[2] = 2609,
@@ -18803,11 +19766,6 @@ SW_DataCollection = {
 								[2] = 180,
 								[4] = 72,
 							},
-						},
-						[0] = {
-							[2] = 94,
-							[5] = 33,
-							[6] = 1563,
 						},
 					},
 				},
@@ -18894,9 +19852,11 @@ SW_DataCollection = {
 						[9] = 8,
 						[10] = 2400,
 					},
-					[6347] = {
-						[10] = 630,
-						[9] = 2,
+					[6223] = {
+						[1] = 542,
+						[5] = 1,
+						[9] = 1,
+						[10] = 300,
 					},
 					[508] = {
 						[1] = 539,
@@ -18916,11 +19876,9 @@ SW_DataCollection = {
 						[9] = 12,
 						[10] = 3600,
 					},
-					[6223] = {
-						[1] = 542,
-						[5] = 1,
-						[9] = 1,
-						[10] = 300,
+					[6347] = {
+						[10] = 630,
+						[9] = 2,
 					},
 				},
 			},
@@ -18955,17 +19913,18 @@ SW_DataCollection = {
 						},
 					},
 					[3] = {
-						[6480] = {
+						[4884] = {
 							[1] = {
-								[1] = 3981,
-								[2] = 1089,
-								[3] = 5,
+								[1] = 328,
+								[2] = 36,
+								[3] = 15,
+								[7] = 45,
+								[8] = 1045,
 							},
 							[4] = {
-								[1] = 8,
-								[2] = 2,
-								[3] = 4,
-								[6] = 2,
+								[1] = 7,
+								[4] = 1,
+								[6] = 6,
 							},
 						},
 						[31] = {
@@ -19000,18 +19959,17 @@ SW_DataCollection = {
 								[2] = 235,
 							},
 						},
-						[4884] = {
+						[6480] = {
 							[1] = {
-								[1] = 328,
-								[2] = 36,
-								[3] = 15,
-								[7] = 45,
-								[8] = 1045,
+								[1] = 3981,
+								[2] = 1089,
+								[3] = 5,
 							},
 							[4] = {
-								[1] = 7,
-								[4] = 1,
-								[6] = 6,
+								[1] = 8,
+								[2] = 2,
+								[3] = 4,
+								[6] = 2,
 							},
 						},
 					},
@@ -19094,6 +20052,11 @@ SW_DataCollection = {
 								[5] = 159,
 							},
 						},
+						[0] = {
+							[2] = 115,
+							[5] = 149,
+							[6] = 9204,
+						},
 						[200] = {
 							[1] = 257797,
 							[2] = 1512,
@@ -19111,11 +20074,6 @@ SW_DataCollection = {
 								[2] = 510,
 								[4] = 58,
 							},
-						},
-						[0] = {
-							[2] = 115,
-							[5] = 149,
-							[6] = 9204,
 						},
 					},
 				},
@@ -19146,9 +20104,11 @@ SW_DataCollection = {
 						[1] = 7512,
 						[5] = 6,
 					},
-					[677] = {
-						[1] = 6388,
-						[5] = 6,
+					[6219] = {
+						[1] = 8573,
+						[5] = 9,
+						[9] = 3,
+						[10] = 78,
 					},
 					[670] = {
 						[1] = 10343,
@@ -19156,11 +20116,9 @@ SW_DataCollection = {
 						[9] = 3,
 						[10] = 68,
 					},
-					[508] = {
-						[1] = 14236,
-						[5] = 17,
-						[9] = 9,
-						[10] = 228,
+					[6206] = {
+						[1] = 1097,
+						[5] = 1,
 					},
 					[4033] = {
 						[1] = 1006,
@@ -19176,15 +20134,15 @@ SW_DataCollection = {
 						[9] = 3,
 						[10] = 72,
 					},
-					[6206] = {
-						[1] = 1097,
-						[5] = 1,
+					[508] = {
+						[1] = 14236,
+						[5] = 17,
+						[9] = 9,
+						[10] = 228,
 					},
-					[6219] = {
-						[1] = 8573,
-						[5] = 9,
-						[9] = 3,
-						[10] = 78,
+					[677] = {
+						[1] = 6388,
+						[5] = 6,
 					},
 				},
 			},
@@ -19234,26 +20192,6 @@ SW_DataCollection = {
 						},
 					},
 					[3] = {
-						[31] = {
-							[1] = {
-								[1] = 29056,
-								[2] = 428,
-								[3] = 145,
-								[4] = 9,
-							},
-							[4] = {
-								[1] = 38,
-								[3] = 11,
-								[5] = 11,
-								[6] = 8,
-								[7] = 2,
-								[8] = 6,
-							},
-							[5] = {
-								[1] = 259,
-								[2] = 53,
-							},
-						},
 						[743] = {
 							[1] = {
 								[1] = 9572,
@@ -19276,6 +20214,26 @@ SW_DataCollection = {
 							},
 							[5] = {
 								[1] = 162,
+							},
+						},
+						[31] = {
+							[1] = {
+								[1] = 29056,
+								[2] = 428,
+								[3] = 145,
+								[4] = 9,
+							},
+							[4] = {
+								[1] = 38,
+								[3] = 11,
+								[5] = 11,
+								[6] = 8,
+								[7] = 2,
+								[8] = 6,
+							},
+							[5] = {
+								[1] = 259,
+								[2] = 53,
 							},
 						},
 					},
@@ -19326,6 +20284,11 @@ SW_DataCollection = {
 							[3] = 36,
 							[4] = 7,
 						},
+						[0] = {
+							[2] = 241,
+							[5] = 14,
+							[6] = 1486,
+						},
 						[200] = {
 							[1] = 74987,
 							[2] = 1450,
@@ -19342,11 +20305,6 @@ SW_DataCollection = {
 								[2] = 60,
 								[4] = 11,
 							},
-						},
-						[0] = {
-							[2] = 241,
-							[5] = 14,
-							[6] = 1486,
 						},
 					},
 				},
@@ -19395,13 +20353,13 @@ SW_DataCollection = {
 						[1] = 771,
 						[5] = 4,
 					},
-					[6223] = {
-						[1] = 1963,
-						[5] = 10,
-					},
 					[670] = {
 						[1] = 37,
 						[5] = 1,
+					},
+					[6223] = {
+						[1] = 1963,
+						[5] = 10,
 					},
 				},
 			},
@@ -19521,6 +20479,11 @@ SW_DataCollection = {
 						[11] = 83,
 					},
 					[2] = {
+						[4] = {
+							[1] = 4700,
+							[2] = 910,
+							[3] = 6,
+						},
 						[200] = {
 							[1] = 132966,
 							[2] = 2196,
@@ -19538,11 +20501,6 @@ SW_DataCollection = {
 								[3] = 4,
 							},
 						},
-						[4] = {
-							[1] = 4700,
-							[2] = 910,
-							[3] = 6,
-						},
 					},
 					[3] = {
 						[5874] = {
@@ -19550,6 +20508,16 @@ SW_DataCollection = {
 								[1] = 4700,
 								[2] = 910,
 								[3] = 6,
+							},
+						},
+						[6492] = {
+							[1] = {
+								[1] = 110748,
+								[2] = 2019,
+								[3] = 76,
+							},
+							[5] = {
+								[1] = 1652,
 							},
 						},
 						[31] = {
@@ -19568,16 +20536,6 @@ SW_DataCollection = {
 							[5] = {
 								[2] = 2567,
 								[3] = 4,
-							},
-						},
-						[6492] = {
-							[1] = {
-								[1] = 110748,
-								[2] = 2019,
-								[3] = 76,
-							},
-							[5] = {
-								[1] = 1652,
 							},
 						},
 					},
@@ -19638,11 +20596,6 @@ SW_DataCollection = {
 								[5] = 3738,
 							},
 						},
-						[0] = {
-							[2] = 120,
-							[5] = 105,
-							[6] = 6133,
-						},
 						[200] = {
 							[1] = 187520,
 							[2] = 2710,
@@ -19660,6 +20613,11 @@ SW_DataCollection = {
 								[2] = 217,
 								[4] = 139,
 							},
+						},
+						[0] = {
+							[2] = 120,
+							[5] = 105,
+							[6] = 6133,
 						},
 					},
 				},
@@ -19829,6 +20787,11 @@ SW_DataCollection = {
 							[5] = 33,
 							[6] = 3168,
 						},
+						[0] = {
+							[2] = 90,
+							[5] = 23,
+							[6] = 1298,
+						},
 						[200] = {
 							[1] = 45674,
 							[2] = 1618,
@@ -19844,11 +20807,6 @@ SW_DataCollection = {
 							[30] = {
 								[2] = 112,
 							},
-						},
-						[0] = {
-							[2] = 90,
-							[5] = 23,
-							[6] = 1298,
 						},
 					},
 				},
@@ -19877,9 +20835,9 @@ SW_DataCollection = {
 						[1] = 1091,
 						[5] = 3,
 					},
-					[6219] = {
-						[1] = 6723,
-						[5] = 11,
+					[678] = {
+						[1] = 3803,
+						[5] = 4,
 					},
 					[6223] = {
 						[1] = 3553,
@@ -19889,9 +20847,9 @@ SW_DataCollection = {
 						[1] = 4262,
 						[5] = 6,
 					},
-					[678] = {
-						[1] = 3803,
-						[5] = 4,
+					[6219] = {
+						[1] = 6723,
+						[5] = 11,
 					},
 				},
 			},
@@ -20013,6 +20971,11 @@ SW_DataCollection = {
 								[5] = 234,
 							},
 						},
+						[0] = {
+							[2] = 91,
+							[5] = 19,
+							[6] = 1246,
+						},
 						[200] = {
 							[1] = 36575,
 							[2] = 974,
@@ -20030,11 +20993,6 @@ SW_DataCollection = {
 								[2] = 120,
 								[4] = 38,
 							},
-						},
-						[0] = {
-							[2] = 91,
-							[5] = 19,
-							[6] = 1246,
 						},
 					},
 				},
@@ -20216,6 +21174,11 @@ SW_DataCollection = {
 								[5] = 91,
 							},
 						},
+						[0] = {
+							[2] = 120,
+							[5] = 94,
+							[6] = 4497,
+						},
 						[200] = {
 							[1] = 122253,
 							[2] = 1910,
@@ -20233,11 +21196,6 @@ SW_DataCollection = {
 								[2] = 217,
 								[4] = 132,
 							},
-						},
-						[0] = {
-							[2] = 120,
-							[5] = 94,
-							[6] = 4497,
 						},
 					},
 				},
@@ -20294,9 +21252,9 @@ SW_DataCollection = {
 						[1] = 859,
 						[5] = 1,
 					},
-					[6223] = {
-						[1] = 5651,
-						[5] = 4,
+					[6347] = {
+						[1] = 4658,
+						[5] = 3,
 					},
 					[508] = {
 						[1] = 5399,
@@ -20310,9 +21268,9 @@ SW_DataCollection = {
 						[1] = 1815,
 						[5] = 3,
 					},
-					[6347] = {
-						[1] = 4658,
-						[5] = 3,
+					[6223] = {
+						[1] = 5651,
+						[5] = 4,
 					},
 				},
 			},
@@ -20405,6 +21363,11 @@ SW_DataCollection = {
 							[3] = 15,
 							[4] = 2,
 						},
+						[0] = {
+							[2] = 68,
+							[5] = 15,
+							[6] = 484,
+						},
 						[200] = {
 							[1] = 10416,
 							[2] = 587,
@@ -20420,11 +21383,6 @@ SW_DataCollection = {
 								[2] = 29,
 								[4] = 1,
 							},
-						},
-						[0] = {
-							[2] = 68,
-							[5] = 15,
-							[6] = 484,
 						},
 					},
 				},
@@ -20572,6 +21530,11 @@ SW_DataCollection = {
 								[11] = 1,
 							},
 						},
+						[0] = {
+							[2] = 82,
+							[5] = 12,
+							[6] = 468,
+						},
 						[200] = {
 							[1] = 13496,
 							[2] = 676,
@@ -20587,11 +21550,6 @@ SW_DataCollection = {
 							[30] = {
 								[4] = 4,
 							},
-						},
-						[0] = {
-							[2] = 82,
-							[5] = 12,
-							[6] = 468,
 						},
 					},
 				},
@@ -20622,43 +21580,11 @@ SW_DataCollection = {
 						[9] = 2,
 						[10] = 150,
 					},
-					[6208] = {
-						[1] = 1195,
-						[5] = 1,
-					},
-					[5531] = {
-						[1] = 1260,
-						[5] = 1,
-					},
-					[6223] = {
-						[1] = 2638,
-						[5] = 2,
-					},
-					[508] = {
-						[1] = 330,
+					[6219] = {
+						[1] = 1324,
 						[5] = 1,
 						[9] = 2,
-						[10] = 123,
-					},
-					[6507] = {
-						[1] = 14051,
-						[5] = 26,
-						[9] = 16,
-						[10] = 1000,
-					},
-					[4033] = {
-						[1] = 1558,
-						[5] = 2,
-					},
-					[6222] = {
-						[1] = 1072,
-						[5] = 2,
-						[9] = 5,
-						[10] = 404,
-					},
-					[6508] = {
-						[1] = 565,
-						[5] = 1,
+						[10] = 164,
 					},
 					[670] = {
 						[1] = 1285,
@@ -20666,11 +21592,43 @@ SW_DataCollection = {
 						[9] = 3,
 						[10] = 131,
 					},
-					[6219] = {
-						[1] = 1324,
+					[6508] = {
+						[1] = 565,
+						[5] = 1,
+					},
+					[508] = {
+						[1] = 330,
 						[5] = 1,
 						[9] = 2,
-						[10] = 164,
+						[10] = 123,
+					},
+					[6222] = {
+						[1] = 1072,
+						[5] = 2,
+						[9] = 5,
+						[10] = 404,
+					},
+					[5531] = {
+						[1] = 1260,
+						[5] = 1,
+					},
+					[6507] = {
+						[1] = 14051,
+						[5] = 26,
+						[9] = 16,
+						[10] = 1000,
+					},
+					[6208] = {
+						[1] = 1195,
+						[5] = 1,
+					},
+					[4033] = {
+						[1] = 1558,
+						[5] = 2,
+					},
+					[6223] = {
+						[1] = 2638,
+						[5] = 2,
 					},
 				},
 			},
@@ -20726,10 +21684,10 @@ SW_DataCollection = {
 						[2] = {
 							[2] = 267,
 							[5] = 43,
-							[6] = 11133,
 							[30] = {
 								[5] = 66,
 							},
+							[6] = 11133,
 						},
 						[3] = {
 							[1] = 321,
@@ -20750,11 +21708,6 @@ SW_DataCollection = {
 								[5] = 377,
 							},
 						},
-						[0] = {
-							[2] = 81,
-							[5] = 11,
-							[6] = 634,
-						},
 						[200] = {
 							[1] = 17350,
 							[2] = 833,
@@ -20771,19 +21724,24 @@ SW_DataCollection = {
 								[4] = 7,
 							},
 						},
+						[0] = {
+							[2] = 81,
+							[5] = 11,
+							[6] = 634,
+						},
 					},
 				},
 				[3] = {
+					[678] = {
+						[1] = 5916,
+						[5] = 5,
+					},
 					[508] = {
 						[1] = 4214,
 						[5] = 4,
 					},
 					[6211] = {
 						[1] = 2600,
-						[5] = 5,
-					},
-					[678] = {
-						[1] = 5916,
 						[5] = 5,
 					},
 				},
@@ -20997,6 +21955,11 @@ SW_DataCollection = {
 								[5] = 422,
 							},
 						},
+						[0] = {
+							[2] = 130,
+							[5] = 61,
+							[6] = 4517,
+						},
 						[200] = {
 							[1] = 57697,
 							[2] = 1133,
@@ -21013,11 +21976,6 @@ SW_DataCollection = {
 								[2] = 30,
 								[4] = 3,
 							},
-						},
-						[0] = {
-							[2] = 130,
-							[5] = 61,
-							[6] = 4517,
 						},
 					},
 				},
@@ -21050,29 +22008,29 @@ SW_DataCollection = {
 						[1] = 2031,
 						[5] = 3,
 					},
-					[670] = {
-						[1] = 7428,
-						[5] = 17,
+					[6206] = {
+						[1] = 1138,
+						[5] = 1,
 					},
 					[6521] = {
 						[1] = 38140,
 						[5] = 57,
 					},
-					[6219] = {
-						[1] = 15366,
-						[5] = 19,
+					[678] = {
+						[1] = 3346,
+						[5] = 4,
 					},
 					[6223] = {
 						[1] = 2080,
 						[5] = 3,
 					},
-					[678] = {
-						[1] = 3346,
-						[5] = 4,
+					[6219] = {
+						[1] = 15366,
+						[5] = 19,
 					},
-					[6206] = {
-						[1] = 1138,
-						[5] = 1,
+					[670] = {
+						[1] = 7428,
+						[5] = 17,
 					},
 				},
 			},
@@ -21174,6 +22132,11 @@ SW_DataCollection = {
 							[2] = 349,
 							[3] = 1,
 						},
+						[0] = {
+							[2] = 142,
+							[5] = 4,
+							[6] = 568,
+						},
 						[200] = {
 							[1] = 44539,
 							[2] = 1344,
@@ -21188,11 +22151,6 @@ SW_DataCollection = {
 							[30] = {
 								[2] = 120,
 							},
-						},
-						[0] = {
-							[2] = 142,
-							[5] = 4,
-							[6] = 568,
 						},
 					},
 				},
@@ -21298,10 +22256,10 @@ SW_DataCollection = {
 						[2] = {
 							[2] = 267,
 							[5] = 27,
-							[6] = 6770,
 							[30] = {
 								[5] = 194,
 							},
+							[6] = 6770,
 						},
 						[3] = {
 							[1] = 503,
@@ -21333,6 +22291,11 @@ SW_DataCollection = {
 							[2] = 192,
 							[3] = 1,
 						},
+						[0] = {
+							[2] = 91,
+							[5] = 7,
+							[6] = 550,
+						},
 						[200] = {
 							[1] = 28984,
 							[2] = 1024,
@@ -21348,11 +22311,6 @@ SW_DataCollection = {
 								[2] = 61,
 								[4] = 15,
 							},
-						},
-						[0] = {
-							[2] = 91,
-							[5] = 7,
-							[6] = 550,
 						},
 					},
 				},
@@ -21418,6 +22376,36 @@ SW_DataCollection = {
 						},
 					},
 					[3] = {
+						[133] = {
+							[1] = {
+								[1] = 82307,
+								[2] = 3811,
+								[3] = 32,
+							},
+							[4] = {
+								[1] = 6,
+								[3] = 2,
+								[6] = 4,
+							},
+							[5] = {
+								[1] = 826,
+								[2] = 55,
+							},
+						},
+						[334] = {
+							[1] = {
+								[1] = 11185,
+								[2] = 4504,
+								[3] = 3,
+							},
+							[4] = {
+								[1] = 1,
+								[7] = 1,
+							},
+							[5] = {
+								[2] = 184,
+							},
+						},
 						[102] = {
 							[1] = {
 								[1] = 13770,
@@ -21442,36 +22430,6 @@ SW_DataCollection = {
 								[1] = 1271,
 								[2] = 878,
 								[3] = 10,
-							},
-						},
-						[334] = {
-							[1] = {
-								[1] = 11185,
-								[2] = 4504,
-								[3] = 3,
-							},
-							[4] = {
-								[1] = 1,
-								[7] = 1,
-							},
-							[5] = {
-								[2] = 184,
-							},
-						},
-						[133] = {
-							[1] = {
-								[1] = 82307,
-								[2] = 3811,
-								[3] = 32,
-							},
-							[4] = {
-								[1] = 6,
-								[3] = 2,
-								[6] = 4,
-							},
-							[5] = {
-								[1] = 826,
-								[2] = 55,
 							},
 						},
 					},
@@ -21539,6 +22497,11 @@ SW_DataCollection = {
 								[5] = 255,
 							},
 						},
+						[0] = {
+							[2] = 152,
+							[5] = 136,
+							[6] = 7025,
+						},
 						[200] = {
 							[1] = 219949,
 							[2] = 2161,
@@ -21556,11 +22519,6 @@ SW_DataCollection = {
 								[2] = 197,
 								[4] = 195,
 							},
-						},
-						[0] = {
-							[2] = 152,
-							[5] = 136,
-							[6] = 7025,
 						},
 					},
 				},
@@ -21621,9 +22579,9 @@ SW_DataCollection = {
 						[1] = 5808,
 						[5] = 2,
 					},
-					[6223] = {
-						[1] = 2642,
-						[5] = 1,
+					[6347] = {
+						[1] = 8424,
+						[5] = 3,
 					},
 					[508] = {
 						[1] = 50624,
@@ -21637,9 +22595,9 @@ SW_DataCollection = {
 						[1] = 6443,
 						[5] = 3,
 					},
-					[6347] = {
-						[1] = 8424,
-						[5] = 3,
+					[6223] = {
+						[1] = 2642,
+						[5] = 1,
 					},
 				},
 			},
@@ -21698,10 +22656,10 @@ SW_DataCollection = {
 						[3] = {
 							[2] = 550,
 							[5] = 60,
-							[6] = 29690,
 							[30] = {
 								[5] = 410,
 							},
+							[6] = 29690,
 						},
 						[200] = {
 							[1] = 15143,
@@ -21719,13 +22677,19 @@ SW_DataCollection = {
 						},
 					},
 					[3] = {
-						[6548] = {
+						[743] = {
 							[1] = {
-								[1] = 6213,
-								[2] = 2136,
-								[3] = 3,
-								[7] = 4,
-								[8] = 448,
+								[1] = 1590,
+								[2] = 1590,
+								[3] = 1,
+							},
+							[3] = {
+								[1] = 2,
+								[2] = 2,
+								[3] = 1,
+							},
+							[5] = {
+								[3] = 1,
 							},
 						},
 						[6549] = {
@@ -21762,19 +22726,13 @@ SW_DataCollection = {
 								[3] = 9,
 							},
 						},
-						[743] = {
+						[6548] = {
 							[1] = {
-								[1] = 1590,
-								[2] = 1590,
-								[3] = 1,
-							},
-							[3] = {
-								[1] = 2,
-								[2] = 2,
-								[3] = 1,
-							},
-							[5] = {
-								[3] = 1,
+								[1] = 6213,
+								[2] = 2136,
+								[3] = 3,
+								[7] = 4,
+								[8] = 448,
 							},
 						},
 						[31] = {
@@ -21910,15 +22868,15 @@ SW_DataCollection = {
 						[9] = 10,
 						[10] = 5000,
 					},
+					[5531] = {
+						[10] = 500,
+						[9] = 1,
+					},
 					[670] = {
 						[1] = 2563,
 						[5] = 2,
 						[9] = 15,
 						[10] = 7975,
-					},
-					[5531] = {
-						[10] = 500,
-						[9] = 1,
 					},
 				},
 			},
@@ -22109,12 +23067,18 @@ SW_DataCollection = {
 								[6] = 381,
 							},
 						},
-						[36] = {
-							[2] = {
-								[1] = 753,
-								[2] = 251,
-								[3] = 3,
-								[5] = 25,
+						[74] = {
+							[1] = {
+								[1] = 937,
+								[2] = 145,
+								[3] = 8,
+							},
+							[4] = {
+								[1] = 1,
+								[5] = 1,
+							},
+							[5] = {
+								[5] = 111,
 							},
 						},
 						[54] = {
@@ -22148,18 +23112,12 @@ SW_DataCollection = {
 								[5] = 2274,
 							},
 						},
-						[74] = {
-							[1] = {
-								[1] = 937,
-								[2] = 145,
-								[3] = 8,
-							},
-							[4] = {
-								[1] = 1,
-								[5] = 1,
-							},
-							[5] = {
-								[5] = 111,
+						[36] = {
+							[2] = {
+								[1] = 753,
+								[2] = 251,
+								[3] = 3,
+								[5] = 25,
 							},
 						},
 					},
@@ -22234,15 +23192,15 @@ SW_DataCollection = {
 								[3] = 1,
 							},
 						},
-						[300] = {
-							[1] = 647,
-							[2] = 647,
-							[3] = 1,
-						},
 						[0] = {
 							[2] = 32,
 							[5] = 4,
 							[6] = 128,
+						},
+						[300] = {
+							[1] = 647,
+							[2] = 647,
+							[3] = 1,
 						},
 					},
 				},
@@ -22397,17 +23355,15 @@ SW_DataCollection = {
 						[9] = 20,
 						[10] = 5969,
 					},
-					[6456] = {
-						[1] = 7257,
-						[5] = 6,
-						[9] = 21,
-						[10] = 6835,
+					[6211] = {
+						[1] = 241,
+						[5] = 1,
 					},
-					[6438] = {
-						[1] = 4808,
-						[5] = 4,
-						[9] = 49,
-						[10] = 16577,
+					[6568] = {
+						[1] = 12602,
+						[5] = 9,
+						[9] = 213,
+						[10] = 77166,
 					},
 					[6520] = {
 						[1] = 3543,
@@ -22457,21 +23413,31 @@ SW_DataCollection = {
 						[9] = 19,
 						[10] = 5953,
 					},
+					[6558] = {
+						[1] = 4364,
+						[5] = 3,
+						[9] = 17,
+						[10] = 7099,
+					},
 					[6538] = {
 						[10] = 21758,
 						[9] = 78,
-					},
-					[6475] = {
-						[1] = 5624,
-						[5] = 6,
-						[9] = 44,
-						[10] = 15169,
 					},
 					[6491] = {
 						[1] = 10144,
 						[5] = 8,
 						[9] = 64,
 						[10] = 26471,
+					},
+					[4033] = {
+						[7] = 63254,
+						[8] = 53969,
+					},
+					[6460] = {
+						[1] = 1506,
+						[5] = 1,
+						[9] = 17,
+						[10] = 5678,
 					},
 					[5531] = {
 						[1] = 8846,
@@ -22480,18 +23446,6 @@ SW_DataCollection = {
 						[6] = 25,
 						[7] = 70146,
 						[8] = 59448,
-					},
-					[6460] = {
-						[1] = 1506,
-						[5] = 1,
-						[9] = 17,
-						[10] = 5678,
-					},
-					[6476] = {
-						[1] = 1954,
-						[5] = 2,
-						[9] = 46,
-						[10] = 15284,
 					},
 					[6347] = {
 						[7] = 4356,
@@ -22502,15 +23456,17 @@ SW_DataCollection = {
 						[9] = 14,
 						[10] = 4794,
 					},
-					[4033] = {
-						[7] = 63254,
-						[8] = 53969,
+					[6476] = {
+						[1] = 1954,
+						[5] = 2,
+						[9] = 46,
+						[10] = 15284,
 					},
-					[6558] = {
-						[1] = 4364,
-						[5] = 3,
-						[9] = 17,
-						[10] = 7099,
+					[6475] = {
+						[1] = 5624,
+						[5] = 6,
+						[9] = 44,
+						[10] = 15169,
 					},
 					[6556] = {
 						[1] = 759,
@@ -22518,15 +23474,17 @@ SW_DataCollection = {
 						[9] = 12,
 						[10] = 4171,
 					},
-					[6568] = {
-						[1] = 12602,
-						[5] = 9,
-						[9] = 213,
-						[10] = 77166,
+					[6438] = {
+						[1] = 4808,
+						[5] = 4,
+						[9] = 49,
+						[10] = 16577,
 					},
-					[6211] = {
-						[1] = 241,
-						[5] = 1,
+					[6456] = {
+						[1] = 7257,
+						[5] = 6,
+						[9] = 21,
+						[10] = 6835,
 					},
 				},
 			},
@@ -22651,13 +23609,13 @@ SW_DataCollection = {
 						[1] = 4317,
 						[5] = 7,
 					},
-					[670] = {
-						[1] = 4950,
-						[5] = 6,
-					},
 					[6347] = {
 						[1] = 3713,
 						[5] = 5,
+					},
+					[670] = {
+						[1] = 4950,
+						[5] = 6,
 					},
 				},
 			},
@@ -22738,6 +23696,11 @@ SW_DataCollection = {
 						[10] = 1605,
 					},
 					[2] = {
+						[0] = {
+							[2] = 43,
+							[5] = 2,
+							[6] = 86,
+						},
 						[200] = {
 							[1] = 2938,
 							[2] = 538,
@@ -22746,11 +23709,6 @@ SW_DataCollection = {
 							[30] = {
 								[2] = 28,
 							},
-						},
-						[0] = {
-							[2] = 43,
-							[5] = 2,
-							[6] = 86,
 						},
 					},
 					[3] = {
@@ -22916,6 +23874,13 @@ SW_DataCollection = {
 								[8] = 2,
 							},
 						},
+						[6493] = {
+							[1] = {
+								[1] = 4484,
+								[2] = 526,
+								[3] = 9,
+							},
+						},
 						[714] = {
 							[1] = {
 								[1] = 12188,
@@ -22924,13 +23889,6 @@ SW_DataCollection = {
 							},
 							[5] = {
 								[5] = 4064,
-							},
-						},
-						[6493] = {
-							[1] = {
-								[1] = 4484,
-								[2] = 526,
-								[3] = 9,
 							},
 						},
 					},
@@ -22984,9 +23942,9 @@ SW_DataCollection = {
 						[1] = 5318,
 						[5] = 32,
 					},
-					[4033] = {
-						[1] = 3660,
-						[5] = 15,
+					[6210] = {
+						[1] = 821,
+						[5] = 3,
 					},
 					[6206] = {
 						[1] = 1763,
@@ -23004,9 +23962,9 @@ SW_DataCollection = {
 						[1] = 524,
 						[5] = 1,
 					},
-					[6210] = {
-						[1] = 821,
-						[5] = 3,
+					[4033] = {
+						[1] = 3660,
+						[5] = 15,
 					},
 				},
 			},
@@ -23342,21 +24300,17 @@ SW_DataCollection = {
 								[4] = 267,
 							},
 						},
-						[327] = {
+						[338] = {
 							[1] = {
-								[1] = 376494,
-								[2] = 1227,
-								[3] = 700,
-								[4] = 236,
+								[1] = 4508,
+								[2] = 587,
+								[3] = 14,
+								[4] = 4,
 							},
 							[4] = {
-								[1] = 37,
-								[3] = 2,
-								[5] = 34,
-								[11] = 1,
-							},
-							[5] = {
-								[2] = 364,
+								[1] = 3,
+								[7] = 2,
+								[6] = 1,
 							},
 						},
 						[6445] = {
@@ -23391,15 +24345,6 @@ SW_DataCollection = {
 								[2] = 391,
 							},
 						},
-						[1728] = {
-							[2] = {
-								[1] = 10780,
-								[2] = 245,
-								[3] = 44,
-								[5] = 4165,
-								[6] = 3920,
-							},
-						},
 						[332] = {
 							[1] = {
 								[1] = 213658,
@@ -23416,6 +24361,15 @@ SW_DataCollection = {
 								[2] = 154,
 							},
 						},
+						[1728] = {
+							[2] = {
+								[1] = 10780,
+								[2] = 245,
+								[3] = 44,
+								[5] = 4165,
+								[6] = 3920,
+							},
+						},
 						[438] = {
 							[1] = {
 								[1] = 1862,
@@ -23428,17 +24382,21 @@ SW_DataCollection = {
 								[8] = 2,
 							},
 						},
-						[338] = {
+						[327] = {
 							[1] = {
-								[1] = 4508,
-								[2] = 587,
-								[3] = 14,
-								[4] = 4,
+								[1] = 376494,
+								[2] = 1227,
+								[3] = 700,
+								[4] = 236,
 							},
 							[4] = {
-								[1] = 3,
-								[7] = 2,
-								[6] = 1,
+								[1] = 37,
+								[3] = 2,
+								[5] = 34,
+								[11] = 1,
+							},
+							[5] = {
+								[2] = 364,
 							},
 						},
 					},
@@ -23523,15 +24481,15 @@ SW_DataCollection = {
 								[5] = 756,
 							},
 						},
-						[300] = {
-							[1] = 692,
-							[2] = 567,
-							[3] = 2,
-						},
 						[0] = {
 							[2] = 36,
 							[5] = 2,
 							[6] = 72,
+						},
+						[300] = {
+							[1] = 692,
+							[2] = 567,
+							[3] = 2,
 						},
 					},
 				},
@@ -23610,17 +24568,17 @@ SW_DataCollection = {
 						[1] = 57836,
 						[5] = 116,
 					},
-					[6211] = {
-						[1] = 402,
-						[5] = 2,
+					[6438] = {
+						[1] = 28630,
+						[5] = 79,
 					},
 					[6484] = {
 						[1] = 20539,
 						[5] = 66,
 					},
-					[6566] = {
-						[1] = 14885,
-						[5] = 55,
+					[6465] = {
+						[1] = 20843,
+						[5] = 65,
 					},
 					[6516] = {
 						[1] = 17486,
@@ -23648,9 +24606,9 @@ SW_DataCollection = {
 						[1] = 1715,
 						[5] = 1,
 					},
-					[6465] = {
-						[1] = 20843,
-						[5] = 65,
+					[6558] = {
+						[1] = 26211,
+						[5] = 82,
 					},
 					[6439] = {
 						[1] = 25700,
@@ -23668,9 +24626,11 @@ SW_DataCollection = {
 						[9] = 35,
 						[10] = 3360,
 					},
-					[6558] = {
-						[1] = 26211,
-						[5] = 82,
+					[6519] = {
+						[1] = 9646,
+						[5] = 28,
+						[9] = 8,
+						[10] = 768,
 					},
 					[6503] = {
 						[1] = 1876,
@@ -23698,13 +24658,15 @@ SW_DataCollection = {
 						[1] = 10163,
 						[5] = 36,
 					},
+					[6568] = {
+						[1] = 114550,
+						[5] = 361,
+						[9] = 24,
+						[10] = 4800,
+					},
 					[6552] = {
 						[1] = 21237,
 						[5] = 73,
-					},
-					[6489] = {
-						[1] = 1656,
-						[5] = 4,
 					},
 					[6442] = {
 						[1] = 17410,
@@ -23730,13 +24692,13 @@ SW_DataCollection = {
 						[1] = 35155,
 						[5] = 97,
 					},
-					[6538] = {
-						[1] = 24434,
-						[5] = 104,
-					},
 					[6475] = {
 						[1] = 19378,
 						[5] = 69,
+					},
+					[6538] = {
+						[1] = 24434,
+						[5] = 104,
 					},
 					[6491] = {
 						[1] = 31707,
@@ -23756,11 +24718,9 @@ SW_DataCollection = {
 						[1] = 17130,
 						[5] = 54,
 					},
-					[6568] = {
-						[1] = 114550,
-						[5] = 361,
-						[9] = 24,
-						[10] = 4800,
+					[6489] = {
+						[1] = 1656,
+						[5] = 4,
 					},
 					[6508] = {
 						[1] = 15349,
@@ -23769,11 +24729,9 @@ SW_DataCollection = {
 					[6209] = {
 						[2] = 245,
 					},
-					[6519] = {
-						[1] = 9646,
-						[5] = 28,
-						[9] = 8,
-						[10] = 768,
+					[6566] = {
+						[1] = 14885,
+						[5] = 55,
 					},
 					[6556] = {
 						[1] = 1694,
@@ -23783,9 +24741,9 @@ SW_DataCollection = {
 						[1] = 1610,
 						[5] = 4,
 					},
-					[6438] = {
-						[1] = 28630,
-						[5] = 79,
+					[6211] = {
+						[1] = 402,
+						[5] = 2,
 					},
 				},
 			},
@@ -23859,21 +24817,11 @@ SW_DataCollection = {
 								[8] = 800,
 							},
 						},
-						[244] = {
+						[169] = {
 							[1] = {
-								[1] = 2855,
-								[2] = 396,
-								[3] = 11,
-								[4] = 3,
-								[7] = 22,
-								[8] = 2576,
-							},
-							[4] = {
-								[1] = 1,
-								[2] = 1,
-							},
-							[5] = {
-								[5] = 202,
+								[2] = 36,
+								[7] = 37,
+								[8] = 1332,
 							},
 						},
 						[1505] = {
@@ -23890,11 +24838,14 @@ SW_DataCollection = {
 								[8] = 5520,
 							},
 						},
-						[169] = {
-							[1] = {
-								[2] = 36,
-								[7] = 37,
-								[8] = 1332,
+						[186] = {
+							[2] = {
+								[1] = 243966,
+								[2] = 3378,
+								[3] = 252,
+								[4] = 40,
+								[5] = 562,
+								[6] = 86337,
 							},
 						},
 						[31] = {
@@ -23915,6 +24866,23 @@ SW_DataCollection = {
 								[4] = 8,
 							},
 						},
+						[244] = {
+							[1] = {
+								[1] = 2855,
+								[2] = 396,
+								[3] = 11,
+								[4] = 3,
+								[7] = 22,
+								[8] = 2576,
+							},
+							[4] = {
+								[1] = 1,
+								[2] = 1,
+							},
+							[5] = {
+								[5] = 202,
+							},
+						},
 						[185] = {
 							[2] = {
 								[1] = 310487,
@@ -23922,16 +24890,6 @@ SW_DataCollection = {
 								[3] = 750,
 								[5] = 2560,
 								[6] = 51866,
-							},
-						},
-						[355] = {
-							[2] = {
-								[1] = 109401,
-								[2] = 2283,
-								[3] = 160,
-								[4] = 29,
-								[5] = 200,
-								[6] = 22358,
 							},
 						},
 						[6464] = {
@@ -23949,14 +24907,14 @@ SW_DataCollection = {
 								[5] = 464,
 							},
 						},
-						[186] = {
+						[355] = {
 							[2] = {
-								[1] = 243966,
-								[2] = 3378,
-								[3] = 252,
-								[4] = 40,
-								[5] = 562,
-								[6] = 86337,
+								[1] = 109401,
+								[2] = 2283,
+								[3] = 160,
+								[4] = 29,
+								[5] = 200,
+								[6] = 22358,
 							},
 						},
 					},
@@ -23992,10 +24950,10 @@ SW_DataCollection = {
 						[6] = {
 							[2] = 300,
 							[5] = 7,
-							[6] = 2025,
 							[30] = {
 								[5] = 75,
 							},
+							[6] = 2025,
 						},
 						[200] = {
 							[1] = 34953,
@@ -24036,8 +24994,8 @@ SW_DataCollection = {
 				[3] = {
 					[1] = {
 						[7] = 1449,
-						[8] = 37,
 						[4] = 1,
+						[8] = 37,
 					},
 					[6210] = {
 						[2] = 2134,
@@ -24071,8 +25029,8 @@ SW_DataCollection = {
 					},
 					[6214] = {
 						[7] = 9266,
-						[8] = 3979,
 						[4] = 1,
+						[8] = 3979,
 					},
 					[670] = {
 						[2] = 233,
@@ -24137,16 +25095,17 @@ SW_DataCollection = {
 						[9] = 4,
 						[10] = 452,
 					},
-					[6219] = {
-						[2] = 2085,
-						[4] = 4,
-						[7] = 26265,
-						[8] = 5450,
+					[6564] = {
+						[1] = 575,
+						[5] = 5,
+						[9] = 23,
+						[10] = 828,
 					},
-					[6218] = {
-						[7] = 11604,
-						[8] = 1849,
-						[4] = 1,
+					[6568] = {
+						[1] = 70,
+						[5] = 1,
+						[9] = 4,
+						[10] = 800,
 					},
 					[6441] = {
 						[1] = 319,
@@ -24175,18 +25134,16 @@ SW_DataCollection = {
 						[1] = 71,
 						[5] = 1,
 					},
-					[6206] = {
-						[7] = 15349,
-						[8] = 5960,
-						[4] = 1,
+					[6521] = {
+						[7] = 7943,
 					},
 					[6222] = {
 						[7] = 4514,
-						[8] = 936,
 						[4] = 1,
+						[8] = 936,
 					},
-					[6475] = {
-						[1] = 226,
+					[6489] = {
+						[1] = 223,
 						[5] = 3,
 					},
 					[6443] = {
@@ -24195,24 +25152,24 @@ SW_DataCollection = {
 						[9] = 5,
 						[10] = 565,
 					},
-					[6521] = {
-						[7] = 7943,
+					[6438] = {
+						[10] = 108,
+						[9] = 3,
 					},
-					[6223] = {
-						[7] = 36350,
-						[8] = 11802,
-						[4] = 2,
+					[6475] = {
+						[1] = 226,
+						[5] = 3,
 					},
 					[4033] = {
 						[7] = 12057,
-						[8] = 3089,
 						[4] = 2,
+						[8] = 3089,
 					},
-					[677] = {
-						[2] = 1668,
-						[4] = 1,
-						[7] = 12566,
-						[8] = 3145,
+					[6538] = {
+						[1] = 284,
+						[5] = 2,
+						[9] = 2,
+						[10] = 217,
 					},
 					[6208] = {
 						[2] = 2502,
@@ -24228,41 +25185,42 @@ SW_DataCollection = {
 						[7] = 8316,
 						[8] = 1696,
 					},
-					[6476] = {
-						[10] = 396,
-						[9] = 11,
-					},
 					[6537] = {
 						[1] = 396,
 						[5] = 1,
 						[9] = 1,
 						[10] = 124,
 					},
-					[6538] = {
-						[1] = 284,
-						[5] = 2,
-						[9] = 2,
-						[10] = 217,
+					[6476] = {
+						[10] = 396,
+						[9] = 11,
 					},
-					[6438] = {
-						[10] = 108,
-						[9] = 3,
+					[677] = {
+						[2] = 1668,
+						[4] = 1,
+						[7] = 12566,
+						[8] = 3145,
 					},
-					[6489] = {
-						[1] = 223,
-						[5] = 3,
+					[6223] = {
+						[7] = 36350,
+						[4] = 2,
+						[8] = 11802,
 					},
-					[6568] = {
-						[1] = 70,
-						[5] = 1,
-						[9] = 4,
-						[10] = 800,
+					[6206] = {
+						[7] = 15349,
+						[4] = 1,
+						[8] = 5960,
 					},
-					[6564] = {
-						[1] = 575,
-						[5] = 5,
-						[9] = 23,
-						[10] = 828,
+					[6218] = {
+						[7] = 11604,
+						[4] = 1,
+						[8] = 1849,
+					},
+					[6219] = {
+						[2] = 2085,
+						[4] = 4,
+						[7] = 26265,
+						[8] = 5450,
 					},
 				},
 			},
@@ -24539,18 +25497,18 @@ SW_DataCollection = {
 								[2] = 274,
 							},
 						},
-						[6571] = {
-							[1] = {
-								[2] = 200,
-								[7] = 16,
-								[8] = 3200,
-							},
-						},
 						[1807] = {
 							[1] = {
 								[1] = 9742,
 								[2] = 649,
 								[3] = 41,
+							},
+						},
+						[6571] = {
+							[1] = {
+								[2] = 200,
+								[7] = 16,
+								[8] = 3200,
 							},
 						},
 					},
@@ -24630,15 +25588,15 @@ SW_DataCollection = {
 								[1] = 1173,
 							},
 						},
-						[0] = {
-							[2] = 39,
-							[5] = 8,
-							[6] = 276,
-						},
 						[300] = {
 							[1] = 1295,
 							[2] = 749,
 							[3] = 4,
+						},
+						[0] = {
+							[2] = 39,
+							[5] = 8,
+							[6] = 276,
 						},
 					},
 				},
@@ -24695,9 +25653,9 @@ SW_DataCollection = {
 						[1] = 23384,
 						[5] = 84,
 					},
-					[6456] = {
-						[1] = 8589,
-						[5] = 31,
+					[508] = {
+						[1] = 841,
+						[5] = 1,
 					},
 					[6516] = {
 						[1] = 6938,
@@ -24723,9 +25681,9 @@ SW_DataCollection = {
 						[1] = 3586,
 						[5] = 8,
 					},
-					[6230] = {
-						[1] = 7756,
-						[5] = 29,
+					[6558] = {
+						[1] = 33063,
+						[5] = 133,
 					},
 					[6439] = {
 						[1] = 28714,
@@ -24739,9 +25697,12 @@ SW_DataCollection = {
 						[1] = 1614,
 						[5] = 6,
 					},
-					[6558] = {
-						[1] = 33063,
-						[5] = 133,
+					[6210] = {
+						[1] = 765,
+						[2] = 2250,
+						[5] = 1,
+						[7] = 18365,
+						[8] = 6507,
 					},
 					[6566] = {
 						[1] = 15023,
@@ -24751,9 +25712,25 @@ SW_DataCollection = {
 						[1] = 1835,
 						[5] = 9,
 					},
-					[6469] = {
-						[1] = 2380,
-						[5] = 12,
+					[6347] = {
+						[1] = 841,
+						[5] = 1,
+					},
+					[6438] = {
+						[1] = 16623,
+						[5] = 72,
+					},
+					[6442] = {
+						[1] = 15940,
+						[5] = 58,
+					},
+					[6520] = {
+						[1] = 9746,
+						[5] = 41,
+					},
+					[6536] = {
+						[1] = 1233,
+						[5] = 4,
 					},
 					[6489] = {
 						[1] = 972,
@@ -24765,22 +25742,6 @@ SW_DataCollection = {
 						[9] = 16,
 						[10] = 3200,
 					},
-					[6520] = {
-						[1] = 9746,
-						[5] = 41,
-					},
-					[6536] = {
-						[1] = 1233,
-						[5] = 4,
-					},
-					[6552] = {
-						[1] = 12703,
-						[5] = 59,
-					},
-					[6442] = {
-						[1] = 15940,
-						[5] = 58,
-					},
 					[6206] = {
 						[1] = 1042,
 						[5] = 6,
@@ -24789,21 +25750,21 @@ SW_DataCollection = {
 						[1] = 38584,
 						[5] = 156,
 					},
-					[6475] = {
-						[1] = 22648,
-						[5] = 79,
+					[6219] = {
+						[1] = 841,
+						[5] = 1,
 					},
 					[6443] = {
 						[1] = 30722,
 						[5] = 107,
 					},
-					[6538] = {
-						[1] = 29906,
-						[5] = 128,
-					},
 					[6223] = {
 						[1] = 192,
 						[5] = 1,
+					},
+					[6475] = {
+						[1] = 22648,
+						[5] = 79,
 					},
 					[6491] = {
 						[1] = 27968,
@@ -24821,36 +25782,33 @@ SW_DataCollection = {
 						[1] = 20905,
 						[5] = 77,
 					},
-					[6219] = {
-						[1] = 841,
-						[5] = 1,
+					[6538] = {
+						[1] = 29906,
+						[5] = 128,
 					},
 					[6508] = {
 						[1] = 3507,
 						[5] = 14,
 					},
-					[6438] = {
-						[1] = 16623,
-						[5] = 72,
+					[6552] = {
+						[1] = 12703,
+						[5] = 59,
 					},
-					[6347] = {
-						[1] = 841,
-						[5] = 1,
+					[6469] = {
+						[1] = 2380,
+						[5] = 12,
 					},
-					[6210] = {
-						[1] = 765,
-						[2] = 2250,
-						[5] = 1,
-						[7] = 18365,
-						[8] = 6507,
+					[6230] = {
+						[1] = 7756,
+						[5] = 29,
 					},
 					[6509] = {
 						[1] = 1565,
 						[5] = 8,
 					},
-					[508] = {
-						[1] = 841,
-						[5] = 1,
+					[6456] = {
+						[1] = 8589,
+						[5] = 31,
 					},
 				},
 			},
@@ -24866,6 +25824,11 @@ SW_DataCollection = {
 						[11] = 346,
 					},
 					[2] = {
+						[0] = {
+							[2] = 49,
+							[5] = 2,
+							[6] = 98,
+						},
 						[200] = {
 							[1] = 3367,
 							[2] = 595,
@@ -24876,11 +25839,6 @@ SW_DataCollection = {
 								[3] = 1,
 								[6] = 1,
 							},
-						},
-						[0] = {
-							[2] = 49,
-							[5] = 2,
-							[6] = 98,
 						},
 					},
 					[3] = {
@@ -24962,15 +25920,15 @@ SW_DataCollection = {
 					},
 				},
 				[3] = {
+					[6212] = {
+						[7] = 129,
+						[8] = 109,
+					},
 					[6230] = {
 						[1] = 3367,
 						[5] = 13,
 						[9] = 2,
 						[10] = 98,
-					},
-					[6212] = {
-						[7] = 129,
-						[8] = 109,
 					},
 				},
 			},
@@ -25362,11 +26320,9 @@ SW_DataCollection = {
 						[9] = 58,
 						[10] = 10498,
 					},
-					[6438] = {
-						[1] = 8941,
-						[5] = 10,
-						[9] = 80,
-						[10] = 14840,
+					[6558] = {
+						[1] = 29346,
+						[5] = 23,
 					},
 					[6503] = {
 						[1] = 5776,
@@ -25378,11 +26334,31 @@ SW_DataCollection = {
 						[9] = 279,
 						[10] = 51194,
 					},
-					[6566] = {
-						[1] = 5201,
-						[5] = 8,
-						[9] = 26,
-						[10] = 4706,
+					[6438] = {
+						[1] = 8941,
+						[5] = 10,
+						[9] = 80,
+						[10] = 14840,
+					},
+					[6489] = {
+						[1] = 2393,
+						[5] = 3,
+						[9] = 6,
+						[10] = 1086,
+					},
+					[732] = {
+						[1] = 323,
+						[5] = 1,
+					},
+					[6520] = {
+						[1] = 5367,
+						[5] = 7,
+						[9] = 11,
+						[10] = 2052,
+					},
+					[6536] = {
+						[1] = 2865,
+						[5] = 9,
 					},
 					[6552] = {
 						[1] = 1431,
@@ -25395,28 +26371,6 @@ SW_DataCollection = {
 						[5] = 5,
 						[9] = 4,
 						[10] = 800,
-					},
-					[6520] = {
-						[1] = 5367,
-						[5] = 7,
-						[9] = 11,
-						[10] = 2052,
-					},
-					[6536] = {
-						[1] = 2865,
-						[5] = 9,
-					},
-					[6489] = {
-						[1] = 2393,
-						[5] = 3,
-						[9] = 6,
-						[10] = 1086,
-					},
-					[6568] = {
-						[1] = 85986,
-						[5] = 75,
-						[9] = 16,
-						[10] = 3200,
 					},
 					[6521] = {
 						[1] = 804,
@@ -25438,29 +26392,31 @@ SW_DataCollection = {
 						[1] = 9877,
 						[5] = 9,
 					},
+					[6456] = {
+						[1] = 12464,
+						[5] = 27,
+						[9] = 133,
+						[10] = 23983,
+					},
 					[6475] = {
 						[1] = 15082,
 						[5] = 14,
 						[9] = 7,
 						[10] = 1183,
 					},
-					[6538] = {
-						[1] = 30523,
-						[5] = 27,
-					},
 					[6491] = {
 						[1] = 40257,
 						[5] = 29,
+					},
+					[6523] = {
+						[10] = 188,
+						[9] = 1,
 					},
 					[6460] = {
 						[1] = 4475,
 						[5] = 8,
 						[9] = 79,
 						[10] = 14119,
-					},
-					[6523] = {
-						[10] = 188,
-						[9] = 1,
 					},
 					[6476] = {
 						[1] = 7760,
@@ -25476,15 +26432,15 @@ SW_DataCollection = {
 						[1] = 8886,
 						[5] = 10,
 					},
-					[6456] = {
-						[1] = 12464,
+					[6538] = {
+						[1] = 30523,
 						[5] = 27,
-						[9] = 133,
-						[10] = 23983,
 					},
-					[732] = {
-						[1] = 323,
-						[5] = 1,
+					[6568] = {
+						[1] = 85986,
+						[5] = 75,
+						[9] = 16,
+						[10] = 3200,
 					},
 					[6556] = {
 						[1] = 3107,
@@ -25494,9 +26450,11 @@ SW_DataCollection = {
 						[10] = 5249,
 						[9] = 29,
 					},
-					[6558] = {
-						[1] = 29346,
-						[5] = 23,
+					[6566] = {
+						[1] = 5201,
+						[5] = 8,
+						[9] = 26,
+						[10] = 4706,
 					},
 				},
 			},
@@ -25680,13 +26638,11 @@ SW_DataCollection = {
 								[3] = 1,
 							},
 						},
-						[36] = {
-							[2] = {
-								[1] = 51450,
-								[2] = 347,
-								[3] = 150,
-								[5] = 775,
-								[6] = 4807,
+						[74] = {
+							[1] = {
+								[1] = 592,
+								[2] = 144,
+								[3] = 5,
 							},
 						},
 						[374] = {
@@ -25697,33 +26653,6 @@ SW_DataCollection = {
 								[4] = 7,
 								[5] = 3156,
 								[6] = 28132,
-							},
-						},
-						[54] = {
-							[1] = {
-								[1] = 851,
-								[2] = 99,
-								[3] = 10,
-							},
-						},
-						[188] = {
-							[2] = {
-								[1] = 1371943,
-								[2] = 4338,
-								[3] = 1525,
-								[4] = 108,
-								[5] = 29740,
-								[6] = 651416,
-							},
-						},
-						[41] = {
-							[2] = {
-								[1] = 226627,
-								[2] = 2103,
-								[3] = 175,
-								[4] = 29,
-								[5] = 5682,
-								[6] = 70902,
 							},
 						},
 						[136] = {
@@ -25739,11 +26668,40 @@ SW_DataCollection = {
 								[4] = 1,
 							},
 						},
-						[74] = {
+						[54] = {
 							[1] = {
-								[1] = 592,
-								[2] = 144,
-								[3] = 5,
+								[1] = 851,
+								[2] = 99,
+								[3] = 10,
+							},
+						},
+						[41] = {
+							[2] = {
+								[1] = 226627,
+								[2] = 2103,
+								[3] = 175,
+								[4] = 29,
+								[5] = 5682,
+								[6] = 70902,
+							},
+						},
+						[188] = {
+							[2] = {
+								[1] = 1371943,
+								[2] = 4338,
+								[3] = 1525,
+								[4] = 108,
+								[5] = 29740,
+								[6] = 651416,
+							},
+						},
+						[36] = {
+							[2] = {
+								[1] = 51450,
+								[2] = 347,
+								[3] = 150,
+								[5] = 775,
+								[6] = 4807,
 							},
 						},
 					},
@@ -25805,10 +26763,15 @@ SW_DataCollection = {
 						[6] = {
 							[2] = 300,
 							[5] = 9,
-							[6] = 2625,
 							[30] = {
 								[5] = 75,
 							},
+							[6] = 2625,
+						},
+						[0] = {
+							[2] = 27,
+							[5] = 7,
+							[6] = 189,
 						},
 						[200] = {
 							[1] = 47009,
@@ -25825,11 +26788,6 @@ SW_DataCollection = {
 							[30] = {
 								[1] = 1160,
 							},
-						},
-						[0] = {
-							[2] = 27,
-							[5] = 7,
-							[6] = 189,
 						},
 					},
 				},
@@ -25956,8 +26914,8 @@ SW_DataCollection = {
 					},
 					[6206] = {
 						[7] = 24934,
-						[8] = 13645,
 						[4] = 1,
+						[8] = 13645,
 					},
 					[6222] = {
 						[1] = 3505,
@@ -25975,8 +26933,8 @@ SW_DataCollection = {
 						[1] = 256,
 						[5] = 2,
 					},
-					[6460] = {
-						[1] = 85,
+					[6538] = {
+						[1] = 86,
 						[5] = 1,
 					},
 					[6223] = {
@@ -25993,17 +26951,18 @@ SW_DataCollection = {
 						[7] = 15845,
 						[8] = 8934,
 					},
+					[5531] = {
+						[2] = 338,
+						[7] = 16359,
+						[8] = 8847,
+					},
+					[6460] = {
+						[1] = 85,
+						[5] = 1,
+					},
 					[872] = {
 						[2] = 1822,
 						[6] = 1700,
-					},
-					[6208] = {
-						[7] = 23942,
-						[8] = 8928,
-					},
-					[6476] = {
-						[1] = 83,
-						[5] = 1,
 					},
 					[6438] = {
 						[1] = 83,
@@ -26030,14 +26989,13 @@ SW_DataCollection = {
 						[2] = 4338,
 						[6] = 2777,
 					},
-					[5531] = {
-						[2] = 338,
-						[7] = 16359,
-						[8] = 8847,
-					},
-					[6538] = {
-						[1] = 86,
+					[6476] = {
+						[1] = 83,
 						[5] = 1,
+					},
+					[6208] = {
+						[7] = 23942,
+						[8] = 8928,
 					},
 				},
 			},
@@ -26162,18 +27120,18 @@ SW_DataCollection = {
 						[2] = {
 							[2] = 293,
 							[5] = 579,
-							[6] = 153653,
 							[30] = {
 								[5] = 1663,
 							},
+							[6] = 153653,
 						},
 						[3] = {
 							[2] = 200,
 							[5] = 32,
-							[6] = 6250,
 							[30] = {
 								[5] = 150,
 							},
+							[6] = 6250,
 						},
 						[200] = {
 							[20] = {
@@ -26281,14 +27239,14 @@ SW_DataCollection = {
 								[8] = 3200,
 							},
 						},
-						[610] = {
+						[6571] = {
 							[1] = {
-								[2] = 293,
-								[7] = 579,
-								[8] = 153653,
+								[2] = 200,
+								[7] = 32,
+								[8] = 6250,
 							},
 							[5] = {
-								[5] = 1663,
+								[5] = 150,
 							},
 						},
 						[181] = {
@@ -26317,14 +27275,14 @@ SW_DataCollection = {
 								[5] = 1015,
 							},
 						},
-						[6571] = {
+						[610] = {
 							[1] = {
-								[2] = 200,
-								[7] = 32,
-								[8] = 6250,
+								[2] = 293,
+								[7] = 579,
+								[8] = 153653,
 							},
 							[5] = {
-								[5] = 150,
+								[5] = 1663,
 							},
 						},
 					},
@@ -26396,15 +27354,15 @@ SW_DataCollection = {
 								[3] = 1,
 							},
 						},
-						[300] = {
-							[1] = 884,
-							[2] = 599,
-							[3] = 2,
-						},
 						[0] = {
 							[2] = 40,
 							[5] = 4,
 							[6] = 160,
+						},
+						[300] = {
+							[1] = 884,
+							[2] = 599,
+							[3] = 2,
 						},
 					},
 				},
@@ -26529,9 +27487,9 @@ SW_DataCollection = {
 						[10] = 38051,
 						[9] = 144,
 					},
-					[6456] = {
-						[10] = 16554,
-						[9] = 62,
+					[6442] = {
+						[1] = 6188,
+						[5] = 4,
 					},
 					[6520] = {
 						[1] = 4289,
@@ -26585,9 +27543,9 @@ SW_DataCollection = {
 						[10] = 534,
 						[9] = 2,
 					},
-					[6545] = {
-						[1] = 10761,
-						[5] = 7,
+					[6465] = {
+						[1] = 33877,
+						[5] = 20,
 					},
 					[6460] = {
 						[10] = 9078,
@@ -26599,23 +27557,23 @@ SW_DataCollection = {
 						[9] = 10,
 						[10] = 2670,
 					},
-					[6538] = {
-						[10] = 8383,
-						[9] = 8,
-					},
-					[6508] = {
-						[1] = 4216,
-						[5] = 4,
-					},
 					[6558] = {
 						[1] = 32527,
 						[5] = 22,
 						[9] = 1,
 						[10] = 293,
 					},
-					[6465] = {
-						[1] = 33877,
-						[5] = 20,
+					[6508] = {
+						[1] = 4216,
+						[5] = 4,
+					},
+					[6538] = {
+						[10] = 8383,
+						[9] = 8,
+					},
+					[6545] = {
+						[1] = 10761,
+						[5] = 7,
 					},
 					[6556] = {
 						[1] = 2465,
@@ -26625,9 +27583,9 @@ SW_DataCollection = {
 						[10] = 3204,
 						[9] = 12,
 					},
-					[6442] = {
-						[1] = 6188,
-						[5] = 4,
+					[6456] = {
+						[10] = 16554,
+						[9] = 62,
 					},
 				},
 			},
@@ -26737,6 +27695,11 @@ SW_DataCollection = {
 								[2] = 4,
 							},
 						},
+						[0] = {
+							[2] = 49,
+							[5] = 5,
+							[6] = 221,
+						},
 						[200] = {
 							[1] = 91965,
 							[2] = 1318,
@@ -26753,11 +27716,6 @@ SW_DataCollection = {
 							[30] = {
 								[2] = 224,
 							},
-						},
-						[0] = {
-							[2] = 49,
-							[5] = 5,
-							[6] = 221,
 						},
 					},
 				},
@@ -26826,9 +27784,9 @@ SW_DataCollection = {
 						[1] = 1591,
 						[5] = 5,
 					},
-					[5076] = {
-						[1] = 2474,
-						[5] = 22,
+					[3736] = {
+						[1] = 263,
+						[5] = 1,
 					},
 					[3426] = {
 						[1] = 3949,
@@ -26842,9 +27800,9 @@ SW_DataCollection = {
 						[1] = 414,
 						[5] = 2,
 					},
-					[3736] = {
-						[1] = 263,
-						[5] = 1,
+					[5076] = {
+						[1] = 2474,
+						[5] = 22,
 					},
 				},
 			},
@@ -27031,9 +27989,9 @@ SW_DataCollection = {
 				},
 			},
 			["initTS"] = {
-				["epochTS"] = 1517164747,
+				["uTS"] = -163637.9379999638,
 				["msO"] = 0.06199999999989814,
-				["uTS"] = -160745.9379999638,
+				["epochTS"] = 1517164747,
 			},
 			[852] = {
 				[1] = {
@@ -27066,17 +28024,748 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[2685] = {
-				[2] = {
+			[670] = {
+				[1] = {
 					[1] = {
+						[1] = 364172,
+						[5] = 1810,
+						[7] = 5860,
+						[8] = 3161,
+						[10] = 22685,
+						[9] = 501,
+						[11] = 4358,
 					},
 					[2] = {
 						[200] = {
+							[1] = 316469,
+							[2] = 1668,
+							[3] = 1653,
+							[4] = 256,
 							[20] = {
+								[1] = 155,
+								[3] = 24,
+								[6] = 73,
+								[7] = 50,
+								[8] = 7,
+								[11] = 1,
+							},
+							[30] = {
+								[2] = 1365,
+								[4] = 352,
+							},
+						},
+						[0] = {
+							[2] = 120,
+							[5] = 447,
+							[6] = 16443,
+						},
+						[3] = {
+							[1] = 824,
+							[2] = 180,
+							[3] = 51,
+							[5] = 24,
+							[6] = 4320,
+						},
+					},
+					[3] = {
+						[709] = {
+							[1] = {
+								[1] = 2900,
+								[2] = 375,
+								[3] = 17,
+								[4] = 3,
+							},
+							[4] = {
 								[1] = 1,
+								[6] = 1,
+							},
+						},
+						[601] = {
+							[1] = {
+								[1] = 3551,
+								[2] = 306,
+								[3] = 24,
+								[4] = 4,
+							},
+							[2] = {
+								[1] = 60,
+								[2] = 20,
+								[3] = 3,
+								[6] = 20,
+							},
+							[3] = {
+								[1] = 29,
+								[2] = 1,
+								[3] = 29,
+							},
+							[4] = {
+								[1] = 3,
+								[7] = 1,
+								[6] = 2,
+							},
+							[5] = {
+								[4] = 3,
+							},
+						},
+						[121] = {
+							[1] = {
+								[1] = 26449,
+								[2] = 1668,
+								[3] = 34,
+								[4] = 3,
+							},
+							[2] = {
+								[1] = 20,
+								[2] = 20,
+								[3] = 1,
+							},
+							[4] = {
+								[1] = 4,
+								[3] = 1,
+								[6] = 2,
+								[7] = 1,
+							},
+							[5] = {
+								[2] = 60,
+							},
+						},
+						[695] = {
+							[1] = {
+								[2] = 31,
+								[7] = 40,
+								[8] = 1066,
+							},
+						},
+						[495] = {
+							[1] = {
+								[1] = 1408,
+								[2] = 184,
+								[3] = 13,
+							},
+							[4] = {
+								[1] = 2,
+								[3] = 2,
+							},
+						},
+						[620] = {
+							[1] = {
+								[1] = 9425,
+								[2] = 1003,
+								[3] = 29,
+								[4] = 8,
+							},
+							[4] = {
+								[1] = 3,
+								[7] = 2,
+								[6] = 1,
+							},
+							[5] = {
+								[2] = 31,
+							},
+						},
+						[6571] = {
+							[1] = {
+								[2] = 180,
+								[7] = 24,
+								[8] = 4320,
+							},
+						},
+						[715] = {
+							[1] = {
+								[1] = 1538,
+								[2] = 79,
+								[3] = 24,
+							},
+						},
+						[132] = {
+							[1] = {
+								[1] = 255,
+								[2] = 47,
+								[3] = 6,
+							},
+							[4] = {
+								[1] = 7,
+								[8] = 7,
+							},
+						},
+						[118] = {
+							[1] = {
+								[1] = 26069,
+								[2] = 829,
+								[3] = 71,
+								[4] = 12,
+							},
+							[2] = {
+								[1] = 4960,
+								[2] = 20,
+								[3] = 248,
+								[6] = 2601,
+							},
+							[4] = {
+								[1] = 5,
+								[6] = 2,
+								[7] = 2,
+								[11] = 1,
+							},
+							[5] = {
+								[2] = 61,
+							},
+						},
+						[725] = {
+							[1] = {
+								[1] = 211,
+								[2] = 68,
+								[3] = 5,
+								[4] = 2,
+							},
+							[4] = {
+								[1] = 1,
+								[6] = 1,
+							},
+						},
+						[591] = {
+							[1] = {
+								[1] = 17846,
+								[2] = 980,
+								[3] = 70,
+								[4] = 9,
+							},
+							[4] = {
+								[1] = 4,
+								[7] = 1,
+								[6] = 3,
+							},
+							[5] = {
+								[2] = 30,
+							},
+						},
+						[114] = {
+							[1] = {
+								[1] = 169,
+								[2] = 74,
+								[3] = 4,
+								[4] = 1,
+							},
+						},
+						[117] = {
+							[1] = {
+								[2] = 120,
+								[7] = 407,
+								[8] = 15377,
+							},
+						},
+						[6573] = {
+							[1] = {
+								[1] = 149,
+								[2] = 149,
 								[3] = 1,
 							},
 						},
+						[689] = {
+							[1] = {
+								[1] = 4392,
+								[2] = 114,
+								[3] = 85,
+								[4] = 10,
+							},
+							[4] = {
+								[1] = 12,
+								[3] = 1,
+								[6] = 7,
+								[7] = 4,
+							},
+							[5] = {
+								[2] = 61,
+							},
+						},
+						[119] = {
+							[1] = {
+								[1] = 1021,
+								[2] = 810,
+								[3] = 2,
+								[4] = 1,
+							},
+						},
+						[690] = {
+							[1] = {
+								[1] = 19,
+								[2] = 19,
+								[3] = 1,
+							},
+						},
+						[706] = {
+							[1] = {
+								[1] = 879,
+								[2] = 153,
+								[3] = 11,
+								[4] = 3,
+							},
+							[5] = {
+								[2] = 30,
+							},
+						},
+						[180] = {
+							[1] = {
+								[1] = 37,
+								[2] = 37,
+								[3] = 1,
+							},
+						},
+						[133] = {
+							[1] = {
+								[1] = 24379,
+								[2] = 717,
+								[3] = 76,
+								[4] = 13,
+							},
+							[4] = {
+								[1] = 4,
+								[7] = 1,
+								[6] = 3,
+							},
+							[5] = {
+								[2] = 60,
+							},
+						},
+						[111] = {
+							[1] = {
+								[1] = 824,
+								[2] = 18,
+								[3] = 51,
+							},
+						},
+						[31] = {
+							[1] = {
+								[1] = 195772,
+								[2] = 1080,
+								[3] = 1179,
+								[4] = 187,
+							},
+							[2] = {
+								[1] = 40,
+								[2] = 20,
+								[3] = 2,
+							},
+							[4] = {
+								[1] = 109,
+								[3] = 20,
+								[6] = 51,
+								[7] = 38,
+							},
+							[5] = {
+								[2] = 1032,
+								[4] = 349,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 469973,
+						[2] = 23785,
+						[3] = 4,
+						[4] = 9,
+						[5] = 674,
+						[6] = 7687,
+						[7] = 847300,
+						[8] = 354785,
+						[9] = 105,
+						[10] = 19885,
+					},
+					[2] = {
+						[1] = {
+							[1] = 2563,
+							[2] = 1592,
+							[3] = 2,
+						},
+						[2] = {
+							[1] = 9358,
+							[2] = 1266,
+							[3] = 12,
+							[4] = 1,
+							[5] = 4,
+							[6] = 581,
+							[20] = {
+								[1] = 1,
+								[2] = 1,
+							},
+							[30] = {
+								[1] = 100,
+								[5] = 11,
+							},
+						},
+						[3] = {
+							[1] = 7773,
+							[2] = 1725,
+							[3] = 16,
+							[5] = 68,
+							[6] = 13257,
+							[30] = {
+								[5] = 2163,
+							},
+						},
+						[4] = {
+							[1] = 713,
+							[2] = 713,
+							[3] = 1,
+						},
+						[5] = {
+							[1] = 11092,
+							[2] = 998,
+							[3] = 33,
+							[5] = 21,
+							[6] = 4335,
+							[20] = {
+								[1] = 3,
+								[2] = 3,
+							},
+							[30] = {
+								[5] = 1920,
+							},
+						},
+						[6] = {
+							[2] = 300,
+							[5] = 5,
+							[6] = 1380,
+						},
+						[200] = {
+							[1] = 416068,
+							[2] = 3496,
+							[3] = 586,
+							[4] = 24,
+							[5] = 3,
+							[6] = 68,
+							[20] = {
+								[1] = 221,
+								[3] = 84,
+								[5] = 2,
+								[6] = 81,
+								[7] = 47,
+								[8] = 7,
+							},
+							[30] = {
+								[1] = 3656,
+								[2] = 7378,
+								[3] = 14,
+								[5] = 117,
+							},
+						},
+						[0] = {
+							[2] = 66,
+							[5] = 4,
+							[6] = 264,
+						},
+						[300] = {
+							[1] = 10674,
+							[2] = 2636,
+							[3] = 6,
+						},
+					},
+				},
+				[3] = {
+					[6462] = {
+						[1] = 2335,
+						[5] = 7,
+					},
+					[6494] = {
+						[1] = 120,
+						[5] = 2,
+					},
+					[6510] = {
+						[1] = 204,
+						[5] = 4,
+					},
+					[6526] = {
+						[1] = 4297,
+						[5] = 32,
+						[9] = 9,
+						[10] = 262,
+					},
+					[6479] = {
+						[1] = 13717,
+						[5] = 76,
+						[9] = 19,
+						[10] = 981,
+					},
+					[6495] = {
+						[1] = 1082,
+						[5] = 16,
+					},
+					[6448] = {
+						[1] = 1041,
+						[5] = 2,
+					},
+					[6527] = {
+						[1] = 399,
+						[5] = 2,
+					},
+					[6512] = {
+						[1] = 10284,
+						[5] = 20,
+						[9] = 10,
+						[10] = 740,
+					},
+					[6465] = {
+						[1] = 16576,
+						[5] = 60,
+						[9] = 17,
+						[10] = 727,
+					},
+					[6544] = {
+						[1] = 750,
+						[5] = 2,
+						[9] = 2,
+						[10] = 134,
+					},
+					[6497] = {
+						[1] = 358,
+						[5] = 2,
+					},
+					[6230] = {
+						[1] = 1345,
+						[5] = 7,
+					},
+					[670] = {
+						[7] = 5080,
+						[8] = 2621,
+					},
+					[6215] = {
+						[1] = 764,
+						[5] = 7,
+					},
+					[6546] = {
+						[1] = 1870,
+						[5] = 12,
+					},
+					[6499] = {
+						[1] = 2208,
+						[5] = 18,
+						[9] = 10,
+						[10] = 212,
+					},
+					[6452] = {
+						[1] = 11724,
+						[5] = 76,
+						[9] = 9,
+						[10] = 277,
+					},
+					[6498] = {
+						[1] = 9403,
+						[5] = 76,
+						[9] = 24,
+						[10] = 473,
+					},
+					[6484] = {
+						[1] = 4340,
+						[5] = 31,
+						[9] = 6,
+						[10] = 130,
+					},
+					[6558] = {
+						[1] = 26908,
+						[5] = 61,
+						[9] = 24,
+						[10] = 1864,
+					},
+					[6516] = {
+						[1] = 1292,
+						[5] = 12,
+					},
+					[6532] = {
+						[1] = 5615,
+						[5] = 46,
+						[9] = 11,
+						[10] = 218,
+					},
+					[6485] = {
+						[1] = 1551,
+						[5] = 14,
+						[9] = 4,
+						[10] = 68,
+					},
+					[6564] = {
+						[1] = 6567,
+						[5] = 35,
+						[9] = 14,
+						[10] = 416,
+					},
+					[6454] = {
+						[1] = 4214,
+						[5] = 13,
+						[9] = 3,
+						[10] = 110,
+					},
+					[6470] = {
+						[1] = 579,
+						[5] = 4,
+					},
+					[6438] = {
+						[1] = 11553,
+						[5] = 34,
+						[9] = 11,
+						[10] = 845,
+					},
+					[6439] = {
+						[1] = 6204,
+						[5] = 48,
+						[9] = 9,
+						[10] = 509,
+					},
+					[6518] = {
+						[1] = 5528,
+						[5] = 39,
+						[9] = 14,
+						[10] = 355,
+					},
+					[6534] = {
+						[1] = 2648,
+						[5] = 18,
+						[9] = 3,
+						[10] = 59,
+					},
+					[6503] = {
+						[1] = 2940,
+						[5] = 19,
+						[9] = 10,
+						[10] = 184,
+					},
+					[6566] = {
+						[1] = 4055,
+						[5] = 49,
+						[9] = 12,
+						[10] = 312,
+					},
+					[6456] = {
+						[1] = 14528,
+						[5] = 42,
+						[9] = 8,
+						[10] = 592,
+					},
+					[6568] = {
+						[1] = 38823,
+						[5] = 287,
+						[9] = 90,
+						[10] = 5761,
+					},
+					[6460] = {
+						[1] = 9169,
+						[5] = 24,
+						[9] = 7,
+						[10] = 578,
+					},
+					[6441] = {
+						[1] = 1826,
+						[5] = 6,
+					},
+					[6520] = {
+						[1] = 949,
+						[5] = 10,
+					},
+					[6536] = {
+						[1] = 1959,
+						[5] = 7,
+						[9] = 4,
+						[10] = 228,
+					},
+					[6552] = {
+						[1] = 2821,
+						[5] = 26,
+						[9] = 15,
+						[10] = 319,
+					},
+					[6442] = {
+						[1] = 7248,
+						[5] = 52,
+						[9] = 9,
+						[10] = 174,
+					},
+					[6475] = {
+						[1] = 8336,
+						[5] = 69,
+						[9] = 10,
+						[10] = 184,
+					},
+					[6537] = {
+						[1] = 18877,
+						[5] = 55,
+						[9] = 36,
+						[10] = 2162,
+					},
+					[6553] = {
+						[1] = 583,
+						[5] = 3,
+					},
+					[6443] = {
+						[1] = 8201,
+						[5] = 41,
+						[9] = 4,
+						[10] = 158,
+					},
+					[6208] = {
+						[1] = 1133,
+						[5] = 2,
+					},
+					[6538] = {
+						[1] = 4139,
+						[5] = 34,
+						[9] = 16,
+						[10] = 457,
+					},
+					[6491] = {
+						[1] = 8794,
+						[5] = 51,
+						[9] = 11,
+						[10] = 200,
+					},
+					[6507] = {
+						[1] = 663,
+						[5] = 9,
+						[9] = 8,
+						[10] = 140,
+					},
+					[6523] = {
+						[1] = 373,
+						[5] = 2,
+					},
+					[6476] = {
+						[1] = 9033,
+						[5] = 62,
+						[9] = 19,
+						[10] = 491,
+					},
+					[6223] = {
+						[1] = 1131,
+						[5] = 3,
+					},
+					[6508] = {
+						[1] = 2992,
+						[5] = 24,
+						[9] = 9,
+						[10] = 202,
+					},
+					[6545] = {
+						[1] = 8603,
+						[5] = 21,
+						[9] = 3,
+						[10] = 207,
+					},
+					[6519] = {
+						[1] = 3251,
+						[5] = 23,
+						[9] = 1,
+						[10] = 34,
+					},
+					[6556] = {
+						[1] = 606,
+						[5] = 3,
+					},
+					[6509] = {
+						[1] = 698,
+						[5] = 3,
+					},
+					[6511] = {
+						[1] = 86,
+						[5] = 1,
 					},
 				},
 			},
@@ -27134,13 +28823,119 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[4042] = {
-				[2] = {
+			[6544] = {
+				[1] = {
 					[1] = {
-						[1] = 438,
-						[5] = 1,
+						[1] = 3604,
+						[5] = 11,
+						[11] = 54,
 					},
 					[2] = {
+						[200] = {
+							[1] = 3604,
+							[2] = 797,
+							[3] = 11,
+							[20] = {
+								[1] = 4,
+								[3] = 2,
+								[7] = 2,
+							},
+							[30] = {
+								[1] = 193,
+								[2] = 543,
+							},
+						},
+					},
+					[3] = {
+						[31] = {
+							[1] = {
+								[1] = 3604,
+								[2] = 797,
+								[3] = 11,
+							},
+							[4] = {
+								[1] = 4,
+								[3] = 2,
+								[7] = 2,
+							},
+							[5] = {
+								[1] = 193,
+								[2] = 543,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 7556,
+						[3] = 1,
+						[5] = 21,
+						[9] = 36,
+						[10] = 7603,
+					},
+					[2] = {
+						[1] = {
+							[1] = 199,
+							[2] = 199,
+							[3] = 1,
+						},
+						[2] = {
+							[1] = 419,
+							[2] = 419,
+							[3] = 1,
+							[5] = 9,
+							[6] = 2283,
+						},
+						[3] = {
+							[1] = 56,
+							[2] = 56,
+							[3] = 1,
+							[30] = {
+								[5] = 55,
+							},
+						},
+						[4] = {
+							[2] = 185,
+							[5] = 20,
+							[6] = 3667,
+						},
+						[5] = {
+							[1] = 3355,
+							[2] = 2064,
+							[3] = 2,
+							[4] = 1,
+							[5] = 4,
+							[6] = 1492,
+						},
+						[0] = {
+							[2] = 67,
+							[5] = 3,
+							[6] = 161,
+						},
+						[200] = {
+							[1] = 3527,
+							[2] = 584,
+							[3] = 16,
+							[4] = 2,
+							[20] = {
+								[1] = 2,
+								[6] = 2,
+							},
+							[30] = {
+								[2] = 30,
+								[4] = 1,
+							},
+						},
+					},
+				},
+				[3] = {
+					[678] = {
+						[1] = 1585,
+						[5] = 2,
+					},
+					[6211] = {
+						[1] = 2019,
+						[5] = 9,
 					},
 				},
 			},
@@ -27159,18 +28954,13 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[1467] = {
+			[656] = {
 				[2] = {
 					[1] = {
-						[1] = 275,
+						[1] = 1874,
 						[5] = 1,
 					},
 					[2] = {
-						[300] = {
-							[1] = 275,
-							[2] = 275,
-							[3] = 1,
-						},
 					},
 				},
 			},
@@ -27184,13 +28974,32 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[6355] = {
-				[2] = {
+			[4527] = {
+				[1] = {
 					[1] = {
-						[1] = 11,
-						[5] = 1,
 					},
 					[2] = {
+					},
+					[3] = {
+					},
+				},
+				[2] = {
+					[1] = {
+						[10] = 85,
+						[9] = 1,
+					},
+					[2] = {
+						[2] = {
+							[2] = 85,
+							[5] = 1,
+							[6] = 85,
+						},
+					},
+				},
+				[3] = {
+					[4527] = {
+						[10] = 85,
+						[9] = 1,
 					},
 				},
 			},
@@ -27392,6 +29201,490 @@ SW_DataCollection = {
 						[10] = 88,
 					},
 					[2] = {
+					},
+				},
+			},
+			[732] = {
+				[1] = {
+					[1] = {
+						[11] = 169,
+					},
+					[2] = {
+					},
+					[3] = {
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 2903,
+						[3] = 6,
+						[5] = 6,
+					},
+					[2] = {
+						[6] = {
+							[1] = 981,
+							[2] = 330,
+							[3] = 3,
+						},
+						[200] = {
+							[1] = 1665,
+							[2] = 1665,
+							[3] = 1,
+							[4] = 1,
+						},
+						[3] = {
+							[1] = 257,
+							[2] = 134,
+							[3] = 2,
+						},
+					},
+				},
+			},
+			[6372] = {
+				[2] = {
+					[1] = {
+					},
+					[2] = {
+						[200] = {
+							[20] = {
+								[1] = 1,
+								[3] = 1,
+							},
+						},
+					},
+				},
+			},
+			[6374] = {
+				[2] = {
+					[1] = {
+					},
+					[2] = {
+						[200] = {
+							[20] = {
+								[1] = 1,
+								[3] = 1,
+							},
+						},
+					},
+				},
+			},
+			[6534] = {
+				[1] = {
+					[1] = {
+						[1] = 17186,
+						[5] = 24,
+						[11] = 20,
+					},
+					[2] = {
+						[200] = {
+							[1] = 17186,
+							[2] = 1524,
+							[3] = 24,
+							[20] = {
+								[1] = 12,
+								[3] = 2,
+								[5] = 1,
+								[6] = 9,
+							},
+							[30] = {
+								[1] = 1374,
+								[2] = 944,
+							},
+						},
+					},
+					[3] = {
+						[31] = {
+							[1] = {
+								[1] = 17186,
+								[2] = 1524,
+								[3] = 24,
+							},
+							[4] = {
+								[1] = 12,
+								[3] = 2,
+								[5] = 1,
+								[6] = 9,
+							},
+							[5] = {
+								[1] = 1374,
+								[2] = 944,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 39765,
+						[3] = 6,
+						[5] = 135,
+						[9] = 265,
+						[10] = 51810,
+					},
+					[2] = {
+						[2] = {
+							[1] = 5459,
+							[2] = 589,
+							[3] = 12,
+							[4] = 1,
+							[5] = 99,
+							[6] = 25419,
+							[30] = {
+								[5] = 108,
+							},
+						},
+						[3] = {
+							[1] = 500,
+							[2] = 146,
+							[3] = 4,
+							[5] = 40,
+							[6] = 5520,
+							[20] = {
+								[1] = 1,
+								[5] = 1,
+							},
+						},
+						[4] = {
+							[1] = 907,
+							[2] = 465,
+							[3] = 2,
+							[5] = 58,
+							[6] = 10498,
+						},
+						[5] = {
+							[1] = 1678,
+							[2] = 1032,
+							[3] = 2,
+							[5] = 18,
+							[6] = 6157,
+						},
+						[6] = {
+							[1] = 1053,
+							[2] = 320,
+							[3] = 4,
+							[5] = 35,
+							[6] = 3360,
+						},
+						[0] = {
+							[2] = 152,
+							[5] = 15,
+							[6] = 856,
+						},
+						[200] = {
+							[1] = 30168,
+							[2] = 1308,
+							[3] = 111,
+							[4] = 28,
+							[20] = {
+								[1] = 12,
+								[2] = 2,
+								[3] = 3,
+								[5] = 1,
+								[6] = 3,
+								[7] = 3,
+							},
+							[30] = {
+								[4] = 9,
+							},
+						},
+					},
+				},
+				[3] = {
+					[6219] = {
+						[1] = 1250,
+						[5] = 1,
+					},
+					[6214] = {
+						[1] = 580,
+						[5] = 1,
+					},
+					[6223] = {
+						[1] = 2242,
+						[5] = 2,
+					},
+					[6211] = {
+						[1] = 3840,
+						[5] = 7,
+					},
+					[678] = {
+						[1] = 1524,
+						[5] = 1,
+					},
+					[670] = {
+						[1] = 7750,
+						[5] = 12,
+					},
+				},
+			},
+			[6532] = {
+				[1] = {
+					[1] = {
+						[1] = 132146,
+						[5] = 164,
+						[11] = 712,
+					},
+					[2] = {
+						[200] = {
+							[1] = 132146,
+							[2] = 2426,
+							[3] = 164,
+							[4] = 2,
+							[20] = {
+								[1] = 72,
+								[2] = 2,
+								[3] = 23,
+								[5] = 2,
+								[6] = 27,
+								[7] = 11,
+								[8] = 3,
+								[11] = 4,
+							},
+							[30] = {
+								[1] = 2163,
+								[2] = 2179,
+							},
+						},
+					},
+					[3] = {
+						[746] = {
+							[1] = {
+								[1] = 14204,
+								[2] = 1896,
+								[3] = 13,
+							},
+							[4] = {
+								[1] = 12,
+								[3] = 3,
+								[6] = 7,
+								[7] = 2,
+							},
+							[5] = {
+								[2] = 52,
+							},
+						},
+						[687] = {
+							[1] = {
+								[1] = 1176,
+								[2] = 151,
+								[3] = 13,
+							},
+							[4] = {
+								[1] = 10,
+								[2] = 2,
+								[3] = 2,
+								[6] = 4,
+								[7] = 1,
+								[11] = 1,
+							},
+						},
+						[31] = {
+							[1] = {
+								[1] = 90745,
+								[2] = 2426,
+								[3] = 112,
+								[4] = 2,
+							},
+							[4] = {
+								[1] = 44,
+								[3] = 18,
+								[5] = 2,
+								[6] = 16,
+								[7] = 8,
+							},
+							[5] = {
+								[1] = 2163,
+								[2] = 2127,
+							},
+						},
+						[6533] = {
+							[1] = {
+								[1] = 26021,
+								[2] = 1902,
+								[3] = 26,
+							},
+							[4] = {
+								[1] = 6,
+								[11] = 3,
+								[8] = 3,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 285071,
+						[3] = 9,
+						[5] = 798,
+						[9] = 483,
+						[10] = 102620,
+					},
+					[2] = {
+						[2] = {
+							[1] = 5265,
+							[2] = 764,
+							[3] = 10,
+							[5] = 138,
+							[6] = 35698,
+							[20] = {
+								[1] = 1,
+								[2] = 1,
+							},
+							[30] = {
+								[5] = 323,
+							},
+						},
+						[3] = {
+							[1] = 4847,
+							[2] = 150,
+							[3] = 46,
+							[20] = {
+								[1] = 1,
+								[5] = 1,
+							},
+							[30] = {
+								[5] = 460,
+							},
+						},
+						[4] = {
+							[1] = 18530,
+							[2] = 2100,
+							[3] = 16,
+							[4] = 3,
+							[5] = 160,
+							[6] = 29931,
+							[20] = {
+								[1] = 1,
+								[5] = 1,
+							},
+							[30] = {
+								[5] = 296,
+							},
+						},
+						[5] = {
+							[1] = 76881,
+							[2] = 2500,
+							[3] = 73,
+							[4] = 10,
+							[5] = 99,
+							[6] = 32575,
+							[20] = {
+								[1] = 6,
+								[2] = 1,
+								[5] = 5,
+							},
+							[30] = {
+								[5] = 4630,
+							},
+						},
+						[6] = {
+							[1] = 46,
+							[2] = 2,
+							[3] = 23,
+						},
+						[0] = {
+							[2] = 157,
+							[5] = 86,
+							[6] = 4416,
+						},
+						[200] = {
+							[1] = 179502,
+							[2] = 2225,
+							[3] = 630,
+							[4] = 160,
+							[20] = {
+								[1] = 92,
+								[2] = 3,
+								[3] = 44,
+								[5] = 1,
+								[6] = 27,
+								[7] = 11,
+								[8] = 6,
+							},
+							[30] = {
+								[2] = 390,
+								[4] = 98,
+							},
+						},
+					},
+				},
+				[3] = {
+					[677] = {
+						[1] = 6789,
+						[5] = 6,
+					},
+					[678] = {
+						[1] = 3214,
+						[5] = 2,
+					},
+					[6210] = {
+						[1] = 2635,
+						[5] = 2,
+					},
+					[6214] = {
+						[1] = 1902,
+						[5] = 1,
+					},
+					[6218] = {
+						[1] = 7636,
+						[5] = 5,
+					},
+					[4033] = {
+						[1] = 3900,
+						[5] = 3,
+					},
+					[6211] = {
+						[1] = 36287,
+						[5] = 57,
+					},
+					[6215] = {
+						[1] = 1633,
+						[5] = 1,
+					},
+					[6219] = {
+						[1] = 18784,
+						[5] = 29,
+					},
+					[6223] = {
+						[1] = 6154,
+						[5] = 4,
+					},
+					[6208] = {
+						[1] = 3222,
+						[5] = 2,
+					},
+					[6228] = {
+						[1] = 5480,
+						[5] = 5,
+					},
+					[508] = {
+						[1] = 124,
+						[5] = 1,
+					},
+					[6426] = {
+						[1] = 5111,
+						[5] = 4,
+					},
+					[5531] = {
+						[1] = 1366,
+						[5] = 1,
+					},
+					[670] = {
+						[1] = 27909,
+						[5] = 41,
+					},
+				},
+			},
+			[6380] = {
+				[2] = {
+					[1] = {
+						[1] = 146,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 146,
+							[2] = 146,
+							[3] = 1,
+						},
 					},
 				},
 			},
@@ -27603,57 +29896,6 @@ SW_DataCollection = {
 								[2] = 269,
 							},
 						},
-						[115] = {
-							[2] = {
-								[1] = 6689,
-								[2] = 124,
-								[3] = 68,
-								[6] = 3758,
-							},
-						},
-						[689] = {
-							[1] = {
-								[1] = 675,
-								[2] = 135,
-								[3] = 10,
-								[4] = 3,
-							},
-							[4] = {
-								[1] = 2,
-								[3] = 1,
-								[6] = 1,
-							},
-						},
-						[114] = {
-							[1] = {
-								[1] = 199,
-								[2] = 69,
-								[3] = 4,
-								[4] = 2,
-							},
-						},
-						[180] = {
-							[1] = {
-								[1] = 152,
-								[2] = 51,
-								[3] = 4,
-							},
-						},
-						[119] = {
-							[1] = {
-								[1] = 3213,
-								[2] = 934,
-								[3] = 5,
-								[4] = 2,
-							},
-						},
-						[602] = {
-							[2] = {
-								[1] = 1440,
-								[2] = 1440,
-								[3] = 1,
-							},
-						},
 						[31] = {
 							[1] = {
 								[1] = 291800,
@@ -27676,6 +29918,57 @@ SW_DataCollection = {
 							[5] = {
 								[2] = 279,
 								[4] = 176,
+							},
+						},
+						[602] = {
+							[2] = {
+								[1] = 1440,
+								[2] = 1440,
+								[3] = 1,
+							},
+						},
+						[119] = {
+							[1] = {
+								[1] = 3213,
+								[2] = 934,
+								[3] = 5,
+								[4] = 2,
+							},
+						},
+						[180] = {
+							[1] = {
+								[1] = 152,
+								[2] = 51,
+								[3] = 4,
+							},
+						},
+						[114] = {
+							[1] = {
+								[1] = 199,
+								[2] = 69,
+								[3] = 4,
+								[4] = 2,
+							},
+						},
+						[689] = {
+							[1] = {
+								[1] = 675,
+								[2] = 135,
+								[3] = 10,
+								[4] = 3,
+							},
+							[4] = {
+								[1] = 2,
+								[3] = 1,
+								[6] = 1,
+							},
+						},
+						[115] = {
+							[2] = {
+								[1] = 6689,
+								[2] = 124,
+								[3] = 68,
+								[6] = 3758,
 							},
 						},
 					},
@@ -27764,16 +30057,16 @@ SW_DataCollection = {
 								[3] = 7,
 							},
 						},
-						[300] = {
-							[1] = 8988,
-							[2] = 2352,
-							[3] = 8,
-						},
 						[0] = {
 							[20] = {
 								[1] = 1,
 								[3] = 1,
 							},
+						},
+						[300] = {
+							[1] = 8988,
+							[2] = 2352,
+							[3] = 8,
 						},
 					},
 				},
@@ -27934,10 +30227,11 @@ SW_DataCollection = {
 						[9] = 8,
 						[10] = 664,
 					},
-					[508] = {
-						[2] = 1340,
-						[7] = 19488,
-						[8] = 9501,
+					[6568] = {
+						[1] = 63289,
+						[5] = 93,
+						[9] = 67,
+						[10] = 5939,
 					},
 					[6520] = {
 						[1] = 6030,
@@ -28019,11 +30313,11 @@ SW_DataCollection = {
 						[9] = 4,
 						[10] = 356,
 					},
-					[6532] = {
-						[1] = 20581,
-						[5] = 39,
-						[9] = 11,
-						[10] = 951,
+					[6558] = {
+						[1] = 30904,
+						[5] = 54,
+						[9] = 26,
+						[10] = 2393,
 					},
 					[6508] = {
 						[1] = 5333,
@@ -28033,11 +30327,11 @@ SW_DataCollection = {
 						[1] = 1644,
 						[5] = 4,
 					},
-					[6558] = {
-						[1] = 30904,
-						[5] = 54,
-						[9] = 26,
-						[10] = 2393,
+					[6532] = {
+						[1] = 20581,
+						[5] = 39,
+						[9] = 11,
+						[10] = 951,
 					},
 					[6556] = {
 						[1] = 2009,
@@ -28049,109 +30343,605 @@ SW_DataCollection = {
 						[9] = 6,
 						[10] = 486,
 					},
-					[6568] = {
-						[1] = 63289,
-						[5] = 93,
-						[9] = 67,
-						[10] = 5939,
+					[508] = {
+						[2] = 1340,
+						[7] = 19488,
+						[8] = 9501,
 					},
 				},
 			},
-			[6372] = {
+			[5214] = {
 				[2] = {
 					[1] = {
-					},
-					[2] = {
-						[200] = {
-							[20] = {
-								[1] = 1,
-								[3] = 1,
-							},
-						},
-					},
-				},
-			},
-			[6374] = {
-				[2] = {
-					[1] = {
-					},
-					[2] = {
-						[200] = {
-							[20] = {
-								[1] = 1,
-								[3] = 1,
-							},
-						},
-					},
-				},
-			},
-			[2020] = {
-				[2] = {
-					[1] = {
-						[1] = 341,
+						[1] = 665,
 						[5] = 1,
 					},
 					[2] = {
 					},
 				},
 			},
-			[6021] = {
-				[2] = {
+			[6526] = {
+				[1] = {
 					[1] = {
-						[1] = 120,
-						[5] = 1,
+						[1] = 100653,
+						[5] = 104,
+						[9] = 174,
+						[11] = 143,
+						[10] = 62381,
 					},
 					[2] = {
+						[5] = {
+							[1] = 1688,
+							[2] = 450,
+							[3] = 4,
+							[30] = {
+								[5] = 112,
+							},
+						},
+						[200] = {
+							[1] = 74296,
+							[2] = 4806,
+							[3] = 49,
+							[20] = {
+								[1] = 24,
+								[3] = 12,
+								[6] = 2,
+								[7] = 9,
+								[8] = 1,
+							},
+							[30] = {
+								[1] = 4319,
+								[2] = 2419,
+								[3] = 11,
+							},
+						},
+						[3] = {
+							[1] = 23914,
+							[2] = 793,
+							[3] = 50,
+							[5] = 174,
+							[6] = 62381,
+							[30] = {
+								[5] = 2664,
+							},
+						},
+					},
+					[3] = {
+						[743] = {
+							[1] = {
+								[1] = 14432,
+								[2] = 3886,
+								[3] = 6,
+							},
+							[3] = {
+								[1] = 10,
+								[2] = 2,
+								[3] = 5,
+							},
+							[5] = {
+								[2] = 52,
+								[3] = 4,
+							},
+						},
+						[31] = {
+							[1] = {
+								[1] = 53658,
+								[2] = 4806,
+								[3] = 39,
+							},
+							[4] = {
+								[1] = 24,
+								[3] = 12,
+								[6] = 2,
+								[7] = 9,
+								[8] = 1,
+							},
+							[5] = {
+								[1] = 1173,
+								[2] = 2367,
+								[3] = 7,
+							},
+						},
+						[6529] = {
+							[1] = {
+								[1] = 23914,
+								[2] = 683,
+								[3] = 50,
+								[7] = 173,
+								[8] = 61588,
+							},
+							[5] = {
+								[5] = 2664,
+							},
+						},
+						[102] = {
+							[1] = {
+								[1] = 6206,
+								[2] = 2587,
+								[3] = 4,
+							},
+							[5] = {
+								[1] = 3146,
+							},
+						},
+						[6530] = {
+							[1] = {
+								[2] = 793,
+								[7] = 1,
+								[8] = 793,
+							},
+						},
+						[179] = {
+							[1] = {
+								[1] = 1688,
+								[2] = 450,
+								[3] = 4,
+							},
+							[5] = {
+								[5] = 112,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 332904,
+						[3] = 1,
+						[5] = 682,
+						[9] = 204,
+						[10] = 44724,
+					},
+					[2] = {
+						[5] = {
+							[1] = 66930,
+							[2] = 3449,
+							[3] = 54,
+							[4] = 8,
+							[5] = 103,
+							[6] = 37142,
+							[20] = {
+								[1] = 8,
+								[2] = 8,
+							},
+							[30] = {
+								[5] = 4037,
+							},
+						},
+						[200] = {
+							[1] = 193122,
+							[2] = 2364,
+							[3] = 539,
+							[4] = 136,
+							[20] = {
+								[1] = 103,
+								[2] = 6,
+								[3] = 43,
+								[5] = 1,
+								[6] = 32,
+								[7] = 14,
+								[8] = 7,
+							},
+							[30] = {
+								[2] = 217,
+								[4] = 155,
+							},
+						},
+						[0] = {
+							[2] = 130,
+							[5] = 89,
+							[6] = 5557,
+						},
+						[3] = {
+							[1] = 2449,
+							[2] = 148,
+							[3] = 21,
+							[20] = {
+								[1] = 4,
+								[2] = 4,
+							},
+							[30] = {
+								[5] = 200,
+							},
+						},
+						[4] = {
+							[1] = 68732,
+							[2] = 2612,
+							[3] = 62,
+							[4] = 10,
+							[5] = 11,
+							[6] = 1987,
+							[20] = {
+								[1] = 2,
+								[2] = 2,
+							},
+						},
+						[2] = {
+							[1] = 1211,
+							[2] = 996,
+							[3] = 5,
+							[20] = {
+								[1] = 2,
+								[2] = 2,
+							},
+							[30] = {
+								[5] = 13,
+							},
+						},
+					},
+				},
+				[3] = {
+					[1] = {
+						[1] = 1025,
+						[5] = 2,
+						[9] = 10,
+						[10] = 3470,
+					},
+					[677] = {
+						[1] = 3122,
+						[5] = 2,
+						[9] = 2,
+						[10] = 770,
+					},
+					[678] = {
+						[1] = 5913,
+						[5] = 3,
+						[9] = 1,
+						[10] = 376,
+					},
+					[6206] = {
+						[1] = 3687,
+						[5] = 5,
+						[9] = 21,
+						[10] = 7898,
+					},
+					[6210] = {
+						[1] = 2142,
+						[5] = 4,
+						[9] = 20,
+						[10] = 7235,
+					},
+					[6214] = {
+						[1] = 3855,
+						[5] = 4,
+						[9] = 4,
+						[10] = 1624,
+					},
+					[6218] = {
+						[1] = 1045,
+						[5] = 2,
+						[9] = 2,
+						[10] = 670,
+					},
+					[6222] = {
+						[1] = 114,
+						[5] = 1,
+						[9] = 1,
+						[10] = 354,
+					},
+					[4033] = {
+						[1] = 1100,
+						[5] = 2,
+						[9] = 3,
+						[10] = 1008,
+					},
+					[6211] = {
+						[1] = 24247,
+						[5] = 29,
+						[9] = 9,
+						[10] = 2445,
+					},
+					[6215] = {
+						[1] = 5256,
+						[5] = 2,
+						[9] = 2,
+						[10] = 652,
+					},
+					[6219] = {
+						[1] = 1962,
+						[5] = 4,
+						[9] = 20,
+						[10] = 7347,
+					},
+					[6223] = {
+						[1] = 1942,
+						[5] = 4,
+						[9] = 9,
+						[10] = 3462,
+					},
+					[6228] = {
+						[1] = 10733,
+						[5] = 7,
+						[9] = 10,
+						[10] = 3610,
+					},
+					[6347] = {
+						[1] = 2269,
+						[5] = 4,
+						[9] = 20,
+						[10] = 7200,
+					},
+					[508] = {
+						[1] = 6228,
+						[5] = 6,
+						[9] = 20,
+						[10] = 7230,
+					},
+					[6426] = {
+						[1] = 11832,
+						[5] = 6,
+						[9] = 3,
+						[10] = 1041,
+					},
+					[5531] = {
+						[1] = 1484,
+						[5] = 4,
+						[9] = 15,
+						[10] = 5340,
+					},
+					[670] = {
+						[1] = 11942,
+						[5] = 12,
+						[9] = 2,
+						[10] = 649,
 					},
 				},
 			},
-			[6380] = {
+			[6553] = {
+				[1] = {
+					[1] = {
+						[1] = 47928,
+						[5] = 252,
+						[11] = 201,
+					},
+					[2] = {
+						[200] = {
+							[1] = 47928,
+							[2] = 460,
+							[3] = 252,
+							[4] = 10,
+							[20] = {
+								[1] = 63,
+								[3] = 16,
+								[4] = 13,
+								[5] = 6,
+								[6] = 21,
+								[7] = 6,
+								[11] = 1,
+							},
+							[30] = {
+								[2] = 229,
+							},
+						},
+					},
+					[3] = {
+						[102] = {
+							[1] = {
+								[1] = 6486,
+								[2] = 332,
+								[3] = 29,
+							},
+							[4] = {
+								[1] = 1,
+								[11] = 1,
+							},
+						},
+						[31] = {
+							[1] = {
+								[1] = 41442,
+								[2] = 460,
+								[3] = 223,
+								[4] = 10,
+							},
+							[4] = {
+								[1] = 62,
+								[3] = 16,
+								[4] = 13,
+								[5] = 6,
+								[6] = 21,
+								[7] = 6,
+							},
+							[5] = {
+								[2] = 229,
+							},
+						},
+					},
+				},
 				[2] = {
 					[1] = {
-						[1] = 146,
+						[1] = 82625,
+						[3] = 25,
+						[5] = 201,
+						[9] = 254,
+						[10] = 55396,
+					},
+					[2] = {
+						[2] = {
+							[1] = 10863,
+							[2] = 727,
+							[3] = 30,
+							[5] = 108,
+							[6] = 27644,
+							[30] = {
+								[5] = 359,
+							},
+						},
+						[3] = {
+							[1] = 390,
+							[2] = 102,
+							[3] = 19,
+						},
+						[4] = {
+							[1] = 10442,
+							[2] = 948,
+							[3] = 23,
+							[4] = 2,
+							[5] = 109,
+							[6] = 19881,
+							[20] = {
+								[1] = 1,
+								[2] = 1,
+							},
+						},
+						[5] = {
+							[1] = 19540,
+							[2] = 1645,
+							[3] = 25,
+							[4] = 3,
+							[5] = 22,
+							[6] = 6565,
+							[20] = {
+								[1] = 1,
+								[5] = 1,
+							},
+							[30] = {
+								[5] = 1647,
+							},
+						},
+						[6] = {
+							[1] = 11338,
+							[2] = 523,
+							[3] = 31,
+							[4] = 7,
+						},
+						[0] = {
+							[2] = 152,
+							[5] = 15,
+							[6] = 1306,
+						},
+						[200] = {
+							[1] = 30052,
+							[2] = 1126,
+							[3] = 73,
+							[4] = 23,
+							[20] = {
+								[1] = 13,
+								[2] = 4,
+								[3] = 1,
+								[5] = 3,
+								[6] = 4,
+								[7] = 1,
+							},
+							[30] = {
+								[2] = 58,
+								[4] = 2,
+							},
+						},
+					},
+				},
+				[3] = {
+					[1] = {
+						[1] = 2017,
+						[5] = 7,
+					},
+					[677] = {
+						[1] = 2708,
+						[5] = 13,
+					},
+					[678] = {
+						[1] = 4508,
+						[5] = 20,
+					},
+					[6206] = {
+						[1] = 699,
+						[5] = 4,
+					},
+					[6210] = {
+						[1] = 265,
+						[5] = 1,
+					},
+					[6214] = {
+						[1] = 5228,
+						[5] = 20,
+					},
+					[6218] = {
+						[1] = 3003,
+						[5] = 14,
+					},
+					[6222] = {
+						[1] = 2041,
+						[5] = 11,
+					},
+					[4033] = {
+						[1] = 1483,
+						[5] = 7,
+					},
+					[6211] = {
+						[1] = 3276,
+						[5] = 33,
+					},
+					[6215] = {
+						[1] = 239,
+						[5] = 1,
+					},
+					[6219] = {
+						[1] = 10937,
+						[5] = 56,
+					},
+					[6223] = {
+						[1] = 824,
+						[5] = 5,
+					},
+					[6208] = {
+						[1] = 250,
+						[5] = 1,
+					},
+					[6347] = {
+						[1] = 950,
+						[5] = 4,
+					},
+					[508] = {
+						[1] = 1501,
+						[5] = 9,
+					},
+					[6426] = {
+						[1] = 3886,
+						[5] = 17,
+					},
+					[5531] = {
+						[1] = 3392,
+						[5] = 21,
+					},
+					[670] = {
+						[1] = 721,
+						[5] = 8,
+					},
+				},
+			},
+			[184] = {
+				[2] = {
+					[1] = {
+						[1] = 534,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 146,
-							[2] = 146,
+							[1] = 534,
+							[2] = 534,
 							[3] = 1,
 						},
 					},
 				},
 			},
-			[732] = {
+			[1634] = {
 				[1] = {
 					[1] = {
-						[11] = 169,
 					},
 					[2] = {
 					},
 					[3] = {
 					},
 				},
+			},
+			[4350] = {
 				[2] = {
 					[1] = {
-						[1] = 2903,
-						[3] = 6,
-						[5] = 6,
 					},
 					[2] = {
-						[6] = {
-							[1] = 981,
-							[2] = 330,
-							[3] = 3,
-						},
 						[200] = {
-							[1] = 1665,
-							[2] = 1665,
-							[3] = 1,
-							[4] = 1,
-						},
-						[3] = {
-							[1] = 257,
-							[2] = 134,
-							[3] = 2,
+							[20] = {
+								[1] = 1,
+								[3] = 1,
+							},
 						},
 					},
 				},
@@ -28166,496 +30956,78 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[4033] = {
-				[1] = {
+			[6254] = {
+				[2] = {
 					[1] = {
-						[1] = 6306,
-						[2] = 87156,
-						[4] = 12,
-						[5] = 40,
-						[6] = 8957,
-						[7] = 1340962,
-						[8] = 401036,
-						[9] = 32,
-						[10] = 6300,
-						[11] = 4455,
 					},
 					[2] = {
-						[1] = {
-							[1] = 3640,
-							[2] = 318,
-							[3] = 16,
-							[4] = 4,
-							[20] = {
-								[1] = 1,
-								[2] = 1,
-							},
-						},
-						[3] = {
-							[2] = 200,
-							[5] = 32,
-							[6] = 6300,
-							[30] = {
-								[5] = 100,
-							},
-						},
-						[5] = {
-							[1] = 813,
-							[2] = 151,
-							[3] = 8,
-							[4] = 2,
-							[20] = {
-								[1] = 1,
-								[2] = 1,
-							},
-							[30] = {
-								[5] = 121,
-							},
-						},
-						[6] = {
-							[1] = 1557,
-							[2] = 158,
-							[3] = 13,
-							[30] = {
-								[5] = 39,
-							},
-						},
 						[200] = {
-							[1] = 102,
-							[2] = 102,
-							[3] = 1,
 							[20] = {
-								[1] = 2,
-								[2] = 2,
-							},
-						},
-					},
-					[3] = {
-						[6571] = {
-							[1] = {
-								[2] = 200,
-								[7] = 32,
-								[8] = 6300,
-							},
-							[5] = {
-								[5] = 100,
-							},
-						},
-						[36] = {
-							[2] = {
-								[1] = 161221,
-								[2] = 343,
-								[3] = 528,
-								[5] = 2197,
-								[6] = 16569,
-							},
-						},
-						[722] = {
-							[2] = {
-								[1] = 60557,
-								[2] = 1966,
-								[3] = 43,
-								[4] = 8,
-								[6] = 24356,
-							},
-						},
-						[74] = {
-							[1] = {
-								[1] = 1557,
-								[2] = 158,
-								[3] = 13,
-							},
-							[4] = {
-								[1] = 2,
-								[2] = 2,
-							},
-							[5] = {
-								[5] = 39,
-							},
-						},
-						[41] = {
-							[2] = {
-								[1] = 492999,
-								[2] = 2094,
-								[3] = 522,
-								[4] = 73,
-								[5] = 621,
-								[6] = 120880,
-							},
-						},
-						[374] = {
-							[2] = {
-								[1] = 457231,
-								[2] = 2100,
-								[3] = 310,
-								[4] = 56,
-								[5] = 2425,
-								[6] = 181038,
-							},
-						},
-						[165] = {
-							[2] = {
-								[1] = 1490,
-								[2] = 281,
-								[3] = 6,
-							},
-						},
-						[54] = {
-							[1] = {
-								[1] = 813,
-								[2] = 151,
-								[3] = 8,
-								[4] = 2,
-							},
-							[4] = {
 								[1] = 1,
-								[2] = 1,
-							},
-							[5] = {
-								[5] = 121,
-							},
-						},
-						[136] = {
-							[1] = {
-								[1] = 3640,
-								[2] = 318,
-								[3] = 16,
-								[4] = 4,
-							},
-							[2] = {
-								[1] = 16559,
-								[2] = 703,
-								[3] = 35,
-								[4] = 4,
-								[6] = 6558,
-							},
-							[4] = {
-								[1] = 1,
-								[2] = 1,
-							},
-						},
-						[188] = {
-							[2] = {
-								[1] = 101351,
-								[2] = 4209,
-								[3] = 52,
-								[4] = 10,
-								[5] = 1467,
-								[6] = 28184,
-							},
-						},
-						[31] = {
-							[1] = {
-								[1] = 102,
-								[2] = 102,
 								[3] = 1,
 							},
 						},
 					},
 				},
+			},
+			[3459] = {
 				[2] = {
 					[1] = {
-						[1] = 108139,
-						[2] = 10886,
-						[3] = 6,
-						[4] = 2,
-						[5] = 224,
-						[6] = 2485,
-						[7] = 204519,
-						[8] = 108566,
-						[9] = 149,
-						[10] = 21029,
+						[1] = 311,
+						[5] = 1,
 					},
 					[2] = {
-						[2] = {
-							[1] = 2242,
-							[2] = 974,
-							[3] = 4,
-							[30] = {
-								[1] = 13,
-								[5] = 1094,
-							},
-						},
-						[3] = {
-							[1] = 8009,
-							[2] = 846,
-							[3] = 17,
-							[5] = 95,
-							[6] = 10405,
-							[30] = {
-								[5] = 1152,
-							},
-						},
-						[4] = {
-							[1] = 484,
-							[2] = 484,
-							[3] = 1,
-						},
-						[5] = {
-							[1] = 10934,
-							[2] = 1018,
-							[3] = 25,
-							[5] = 40,
-							[6] = 7650,
-							[20] = {
-								[1] = 1,
-								[2] = 1,
-							},
-							[30] = {
-								[5] = 4668,
-							},
-						},
-						[6] = {
-							[2] = 300,
-							[5] = 10,
-							[6] = 2850,
-							[30] = {
-								[5] = 150,
-							},
-						},
-						[200] = {
-							[1] = 79147,
-							[2] = 2642,
-							[3] = 160,
-							[4] = 15,
-							[20] = {
-								[1] = 69,
-								[2] = 1,
-								[3] = 16,
-								[5] = 12,
-								[6] = 5,
-								[8] = 35,
-							},
-							[30] = {
-								[1] = 2581,
-								[3] = 2,
-								[5] = 382,
-							},
-						},
+					},
+				},
+			},
+			[2949] = {
+				[2] = {
+					[1] = {
+						[1] = 140,
+						[5] = 1,
+					},
+					[2] = {
 						[300] = {
-							[1] = 1137,
-							[2] = 441,
-							[3] = 3,
-						},
-						[0] = {
-							[2] = 31,
-							[5] = 4,
-							[6] = 124,
+							[1] = 140,
+							[2] = 140,
+							[3] = 1,
 						},
 					},
 				},
-				[3] = {
+			},
+			[1421] = {
+				[2] = {
 					[1] = {
-						[7] = 25973,
-						[8] = 8996,
-					},
-					[5076] = {
-						[7] = 3354,
-						[8] = 1284,
-					},
-					[6226] = {
-						[2] = 845,
-						[6] = 254,
-						[7] = 4776,
-						[8] = 3326,
-					},
-					[6211] = {
-						[1] = 202,
-						[2] = 6325,
-						[4] = 9,
-						[5] = 2,
-						[6] = 370,
-						[7] = 280838,
-						[8] = 112859,
-					},
-					[6227] = {
-						[7] = 4073,
-						[8] = 747,
-					},
-					[6527] = {
-						[1] = 148,
+						[1] = 10,
 						[5] = 1,
 					},
-					[6228] = {
-						[2] = 8549,
-						[6] = 689,
-						[7] = 47573,
-						[8] = 12214,
+					[2] = {
+						[300] = {
+							[1] = 10,
+							[2] = 10,
+							[3] = 1,
+						},
 					},
-					[6544] = {
-						[1] = 199,
-						[5] = 1,
-					},
-					[6214] = {
-						[7] = 40632,
-						[8] = 15614,
-						[4] = 1,
-					},
-					[670] = {
-						[2] = 1743,
-						[4] = 1,
-						[6] = 23,
-						[7] = 134087,
-						[8] = 55391,
-					},
-					[6215] = {
-						[2] = 14236,
-						[6] = 2579,
-						[7] = 70085,
-						[8] = 14255,
-					},
-					[867] = {
-						[2] = 1257,
-						[7] = 3085,
-						[6] = 254,
-					},
-					[6452] = {
-						[1] = 75,
-						[5] = 1,
-					},
-					[6484] = {
-						[1] = 75,
-						[5] = 1,
-					},
-					[6516] = {
-						[1] = 1208,
+				},
+			},
+			[6409] = {
+				[1] = {
+					[1] = {
+						[1] = 132,
 						[5] = 5,
 					},
-					[6532] = {
-						[1] = 99,
-						[5] = 1,
+					[2] = {
 					},
-					[508] = {
-						[7] = 47610,
-						[8] = 12795,
+					[3] = {
 					},
-					[6218] = {
-						[7] = 12431,
-						[8] = 4688,
+				},
+				[2] = {
+					[1] = {
+						[1] = 445,
+						[3] = 1,
+						[5] = 4,
 					},
-					[6439] = {
-						[1] = 1419,
-						[5] = 6,
-					},
-					[6518] = {
-						[1] = 215,
-						[5] = 1,
-					},
-					[6219] = {
-						[2] = 2100,
-						[7] = 91837,
-						[8] = 22760,
-					},
-					[6479] = {
-						[1] = 344,
-						[5] = 2,
-					},
-					[6210] = {
-						[7] = 27789,
-						[8] = 6550,
-					},
-					[3426] = {
-						[7] = 2732,
-						[8] = 1119,
-					},
-					[6442] = {
-						[1] = 100,
-						[5] = 1,
-					},
-					[6347] = {
-						[7] = 52010,
-						[8] = 13093,
-					},
-					[6426] = {
-						[2] = 249,
-						[6] = 113,
-						[7] = 36094,
-						[8] = 11646,
-					},
-					[6568] = {
-						[1] = 417,
-						[5] = 3,
-						[9] = 32,
-						[10] = 6300,
-					},
-					[6206] = {
-						[2] = 1345,
-						[7] = 34880,
-						[8] = 8584,
-					},
-					[6222] = {
-						[7] = 31395,
-						[8] = 4215,
-					},
-					[6553] = {
-						[1] = 99,
-						[5] = 1,
-					},
-					[6476] = {
-						[1] = 211,
-						[5] = 1,
-					},
-					[5531] = {
-						[7] = 37327,
-						[8] = 11018,
-					},
-					[6223] = {
-						[2] = 2128,
-						[6] = 265,
-						[7] = 42668,
-						[8] = 14684,
-					},
-					[4033] = {
-						[2] = 3184,
-						[10] = 952,
-						[7] = 49748,
-						[9] = 7,
-						[8] = 14066,
-					},
-					[4617] = {
-						[7] = 2546,
-						[8] = 653,
-					},
-					[6208] = {
-						[2] = 2539,
-						[6] = 72,
-						[7] = 3913,
-						[8] = 579,
-					},
-					[872] = {
-						[2] = 813,
-					},
-					[678] = {
-						[2] = 11526,
-						[6] = 1022,
-						[7] = 59255,
-						[8] = 10521,
-					},
-					[677] = {
-						[2] = 18557,
-						[6] = 1069,
-						[7] = 65797,
-						[8] = 12920,
-					},
-					[6221] = {
-						[7] = 1272,
-						[8] = 776,
-					},
-					[6225] = {
-						[7] = 2232,
-						[8] = 2232,
-					},
-					[6438] = {
-						[1] = 195,
-						[5] = 1,
-					},
-					[6499] = {
-						[1] = 320,
-						[5] = 3,
-					},
-					[6564] = {
-						[1] = 786,
-						[5] = 7,
+					[2] = {
 					},
 				},
 			},
@@ -28676,10 +31048,10 @@ SW_DataCollection = {
 						[2] = {
 							[2] = 291,
 							[5] = 32,
-							[6] = 8877,
 							[30] = {
 								[5] = 435,
 							},
+							[6] = 8877,
 						},
 						[5] = {
 							[2] = 48,
@@ -28688,6 +31060,13 @@ SW_DataCollection = {
 						},
 					},
 					[3] = {
+						[75] = {
+							[1] = {
+								[2] = 48,
+								[7] = 1,
+								[8] = 48,
+							},
+						},
 						[610] = {
 							[1] = {
 								[2] = 291,
@@ -28696,13 +31075,6 @@ SW_DataCollection = {
 							},
 							[5] = {
 								[5] = 435,
-							},
-						},
-						[75] = {
-							[1] = {
-								[2] = 48,
-								[7] = 1,
-								[8] = 48,
 							},
 						},
 					},
@@ -28735,454 +31107,6 @@ SW_DataCollection = {
 					[6230] = {
 						[10] = 8925,
 						[9] = 33,
-					},
-				},
-			},
-			[184] = {
-				[2] = {
-					[1] = {
-						[1] = 534,
-						[5] = 1,
-					},
-					[2] = {
-						[300] = {
-							[1] = 534,
-							[2] = 534,
-							[3] = 1,
-						},
-					},
-				},
-			},
-			[5214] = {
-				[2] = {
-					[1] = {
-						[1] = 665,
-						[5] = 1,
-					},
-					[2] = {
-					},
-				},
-			},
-			[4350] = {
-				[2] = {
-					[1] = {
-					},
-					[2] = {
-						[200] = {
-							[20] = {
-								[1] = 1,
-								[3] = 1,
-							},
-						},
-					},
-				},
-			},
-			[6218] = {
-				[1] = {
-					[1] = {
-						[1] = 9133,
-						[2] = 94257,
-						[4] = 8,
-						[5] = 26,
-						[6] = 11764,
-						[7] = 1169130,
-						[8] = 351773,
-						[9] = 25,
-						[10] = 4890,
-						[11] = 4379,
-					},
-					[2] = {
-						[2] = {
-							[1] = 435,
-							[2] = 435,
-							[3] = 1,
-							[4] = 1,
-							[5] = 1,
-							[6] = 90,
-						},
-						[3] = {
-							[1] = 4628,
-							[2] = 615,
-							[3] = 8,
-							[5] = 24,
-							[6] = 4800,
-							[20] = {
-								[1] = 1,
-								[2] = 1,
-							},
-							[30] = {
-								[5] = 147,
-							},
-						},
-						[200] = {
-							[1] = 815,
-							[2] = 104,
-							[3] = 12,
-							[4] = 1,
-							[20] = {
-								[1] = 3,
-								[3] = 2,
-								[6] = 1,
-							},
-							[30] = {
-								[4] = 3,
-							},
-						},
-					},
-					[3] = {
-						[6571] = {
-							[1] = {
-								[2] = 200,
-								[7] = 24,
-								[8] = 4800,
-							},
-							[2] = {
-								[1] = 8000,
-								[2] = 1000,
-								[3] = 8,
-							},
-						},
-						[191] = {
-							[1] = {
-								[1] = 443,
-								[2] = 443,
-								[3] = 1,
-							},
-							[5] = {
-								[5] = 147,
-							},
-						},
-						[61] = {
-							[1] = {
-								[1] = 615,
-								[2] = 615,
-								[3] = 1,
-							},
-						},
-						[48] = {
-							[1] = {
-								[1] = 3570,
-								[2] = 602,
-								[3] = 6,
-							},
-							[4] = {
-								[1] = 1,
-								[2] = 1,
-							},
-						},
-						[330] = {
-							[2] = {
-								[1] = 81795,
-								[2] = 3496,
-								[3] = 60,
-								[4] = 11,
-								[6] = 9321,
-							},
-						},
-						[31] = {
-							[1] = {
-								[1] = 815,
-								[2] = 104,
-								[3] = 12,
-								[4] = 1,
-							},
-							[4] = {
-								[1] = 3,
-								[3] = 2,
-								[6] = 1,
-							},
-							[5] = {
-								[4] = 3,
-							},
-						},
-						[2239] = {
-							[2] = {
-								[1] = 925708,
-								[2] = 1806,
-								[3] = 1281,
-								[4] = 210,
-								[5] = 8564,
-								[6] = 301740,
-							},
-						},
-						[423] = {
-							[2] = {
-								[1] = 161648,
-								[2] = 1950,
-								[3] = 154,
-								[4] = 22,
-								[5] = 2549,
-								[6] = 24550,
-							},
-						},
-						[6543] = {
-							[1] = {
-								[1] = 435,
-								[2] = 435,
-								[3] = 1,
-								[4] = 1,
-								[7] = 1,
-								[8] = 90,
-							},
-						},
-					},
-				},
-				[2] = {
-					[1] = {
-						[1] = 105066,
-						[2] = 4605,
-						[3] = 5,
-						[4] = 1,
-						[5] = 165,
-						[6] = 1741,
-						[7] = 143248,
-						[8] = 36877,
-						[9] = 120,
-						[10] = 20398,
-					},
-					[2] = {
-						[2] = {
-							[1] = 5251,
-							[2] = 938,
-							[3] = 7,
-							[20] = {
-								[1] = 1,
-								[2] = 1,
-							},
-							[30] = {
-								[5] = 187,
-							},
-						},
-						[3] = {
-							[1] = 7677,
-							[2] = 840,
-							[3] = 15,
-							[5] = 48,
-							[6] = 5919,
-							[30] = {
-								[5] = 164,
-							},
-						},
-						[5] = {
-							[1] = 18748,
-							[2] = 1715,
-							[3] = 27,
-							[5] = 56,
-							[6] = 12319,
-							[30] = {
-								[5] = 2992,
-							},
-						},
-						[6] = {
-							[2] = 300,
-							[5] = 5,
-							[6] = 1500,
-						},
-						[200] = {
-							[1] = 65860,
-							[2] = 3028,
-							[3] = 102,
-							[4] = 9,
-							[20] = {
-								[1] = 10,
-								[3] = 7,
-								[11] = 3,
-							},
-							[30] = {
-								[3] = 1,
-							},
-						},
-						[300] = {
-							[1] = 442,
-							[2] = 303,
-							[3] = 2,
-						},
-						[0] = {
-							[2] = 54,
-							[5] = 8,
-							[6] = 360,
-						},
-					},
-				},
-				[3] = {
-					[1] = {
-						[2] = 750,
-						[6] = 547,
-						[7] = 17466,
-						[8] = 4510,
-					},
-					[6210] = {
-						[2] = 996,
-						[4] = 1,
-						[6] = 120,
-						[7] = 76564,
-						[8] = 19375,
-					},
-					[6510] = {
-						[1] = 601,
-						[7] = 366,
-						[5] = 1,
-					},
-					[6211] = {
-						[2] = 2278,
-						[7] = 140731,
-						[8] = 48355,
-					},
-					[6227] = {
-						[7] = 722,
-						[8] = 355,
-					},
-					[6511] = {
-						[7] = 1534,
-					},
-					[6228] = {
-						[2] = 6360,
-						[4] = 1,
-						[6] = 217,
-						[7] = 35992,
-						[8] = 10127,
-					},
-					[6512] = {
-						[1] = 1657,
-						[5] = 3,
-					},
-					[6214] = {
-						[7] = 14792,
-						[8] = 4684,
-						[4] = 1,
-					},
-					[6230] = {
-						[1] = 599,
-						[5] = 1,
-					},
-					[670] = {
-						[2] = 7580,
-						[7] = 93443,
-						[8] = 26114,
-					},
-					[6215] = {
-						[2] = 12695,
-						[6] = 4230,
-						[7] = 51729,
-						[8] = 11600,
-					},
-					[678] = {
-						[2] = 8288,
-						[6] = 875,
-						[7] = 53650,
-						[8] = 10579,
-					},
-					[6516] = {
-						[1] = 758,
-						[5] = 3,
-					},
-					[6217] = {
-						[7] = 722,
-						[8] = 236,
-					},
-					[508] = {
-						[2] = 8642,
-						[4] = 1,
-						[7] = 97882,
-						[8] = 31818,
-					},
-					[6218] = {
-						[2] = 2378,
-						[10] = 2232,
-						[7] = 39874,
-						[9] = 16,
-						[8] = 9045,
-					},
-					[6219] = {
-						[2] = 11934,
-						[4] = 2,
-						[6] = 778,
-						[7] = 86794,
-						[8] = 36909,
-					},
-					[6566] = {
-						[1] = 255,
-						[5] = 5,
-					},
-					[6347] = {
-						[2] = 5324,
-						[4] = 1,
-						[6] = 1210,
-						[7] = 105205,
-						[8] = 30930,
-					},
-					[6426] = {
-						[2] = 1570,
-						[6] = 762,
-						[7] = 27808,
-						[8] = 5954,
-					},
-					[6568] = {
-						[1] = 82,
-						[10] = 4800,
-						[7] = 8000,
-						[9] = 24,
-						[5] = 1,
-					},
-					[6206] = {
-						[2] = 1327,
-						[4] = 1,
-						[6] = 490,
-						[7] = 45801,
-						[8] = 27646,
-					},
-					[6222] = {
-						[2] = 753,
-						[6] = 353,
-						[7] = 15522,
-						[8] = 5350,
-					},
-					[6443] = {
-						[1] = 1191,
-						[5] = 2,
-					},
-					[6223] = {
-						[2] = 4169,
-						[7] = 71715,
-						[8] = 26237,
-					},
-					[677] = {
-						[2] = 9525,
-						[6] = 1450,
-						[7] = 53754,
-						[8] = 9343,
-					},
-					[6507] = {
-						[7] = 369,
-						[8] = 171,
-					},
-					[6208] = {
-						[2] = 2101,
-						[6] = 81,
-						[7] = 14619,
-						[8] = 5459,
-					},
-					[5531] = {
-						[7] = 16277,
-						[8] = 5530,
-					},
-					[6538] = {
-						[1] = 540,
-						[5] = 3,
-						[9] = 1,
-						[10] = 90,
-					},
-					[6521] = {
-						[7] = 3463,
-					},
-					[6564] = {
-						[1] = 195,
-						[5] = 2,
-					},
-					[4033] = {
-						[2] = 4343,
-						[7] = 11344,
-						[8] = 5284,
 					},
 				},
 			},
@@ -29219,11 +31143,6 @@ SW_DataCollection = {
 						[10] = 373,
 					},
 					[2] = {
-						[4] = {
-							[2] = 188,
-							[5] = 2,
-							[6] = 373,
-						},
 						[200] = {
 							[1] = 510,
 							[2] = 242,
@@ -29233,87 +31152,17 @@ SW_DataCollection = {
 								[5] = 1,
 							},
 						},
+						[4] = {
+							[2] = 188,
+							[5] = 2,
+							[6] = 373,
+						},
 					},
 				},
 				[3] = {
 					[6211] = {
 						[1] = 1,
 						[5] = 1,
-					},
-				},
-			},
-			[3459] = {
-				[2] = {
-					[1] = {
-						[1] = 311,
-						[5] = 1,
-					},
-					[2] = {
-					},
-				},
-			},
-			[2949] = {
-				[2] = {
-					[1] = {
-						[1] = 140,
-						[5] = 1,
-					},
-					[2] = {
-						[300] = {
-							[1] = 140,
-							[2] = 140,
-							[3] = 1,
-						},
-					},
-				},
-			},
-			[6263] = {
-				[2] = {
-					[1] = {
-					},
-					[2] = {
-						[200] = {
-							[20] = {
-								[1] = 1,
-								[3] = 1,
-							},
-						},
-					},
-				},
-			},
-			[6409] = {
-				[1] = {
-					[1] = {
-						[1] = 132,
-						[5] = 5,
-					},
-					[2] = {
-					},
-					[3] = {
-					},
-				},
-				[2] = {
-					[1] = {
-						[1] = 445,
-						[3] = 1,
-						[5] = 4,
-					},
-					[2] = {
-					},
-				},
-			},
-			["Name"] = "SyncInit",
-			[6253] = {
-				[2] = {
-					[1] = {
-					},
-					[2] = {
-						[200] = {
-							[20] = {
-								[1] = 1,
-								[3] = 1,
-							},
-						},
 					},
 				},
 			},
@@ -29502,16 +31351,14 @@ SW_DataCollection = {
 								[4] = 1,
 							},
 						},
-						[74] = {
+						[31] = {
 							[1] = {
-								[1] = 793,
-								[2] = 157,
-								[3] = 6,
-								[4] = 1,
+								[1] = 65,
+								[2] = 34,
+								[3] = 2,
 							},
-							[4] = {
-								[1] = 1,
-								[2] = 1,
+							[5] = {
+								[4] = 2,
 							},
 						},
 						[104] = {
@@ -29587,14 +31434,16 @@ SW_DataCollection = {
 								[11] = 2,
 							},
 						},
-						[31] = {
+						[74] = {
 							[1] = {
-								[1] = 65,
-								[2] = 34,
-								[3] = 2,
+								[1] = 793,
+								[2] = 157,
+								[3] = 6,
+								[4] = 1,
 							},
-							[5] = {
-								[4] = 2,
+							[4] = {
+								[1] = 1,
+								[2] = 1,
 							},
 						},
 					},
@@ -29672,15 +31521,15 @@ SW_DataCollection = {
 								[5] = 766,
 							},
 						},
-						[300] = {
-							[1] = 2348,
-							[2] = 953,
-							[3] = 3,
-						},
 						[0] = {
 							[2] = 40,
 							[5] = 8,
 							[6] = 316,
+						},
+						[300] = {
+							[1] = 2348,
+							[2] = 953,
+							[3] = 3,
 						},
 					},
 				},
@@ -29737,9 +31586,9 @@ SW_DataCollection = {
 						[1] = 11745,
 						[5] = 13,
 					},
-					[6214] = {
-						[1] = 260,
-						[5] = 1,
+					[6466] = {
+						[1] = 29779,
+						[5] = 50,
 					},
 					[6545] = {
 						[1] = 20388,
@@ -29763,9 +31612,11 @@ SW_DataCollection = {
 						[1] = 18440,
 						[5] = 14,
 					},
-					[6448] = {
-						[1] = 510,
-						[5] = 1,
+					[6498] = {
+						[1] = 7003,
+						[5] = 9,
+						[9] = 6,
+						[10] = 1110,
 					},
 					[6484] = {
 						[1] = 19730,
@@ -29803,15 +31654,13 @@ SW_DataCollection = {
 						[1] = 4690,
 						[5] = 3,
 					},
-					[6466] = {
-						[1] = 29779,
-						[5] = 50,
+					[6214] = {
+						[1] = 260,
+						[5] = 1,
 					},
-					[6519] = {
-						[1] = 9792,
-						[5] = 21,
-						[9] = 282,
-						[10] = 51710,
+					[6528] = {
+						[10] = 1480,
+						[9] = 8,
 					},
 					[6439] = {
 						[1] = 2330,
@@ -29829,11 +31678,11 @@ SW_DataCollection = {
 						[1] = 858,
 						[5] = 1,
 					},
-					[6552] = {
-						[1] = 962,
-						[5] = 1,
-						[9] = 18,
-						[10] = 3510,
+					[6438] = {
+						[1] = 918,
+						[5] = 2,
+						[9] = 49,
+						[10] = 9209,
 					},
 					[6566] = {
 						[1] = 17483,
@@ -29841,22 +31690,21 @@ SW_DataCollection = {
 						[9] = 15,
 						[10] = 2775,
 					},
-					[6456] = {
-						[1] = 9124,
-						[5] = 18,
-						[9] = 85,
-						[10] = 15633,
+					[6519] = {
+						[1] = 9792,
+						[5] = 21,
+						[9] = 282,
+						[10] = 51710,
 					},
-					[6426] = {
-						[1] = 1170,
-						[4] = 1,
-						[5] = 1,
+					[6489] = {
+						[10] = 185,
+						[9] = 1,
 					},
-					[6553] = {
-						[1] = 12850,
-						[5] = 30,
-						[9] = 38,
-						[10] = 7030,
+					[6568] = {
+						[1] = 89741,
+						[5] = 70,
+						[9] = 24,
+						[10] = 4800,
 					},
 					[6441] = {
 						[10] = 185,
@@ -29870,9 +31718,11 @@ SW_DataCollection = {
 						[1] = 2113,
 						[5] = 1,
 					},
-					[6489] = {
-						[10] = 185,
-						[9] = 1,
+					[6552] = {
+						[1] = 962,
+						[5] = 1,
+						[9] = 18,
+						[10] = 3510,
 					},
 					[6442] = {
 						[1] = 6171,
@@ -29886,17 +31736,21 @@ SW_DataCollection = {
 						[1] = 4174,
 						[5] = 3,
 					},
-					[732] = {
-						[1] = 658,
-						[5] = 2,
+					[6553] = {
+						[1] = 12850,
+						[5] = 30,
+						[9] = 38,
+						[10] = 7030,
 					},
 					[6443] = {
 						[1] = 6336,
 						[5] = 6,
 					},
-					[6523] = {
-						[10] = 185,
-						[9] = 1,
+					[6460] = {
+						[1] = 5252,
+						[5] = 11,
+						[9] = 64,
+						[10] = 11840,
 					},
 					[6475] = {
 						[1] = 14460,
@@ -29912,11 +31766,9 @@ SW_DataCollection = {
 						[1] = 1655,
 						[5] = 2,
 					},
-					[6460] = {
-						[1] = 5252,
-						[5] = 11,
-						[9] = 64,
-						[10] = 11840,
+					[6523] = {
+						[10] = 185,
+						[9] = 1,
 					},
 					[6476] = {
 						[1] = 3032,
@@ -29924,25 +31776,24 @@ SW_DataCollection = {
 						[9] = 47,
 						[10] = 8839,
 					},
-					[6568] = {
-						[1] = 89741,
-						[5] = 70,
-						[9] = 24,
-						[10] = 4800,
+					[732] = {
+						[1] = 658,
+						[5] = 2,
 					},
 					[6508] = {
 						[1] = 7543,
 						[5] = 8,
 					},
-					[6438] = {
-						[1] = 918,
-						[5] = 2,
-						[9] = 49,
-						[10] = 9209,
+					[6426] = {
+						[1] = 1170,
+						[4] = 1,
+						[5] = 1,
 					},
-					[6528] = {
-						[10] = 1480,
-						[9] = 8,
+					[6456] = {
+						[1] = 9124,
+						[5] = 18,
+						[9] = 85,
+						[10] = 15633,
 					},
 					[6556] = {
 						[1] = 2074,
@@ -29952,11 +31803,9 @@ SW_DataCollection = {
 						[10] = 1295,
 						[9] = 7,
 					},
-					[6498] = {
-						[1] = 7003,
-						[5] = 9,
-						[9] = 6,
-						[10] = 1110,
+					[6448] = {
+						[1] = 510,
+						[5] = 1,
 					},
 				},
 			},
@@ -29980,7 +31829,7 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[6254] = {
+			[6263] = {
 				[2] = {
 					[1] = {
 					},
@@ -30208,6 +32057,11 @@ SW_DataCollection = {
 							[3] = 2,
 							[4] = 1,
 						},
+						[0] = {
+							[2] = 136,
+							[5] = 53,
+							[6] = 3330,
+						},
 						[200] = {
 							[1] = 140592,
 							[2] = 2294,
@@ -30225,11 +32079,6 @@ SW_DataCollection = {
 								[2] = 180,
 								[4] = 27,
 							},
-						},
-						[0] = {
-							[2] = 136,
-							[5] = 53,
-							[6] = 3330,
 						},
 					},
 				},
@@ -30324,11 +32173,11 @@ SW_DataCollection = {
 						[9] = 45,
 						[10] = 4489,
 					},
-					[670] = {
-						[1] = 12398,
-						[5] = 20,
-						[9] = 27,
-						[10] = 2682,
+					[6347] = {
+						[1] = 10045,
+						[5] = 14,
+						[9] = 40,
+						[10] = 4280,
 					},
 					[508] = {
 						[1] = 9495,
@@ -30348,26 +32197,21 @@ SW_DataCollection = {
 						[9] = 35,
 						[10] = 3495,
 					},
-					[6347] = {
-						[1] = 10045,
-						[5] = 14,
-						[9] = 40,
-						[10] = 4280,
+					[670] = {
+						[1] = 12398,
+						[5] = 20,
+						[9] = 27,
+						[10] = 2682,
 					},
 				},
 			},
-			[1421] = {
+			[6421] = {
 				[2] = {
 					[1] = {
-						[1] = 10,
+						[1] = 455,
 						[5] = 1,
 					},
 					[2] = {
-						[300] = {
-							[1] = 10,
-							[2] = 10,
-							[3] = 1,
-						},
 					},
 				},
 			},
@@ -30508,6 +32352,11 @@ SW_DataCollection = {
 								[5] = 23,
 							},
 						},
+						[0] = {
+							[2] = 105,
+							[5] = 41,
+							[6] = 1954,
+						},
 						[200] = {
 							[1] = 116612,
 							[2] = 2095,
@@ -30525,11 +32374,6 @@ SW_DataCollection = {
 								[2] = 120,
 								[4] = 29,
 							},
-						},
-						[0] = {
-							[2] = 105,
-							[5] = 41,
-							[6] = 1954,
 						},
 					},
 				},
@@ -30550,13 +32394,13 @@ SW_DataCollection = {
 						[1] = 2530,
 						[5] = 2,
 					},
-					[508] = {
-						[1] = 5904,
-						[5] = 6,
-					},
 					[670] = {
 						[1] = 4607,
 						[5] = 7,
+					},
+					[4033] = {
+						[1] = 1484,
+						[5] = 2,
 					},
 					[6206] = {
 						[1] = 2959,
@@ -30574,35 +32418,36 @@ SW_DataCollection = {
 						[1] = 3189,
 						[5] = 3,
 					},
-					[4033] = {
-						[1] = 1484,
-						[5] = 2,
+					[508] = {
+						[1] = 5904,
+						[5] = 6,
 					},
 				},
 			},
-			[6421] = {
+			[6261] = {
 				[2] = {
 					[1] = {
-						[1] = 455,
-						[5] = 1,
 					},
 					[2] = {
+						[200] = {
+							[20] = {
+								[1] = 1,
+								[3] = 1,
+							},
+						},
 					},
 				},
 			},
-			[657] = {
+			[6253] = {
 				[2] = {
 					[1] = {
-						[1] = 966,
-						[3] = 2,
-						[5] = 1,
 					},
 					[2] = {
-						[2] = {
-							[1] = 966,
-							[2] = 966,
-							[3] = 1,
-							[4] = 1,
+						[200] = {
+							[20] = {
+								[1] = 1,
+								[3] = 1,
+							},
 						},
 					},
 				},
@@ -30804,6 +32649,11 @@ SW_DataCollection = {
 								[5] = 1,
 							},
 						},
+						[0] = {
+							[2] = 163,
+							[5] = 147,
+							[6] = 8248,
+						},
 						[200] = {
 							[1] = 302315,
 							[2] = 2226,
@@ -30822,11 +32672,6 @@ SW_DataCollection = {
 								[2] = 713,
 								[4] = 172,
 							},
-						},
-						[0] = {
-							[2] = 163,
-							[5] = 147,
-							[6] = 8248,
 						},
 					},
 				},
@@ -30887,9 +32732,9 @@ SW_DataCollection = {
 						[1] = 4068,
 						[5] = 3,
 					},
-					[670] = {
-						[1] = 25745,
-						[5] = 27,
+					[6347] = {
+						[1] = 32252,
+						[5] = 29,
 					},
 					[508] = {
 						[1] = 36378,
@@ -30903,9 +32748,9 @@ SW_DataCollection = {
 						[1] = 6395,
 						[5] = 6,
 					},
-					[6347] = {
-						[1] = 32252,
-						[5] = 29,
+					[670] = {
+						[1] = 25745,
+						[5] = 27,
 					},
 				},
 			},
@@ -31143,6 +32988,13 @@ SW_DataCollection = {
 						},
 					},
 					[3] = {
+						[6458] = {
+							[1] = {
+								[2] = 200,
+								[7] = 9,
+								[8] = 1800,
+							},
+						},
 						[31] = {
 							[1] = {
 								[1] = 53755,
@@ -31159,13 +33011,6 @@ SW_DataCollection = {
 							[5] = {
 								[1] = 1160,
 								[2] = 913,
-							},
-						},
-						[6458] = {
-							[1] = {
-								[2] = 200,
-								[7] = 9,
-								[8] = 1800,
 							},
 						},
 					},
@@ -31245,6 +33090,11 @@ SW_DataCollection = {
 								[5] = 163,
 							},
 						},
+						[0] = {
+							[2] = 153,
+							[5] = 51,
+							[6] = 3756,
+						},
 						[200] = {
 							[1] = 123016,
 							[2] = 1684,
@@ -31262,11 +33112,6 @@ SW_DataCollection = {
 								[2] = 360,
 								[4] = 22,
 							},
-						},
-						[0] = {
-							[2] = 153,
-							[5] = 51,
-							[6] = 3756,
 						},
 					},
 				},
@@ -31292,13 +33137,13 @@ SW_DataCollection = {
 						[9] = 23,
 						[4] = 13,
 					},
+					[6426] = {
+						[1] = 2671,
+						[5] = 2,
+					},
 					[508] = {
 						[1] = 6961,
 						[5] = 5,
-					},
-					[670] = {
-						[1] = 3901,
-						[5] = 4,
 					},
 					[6460] = {
 						[10] = 1600,
@@ -31322,29 +33167,30 @@ SW_DataCollection = {
 						[1] = 11557,
 						[5] = 10,
 					},
-					[6426] = {
-						[1] = 2671,
-						[5] = 2,
+					[670] = {
+						[1] = 3901,
+						[5] = 4,
 					},
 				},
 			},
-			[250] = {
-				[1] = {
+			[1001] = {
+				[2] = {
 					[1] = {
-						[1] = 32,
+						[1] = 10,
 						[5] = 1,
 					},
 					[2] = {
-					},
-					[3] = {
-					},
-				},
-				[2] = {
-					[1] = {
-						[1] = 66,
-						[5] = 2,
-					},
-					[2] = {
+						[200] = {
+							[20] = {
+								[1] = 1,
+								[3] = 1,
+							},
+						},
+						[300] = {
+							[1] = 10,
+							[2] = 10,
+							[3] = 1,
+						},
 					},
 				},
 			},
@@ -31472,11 +33318,6 @@ SW_DataCollection = {
 								[5] = 86,
 							},
 						},
-						[0] = {
-							[2] = 151,
-							[5] = 22,
-							[6] = 1434,
-						},
 						[200] = {
 							[1] = 51160,
 							[2] = 1150,
@@ -31494,6 +33335,11 @@ SW_DataCollection = {
 								[2] = 90,
 								[4] = 3,
 							},
+						},
+						[0] = {
+							[2] = 151,
+							[5] = 22,
+							[6] = 1434,
 						},
 					},
 				},
@@ -31522,9 +33368,9 @@ SW_DataCollection = {
 						[1] = 3429,
 						[5] = 3,
 					},
-					[6219] = {
-						[1] = 3007,
-						[5] = 3,
+					[508] = {
+						[1] = 936,
+						[5] = 1,
 					},
 					[6222] = {
 						[1] = 2174,
@@ -31538,9 +33384,9 @@ SW_DataCollection = {
 						[1] = 3301,
 						[5] = 2,
 					},
-					[508] = {
-						[1] = 936,
-						[5] = 1,
+					[6219] = {
+						[1] = 3007,
+						[5] = 3,
 					},
 				},
 			},
@@ -31557,14 +33403,14 @@ SW_DataCollection = {
 						[2] = {
 							[2] = 550,
 							[5] = 5,
-							[6] = 2500,
+							[30] = {
+								[1] = 100,
+							},
 							[20] = {
 								[1] = 2,
 								[5] = 2,
 							},
-							[30] = {
-								[1] = 100,
-							},
+							[6] = 2500,
 						},
 						[200] = {
 							[1] = 2609,
@@ -31653,6 +33499,11 @@ SW_DataCollection = {
 								[5] = 246,
 							},
 						},
+						[0] = {
+							[2] = 126,
+							[5] = 1,
+							[6] = 126,
+						},
 						[200] = {
 							[1] = 33766,
 							[2] = 1757,
@@ -31667,11 +33518,6 @@ SW_DataCollection = {
 								[2] = 60,
 								[4] = 6,
 							},
-						},
-						[0] = {
-							[2] = 126,
-							[5] = 1,
-							[6] = 126,
 						},
 					},
 				},
@@ -31694,13 +33540,1587 @@ SW_DataCollection = {
 						[9] = 1,
 						[10] = 450,
 					},
+					[508] = {
+						[10] = 550,
+						[9] = 1,
+					},
 					[670] = {
 						[10] = 450,
 						[9] = 1,
 					},
+				},
+			},
+			[6226] = {
+				[1] = {
+					[1] = {
+						[1] = 94981,
+						[5] = 301,
+						[7] = 1500,
+						[11] = 356,
+					},
+					[2] = {
+						[2] = {
+							[1] = 52,
+							[2] = 40,
+							[3] = 2,
+							[30] = {
+								[5] = 46,
+							},
+						},
+						[3] = {
+							[1] = 1623,
+							[2] = 211,
+							[3] = 13,
+							[4] = 2,
+							[30] = {
+								[5] = 191,
+							},
+						},
+						[200] = {
+							[1] = 24917,
+							[2] = 1318,
+							[3] = 59,
+							[4] = 32,
+							[20] = {
+								[1] = 4,
+								[3] = 3,
+								[7] = 1,
+							},
+							[30] = {
+								[2] = 28,
+							},
+						},
+					},
+					[3] = {
+						[5820] = {
+							[1] = {
+								[1] = 52,
+								[2] = 40,
+								[3] = 2,
+							},
+							[5] = {
+								[5] = 46,
+							},
+						},
+						[2341] = {
+							[1] = {
+								[1] = 12475,
+								[2] = 1048,
+								[3] = 13,
+								[4] = 12,
+							},
+						},
+						[6231] = {
+							[1] = {
+								[1] = 1623,
+								[2] = 211,
+								[3] = 13,
+								[4] = 2,
+							},
+							[5] = {
+								[5] = 191,
+							},
+						},
+						[31] = {
+							[1] = {
+								[1] = 7705,
+								[2] = 370,
+								[3] = 38,
+								[4] = 17,
+							},
+							[4] = {
+								[1] = 4,
+								[3] = 3,
+								[7] = 1,
+							},
+							[5] = {
+								[2] = 28,
+							},
+						},
+						[3447] = {
+							[1] = {
+								[1] = 1318,
+								[2] = 1318,
+								[3] = 1,
+								[4] = 1,
+							},
+						},
+						[376] = {
+							[1] = {
+								[1] = 928,
+								[2] = 476,
+								[3] = 2,
+								[4] = 2,
+							},
+						},
+						[1807] = {
+							[1] = {
+								[1] = 2491,
+								[2] = 1021,
+								[3] = 5,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 19399,
+						[2] = 845,
+						[5] = 35,
+						[6] = 254,
+						[7] = 24316,
+						[8] = 6669,
+					},
+					[2] = {
+						[200] = {
+							[1] = 6645,
+							[2] = 544,
+							[3] = 23,
+							[4] = 4,
+							[20] = {
+								[1] = 9,
+								[3] = 3,
+								[6] = 5,
+								[7] = 1,
+							},
+						},
+					},
+				},
+				[3] = {
+					[6230] = {
+						[1] = 26592,
+						[5] = 74,
+					},
+				},
+			},
+			[6466] = {
+				[1] = {
+					[1] = {
+						[1] = 1326,
+						[5] = 9,
+						[11] = 84,
+					},
+					[2] = {
+						[200] = {
+							[1] = 1326,
+							[2] = 272,
+							[3] = 9,
+							[4] = 1,
+							[20] = {
+								[1] = 6,
+								[3] = 2,
+								[5] = 2,
+								[6] = 2,
+							},
+							[30] = {
+								[1] = 92,
+							},
+						},
+					},
+					[3] = {
+						[31] = {
+							[1] = {
+								[1] = 1326,
+								[2] = 272,
+								[3] = 9,
+								[4] = 1,
+							},
+							[4] = {
+								[1] = 6,
+								[3] = 2,
+								[5] = 2,
+								[6] = 2,
+							},
+							[5] = {
+								[1] = 92,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 46408,
+						[3] = 50,
+						[5] = 85,
+					},
+					[2] = {
+						[4] = {
+							[1] = 44464,
+							[2] = 945,
+							[3] = 79,
+							[4] = 19,
+						},
+						[6] = {
+							[1] = 1944,
+							[2] = 334,
+							[3] = 6,
+						},
+					},
+				},
+				[3] = {
+					[6426] = {
+						[1] = 1279,
+						[5] = 8,
+					},
+					[6214] = {
+						[1] = 47,
+						[5] = 1,
+					},
+				},
+			},
+			[6443] = {
+				[1] = {
+					[1] = {
+						[1] = 59020,
+						[5] = 99,
+						[11] = 602,
+					},
+					[2] = {
+						[200] = {
+							[1] = 55653,
+							[2] = 1668,
+							[3] = 96,
+							[4] = 5,
+							[20] = {
+								[1] = 39,
+								[3] = 14,
+								[4] = 1,
+								[5] = 4,
+								[6] = 7,
+								[7] = 13,
+							},
+							[30] = {
+								[1] = 358,
+								[2] = 2950,
+							},
+						},
+					},
+					[3] = {
+						[31] = {
+							[1] = {
+								[1] = 55653,
+								[2] = 1668,
+								[3] = 96,
+								[4] = 5,
+							},
+							[4] = {
+								[1] = 39,
+								[3] = 14,
+								[4] = 1,
+								[5] = 4,
+								[6] = 7,
+								[7] = 13,
+							},
+							[5] = {
+								[1] = 358,
+								[2] = 2950,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 273921,
+						[3] = 12,
+						[5] = 675,
+						[9] = 76,
+						[10] = 9686,
+					},
+					[2] = {
+						[2] = {
+							[1] = 3137,
+							[2] = 756,
+							[3] = 6,
+							[20] = {
+								[1] = 3,
+								[8] = 3,
+							},
+						},
+						[3] = {
+							[1] = 3200,
+							[2] = 602,
+							[3] = 24,
+							[20] = {
+								[1] = 11,
+								[5] = 1,
+								[8] = 10,
+							},
+							[30] = {
+								[5] = 30,
+							},
+						},
+						[4] = {
+							[1] = 14014,
+							[2] = 2157,
+							[3] = 12,
+							[4] = 2,
+							[20] = {
+								[1] = 7,
+								[5] = 1,
+								[8] = 6,
+							},
+						},
+						[5] = {
+							[1] = 41580,
+							[2] = 2160,
+							[3] = 38,
+							[4] = 6,
+							[5] = 20,
+							[6] = 6149,
+							[20] = {
+								[1] = 31,
+								[5] = 10,
+								[8] = 21,
+							},
+							[30] = {
+								[5] = 552,
+							},
+						},
+						[6] = {
+							[1] = 735,
+							[2] = 247,
+							[3] = 4,
+							[5] = 5,
+							[6] = 565,
+						},
+						[0] = {
+							[2] = 147,
+							[5] = 51,
+							[6] = 2972,
+						},
+						[200] = {
+							[1] = 211255,
+							[2] = 2232,
+							[3] = 591,
+							[4] = 178,
+							[20] = {
+								[1] = 91,
+								[2] = 4,
+								[3] = 31,
+								[5] = 5,
+								[6] = 21,
+								[7] = 23,
+								[8] = 7,
+							},
+							[30] = {
+								[2] = 360,
+								[4] = 51,
+							},
+						},
+					},
+				},
+				[3] = {
+					[1] = {
+						[1] = 4375,
+						[5] = 5,
+					},
+					[6210] = {
+						[1] = 4180,
+						[5] = 3,
+					},
+					[6211] = {
+						[1] = 14859,
+						[5] = 44,
+					},
+					[6214] = {
+						[1] = 1505,
+						[5] = 2,
+					},
+					[6218] = {
+						[1] = 3657,
+						[5] = 4,
+					},
+					[670] = {
+						[1] = 2097,
+						[5] = 4,
+					},
+					[4033] = {
+						[1] = 2484,
+						[5] = 3,
+					},
+					[6206] = {
+						[1] = 607,
+						[5] = 1,
+					},
+					[6222] = {
+						[1] = 1345,
+						[5] = 2,
+					},
+					[6208] = {
+						[1] = 6897,
+						[5] = 9,
+					},
+					[6219] = {
+						[1] = 1419,
+						[5] = 2,
+					},
 					[508] = {
-						[10] = 550,
-						[9] = 1,
+						[1] = 12228,
+						[5] = 17,
+					},
+				},
+			},
+			[6470] = {
+				[1] = {
+					[1] = {
+						[11] = 84,
+					},
+					[2] = {
+					},
+					[3] = {
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 13483,
+						[5] = 27,
+						[9] = 3,
+						[10] = 147,
+					},
+					[2] = {
+						[2] = {
+							[1] = 350,
+							[2] = 350,
+							[3] = 1,
+						},
+						[3] = {
+							[1] = 200,
+							[2] = 128,
+							[3] = 2,
+							[30] = {
+								[5] = 24,
+							},
+						},
+						[6] = {
+							[1] = 236,
+							[2] = 236,
+							[3] = 1,
+						},
+						[200] = {
+							[1] = 12697,
+							[2] = 1715,
+							[3] = 23,
+							[4] = 11,
+							[30] = {
+								[4] = 5,
+							},
+						},
+						[0] = {
+							[2] = 87,
+							[5] = 3,
+							[6] = 147,
+						},
+					},
+				},
+			},
+			[1749] = {
+				[2] = {
+					[1] = {
+						[1] = 622,
+						[5] = 2,
+					},
+					[2] = {
+						[300] = {
+							[1] = 483,
+							[2] = 483,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[3747] = {
+				[2] = {
+					[1] = {
+						[1] = 1149,
+						[5] = 3,
+					},
+					[2] = {
+						[300] = {
+							[1] = 231,
+							[2] = 231,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[6476] = {
+				[1] = {
+					[1] = {
+						[1] = 119191,
+						[5] = 358,
+						[11] = 233,
+					},
+					[2] = {
+						[200] = {
+							[1] = 48217,
+							[2] = 1378,
+							[3] = 82,
+							[4] = 1,
+							[20] = {
+								[1] = 38,
+								[3] = 8,
+								[6] = 19,
+								[7] = 11,
+							},
+							[30] = {
+								[1] = 1160,
+								[2] = 3211,
+							},
+						},
+						[5] = {
+							[1] = 70974,
+							[2] = 369,
+							[3] = 276,
+							[20] = {
+								[1] = 14,
+								[2] = 14,
+							},
+							[30] = {
+								[5] = 12238,
+							},
+						},
+					},
+					[3] = {
+						[6482] = {
+							[1] = {
+								[1] = 70974,
+								[2] = 369,
+								[3] = 276,
+							},
+							[4] = {
+								[1] = 14,
+								[2] = 14,
+							},
+							[5] = {
+								[5] = 12238,
+							},
+						},
+						[31] = {
+							[1] = {
+								[1] = 48217,
+								[2] = 1378,
+								[3] = 82,
+								[4] = 1,
+							},
+							[4] = {
+								[1] = 38,
+								[3] = 8,
+								[6] = 19,
+								[7] = 11,
+							},
+							[5] = {
+								[1] = 1160,
+								[2] = 3211,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 177118,
+						[3] = 7,
+						[5] = 476,
+						[9] = 331,
+						[10] = 62520,
+					},
+					[2] = {
+						[1] = {
+							[1] = 211,
+							[2] = 211,
+							[3] = 1,
+						},
+						[2] = {
+							[1] = 1855,
+							[2] = 729,
+							[3] = 3,
+							[5] = 88,
+							[6] = 22181,
+							[20] = {
+								[1] = 1,
+								[2] = 1,
+							},
+							[30] = {
+								[5] = 387,
+							},
+						},
+						[3] = {
+							[1] = 2406,
+							[2] = 150,
+							[3] = 20,
+							[5] = 11,
+							[6] = 396,
+							[20] = {
+								[1] = 1,
+								[5] = 1,
+							},
+							[30] = {
+								[5] = 62,
+							},
+						},
+						[4] = {
+							[1] = 8401,
+							[2] = 1917,
+							[3] = 8,
+							[4] = 1,
+							[5] = 115,
+							[6] = 21250,
+							[20] = {
+								[1] = 3,
+								[5] = 3,
+							},
+							[30] = {
+								[5] = 90,
+							},
+						},
+						[5] = {
+							[1] = 34031,
+							[2] = 2901,
+							[3] = 34,
+							[4] = 6,
+							[5] = 46,
+							[6] = 15284,
+							[20] = {
+								[1] = 2,
+								[5] = 2,
+							},
+							[30] = {
+								[5] = 2413,
+							},
+						},
+						[6] = {
+							[1] = 1557,
+							[2] = 328,
+							[3] = 6,
+						},
+						[200] = {
+							[1] = 128657,
+							[2] = 1769,
+							[3] = 404,
+							[4] = 108,
+							[20] = {
+								[1] = 63,
+								[3] = 21,
+								[5] = 4,
+								[6] = 24,
+								[7] = 14,
+							},
+							[30] = {
+								[2] = 420,
+								[4] = 16,
+							},
+						},
+						[0] = {
+							[2] = 124,
+							[5] = 71,
+							[6] = 3409,
+						},
+					},
+				},
+				[3] = {
+					[1] = {
+						[1] = 1126,
+						[5] = 4,
+					},
+					[677] = {
+						[1] = 3454,
+						[5] = 13,
+					},
+					[678] = {
+						[1] = 2405,
+						[5] = 9,
+					},
+					[6206] = {
+						[1] = 4432,
+						[5] = 25,
+					},
+					[6210] = {
+						[1] = 6737,
+						[5] = 22,
+					},
+					[6214] = {
+						[1] = 1854,
+						[5] = 7,
+					},
+					[6218] = {
+						[1] = 940,
+						[5] = 4,
+					},
+					[6222] = {
+						[1] = 9387,
+						[5] = 21,
+					},
+					[4033] = {
+						[1] = 3027,
+						[5] = 12,
+					},
+					[6211] = {
+						[1] = 25077,
+						[5] = 65,
+					},
+					[6215] = {
+						[1] = 3744,
+						[5] = 13,
+					},
+					[6219] = {
+						[1] = 5604,
+						[5] = 19,
+					},
+					[6223] = {
+						[1] = 4221,
+						[5] = 18,
+					},
+					[6208] = {
+						[1] = 1904,
+						[5] = 7,
+					},
+					[6228] = {
+						[1] = 1555,
+						[5] = 6,
+					},
+					[6347] = {
+						[1] = 5903,
+						[5] = 20,
+					},
+					[508] = {
+						[1] = 7947,
+						[5] = 21,
+					},
+					[6426] = {
+						[1] = 3906,
+						[5] = 17,
+					},
+					[5531] = {
+						[1] = 2289,
+						[5] = 9,
+					},
+					[670] = {
+						[1] = 23679,
+						[5] = 46,
+					},
+				},
+			},
+			[2216] = {
+				[2] = {
+					[1] = {
+					},
+					[2] = {
+						[200] = {
+							[20] = {
+								[1] = 1,
+								[3] = 1,
+							},
+						},
+					},
+				},
+			},
+			[250] = {
+				[1] = {
+					[1] = {
+						[1] = 32,
+						[5] = 1,
+					},
+					[2] = {
+					},
+					[3] = {
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 66,
+						[5] = 2,
+					},
+					[2] = {
+					},
+				},
+			},
+			[593] = {
+				[1] = {
+					[1] = {
+						[11] = 120,
+					},
+					[2] = {
+					},
+					[3] = {
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 2326,
+						[5] = 1,
+					},
+					[2] = {
+						[200] = {
+							[1] = 2326,
+							[2] = 2326,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[6484] = {
+				[1] = {
+					[1] = {
+						[1] = 43661,
+						[5] = 38,
+						[11] = 103,
+					},
+					[2] = {
+						[200] = {
+							[1] = 43661,
+							[2] = 2985,
+							[3] = 38,
+							[20] = {
+								[1] = 36,
+								[3] = 15,
+								[6] = 14,
+								[7] = 7,
+							},
+							[30] = {
+								[1] = 1161,
+								[2] = 2337,
+								[3] = 3,
+							},
+						},
+					},
+					[3] = {
+						[2378] = {
+							[1] = {
+								[1] = 4,
+								[2] = 4,
+								[3] = 1,
+							},
+						},
+						[743] = {
+							[1] = {
+								[1] = 4371,
+								[2] = 2548,
+								[3] = 3,
+							},
+							[3] = {
+								[1] = 4,
+								[2] = 2,
+								[3] = 2,
+							},
+							[5] = {
+								[2] = 366,
+							},
+						},
+						[31] = {
+							[1] = {
+								[1] = 21426,
+								[2] = 1941,
+								[3] = 27,
+							},
+							[4] = {
+								[1] = 31,
+								[3] = 14,
+								[6] = 10,
+								[7] = 7,
+							},
+							[5] = {
+								[1] = 1161,
+								[2] = 1918,
+								[3] = 3,
+							},
+						},
+						[133] = {
+							[1] = {
+								[1] = 17860,
+								[2] = 2985,
+								[3] = 7,
+							},
+							[4] = {
+								[1] = 5,
+								[3] = 1,
+								[6] = 4,
+							},
+							[5] = {
+								[2] = 53,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 252959,
+						[3] = 1,
+						[5] = 515,
+						[9] = 92,
+						[10] = 23893,
+					},
+					[2] = {
+						[1] = {
+							[1] = 3630,
+							[2] = 724,
+							[3] = 8,
+							[4] = 1,
+							[20] = {
+								[1] = 5,
+								[2] = 5,
+							},
+							[30] = {
+								[5] = 348,
+							},
+						},
+						[2] = {
+							[1] = 1301,
+							[2] = 477,
+							[3] = 7,
+							[20] = {
+								[1] = 1,
+								[2] = 1,
+							},
+							[30] = {
+								[5] = 35,
+							},
+						},
+						[3] = {
+							[1] = 6381,
+							[2] = 507,
+							[3] = 34,
+							[4] = 2,
+							[20] = {
+								[1] = 12,
+								[2] = 12,
+							},
+							[30] = {
+								[5] = 598,
+							},
+						},
+						[4] = {
+							[1] = 44205,
+							[2] = 2180,
+							[3] = 35,
+							[4] = 8,
+						},
+						[5] = {
+							[1] = 64198,
+							[2] = 2617,
+							[3] = 56,
+							[4] = 5,
+							[5] = 59,
+							[6] = 21607,
+							[20] = {
+								[1] = 11,
+								[2] = 10,
+								[5] = 1,
+							},
+							[30] = {
+								[5] = 6907,
+							},
+						},
+						[6] = {
+							[1] = 786,
+							[2] = 363,
+							[3] = 3,
+							[4] = 1,
+							[5] = 4,
+							[6] = 496,
+							[30] = {
+								[5] = 172,
+							},
+						},
+						[0] = {
+							[2] = 195,
+							[5] = 29,
+							[6] = 1790,
+						},
+						[200] = {
+							[1] = 132458,
+							[2] = 2237,
+							[3] = 372,
+							[4] = 103,
+							[20] = {
+								[1] = 61,
+								[2] = 1,
+								[3] = 35,
+								[6] = 15,
+								[7] = 10,
+							},
+							[30] = {
+								[2] = 372,
+								[4] = 113,
+							},
+						},
+					},
+				},
+				[3] = {
+					[6210] = {
+						[1] = 2614,
+						[5] = 1,
+					},
+					[6211] = {
+						[1] = 13389,
+						[5] = 23,
+					},
+					[6347] = {
+						[1] = 2896,
+						[5] = 1,
+					},
+					[6228] = {
+						[1] = 2985,
+						[5] = 1,
+					},
+					[6218] = {
+						[1] = 2945,
+						[5] = 1,
+					},
+					[670] = {
+						[1] = 6794,
+						[5] = 5,
+					},
+					[6206] = {
+						[1] = 2046,
+						[5] = 1,
+					},
+					[4033] = {
+						[1] = 3452,
+						[5] = 2,
+					},
+					[508] = {
+						[1] = 6540,
+						[5] = 3,
+					},
+				},
+			},
+			[3502] = {
+				[1] = {
+					[1] = {
+						[10] = 404,
+						[9] = 8,
+					},
+					[2] = {
+					},
+					[3] = {
+					},
+				},
+			},
+			[6448] = {
+				[1] = {
+					[1] = {
+						[11] = 86,
+					},
+					[2] = {
+					},
+					[3] = {
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 2056,
+						[3] = 6,
+						[5] = 6,
+					},
+					[2] = {
+						[2] = {
+							[1] = 218,
+							[2] = 218,
+							[3] = 1,
+						},
+						[200] = {
+							[1] = 1328,
+							[2] = 550,
+							[3] = 4,
+						},
+						[6] = {
+							[1] = 510,
+							[2] = 510,
+							[3] = 1,
+							[4] = 1,
+						},
+					},
+				},
+			},
+			[3426] = {
+				[1] = {
+					[1] = {
+						[1] = 50959,
+						[5] = 179,
+						[7] = 1309,
+						[11] = 377,
+					},
+					[2] = {
+						[2] = {
+							[1] = 2682,
+							[2] = 713,
+							[3] = 6,
+							[30] = {
+								[5] = 654,
+							},
+						},
+						[200] = {
+							[1] = 6817,
+							[2] = 965,
+							[3] = 28,
+							[4] = 12,
+							[20] = {
+								[1] = 2,
+								[3] = 1,
+								[7] = 1,
+							},
+							[30] = {
+								[2] = 28,
+							},
+						},
+					},
+					[3] = {
+						[5820] = {
+							[1] = {
+								[1] = 39,
+								[2] = 39,
+								[3] = 1,
+							},
+							[5] = {
+								[5] = 13,
+							},
+						},
+						[31] = {
+							[1] = {
+								[1] = 3385,
+								[2] = 342,
+								[3] = 19,
+								[4] = 8,
+							},
+							[4] = {
+								[1] = 2,
+								[3] = 1,
+								[7] = 1,
+							},
+						},
+						[584] = {
+							[1] = {
+								[1] = 2643,
+								[2] = 713,
+								[3] = 5,
+							},
+							[5] = {
+								[5] = 641,
+							},
+						},
+						[273] = {
+							[1] = {
+								[1] = 900,
+								[2] = 466,
+								[3] = 2,
+								[4] = 1,
+							},
+						},
+						[2341] = {
+							[1] = {
+								[1] = 965,
+								[2] = 965,
+								[3] = 1,
+								[4] = 1,
+							},
+						},
+						[376] = {
+							[1] = {
+								[1] = 1567,
+								[2] = 447,
+								[3] = 6,
+								[4] = 2,
+							},
+							[5] = {
+								[2] = 28,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 23023,
+						[5] = 41,
+						[7] = 29556,
+						[8] = 7195,
+					},
+					[2] = {
+						[2] = {
+							[1] = 237,
+							[2] = 237,
+							[3] = 1,
+							[30] = {
+								[5] = 237,
+							},
+						},
+						[200] = {
+							[1] = 3949,
+							[2] = 496,
+							[3] = 14,
+							[4] = 2,
+							[20] = {
+								[1] = 15,
+								[3] = 1,
+								[6] = 13,
+								[7] = 1,
+							},
+						},
+					},
+				},
+				[3] = {
+					[3426] = {
+						[1] = 237,
+						[5] = 1,
+					},
+					[6230] = {
+						[1] = 9499,
+						[5] = 34,
+					},
+				},
+			},
+			[5941] = {
+				[2] = {
+					[1] = {
+						[1] = 640,
+						[5] = 1,
+					},
+					[2] = {
+					},
+				},
+			},
+			[6494] = {
+				[1] = {
+					[1] = {
+						[1] = 4868,
+						[5] = 29,
+						[11] = 80,
+					},
+					[2] = {
+						[200] = {
+							[1] = 4641,
+							[2] = 236,
+							[3] = 27,
+							[4] = 1,
+							[20] = {
+								[1] = 17,
+								[3] = 4,
+								[4] = 1,
+								[5] = 6,
+								[6] = 1,
+								[7] = 5,
+							},
+						},
+					},
+					[3] = {
+						[31] = {
+							[1] = {
+								[1] = 4641,
+								[2] = 236,
+								[3] = 27,
+								[4] = 1,
+							},
+							[4] = {
+								[1] = 17,
+								[3] = 4,
+								[4] = 1,
+								[5] = 6,
+								[6] = 1,
+								[7] = 5,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 14869,
+						[3] = 10,
+						[5] = 55,
+						[9] = 73,
+						[10] = 15411,
+					},
+					[2] = {
+						[2] = {
+							[1] = 6353,
+							[2] = 689,
+							[3] = 13,
+							[5] = 35,
+							[6] = 8709,
+							[20] = {
+								[1] = 1,
+								[2] = 1,
+							},
+							[30] = {
+								[5] = 622,
+							},
+						},
+						[3] = {
+							[1] = 290,
+							[2] = 18,
+							[3] = 18,
+						},
+						[4] = {
+							[2] = 182,
+							[5] = 23,
+							[6] = 4186,
+						},
+						[5] = {
+							[2] = 360,
+							[5] = 6,
+							[6] = 1930,
+						},
+						[6] = {
+							[2] = 96,
+							[5] = 3,
+							[6] = 288,
+						},
+						[200] = {
+							[1] = 8194,
+							[2] = 766,
+							[3] = 22,
+							[4] = 7,
+							[20] = {
+								[1] = 3,
+								[2] = 2,
+								[7] = 1,
+							},
+							[30] = {
+								[4] = 1,
+							},
+						},
+						[0] = {
+							[2] = 63,
+							[5] = 6,
+							[6] = 298,
+						},
+					},
+				},
+				[3] = {
+					[6223] = {
+						[1] = 2126,
+						[5] = 10,
+					},
+					[6211] = {
+						[1] = 1864,
+						[5] = 14,
+					},
+					[6219] = {
+						[1] = 651,
+						[5] = 3,
+					},
+				},
+			},
+			[4677] = {
+				[2] = {
+					[1] = {
+						[1] = 1110,
+						[5] = 1,
+					},
+					[2] = {
+					},
+				},
+			},
+			[6498] = {
+				[1] = {
+					[1] = {
+						[1] = 47163,
+						[5] = 133,
+						[11] = 111,
+					},
+					[2] = {
+						[200] = {
+							[1] = 47163,
+							[2] = 1178,
+							[3] = 133,
+							[4] = 4,
+							[20] = {
+								[1] = 65,
+								[3] = 43,
+								[6] = 12,
+								[7] = 10,
+							},
+							[30] = {
+								[2] = 1255,
+							},
+						},
+					},
+					[3] = {
+						[2378] = {
+							[1] = {
+								[1] = 283,
+								[2] = 16,
+								[3] = 26,
+							},
+							[4] = {
+								[1] = 2,
+								[3] = 1,
+								[6] = 1,
+							},
+						},
+						[376] = {
+							[1] = {
+								[1] = 4070,
+								[2] = 788,
+								[3] = 6,
+							},
+							[4] = {
+								[1] = 1,
+								[6] = 1,
+							},
+						},
+						[640] = {
+							[1] = {
+								[1] = 2791,
+								[2] = 890,
+								[3] = 13,
+							},
+						},
+						[31] = {
+							[1] = {
+								[1] = 40019,
+								[2] = 1178,
+								[3] = 88,
+								[4] = 4,
+							},
+							[4] = {
+								[1] = 62,
+								[3] = 42,
+								[6] = 10,
+								[7] = 10,
+							},
+							[5] = {
+								[2] = 1255,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 113737,
+						[3] = 1,
+						[5] = 332,
+						[9] = 123,
+						[10] = 18918,
+					},
+					[2] = {
+						[2] = {
+							[1] = 1190,
+							[2] = 291,
+							[3] = 5,
+							[5] = 12,
+							[6] = 3182,
+							[20] = {
+								[1] = 1,
+								[2] = 1,
+							},
+						},
+						[3] = {
+							[1] = 350,
+							[2] = 142,
+							[3] = 9,
+						},
+						[4] = {
+							[1] = 6664,
+							[2] = 1078,
+							[3] = 7,
+							[4] = 1,
+							[5] = 16,
+							[6] = 3002,
+						},
+						[5] = {
+							[1] = 42442,
+							[2] = 2665,
+							[3] = 34,
+							[4] = 6,
+							[5] = 30,
+							[6] = 10352,
+						},
+						[6] = {
+							[1] = 1917,
+							[2] = 571,
+							[3] = 24,
+							[4] = 2,
+						},
+						[200] = {
+							[1] = 61174,
+							[2] = 1308,
+							[3] = 253,
+							[4] = 39,
+							[20] = {
+								[1] = 28,
+								[2] = 1,
+								[3] = 5,
+								[6] = 13,
+								[7] = 9,
+							},
+							[30] = {
+								[2] = 180,
+								[4] = 22,
+							},
+						},
+						[0] = {
+							[2] = 91,
+							[5] = 65,
+							[6] = 2382,
+						},
+					},
+				},
+				[3] = {
+					[6211] = {
+						[1] = 1864,
+						[5] = 9,
+					},
+					[6347] = {
+						[1] = 814,
+						[5] = 5,
+					},
+					[6214] = {
+						[1] = 16,
+						[5] = 2,
+					},
+					[677] = {
+						[1] = 32,
+						[5] = 2,
+					},
+					[670] = {
+						[1] = 32899,
+						[5] = 73,
+					},
+					[508] = {
+						[1] = 28,
+						[5] = 4,
+					},
+					[6206] = {
+						[1] = 951,
+						[5] = 8,
+					},
+					[6222] = {
+						[1] = 13,
+						[5] = 1,
+					},
+					[6208] = {
+						[1] = 30,
+						[5] = 2,
+					},
+					[6219] = {
+						[1] = 9612,
+						[5] = 24,
+					},
+					[6223] = {
+						[1] = 904,
+						[5] = 3,
+					},
+				},
+			},
+			[1245] = {
+				[2] = {
+					[1] = {
+					},
+					[2] = {
+						[200] = {
+							[20] = {
+								[1] = 1,
+								[3] = 1,
+							},
+						},
+					},
+				},
+			},
+			[2999] = {
+				[2] = {
+					[1] = {
+						[1] = 356,
+						[5] = 1,
+					},
+					[2] = {
 					},
 				},
 			},
@@ -31726,15 +35146,6 @@ SW_DataCollection = {
 							[2] = 18,
 							[3] = 347,
 						},
-						[0] = {
-							[2] = 63,
-							[5] = 657,
-							[20] = {
-								[1] = 4,
-								[5] = 4,
-							},
-							[6] = 27027,
-						},
 						[200] = {
 							[1] = 546218,
 							[2] = 1767,
@@ -31754,6 +35165,15 @@ SW_DataCollection = {
 								[2] = 2214,
 								[4] = 294,
 							},
+						},
+						[0] = {
+							[2] = 63,
+							[5] = 657,
+							[20] = {
+								[1] = 4,
+								[5] = 4,
+							},
+							[6] = 27027,
 						},
 					},
 					[3] = {
@@ -31899,24 +35319,11 @@ SW_DataCollection = {
 								[2] = 275,
 							},
 						},
-						[31] = {
+						[715] = {
 							[1] = {
-								[1] = 277133,
-								[2] = 714,
-								[3] = 1151,
-								[4] = 246,
-							},
-							[4] = {
-								[1] = 104,
-								[3] = 1,
-								[5] = 3,
-								[6] = 57,
-								[7] = 43,
-							},
-							[5] = {
-								[1] = 352,
-								[2] = 1372,
-								[4] = 294,
+								[1] = 1231,
+								[2] = 66,
+								[3] = 20,
 							},
 						},
 						[706] = {
@@ -31928,15 +35335,6 @@ SW_DataCollection = {
 							},
 							[5] = {
 								[2] = 31,
-							},
-						},
-						[602] = {
-							[2] = {
-								[1] = 3240,
-								[2] = 1800,
-								[3] = 2,
-								[4] = 1,
-								[6] = 2379,
 							},
 						},
 						[133] = {
@@ -31955,6 +35353,15 @@ SW_DataCollection = {
 								[2] = 90,
 							},
 						},
+						[602] = {
+							[2] = {
+								[1] = 3240,
+								[2] = 1800,
+								[3] = 2,
+								[4] = 1,
+								[6] = 2379,
+							},
+						},
 						[111] = {
 							[1] = {
 								[1] = 5649,
@@ -31962,11 +35369,24 @@ SW_DataCollection = {
 								[3] = 350,
 							},
 						},
-						[715] = {
+						[31] = {
 							[1] = {
-								[1] = 1231,
-								[2] = 66,
-								[3] = 20,
+								[1] = 277133,
+								[2] = 714,
+								[3] = 1151,
+								[4] = 246,
+							},
+							[4] = {
+								[1] = 104,
+								[3] = 1,
+								[5] = 3,
+								[6] = 57,
+								[7] = 43,
+							},
+							[5] = {
+								[1] = 352,
+								[2] = 1372,
+								[4] = 294,
 							},
 						},
 					},
@@ -32071,18 +35491,18 @@ SW_DataCollection = {
 								[5] = 118,
 							},
 						},
+						[0] = {
+							[20] = {
+								[1] = 1,
+								[3] = 1,
+							},
+						},
 						[300] = {
 							[1] = 1534,
 							[2] = 765,
 							[3] = 5,
 							[30] = {
 								[5] = 10,
-							},
-						},
-						[0] = {
-							[20] = {
-								[1] = 1,
-								[3] = 1,
 							},
 						},
 					},
@@ -32354,9 +35774,11 @@ SW_DataCollection = {
 						[9] = 2,
 						[10] = 72,
 					},
-					[6462] = {
-						[1] = 3057,
-						[5] = 8,
+					[6208] = {
+						[1] = 3561,
+						[5] = 12,
+						[9] = 3,
+						[10] = 127,
 					},
 					[6526] = {
 						[1] = 21605,
@@ -32376,21 +35798,17 @@ SW_DataCollection = {
 						[9] = 8,
 						[8] = 5314,
 					},
+					[6462] = {
+						[1] = 3057,
+						[5] = 8,
+					},
 					[6511] = {
 						[1] = 1115,
 						[5] = 4,
 					},
-					[6208] = {
-						[1] = 3561,
-						[5] = 12,
-						[9] = 3,
-						[10] = 127,
-					},
-					[6460] = {
-						[1] = 6140,
-						[5] = 25,
+					[6222] = {
+						[10] = 189,
 						[9] = 7,
-						[10] = 342,
 					},
 					[6465] = {
 						[1] = 15749,
@@ -32398,11 +35816,11 @@ SW_DataCollection = {
 						[9] = 20,
 						[10] = 899,
 					},
-					[6568] = {
-						[1] = 74920,
-						[5] = 225,
-						[9] = 82,
-						[10] = 3560,
+					[6230] = {
+						[1] = 5434,
+						[5] = 29,
+						[9] = 1,
+						[10] = 37,
 					},
 					[6532] = {
 						[1] = 12829,
@@ -32422,11 +35840,11 @@ SW_DataCollection = {
 						[9] = 8,
 						[10] = 316,
 					},
-					[6230] = {
-						[1] = 5434,
-						[5] = 29,
-						[9] = 1,
-						[10] = 37,
+					[6568] = {
+						[1] = 74920,
+						[5] = 225,
+						[9] = 82,
+						[10] = 3560,
 					},
 					[6534] = {
 						[1] = 2531,
@@ -32434,1590 +35852,17 @@ SW_DataCollection = {
 						[9] = 3,
 						[10] = 147,
 					},
-					[6222] = {
-						[10] = 189,
+					[6460] = {
+						[1] = 6140,
+						[5] = 25,
 						[9] = 7,
+						[10] = 342,
 					},
 					[6439] = {
 						[1] = 13820,
 						[5] = 74,
 						[9] = 22,
 						[10] = 897,
-					},
-				},
-			},
-			[6466] = {
-				[1] = {
-					[1] = {
-						[1] = 1326,
-						[5] = 9,
-						[11] = 84,
-					},
-					[2] = {
-						[200] = {
-							[1] = 1326,
-							[2] = 272,
-							[3] = 9,
-							[4] = 1,
-							[20] = {
-								[1] = 6,
-								[3] = 2,
-								[5] = 2,
-								[6] = 2,
-							},
-							[30] = {
-								[1] = 92,
-							},
-						},
-					},
-					[3] = {
-						[31] = {
-							[1] = {
-								[1] = 1326,
-								[2] = 272,
-								[3] = 9,
-								[4] = 1,
-							},
-							[4] = {
-								[1] = 6,
-								[3] = 2,
-								[5] = 2,
-								[6] = 2,
-							},
-							[5] = {
-								[1] = 92,
-							},
-						},
-					},
-				},
-				[2] = {
-					[1] = {
-						[1] = 46408,
-						[3] = 50,
-						[5] = 85,
-					},
-					[2] = {
-						[4] = {
-							[1] = 44464,
-							[2] = 945,
-							[3] = 79,
-							[4] = 19,
-						},
-						[6] = {
-							[1] = 1944,
-							[2] = 334,
-							[3] = 6,
-						},
-					},
-				},
-				[3] = {
-					[6426] = {
-						[1] = 1279,
-						[5] = 8,
-					},
-					[6214] = {
-						[1] = 47,
-						[5] = 1,
-					},
-				},
-			},
-			[1001] = {
-				[2] = {
-					[1] = {
-						[1] = 10,
-						[5] = 1,
-					},
-					[2] = {
-						[200] = {
-							[20] = {
-								[1] = 1,
-								[3] = 1,
-							},
-						},
-						[300] = {
-							[1] = 10,
-							[2] = 10,
-							[3] = 1,
-						},
-					},
-				},
-			},
-			[6470] = {
-				[1] = {
-					[1] = {
-						[11] = 84,
-					},
-					[2] = {
-					},
-					[3] = {
-					},
-				},
-				[2] = {
-					[1] = {
-						[1] = 13483,
-						[5] = 27,
-						[9] = 3,
-						[10] = 147,
-					},
-					[2] = {
-						[2] = {
-							[1] = 350,
-							[2] = 350,
-							[3] = 1,
-						},
-						[3] = {
-							[1] = 200,
-							[2] = 128,
-							[3] = 2,
-							[30] = {
-								[5] = 24,
-							},
-						},
-						[6] = {
-							[1] = 236,
-							[2] = 236,
-							[3] = 1,
-						},
-						[200] = {
-							[1] = 12697,
-							[2] = 1715,
-							[3] = 23,
-							[4] = 11,
-							[30] = {
-								[4] = 5,
-							},
-						},
-						[0] = {
-							[2] = 87,
-							[5] = 3,
-							[6] = 147,
-						},
-					},
-				},
-			},
-			[1749] = {
-				[2] = {
-					[1] = {
-						[1] = 622,
-						[5] = 2,
-					},
-					[2] = {
-						[300] = {
-							[1] = 483,
-							[2] = 483,
-							[3] = 1,
-						},
-					},
-				},
-			},
-			[6443] = {
-				[1] = {
-					[1] = {
-						[1] = 59020,
-						[5] = 99,
-						[11] = 602,
-					},
-					[2] = {
-						[200] = {
-							[1] = 55653,
-							[2] = 1668,
-							[3] = 96,
-							[4] = 5,
-							[20] = {
-								[1] = 39,
-								[3] = 14,
-								[4] = 1,
-								[5] = 4,
-								[6] = 7,
-								[7] = 13,
-							},
-							[30] = {
-								[1] = 358,
-								[2] = 2950,
-							},
-						},
-					},
-					[3] = {
-						[31] = {
-							[1] = {
-								[1] = 55653,
-								[2] = 1668,
-								[3] = 96,
-								[4] = 5,
-							},
-							[4] = {
-								[1] = 39,
-								[3] = 14,
-								[4] = 1,
-								[5] = 4,
-								[6] = 7,
-								[7] = 13,
-							},
-							[5] = {
-								[1] = 358,
-								[2] = 2950,
-							},
-						},
-					},
-				},
-				[2] = {
-					[1] = {
-						[1] = 273921,
-						[3] = 12,
-						[5] = 675,
-						[9] = 76,
-						[10] = 9686,
-					},
-					[2] = {
-						[2] = {
-							[1] = 3137,
-							[2] = 756,
-							[3] = 6,
-							[20] = {
-								[1] = 3,
-								[8] = 3,
-							},
-						},
-						[3] = {
-							[1] = 3200,
-							[2] = 602,
-							[3] = 24,
-							[20] = {
-								[1] = 11,
-								[5] = 1,
-								[8] = 10,
-							},
-							[30] = {
-								[5] = 30,
-							},
-						},
-						[4] = {
-							[1] = 14014,
-							[2] = 2157,
-							[3] = 12,
-							[4] = 2,
-							[20] = {
-								[1] = 7,
-								[5] = 1,
-								[8] = 6,
-							},
-						},
-						[5] = {
-							[1] = 41580,
-							[2] = 2160,
-							[3] = 38,
-							[4] = 6,
-							[5] = 20,
-							[6] = 6149,
-							[20] = {
-								[1] = 31,
-								[5] = 10,
-								[8] = 21,
-							},
-							[30] = {
-								[5] = 552,
-							},
-						},
-						[6] = {
-							[1] = 735,
-							[2] = 247,
-							[3] = 4,
-							[5] = 5,
-							[6] = 565,
-						},
-						[200] = {
-							[1] = 211255,
-							[2] = 2232,
-							[3] = 591,
-							[4] = 178,
-							[20] = {
-								[1] = 91,
-								[2] = 4,
-								[3] = 31,
-								[5] = 5,
-								[6] = 21,
-								[7] = 23,
-								[8] = 7,
-							},
-							[30] = {
-								[2] = 360,
-								[4] = 51,
-							},
-						},
-						[0] = {
-							[2] = 147,
-							[5] = 51,
-							[6] = 2972,
-						},
-					},
-				},
-				[3] = {
-					[1] = {
-						[1] = 4375,
-						[5] = 5,
-					},
-					[6210] = {
-						[1] = 4180,
-						[5] = 3,
-					},
-					[6211] = {
-						[1] = 14859,
-						[5] = 44,
-					},
-					[6214] = {
-						[1] = 1505,
-						[5] = 2,
-					},
-					[6218] = {
-						[1] = 3657,
-						[5] = 4,
-					},
-					[508] = {
-						[1] = 12228,
-						[5] = 17,
-					},
-					[670] = {
-						[1] = 2097,
-						[5] = 4,
-					},
-					[6206] = {
-						[1] = 607,
-						[5] = 1,
-					},
-					[6222] = {
-						[1] = 1345,
-						[5] = 2,
-					},
-					[6208] = {
-						[1] = 6897,
-						[5] = 9,
-					},
-					[6219] = {
-						[1] = 1419,
-						[5] = 2,
-					},
-					[4033] = {
-						[1] = 2484,
-						[5] = 3,
-					},
-				},
-			},
-			[6476] = {
-				[1] = {
-					[1] = {
-						[1] = 119191,
-						[5] = 358,
-						[11] = 233,
-					},
-					[2] = {
-						[200] = {
-							[1] = 48217,
-							[2] = 1378,
-							[3] = 82,
-							[4] = 1,
-							[20] = {
-								[1] = 38,
-								[3] = 8,
-								[6] = 19,
-								[7] = 11,
-							},
-							[30] = {
-								[1] = 1160,
-								[2] = 3211,
-							},
-						},
-						[5] = {
-							[1] = 70974,
-							[2] = 369,
-							[3] = 276,
-							[20] = {
-								[1] = 14,
-								[2] = 14,
-							},
-							[30] = {
-								[5] = 12238,
-							},
-						},
-					},
-					[3] = {
-						[31] = {
-							[1] = {
-								[1] = 48217,
-								[2] = 1378,
-								[3] = 82,
-								[4] = 1,
-							},
-							[4] = {
-								[1] = 38,
-								[3] = 8,
-								[6] = 19,
-								[7] = 11,
-							},
-							[5] = {
-								[1] = 1160,
-								[2] = 3211,
-							},
-						},
-						[6482] = {
-							[1] = {
-								[1] = 70974,
-								[2] = 369,
-								[3] = 276,
-							},
-							[4] = {
-								[1] = 14,
-								[2] = 14,
-							},
-							[5] = {
-								[5] = 12238,
-							},
-						},
-					},
-				},
-				[2] = {
-					[1] = {
-						[1] = 177118,
-						[3] = 7,
-						[5] = 476,
-						[9] = 331,
-						[10] = 62520,
-					},
-					[2] = {
-						[1] = {
-							[1] = 211,
-							[2] = 211,
-							[3] = 1,
-						},
-						[2] = {
-							[1] = 1855,
-							[2] = 729,
-							[3] = 3,
-							[5] = 88,
-							[6] = 22181,
-							[20] = {
-								[1] = 1,
-								[2] = 1,
-							},
-							[30] = {
-								[5] = 387,
-							},
-						},
-						[3] = {
-							[1] = 2406,
-							[2] = 150,
-							[3] = 20,
-							[5] = 11,
-							[6] = 396,
-							[20] = {
-								[1] = 1,
-								[5] = 1,
-							},
-							[30] = {
-								[5] = 62,
-							},
-						},
-						[4] = {
-							[1] = 8401,
-							[2] = 1917,
-							[3] = 8,
-							[4] = 1,
-							[5] = 115,
-							[6] = 21250,
-							[20] = {
-								[1] = 3,
-								[5] = 3,
-							},
-							[30] = {
-								[5] = 90,
-							},
-						},
-						[5] = {
-							[1] = 34031,
-							[2] = 2901,
-							[3] = 34,
-							[4] = 6,
-							[5] = 46,
-							[6] = 15284,
-							[20] = {
-								[1] = 2,
-								[5] = 2,
-							},
-							[30] = {
-								[5] = 2413,
-							},
-						},
-						[6] = {
-							[1] = 1557,
-							[2] = 328,
-							[3] = 6,
-						},
-						[0] = {
-							[2] = 124,
-							[5] = 71,
-							[6] = 3409,
-						},
-						[200] = {
-							[1] = 128657,
-							[2] = 1769,
-							[3] = 404,
-							[4] = 108,
-							[20] = {
-								[1] = 63,
-								[3] = 21,
-								[5] = 4,
-								[6] = 24,
-								[7] = 14,
-							},
-							[30] = {
-								[2] = 420,
-								[4] = 16,
-							},
-						},
-					},
-				},
-				[3] = {
-					[1] = {
-						[1] = 1126,
-						[5] = 4,
-					},
-					[677] = {
-						[1] = 3454,
-						[5] = 13,
-					},
-					[678] = {
-						[1] = 2405,
-						[5] = 9,
-					},
-					[6206] = {
-						[1] = 4432,
-						[5] = 25,
-					},
-					[6210] = {
-						[1] = 6737,
-						[5] = 22,
-					},
-					[6214] = {
-						[1] = 1854,
-						[5] = 7,
-					},
-					[6218] = {
-						[1] = 940,
-						[5] = 4,
-					},
-					[6222] = {
-						[1] = 9387,
-						[5] = 21,
-					},
-					[4033] = {
-						[1] = 3027,
-						[5] = 12,
-					},
-					[6211] = {
-						[1] = 25077,
-						[5] = 65,
-					},
-					[6215] = {
-						[1] = 3744,
-						[5] = 13,
-					},
-					[6219] = {
-						[1] = 5604,
-						[5] = 19,
-					},
-					[6223] = {
-						[1] = 4221,
-						[5] = 18,
-					},
-					[6208] = {
-						[1] = 1904,
-						[5] = 7,
-					},
-					[6228] = {
-						[1] = 1555,
-						[5] = 6,
-					},
-					[670] = {
-						[1] = 23679,
-						[5] = 46,
-					},
-					[508] = {
-						[1] = 7947,
-						[5] = 21,
-					},
-					[6426] = {
-						[1] = 3906,
-						[5] = 17,
-					},
-					[5531] = {
-						[1] = 2289,
-						[5] = 9,
-					},
-					[6347] = {
-						[1] = 5903,
-						[5] = 20,
-					},
-				},
-			},
-			[3747] = {
-				[2] = {
-					[1] = {
-						[1] = 1149,
-						[5] = 3,
-					},
-					[2] = {
-						[300] = {
-							[1] = 231,
-							[2] = 231,
-							[3] = 1,
-						},
-					},
-				},
-			},
-			[4677] = {
-				[2] = {
-					[1] = {
-						[1] = 1110,
-						[5] = 1,
-					},
-					[2] = {
-					},
-				},
-			},
-			[2216] = {
-				[2] = {
-					[1] = {
-					},
-					[2] = {
-						[200] = {
-							[20] = {
-								[1] = 1,
-								[3] = 1,
-							},
-						},
-					},
-				},
-			},
-			[6484] = {
-				[1] = {
-					[1] = {
-						[1] = 43661,
-						[5] = 38,
-						[11] = 103,
-					},
-					[2] = {
-						[200] = {
-							[1] = 43661,
-							[2] = 2985,
-							[3] = 38,
-							[20] = {
-								[1] = 36,
-								[3] = 15,
-								[6] = 14,
-								[7] = 7,
-							},
-							[30] = {
-								[1] = 1161,
-								[2] = 2337,
-								[3] = 3,
-							},
-						},
-					},
-					[3] = {
-						[2378] = {
-							[1] = {
-								[1] = 4,
-								[2] = 4,
-								[3] = 1,
-							},
-						},
-						[743] = {
-							[1] = {
-								[1] = 4371,
-								[2] = 2548,
-								[3] = 3,
-							},
-							[3] = {
-								[1] = 4,
-								[2] = 2,
-								[3] = 2,
-							},
-							[5] = {
-								[2] = 366,
-							},
-						},
-						[31] = {
-							[1] = {
-								[1] = 21426,
-								[2] = 1941,
-								[3] = 27,
-							},
-							[4] = {
-								[1] = 31,
-								[3] = 14,
-								[6] = 10,
-								[7] = 7,
-							},
-							[5] = {
-								[1] = 1161,
-								[2] = 1918,
-								[3] = 3,
-							},
-						},
-						[133] = {
-							[1] = {
-								[1] = 17860,
-								[2] = 2985,
-								[3] = 7,
-							},
-							[4] = {
-								[1] = 5,
-								[3] = 1,
-								[6] = 4,
-							},
-							[5] = {
-								[2] = 53,
-							},
-						},
-					},
-				},
-				[2] = {
-					[1] = {
-						[1] = 252959,
-						[3] = 1,
-						[5] = 515,
-						[9] = 92,
-						[10] = 23893,
-					},
-					[2] = {
-						[1] = {
-							[1] = 3630,
-							[2] = 724,
-							[3] = 8,
-							[4] = 1,
-							[20] = {
-								[1] = 5,
-								[2] = 5,
-							},
-							[30] = {
-								[5] = 348,
-							},
-						},
-						[2] = {
-							[1] = 1301,
-							[2] = 477,
-							[3] = 7,
-							[20] = {
-								[1] = 1,
-								[2] = 1,
-							},
-							[30] = {
-								[5] = 35,
-							},
-						},
-						[3] = {
-							[1] = 6381,
-							[2] = 507,
-							[3] = 34,
-							[4] = 2,
-							[20] = {
-								[1] = 12,
-								[2] = 12,
-							},
-							[30] = {
-								[5] = 598,
-							},
-						},
-						[4] = {
-							[1] = 44205,
-							[2] = 2180,
-							[3] = 35,
-							[4] = 8,
-						},
-						[5] = {
-							[1] = 64198,
-							[2] = 2617,
-							[3] = 56,
-							[4] = 5,
-							[5] = 59,
-							[6] = 21607,
-							[20] = {
-								[1] = 11,
-								[2] = 10,
-								[5] = 1,
-							},
-							[30] = {
-								[5] = 6907,
-							},
-						},
-						[6] = {
-							[1] = 786,
-							[2] = 363,
-							[3] = 3,
-							[4] = 1,
-							[5] = 4,
-							[6] = 496,
-							[30] = {
-								[5] = 172,
-							},
-						},
-						[200] = {
-							[1] = 132458,
-							[2] = 2237,
-							[3] = 372,
-							[4] = 103,
-							[20] = {
-								[1] = 61,
-								[2] = 1,
-								[3] = 35,
-								[6] = 15,
-								[7] = 10,
-							},
-							[30] = {
-								[2] = 372,
-								[4] = 113,
-							},
-						},
-						[0] = {
-							[2] = 195,
-							[5] = 29,
-							[6] = 1790,
-						},
-					},
-				},
-				[3] = {
-					[6210] = {
-						[1] = 2614,
-						[5] = 1,
-					},
-					[6211] = {
-						[1] = 13389,
-						[5] = 23,
-					},
-					[6347] = {
-						[1] = 2896,
-						[5] = 1,
-					},
-					[6228] = {
-						[1] = 2985,
-						[5] = 1,
-					},
-					[6218] = {
-						[1] = 2945,
-						[5] = 1,
-					},
-					[670] = {
-						[1] = 6794,
-						[5] = 5,
-					},
-					[6206] = {
-						[1] = 2046,
-						[5] = 1,
-					},
-					[508] = {
-						[1] = 6540,
-						[5] = 3,
-					},
-					[4033] = {
-						[1] = 3452,
-						[5] = 2,
-					},
-				},
-			},
-			[3502] = {
-				[1] = {
-					[1] = {
-						[10] = 404,
-						[9] = 8,
-					},
-					[2] = {
-					},
-					[3] = {
-					},
-				},
-			},
-			[6448] = {
-				[1] = {
-					[1] = {
-						[11] = 86,
-					},
-					[2] = {
-					},
-					[3] = {
-					},
-				},
-				[2] = {
-					[1] = {
-						[1] = 2056,
-						[3] = 6,
-						[5] = 6,
-					},
-					[2] = {
-						[2] = {
-							[1] = 218,
-							[2] = 218,
-							[3] = 1,
-						},
-						[200] = {
-							[1] = 1328,
-							[2] = 550,
-							[3] = 4,
-						},
-						[6] = {
-							[1] = 510,
-							[2] = 510,
-							[3] = 1,
-							[4] = 1,
-						},
-					},
-				},
-			},
-			[593] = {
-				[1] = {
-					[1] = {
-						[11] = 120,
-					},
-					[2] = {
-					},
-					[3] = {
-					},
-				},
-				[2] = {
-					[1] = {
-						[1] = 2326,
-						[5] = 1,
-					},
-					[2] = {
-						[200] = {
-							[1] = 2326,
-							[2] = 2326,
-							[3] = 1,
-						},
-					},
-				},
-			},
-			[3426] = {
-				[1] = {
-					[1] = {
-						[1] = 50959,
-						[5] = 179,
-						[7] = 1309,
-						[11] = 377,
-					},
-					[2] = {
-						[2] = {
-							[1] = 2682,
-							[2] = 713,
-							[3] = 6,
-							[30] = {
-								[5] = 654,
-							},
-						},
-						[200] = {
-							[1] = 6817,
-							[2] = 965,
-							[3] = 28,
-							[4] = 12,
-							[20] = {
-								[1] = 2,
-								[3] = 1,
-								[7] = 1,
-							},
-							[30] = {
-								[2] = 28,
-							},
-						},
-					},
-					[3] = {
-						[5820] = {
-							[1] = {
-								[1] = 39,
-								[2] = 39,
-								[3] = 1,
-							},
-							[5] = {
-								[5] = 13,
-							},
-						},
-						[376] = {
-							[1] = {
-								[1] = 1567,
-								[2] = 447,
-								[3] = 6,
-								[4] = 2,
-							},
-							[5] = {
-								[2] = 28,
-							},
-						},
-						[31] = {
-							[1] = {
-								[1] = 3385,
-								[2] = 342,
-								[3] = 19,
-								[4] = 8,
-							},
-							[4] = {
-								[1] = 2,
-								[3] = 1,
-								[7] = 1,
-							},
-						},
-						[273] = {
-							[1] = {
-								[1] = 900,
-								[2] = 466,
-								[3] = 2,
-								[4] = 1,
-							},
-						},
-						[2341] = {
-							[1] = {
-								[1] = 965,
-								[2] = 965,
-								[3] = 1,
-								[4] = 1,
-							},
-						},
-						[584] = {
-							[1] = {
-								[1] = 2643,
-								[2] = 713,
-								[3] = 5,
-							},
-							[5] = {
-								[5] = 641,
-							},
-						},
-					},
-				},
-				[2] = {
-					[1] = {
-						[1] = 23023,
-						[5] = 41,
-						[7] = 29556,
-						[8] = 7195,
-					},
-					[2] = {
-						[2] = {
-							[1] = 237,
-							[2] = 237,
-							[3] = 1,
-							[30] = {
-								[5] = 237,
-							},
-						},
-						[200] = {
-							[1] = 3949,
-							[2] = 496,
-							[3] = 14,
-							[4] = 2,
-							[20] = {
-								[1] = 15,
-								[3] = 1,
-								[6] = 13,
-								[7] = 1,
-							},
-						},
-					},
-				},
-				[3] = {
-					[3426] = {
-						[1] = 237,
-						[5] = 1,
-					},
-					[6230] = {
-						[1] = 9499,
-						[5] = 34,
-					},
-				},
-			},
-			[6494] = {
-				[1] = {
-					[1] = {
-						[1] = 4868,
-						[5] = 29,
-						[11] = 80,
-					},
-					[2] = {
-						[200] = {
-							[1] = 4641,
-							[2] = 236,
-							[3] = 27,
-							[4] = 1,
-							[20] = {
-								[1] = 17,
-								[3] = 4,
-								[4] = 1,
-								[5] = 6,
-								[6] = 1,
-								[7] = 5,
-							},
-						},
-					},
-					[3] = {
-						[31] = {
-							[1] = {
-								[1] = 4641,
-								[2] = 236,
-								[3] = 27,
-								[4] = 1,
-							},
-							[4] = {
-								[1] = 17,
-								[3] = 4,
-								[4] = 1,
-								[5] = 6,
-								[6] = 1,
-								[7] = 5,
-							},
-						},
-					},
-				},
-				[2] = {
-					[1] = {
-						[1] = 14869,
-						[3] = 10,
-						[5] = 55,
-						[9] = 73,
-						[10] = 15411,
-					},
-					[2] = {
-						[2] = {
-							[1] = 6353,
-							[2] = 689,
-							[3] = 13,
-							[5] = 35,
-							[6] = 8709,
-							[20] = {
-								[1] = 1,
-								[2] = 1,
-							},
-							[30] = {
-								[5] = 622,
-							},
-						},
-						[3] = {
-							[1] = 290,
-							[2] = 18,
-							[3] = 18,
-						},
-						[4] = {
-							[2] = 182,
-							[5] = 23,
-							[6] = 4186,
-						},
-						[5] = {
-							[2] = 360,
-							[5] = 6,
-							[6] = 1930,
-						},
-						[6] = {
-							[2] = 96,
-							[5] = 3,
-							[6] = 288,
-						},
-						[0] = {
-							[2] = 63,
-							[5] = 6,
-							[6] = 298,
-						},
-						[200] = {
-							[1] = 8194,
-							[2] = 766,
-							[3] = 22,
-							[4] = 7,
-							[20] = {
-								[1] = 3,
-								[2] = 2,
-								[7] = 1,
-							},
-							[30] = {
-								[4] = 1,
-							},
-						},
-					},
-				},
-				[3] = {
-					[6223] = {
-						[1] = 2126,
-						[5] = 10,
-					},
-					[6211] = {
-						[1] = 1864,
-						[5] = 14,
-					},
-					[6219] = {
-						[1] = 651,
-						[5] = 3,
-					},
-				},
-			},
-			[5941] = {
-				[2] = {
-					[1] = {
-						[1] = 640,
-						[5] = 1,
-					},
-					[2] = {
-					},
-				},
-			},
-			[6498] = {
-				[1] = {
-					[1] = {
-						[1] = 47163,
-						[5] = 133,
-						[11] = 111,
-					},
-					[2] = {
-						[200] = {
-							[1] = 47163,
-							[2] = 1178,
-							[3] = 133,
-							[4] = 4,
-							[20] = {
-								[1] = 65,
-								[3] = 43,
-								[6] = 12,
-								[7] = 10,
-							},
-							[30] = {
-								[2] = 1255,
-							},
-						},
-					},
-					[3] = {
-						[2378] = {
-							[1] = {
-								[1] = 283,
-								[2] = 16,
-								[3] = 26,
-							},
-							[4] = {
-								[1] = 2,
-								[3] = 1,
-								[6] = 1,
-							},
-						},
-						[640] = {
-							[1] = {
-								[1] = 2791,
-								[2] = 890,
-								[3] = 13,
-							},
-						},
-						[376] = {
-							[1] = {
-								[1] = 4070,
-								[2] = 788,
-								[3] = 6,
-							},
-							[4] = {
-								[1] = 1,
-								[6] = 1,
-							},
-						},
-						[31] = {
-							[1] = {
-								[1] = 40019,
-								[2] = 1178,
-								[3] = 88,
-								[4] = 4,
-							},
-							[4] = {
-								[1] = 62,
-								[3] = 42,
-								[6] = 10,
-								[7] = 10,
-							},
-							[5] = {
-								[2] = 1255,
-							},
-						},
-					},
-				},
-				[2] = {
-					[1] = {
-						[1] = 113737,
-						[3] = 1,
-						[5] = 332,
-						[9] = 123,
-						[10] = 18918,
-					},
-					[2] = {
-						[2] = {
-							[1] = 1190,
-							[2] = 291,
-							[3] = 5,
-							[5] = 12,
-							[6] = 3182,
-							[20] = {
-								[1] = 1,
-								[2] = 1,
-							},
-						},
-						[3] = {
-							[1] = 350,
-							[2] = 142,
-							[3] = 9,
-						},
-						[4] = {
-							[1] = 6664,
-							[2] = 1078,
-							[3] = 7,
-							[4] = 1,
-							[5] = 16,
-							[6] = 3002,
-						},
-						[5] = {
-							[1] = 42442,
-							[2] = 2665,
-							[3] = 34,
-							[4] = 6,
-							[5] = 30,
-							[6] = 10352,
-						},
-						[6] = {
-							[1] = 1917,
-							[2] = 571,
-							[3] = 24,
-							[4] = 2,
-						},
-						[0] = {
-							[2] = 91,
-							[5] = 65,
-							[6] = 2382,
-						},
-						[200] = {
-							[1] = 61174,
-							[2] = 1308,
-							[3] = 253,
-							[4] = 39,
-							[20] = {
-								[1] = 28,
-								[2] = 1,
-								[3] = 5,
-								[6] = 13,
-								[7] = 9,
-							},
-							[30] = {
-								[2] = 180,
-								[4] = 22,
-							},
-						},
-					},
-				},
-				[3] = {
-					[6211] = {
-						[1] = 1864,
-						[5] = 9,
-					},
-					[6347] = {
-						[1] = 814,
-						[5] = 5,
-					},
-					[6214] = {
-						[1] = 16,
-						[5] = 2,
-					},
-					[677] = {
-						[1] = 32,
-						[5] = 2,
-					},
-					[670] = {
-						[1] = 32899,
-						[5] = 73,
-					},
-					[6208] = {
-						[1] = 30,
-						[5] = 2,
-					},
-					[6206] = {
-						[1] = 951,
-						[5] = 8,
-					},
-					[6222] = {
-						[1] = 13,
-						[5] = 1,
-					},
-					[6223] = {
-						[1] = 904,
-						[5] = 3,
-					},
-					[6219] = {
-						[1] = 9612,
-						[5] = 24,
-					},
-					[508] = {
-						[1] = 28,
-						[5] = 4,
-					},
-				},
-			},
-			[1245] = {
-				[2] = {
-					[1] = {
-					},
-					[2] = {
-						[200] = {
-							[20] = {
-								[1] = 1,
-								[3] = 1,
-							},
-						},
-					},
-				},
-			},
-			[2999] = {
-				[2] = {
-					[1] = {
-						[1] = 356,
-						[5] = 1,
-					},
-					[2] = {
-					},
-				},
-			},
-			[6226] = {
-				[1] = {
-					[1] = {
-						[1] = 94981,
-						[5] = 301,
-						[7] = 1500,
-						[11] = 356,
-					},
-					[2] = {
-						[2] = {
-							[1] = 52,
-							[2] = 40,
-							[3] = 2,
-							[30] = {
-								[5] = 46,
-							},
-						},
-						[3] = {
-							[1] = 1623,
-							[2] = 211,
-							[3] = 13,
-							[4] = 2,
-							[30] = {
-								[5] = 191,
-							},
-						},
-						[200] = {
-							[1] = 24917,
-							[2] = 1318,
-							[3] = 59,
-							[4] = 32,
-							[20] = {
-								[1] = 4,
-								[3] = 3,
-								[7] = 1,
-							},
-							[30] = {
-								[2] = 28,
-							},
-						},
-					},
-					[3] = {
-						[5820] = {
-							[1] = {
-								[1] = 52,
-								[2] = 40,
-								[3] = 2,
-							},
-							[5] = {
-								[5] = 46,
-							},
-						},
-						[2341] = {
-							[1] = {
-								[1] = 12475,
-								[2] = 1048,
-								[3] = 13,
-								[4] = 12,
-							},
-						},
-						[6231] = {
-							[1] = {
-								[1] = 1623,
-								[2] = 211,
-								[3] = 13,
-								[4] = 2,
-							},
-							[5] = {
-								[5] = 191,
-							},
-						},
-						[31] = {
-							[1] = {
-								[1] = 7705,
-								[2] = 370,
-								[3] = 38,
-								[4] = 17,
-							},
-							[4] = {
-								[1] = 4,
-								[3] = 3,
-								[7] = 1,
-							},
-							[5] = {
-								[2] = 28,
-							},
-						},
-						[3447] = {
-							[1] = {
-								[1] = 1318,
-								[2] = 1318,
-								[3] = 1,
-								[4] = 1,
-							},
-						},
-						[376] = {
-							[1] = {
-								[1] = 928,
-								[2] = 476,
-								[3] = 2,
-								[4] = 2,
-							},
-						},
-						[1807] = {
-							[1] = {
-								[1] = 2491,
-								[2] = 1021,
-								[3] = 5,
-							},
-						},
-					},
-				},
-				[2] = {
-					[1] = {
-						[1] = 19399,
-						[2] = 845,
-						[5] = 35,
-						[6] = 254,
-						[7] = 24316,
-						[8] = 6669,
-					},
-					[2] = {
-						[200] = {
-							[1] = 6645,
-							[2] = 544,
-							[3] = 23,
-							[4] = 4,
-							[20] = {
-								[1] = 9,
-								[3] = 3,
-								[6] = 5,
-								[7] = 1,
-							},
-						},
-					},
-				},
-				[3] = {
-					[6230] = {
-						[1] = 26592,
-						[5] = 74,
 					},
 				},
 			},
@@ -34043,18 +35888,18 @@ SW_DataCollection = {
 						},
 					},
 					[3] = {
-						[31] = {
-							[1] = {
-								[1] = 1296,
-								[2] = 664,
-								[3] = 2,
-							},
-						},
 						[758] = {
 							[1] = {
 								[2] = 46,
 								[7] = 1,
 								[8] = 46,
+							},
+						},
+						[31] = {
+							[1] = {
+								[1] = 1296,
+								[2] = 664,
+								[3] = 2,
 							},
 						},
 					},
@@ -34352,6 +36197,11 @@ SW_DataCollection = {
 								[5] = 978,
 							},
 						},
+						[0] = {
+							[2] = 51,
+							[5] = 1,
+							[6] = 51,
+						},
 						[200] = {
 							[1] = 14578,
 							[2] = 1635,
@@ -34366,11 +36216,6 @@ SW_DataCollection = {
 							[30] = {
 								[4] = 2,
 							},
-						},
-						[0] = {
-							[2] = 51,
-							[5] = 1,
-							[6] = 51,
 						},
 					},
 				},
@@ -34391,13 +36236,13 @@ SW_DataCollection = {
 						[1] = 3510,
 						[5] = 8,
 					},
-					[670] = {
-						[1] = 809,
-						[5] = 3,
-					},
 					[6223] = {
 						[1] = 400,
 						[5] = 1,
+					},
+					[670] = {
+						[1] = 809,
+						[5] = 3,
 					},
 				},
 			},
@@ -34510,6 +36355,11 @@ SW_DataCollection = {
 								[2] = 1,
 							},
 						},
+						[0] = {
+							[2] = 163,
+							[5] = 49,
+							[6] = 3341,
+						},
 						[200] = {
 							[1] = 108685,
 							[2] = 3827,
@@ -34528,21 +36378,16 @@ SW_DataCollection = {
 								[4] = 65,
 							},
 						},
-						[0] = {
-							[2] = 163,
-							[5] = 49,
-							[6] = 3341,
-						},
 					},
 				},
 				[3] = {
-					[6211] = {
-						[1] = 10179,
-						[5] = 11,
-					},
 					[678] = {
 						[1] = 3270,
 						[5] = 3,
+					},
+					[6211] = {
+						[1] = 10179,
+						[5] = 11,
 					},
 				},
 			},
@@ -34667,6 +36512,11 @@ SW_DataCollection = {
 							[5] = 4,
 							[6] = 384,
 						},
+						[0] = {
+							[2] = 83,
+							[5] = 2,
+							[6] = 130,
+						},
 						[200] = {
 							[1] = 48196,
 							[2] = 2353,
@@ -34683,11 +36533,6 @@ SW_DataCollection = {
 							[30] = {
 								[2] = 56,
 							},
-						},
-						[0] = {
-							[2] = 83,
-							[5] = 2,
-							[6] = 130,
 						},
 					},
 				},
@@ -34873,11 +36718,6 @@ SW_DataCollection = {
 								[2] = 30,
 							},
 						},
-						[0] = {
-							[2] = 130,
-							[5] = 77,
-							[6] = 4356,
-						},
 						[200] = {
 							[1] = 152989,
 							[2] = 1654,
@@ -34894,6 +36734,11 @@ SW_DataCollection = {
 								[2] = 330,
 								[4] = 106,
 							},
+						},
+						[0] = {
+							[2] = 130,
+							[5] = 77,
+							[6] = 4356,
 						},
 					},
 				},
@@ -34922,13 +36767,13 @@ SW_DataCollection = {
 						[1] = 2984,
 						[5] = 3,
 					},
-					[670] = {
-						[1] = 11324,
-						[5] = 26,
-					},
 					[6206] = {
 						[1] = 1184,
 						[5] = 1,
+					},
+					[670] = {
+						[1] = 11324,
+						[5] = 26,
 					},
 				},
 			},
@@ -35093,6 +36938,11 @@ SW_DataCollection = {
 								[5] = 49,
 							},
 						},
+						[0] = {
+							[2] = 83,
+							[5] = 2,
+							[6] = 166,
+						},
 						[200] = {
 							[1] = 41061,
 							[2] = 1824,
@@ -35110,11 +36960,6 @@ SW_DataCollection = {
 								[2] = 120,
 								[4] = 29,
 							},
-						},
-						[0] = {
-							[2] = 83,
-							[5] = 2,
-							[6] = 166,
 						},
 					},
 				},
@@ -35175,8 +37020,8 @@ SW_DataCollection = {
 						[1] = 1773,
 						[5] = 1,
 					},
-					[6208] = {
-						[1] = 1045,
+					[6347] = {
+						[1] = 1176,
 						[5] = 1,
 					},
 					[6210] = {
@@ -35187,582 +37032,928 @@ SW_DataCollection = {
 						[1] = 1231,
 						[5] = 1,
 					},
-					[6519] = {
-						[1] = 702,
+					[6426] = {
+						[1] = 1652,
 						[5] = 1,
 					},
 					[508] = {
 						[1] = 1128,
 						[5] = 1,
 					},
-					[6426] = {
-						[1] = 1652,
+					[6519] = {
+						[1] = 702,
 						[5] = 1,
 					},
 					[5531] = {
 						[1] = 3085,
 						[5] = 4,
 					},
-					[6347] = {
-						[1] = 1176,
+					[6208] = {
+						[1] = 1045,
 						[5] = 1,
 					},
 				},
 			},
-			[1634] = {
+			["Name"] = "SyncInit",
+			[6218] = {
 				[1] = {
 					[1] = {
+						[1] = 9133,
+						[2] = 94257,
+						[4] = 8,
+						[5] = 26,
+						[6] = 11764,
+						[7] = 1169130,
+						[8] = 351773,
+						[9] = 25,
+						[10] = 4890,
+						[11] = 4379,
 					},
 					[2] = {
-					},
-					[3] = {
-					},
-				},
-			},
-			[6553] = {
-				[1] = {
-					[1] = {
-						[1] = 47928,
-						[5] = 252,
-						[11] = 201,
-					},
-					[2] = {
-						[200] = {
-							[1] = 47928,
-							[2] = 460,
-							[3] = 252,
-							[4] = 10,
+						[2] = {
+							[1] = 435,
+							[2] = 435,
+							[3] = 1,
+							[4] = 1,
+							[5] = 1,
+							[6] = 90,
+						},
+						[3] = {
+							[1] = 4628,
+							[2] = 615,
+							[3] = 8,
+							[5] = 24,
+							[6] = 4800,
 							[20] = {
-								[1] = 63,
-								[3] = 16,
-								[4] = 13,
-								[5] = 6,
-								[6] = 21,
-								[7] = 6,
-								[11] = 1,
+								[1] = 1,
+								[2] = 1,
 							},
 							[30] = {
-								[2] = 229,
+								[5] = 147,
+							},
+						},
+						[200] = {
+							[1] = 815,
+							[2] = 104,
+							[3] = 12,
+							[4] = 1,
+							[20] = {
+								[1] = 3,
+								[3] = 2,
+								[6] = 1,
+							},
+							[30] = {
+								[4] = 3,
 							},
 						},
 					},
 					[3] = {
-						[102] = {
+						[6571] = {
 							[1] = {
-								[1] = 6486,
-								[2] = 332,
-								[3] = 29,
+								[2] = 200,
+								[7] = 24,
+								[8] = 4800,
+							},
+							[2] = {
+								[1] = 8000,
+								[2] = 1000,
+								[3] = 8,
+							},
+						},
+						[191] = {
+							[1] = {
+								[1] = 443,
+								[2] = 443,
+								[3] = 1,
+							},
+							[5] = {
+								[5] = 147,
+							},
+						},
+						[61] = {
+							[1] = {
+								[1] = 615,
+								[2] = 615,
+								[3] = 1,
+							},
+						},
+						[48] = {
+							[1] = {
+								[1] = 3570,
+								[2] = 602,
+								[3] = 6,
 							},
 							[4] = {
 								[1] = 1,
-								[11] = 1,
+								[2] = 1,
+							},
+						},
+						[330] = {
+							[2] = {
+								[1] = 81795,
+								[2] = 3496,
+								[3] = 60,
+								[4] = 11,
+								[6] = 9321,
+							},
+						},
+						[6543] = {
+							[1] = {
+								[1] = 435,
+								[2] = 435,
+								[3] = 1,
+								[4] = 1,
+								[7] = 1,
+								[8] = 90,
+							},
+						},
+						[2239] = {
+							[2] = {
+								[1] = 925708,
+								[2] = 1806,
+								[3] = 1281,
+								[4] = 210,
+								[5] = 8564,
+								[6] = 301740,
+							},
+						},
+						[423] = {
+							[2] = {
+								[1] = 161648,
+								[2] = 1950,
+								[3] = 154,
+								[4] = 22,
+								[5] = 2549,
+								[6] = 24550,
 							},
 						},
 						[31] = {
 							[1] = {
-								[1] = 41442,
-								[2] = 460,
-								[3] = 223,
-								[4] = 10,
+								[1] = 815,
+								[2] = 104,
+								[3] = 12,
+								[4] = 1,
 							},
 							[4] = {
-								[1] = 62,
-								[3] = 16,
-								[4] = 13,
-								[5] = 6,
-								[6] = 21,
-								[7] = 6,
+								[1] = 3,
+								[3] = 2,
+								[6] = 1,
 							},
 							[5] = {
-								[2] = 229,
+								[4] = 3,
 							},
 						},
 					},
 				},
 				[2] = {
 					[1] = {
-						[1] = 82625,
-						[3] = 25,
-						[5] = 201,
-						[9] = 254,
-						[10] = 55396,
+						[1] = 105066,
+						[2] = 4605,
+						[3] = 5,
+						[4] = 1,
+						[5] = 165,
+						[6] = 1741,
+						[7] = 143248,
+						[8] = 36877,
+						[9] = 120,
+						[10] = 20398,
 					},
 					[2] = {
 						[2] = {
-							[1] = 10863,
-							[2] = 727,
-							[3] = 30,
-							[5] = 108,
-							[6] = 27644,
+							[1] = 5251,
+							[2] = 938,
+							[3] = 7,
+							[20] = {
+								[1] = 1,
+								[2] = 1,
+							},
 							[30] = {
-								[5] = 359,
+								[5] = 187,
 							},
 						},
 						[3] = {
-							[1] = 390,
-							[2] = 102,
-							[3] = 19,
+							[1] = 7677,
+							[2] = 840,
+							[3] = 15,
+							[5] = 48,
+							[6] = 5919,
+							[30] = {
+								[5] = 164,
+							},
 						},
-						[4] = {
-							[1] = 10442,
-							[2] = 948,
-							[3] = 23,
-							[4] = 2,
-							[5] = 109,
-							[6] = 19881,
+						[5] = {
+							[1] = 18748,
+							[2] = 1715,
+							[3] = 27,
+							[5] = 56,
+							[6] = 12319,
+							[30] = {
+								[5] = 2992,
+							},
+						},
+						[6] = {
+							[2] = 300,
+							[5] = 5,
+							[6] = 1500,
+						},
+						[200] = {
+							[1] = 65860,
+							[2] = 3028,
+							[3] = 102,
+							[4] = 9,
+							[20] = {
+								[1] = 10,
+								[3] = 7,
+								[11] = 3,
+							},
+							[30] = {
+								[3] = 1,
+							},
+						},
+						[0] = {
+							[2] = 54,
+							[5] = 8,
+							[6] = 360,
+						},
+						[300] = {
+							[1] = 442,
+							[2] = 303,
+							[3] = 2,
+						},
+					},
+				},
+				[3] = {
+					[1] = {
+						[2] = 750,
+						[6] = 547,
+						[7] = 17466,
+						[8] = 4510,
+					},
+					[6210] = {
+						[2] = 996,
+						[4] = 1,
+						[6] = 120,
+						[7] = 76564,
+						[8] = 19375,
+					},
+					[6510] = {
+						[1] = 601,
+						[7] = 366,
+						[5] = 1,
+					},
+					[6211] = {
+						[2] = 2278,
+						[7] = 140731,
+						[8] = 48355,
+					},
+					[6227] = {
+						[7] = 722,
+						[8] = 355,
+					},
+					[6511] = {
+						[7] = 1534,
+					},
+					[6228] = {
+						[2] = 6360,
+						[4] = 1,
+						[6] = 217,
+						[7] = 35992,
+						[8] = 10127,
+					},
+					[6512] = {
+						[1] = 1657,
+						[5] = 3,
+					},
+					[6214] = {
+						[7] = 14792,
+						[4] = 1,
+						[8] = 4684,
+					},
+					[6230] = {
+						[1] = 599,
+						[5] = 1,
+					},
+					[670] = {
+						[2] = 7580,
+						[7] = 93443,
+						[8] = 26114,
+					},
+					[6215] = {
+						[2] = 12695,
+						[6] = 4230,
+						[7] = 51729,
+						[8] = 11600,
+					},
+					[678] = {
+						[2] = 8288,
+						[6] = 875,
+						[7] = 53650,
+						[8] = 10579,
+					},
+					[6516] = {
+						[1] = 758,
+						[5] = 3,
+					},
+					[6217] = {
+						[7] = 722,
+						[8] = 236,
+					},
+					[508] = {
+						[2] = 8642,
+						[4] = 1,
+						[7] = 97882,
+						[8] = 31818,
+					},
+					[6218] = {
+						[2] = 2378,
+						[10] = 2232,
+						[7] = 39874,
+						[9] = 16,
+						[8] = 9045,
+					},
+					[6219] = {
+						[2] = 11934,
+						[4] = 2,
+						[6] = 778,
+						[7] = 86794,
+						[8] = 36909,
+					},
+					[6566] = {
+						[1] = 255,
+						[5] = 5,
+					},
+					[6347] = {
+						[2] = 5324,
+						[4] = 1,
+						[6] = 1210,
+						[7] = 105205,
+						[8] = 30930,
+					},
+					[6426] = {
+						[2] = 1570,
+						[6] = 762,
+						[7] = 27808,
+						[8] = 5954,
+					},
+					[6568] = {
+						[1] = 82,
+						[10] = 4800,
+						[7] = 8000,
+						[9] = 24,
+						[5] = 1,
+					},
+					[6206] = {
+						[2] = 1327,
+						[4] = 1,
+						[6] = 490,
+						[7] = 45801,
+						[8] = 27646,
+					},
+					[6222] = {
+						[2] = 753,
+						[6] = 353,
+						[7] = 15522,
+						[8] = 5350,
+					},
+					[6443] = {
+						[1] = 1191,
+						[5] = 2,
+					},
+					[6223] = {
+						[2] = 4169,
+						[7] = 71715,
+						[8] = 26237,
+					},
+					[677] = {
+						[2] = 9525,
+						[6] = 1450,
+						[7] = 53754,
+						[8] = 9343,
+					},
+					[6507] = {
+						[7] = 369,
+						[8] = 171,
+					},
+					[6208] = {
+						[2] = 2101,
+						[6] = 81,
+						[7] = 14619,
+						[8] = 5459,
+					},
+					[5531] = {
+						[7] = 16277,
+						[8] = 5530,
+					},
+					[4033] = {
+						[2] = 4343,
+						[7] = 11344,
+						[8] = 5284,
+					},
+					[6564] = {
+						[1] = 195,
+						[5] = 2,
+					},
+					[6521] = {
+						[7] = 3463,
+					},
+					[6538] = {
+						[1] = 540,
+						[5] = 3,
+						[9] = 1,
+						[10] = 90,
+					},
+				},
+			},
+			[4033] = {
+				[1] = {
+					[1] = {
+						[1] = 6306,
+						[2] = 87156,
+						[4] = 12,
+						[5] = 40,
+						[6] = 8957,
+						[7] = 1340962,
+						[8] = 401036,
+						[9] = 32,
+						[10] = 6300,
+						[11] = 4455,
+					},
+					[2] = {
+						[1] = {
+							[1] = 3640,
+							[2] = 318,
+							[3] = 16,
+							[4] = 4,
 							[20] = {
 								[1] = 1,
 								[2] = 1,
 							},
 						},
+						[3] = {
+							[2] = 200,
+							[5] = 32,
+							[30] = {
+								[5] = 100,
+							},
+							[6] = 6300,
+						},
 						[5] = {
-							[1] = 19540,
-							[2] = 1645,
-							[3] = 25,
-							[4] = 3,
-							[5] = 22,
-							[6] = 6565,
+							[1] = 813,
+							[2] = 151,
+							[3] = 8,
+							[4] = 2,
 							[20] = {
 								[1] = 1,
-								[5] = 1,
+								[2] = 1,
 							},
 							[30] = {
-								[5] = 1647,
+								[5] = 121,
 							},
 						},
 						[6] = {
-							[1] = 11338,
-							[2] = 523,
-							[3] = 31,
-							[4] = 7,
-						},
-						[200] = {
-							[1] = 30052,
-							[2] = 1126,
-							[3] = 73,
-							[4] = 23,
-							[20] = {
-								[1] = 13,
-								[2] = 4,
-								[3] = 1,
-								[5] = 3,
-								[6] = 4,
-								[7] = 1,
-							},
+							[1] = 1557,
+							[2] = 158,
+							[3] = 13,
 							[30] = {
-								[2] = 58,
-								[4] = 2,
-							},
-						},
-						[0] = {
-							[2] = 152,
-							[5] = 15,
-							[6] = 1306,
-						},
-					},
-				},
-				[3] = {
-					[1] = {
-						[1] = 2017,
-						[5] = 7,
-					},
-					[677] = {
-						[1] = 2708,
-						[5] = 13,
-					},
-					[678] = {
-						[1] = 4508,
-						[5] = 20,
-					},
-					[6206] = {
-						[1] = 699,
-						[5] = 4,
-					},
-					[6210] = {
-						[1] = 265,
-						[5] = 1,
-					},
-					[6214] = {
-						[1] = 5228,
-						[5] = 20,
-					},
-					[6218] = {
-						[1] = 3003,
-						[5] = 14,
-					},
-					[6222] = {
-						[1] = 2041,
-						[5] = 11,
-					},
-					[4033] = {
-						[1] = 1483,
-						[5] = 7,
-					},
-					[6211] = {
-						[1] = 3276,
-						[5] = 33,
-					},
-					[6215] = {
-						[1] = 239,
-						[5] = 1,
-					},
-					[6219] = {
-						[1] = 10937,
-						[5] = 56,
-					},
-					[6223] = {
-						[1] = 824,
-						[5] = 5,
-					},
-					[6208] = {
-						[1] = 250,
-						[5] = 1,
-					},
-					[670] = {
-						[1] = 721,
-						[5] = 8,
-					},
-					[508] = {
-						[1] = 1501,
-						[5] = 9,
-					},
-					[6426] = {
-						[1] = 3886,
-						[5] = 17,
-					},
-					[5531] = {
-						[1] = 3392,
-						[5] = 21,
-					},
-					[6347] = {
-						[1] = 950,
-						[5] = 4,
-					},
-				},
-			},
-			[6526] = {
-				[1] = {
-					[1] = {
-						[1] = 100653,
-						[5] = 104,
-						[9] = 174,
-						[11] = 143,
-						[10] = 62381,
-					},
-					[2] = {
-						[5] = {
-							[1] = 1688,
-							[2] = 450,
-							[3] = 4,
-							[30] = {
-								[5] = 112,
+								[5] = 39,
 							},
 						},
 						[200] = {
-							[1] = 74296,
-							[2] = 4806,
-							[3] = 49,
+							[1] = 102,
+							[2] = 102,
+							[3] = 1,
 							[20] = {
-								[1] = 24,
-								[3] = 12,
-								[6] = 2,
-								[7] = 9,
-								[8] = 1,
-							},
-							[30] = {
-								[1] = 4319,
-								[2] = 2419,
-								[3] = 11,
-							},
-						},
-						[3] = {
-							[1] = 23914,
-							[2] = 793,
-							[3] = 50,
-							[5] = 174,
-							[6] = 62381,
-							[30] = {
-								[5] = 2664,
+								[1] = 2,
+								[2] = 2,
 							},
 						},
 					},
 					[3] = {
-						[743] = {
+						[6571] = {
 							[1] = {
-								[1] = 14432,
-								[2] = 3886,
-								[3] = 6,
-							},
-							[3] = {
-								[1] = 10,
-								[2] = 2,
-								[3] = 5,
+								[2] = 200,
+								[7] = 32,
+								[8] = 6300,
 							},
 							[5] = {
-								[2] = 52,
-								[3] = 4,
+								[5] = 100,
+							},
+						},
+						[36] = {
+							[2] = {
+								[1] = 161221,
+								[2] = 343,
+								[3] = 528,
+								[5] = 2197,
+								[6] = 16569,
+							},
+						},
+						[722] = {
+							[2] = {
+								[1] = 60557,
+								[2] = 1966,
+								[3] = 43,
+								[4] = 8,
+								[6] = 24356,
+							},
+						},
+						[74] = {
+							[1] = {
+								[1] = 1557,
+								[2] = 158,
+								[3] = 13,
+							},
+							[4] = {
+								[1] = 2,
+								[2] = 2,
+							},
+							[5] = {
+								[5] = 39,
 							},
 						},
 						[31] = {
 							[1] = {
-								[1] = 53658,
-								[2] = 4806,
-								[3] = 39,
+								[1] = 102,
+								[2] = 102,
+								[3] = 1,
+							},
+						},
+						[374] = {
+							[2] = {
+								[1] = 457231,
+								[2] = 2100,
+								[3] = 310,
+								[4] = 56,
+								[5] = 2425,
+								[6] = 181038,
+							},
+						},
+						[165] = {
+							[2] = {
+								[1] = 1490,
+								[2] = 281,
+								[3] = 6,
+							},
+						},
+						[54] = {
+							[1] = {
+								[1] = 813,
+								[2] = 151,
+								[3] = 8,
+								[4] = 2,
 							},
 							[4] = {
-								[1] = 24,
-								[3] = 12,
-								[6] = 2,
-								[7] = 9,
-								[8] = 1,
+								[1] = 1,
+								[2] = 1,
 							},
 							[5] = {
-								[1] = 1173,
-								[2] = 2367,
-								[3] = 7,
+								[5] = 121,
 							},
 						},
-						[102] = {
-							[1] = {
-								[1] = 6206,
-								[2] = 2587,
-								[3] = 4,
-							},
-							[5] = {
-								[1] = 3146,
-							},
-						},
-						[179] = {
-							[1] = {
-								[1] = 1688,
-								[2] = 450,
-								[3] = 4,
-							},
-							[5] = {
-								[5] = 112,
+						[41] = {
+							[2] = {
+								[1] = 492999,
+								[2] = 2094,
+								[3] = 522,
+								[4] = 73,
+								[5] = 621,
+								[6] = 120880,
 							},
 						},
-						[6530] = {
-							[1] = {
-								[2] = 793,
-								[7] = 1,
-								[8] = 793,
+						[188] = {
+							[2] = {
+								[1] = 101351,
+								[2] = 4209,
+								[3] = 52,
+								[4] = 10,
+								[5] = 1467,
+								[6] = 28184,
 							},
 						},
-						[6529] = {
+						[136] = {
 							[1] = {
-								[1] = 23914,
-								[2] = 683,
-								[3] = 50,
-								[7] = 173,
-								[8] = 61588,
+								[1] = 3640,
+								[2] = 318,
+								[3] = 16,
+								[4] = 4,
 							},
-							[5] = {
-								[5] = 2664,
+							[2] = {
+								[1] = 16559,
+								[2] = 703,
+								[3] = 35,
+								[4] = 4,
+								[6] = 6558,
+							},
+							[4] = {
+								[1] = 1,
+								[2] = 1,
 							},
 						},
 					},
 				},
 				[2] = {
 					[1] = {
-						[1] = 332904,
-						[3] = 1,
-						[5] = 682,
-						[9] = 204,
-						[10] = 44724,
+						[1] = 108139,
+						[2] = 10886,
+						[3] = 6,
+						[4] = 2,
+						[5] = 224,
+						[6] = 2485,
+						[7] = 204519,
+						[8] = 108566,
+						[9] = 149,
+						[10] = 21029,
 					},
 					[2] = {
-						[5] = {
-							[1] = 66930,
-							[2] = 3449,
-							[3] = 54,
-							[4] = 8,
-							[5] = 103,
-							[6] = 37142,
-							[20] = {
-								[1] = 8,
-								[2] = 8,
-							},
+						[2] = {
+							[1] = 2242,
+							[2] = 974,
+							[3] = 4,
 							[30] = {
-								[5] = 4037,
+								[1] = 13,
+								[5] = 1094,
 							},
-						},
-						[200] = {
-							[1] = 193122,
-							[2] = 2364,
-							[3] = 539,
-							[4] = 136,
-							[20] = {
-								[1] = 103,
-								[2] = 6,
-								[3] = 43,
-								[5] = 1,
-								[6] = 32,
-								[7] = 14,
-								[8] = 7,
-							},
-							[30] = {
-								[2] = 217,
-								[4] = 155,
-							},
-						},
-						[0] = {
-							[2] = 130,
-							[5] = 89,
-							[6] = 5557,
 						},
 						[3] = {
-							[1] = 2449,
-							[2] = 148,
-							[3] = 21,
-							[20] = {
-								[1] = 4,
-								[2] = 4,
-							},
+							[1] = 8009,
+							[2] = 846,
+							[3] = 17,
+							[5] = 95,
+							[6] = 10405,
 							[30] = {
-								[5] = 200,
+								[5] = 1152,
 							},
 						},
 						[4] = {
-							[1] = 68732,
-							[2] = 2612,
-							[3] = 62,
-							[4] = 10,
-							[5] = 11,
-							[6] = 1987,
-							[20] = {
-								[1] = 2,
-								[2] = 2,
-							},
+							[1] = 484,
+							[2] = 484,
+							[3] = 1,
 						},
-						[2] = {
-							[1] = 1211,
-							[2] = 996,
-							[3] = 5,
+						[5] = {
+							[1] = 10934,
+							[2] = 1018,
+							[3] = 25,
+							[5] = 40,
+							[6] = 7650,
 							[20] = {
-								[1] = 2,
-								[2] = 2,
+								[1] = 1,
+								[2] = 1,
 							},
 							[30] = {
-								[5] = 13,
+								[5] = 4668,
 							},
+						},
+						[6] = {
+							[2] = 300,
+							[5] = 10,
+							[30] = {
+								[5] = 150,
+							},
+							[6] = 2850,
+						},
+						[200] = {
+							[1] = 79147,
+							[2] = 2642,
+							[3] = 160,
+							[4] = 15,
+							[20] = {
+								[1] = 69,
+								[2] = 1,
+								[3] = 16,
+								[5] = 12,
+								[6] = 5,
+								[8] = 35,
+							},
+							[30] = {
+								[1] = 2581,
+								[3] = 2,
+								[5] = 382,
+							},
+						},
+						[0] = {
+							[2] = 31,
+							[5] = 4,
+							[6] = 124,
+						},
+						[300] = {
+							[1] = 1137,
+							[2] = 441,
+							[3] = 3,
 						},
 					},
 				},
 				[3] = {
 					[1] = {
-						[1] = 1025,
-						[5] = 2,
-						[9] = 10,
-						[10] = 3470,
+						[7] = 25973,
+						[8] = 8996,
 					},
-					[677] = {
-						[1] = 3122,
-						[5] = 2,
-						[9] = 2,
-						[10] = 770,
+					[5076] = {
+						[7] = 3354,
+						[8] = 1284,
 					},
-					[678] = {
-						[1] = 5913,
-						[5] = 3,
-						[9] = 1,
-						[10] = 376,
-					},
-					[6206] = {
-						[1] = 3687,
-						[5] = 5,
-						[9] = 21,
-						[10] = 7898,
-					},
-					[6210] = {
-						[1] = 2142,
-						[5] = 4,
-						[9] = 20,
-						[10] = 7235,
-					},
-					[6214] = {
-						[1] = 3855,
-						[5] = 4,
-						[9] = 4,
-						[10] = 1624,
-					},
-					[6218] = {
-						[1] = 1045,
-						[5] = 2,
-						[9] = 2,
-						[10] = 670,
-					},
-					[6222] = {
-						[1] = 114,
-						[5] = 1,
-						[9] = 1,
-						[10] = 354,
-					},
-					[4033] = {
-						[1] = 1100,
-						[5] = 2,
-						[9] = 3,
-						[10] = 1008,
+					[6226] = {
+						[2] = 845,
+						[6] = 254,
+						[7] = 4776,
+						[8] = 3326,
 					},
 					[6211] = {
-						[1] = 24247,
-						[5] = 29,
-						[9] = 9,
-						[10] = 2445,
-					},
-					[6215] = {
-						[1] = 5256,
+						[1] = 202,
+						[2] = 6325,
+						[4] = 9,
 						[5] = 2,
-						[9] = 2,
-						[10] = 652,
+						[6] = 370,
+						[7] = 280838,
+						[8] = 112859,
 					},
-					[6219] = {
-						[1] = 1962,
-						[5] = 4,
-						[9] = 20,
-						[10] = 7347,
+					[6479] = {
+						[1] = 344,
+						[5] = 2,
 					},
-					[6223] = {
-						[1] = 1942,
-						[5] = 4,
-						[9] = 9,
-						[10] = 3462,
+					[6527] = {
+						[1] = 148,
+						[5] = 1,
 					},
 					[6228] = {
-						[1] = 10733,
-						[5] = 7,
-						[9] = 10,
-						[10] = 3610,
+						[2] = 8549,
+						[6] = 689,
+						[7] = 47573,
+						[8] = 12214,
+					},
+					[6544] = {
+						[1] = 199,
+						[5] = 1,
+					},
+					[6214] = {
+						[7] = 40632,
+						[4] = 1,
+						[8] = 15614,
 					},
 					[670] = {
-						[1] = 11942,
-						[5] = 12,
-						[9] = 2,
-						[10] = 649,
+						[2] = 1743,
+						[4] = 1,
+						[6] = 23,
+						[7] = 134087,
+						[8] = 55391,
+					},
+					[6215] = {
+						[2] = 14236,
+						[6] = 2579,
+						[7] = 70085,
+						[8] = 14255,
+					},
+					[867] = {
+						[2] = 1257,
+						[7] = 3085,
+						[6] = 254,
+					},
+					[6452] = {
+						[1] = 75,
+						[5] = 1,
+					},
+					[6484] = {
+						[1] = 75,
+						[5] = 1,
+					},
+					[6516] = {
+						[1] = 1208,
+						[5] = 5,
+					},
+					[6532] = {
+						[1] = 99,
+						[5] = 1,
 					},
 					[508] = {
-						[1] = 6228,
-						[5] = 6,
-						[9] = 20,
-						[10] = 7230,
+						[7] = 47610,
+						[8] = 12795,
 					},
-					[6426] = {
-						[1] = 11832,
-						[5] = 6,
-						[9] = 3,
-						[10] = 1041,
+					[6218] = {
+						[7] = 12431,
+						[8] = 4688,
 					},
-					[5531] = {
-						[1] = 1484,
-						[5] = 4,
-						[9] = 15,
-						[10] = 5340,
+					[6439] = {
+						[1] = 1419,
+						[5] = 6,
+					},
+					[6518] = {
+						[1] = 215,
+						[5] = 1,
+					},
+					[6219] = {
+						[2] = 2100,
+						[7] = 91837,
+						[8] = 22760,
+					},
+					[6564] = {
+						[1] = 786,
+						[5] = 7,
+					},
+					[6499] = {
+						[1] = 320,
+						[5] = 3,
+					},
+					[6438] = {
+						[1] = 195,
+						[5] = 1,
+					},
+					[3426] = {
+						[7] = 2732,
+						[8] = 1119,
 					},
 					[6347] = {
-						[1] = 2269,
-						[5] = 4,
-						[9] = 20,
-						[10] = 7200,
+						[7] = 52010,
+						[8] = 13093,
+					},
+					[6426] = {
+						[2] = 249,
+						[6] = 113,
+						[7] = 36094,
+						[8] = 11646,
+					},
+					[6568] = {
+						[1] = 417,
+						[5] = 3,
+						[9] = 32,
+						[10] = 6300,
+					},
+					[6206] = {
+						[2] = 1345,
+						[7] = 34880,
+						[8] = 8584,
+					},
+					[6222] = {
+						[7] = 31395,
+						[8] = 4215,
+					},
+					[6553] = {
+						[1] = 99,
+						[5] = 1,
+					},
+					[6221] = {
+						[7] = 1272,
+						[8] = 776,
+					},
+					[677] = {
+						[2] = 18557,
+						[6] = 1069,
+						[7] = 65797,
+						[8] = 12920,
+					},
+					[6223] = {
+						[2] = 2128,
+						[6] = 265,
+						[7] = 42668,
+						[8] = 14684,
+					},
+					[4033] = {
+						[2] = 3184,
+						[10] = 952,
+						[7] = 49748,
+						[9] = 7,
+						[8] = 14066,
+					},
+					[4617] = {
+						[7] = 2546,
+						[8] = 653,
+					},
+					[6208] = {
+						[2] = 2539,
+						[6] = 72,
+						[7] = 3913,
+						[8] = 579,
+					},
+					[5531] = {
+						[7] = 37327,
+						[8] = 11018,
+					},
+					[678] = {
+						[2] = 11526,
+						[6] = 1022,
+						[7] = 59255,
+						[8] = 10521,
+					},
+					[872] = {
+						[2] = 813,
+					},
+					[6442] = {
+						[1] = 100,
+						[5] = 1,
+					},
+					[6225] = {
+						[7] = 2232,
+						[8] = 2232,
+					},
+					[6476] = {
+						[1] = 211,
+						[5] = 1,
+					},
+					[6210] = {
+						[7] = 27789,
+						[8] = 6550,
+					},
+					[6227] = {
+						[7] = 4073,
+						[8] = 747,
 					},
 				},
 			},
@@ -35898,408 +38089,23 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[6532] = {
-				[1] = {
-					[1] = {
-						[1] = 132146,
-						[5] = 164,
-						[11] = 712,
-					},
-					[2] = {
-						[200] = {
-							[1] = 132146,
-							[2] = 2426,
-							[3] = 164,
-							[4] = 2,
-							[20] = {
-								[1] = 72,
-								[2] = 2,
-								[3] = 23,
-								[5] = 2,
-								[6] = 27,
-								[7] = 11,
-								[8] = 3,
-								[11] = 4,
-							},
-							[30] = {
-								[1] = 2163,
-								[2] = 2179,
-							},
-						},
-					},
-					[3] = {
-						[746] = {
-							[1] = {
-								[1] = 14204,
-								[2] = 1896,
-								[3] = 13,
-							},
-							[4] = {
-								[1] = 12,
-								[3] = 3,
-								[6] = 7,
-								[7] = 2,
-							},
-							[5] = {
-								[2] = 52,
-							},
-						},
-						[687] = {
-							[1] = {
-								[1] = 1176,
-								[2] = 151,
-								[3] = 13,
-							},
-							[4] = {
-								[1] = 10,
-								[2] = 2,
-								[3] = 2,
-								[6] = 4,
-								[7] = 1,
-								[11] = 1,
-							},
-						},
-						[31] = {
-							[1] = {
-								[1] = 90745,
-								[2] = 2426,
-								[3] = 112,
-								[4] = 2,
-							},
-							[4] = {
-								[1] = 44,
-								[3] = 18,
-								[5] = 2,
-								[6] = 16,
-								[7] = 8,
-							},
-							[5] = {
-								[1] = 2163,
-								[2] = 2127,
-							},
-						},
-						[6533] = {
-							[1] = {
-								[1] = 26021,
-								[2] = 1902,
-								[3] = 26,
-							},
-							[4] = {
-								[1] = 6,
-								[8] = 3,
-								[11] = 3,
-							},
-						},
-					},
-				},
+			[6021] = {
 				[2] = {
 					[1] = {
-						[1] = 285071,
-						[3] = 9,
-						[5] = 798,
-						[9] = 483,
-						[10] = 102620,
+						[1] = 120,
+						[5] = 1,
 					},
 					[2] = {
-						[2] = {
-							[1] = 5265,
-							[2] = 764,
-							[3] = 10,
-							[5] = 138,
-							[6] = 35698,
-							[20] = {
-								[1] = 1,
-								[2] = 1,
-							},
-							[30] = {
-								[5] = 323,
-							},
-						},
-						[3] = {
-							[1] = 4847,
-							[2] = 150,
-							[3] = 46,
-							[20] = {
-								[1] = 1,
-								[5] = 1,
-							},
-							[30] = {
-								[5] = 460,
-							},
-						},
-						[4] = {
-							[1] = 18530,
-							[2] = 2100,
-							[3] = 16,
-							[4] = 3,
-							[5] = 160,
-							[6] = 29931,
-							[20] = {
-								[1] = 1,
-								[5] = 1,
-							},
-							[30] = {
-								[5] = 296,
-							},
-						},
-						[5] = {
-							[1] = 76881,
-							[2] = 2500,
-							[3] = 73,
-							[4] = 10,
-							[5] = 99,
-							[6] = 32575,
-							[20] = {
-								[1] = 6,
-								[2] = 1,
-								[5] = 5,
-							},
-							[30] = {
-								[5] = 4630,
-							},
-						},
-						[6] = {
-							[1] = 46,
-							[2] = 2,
-							[3] = 23,
-						},
-						[200] = {
-							[1] = 179502,
-							[2] = 2225,
-							[3] = 630,
-							[4] = 160,
-							[20] = {
-								[1] = 92,
-								[2] = 3,
-								[3] = 44,
-								[5] = 1,
-								[6] = 27,
-								[7] = 11,
-								[8] = 6,
-							},
-							[30] = {
-								[2] = 390,
-								[4] = 98,
-							},
-						},
-						[0] = {
-							[2] = 157,
-							[5] = 86,
-							[6] = 4416,
-						},
-					},
-				},
-				[3] = {
-					[677] = {
-						[1] = 6789,
-						[5] = 6,
-					},
-					[678] = {
-						[1] = 3214,
-						[5] = 2,
-					},
-					[6210] = {
-						[1] = 2635,
-						[5] = 2,
-					},
-					[6214] = {
-						[1] = 1902,
-						[5] = 1,
-					},
-					[6218] = {
-						[1] = 7636,
-						[5] = 5,
-					},
-					[4033] = {
-						[1] = 3900,
-						[5] = 3,
-					},
-					[6211] = {
-						[1] = 36287,
-						[5] = 57,
-					},
-					[6215] = {
-						[1] = 1633,
-						[5] = 1,
-					},
-					[6219] = {
-						[1] = 18784,
-						[5] = 29,
-					},
-					[6223] = {
-						[1] = 6154,
-						[5] = 4,
-					},
-					[6208] = {
-						[1] = 3222,
-						[5] = 2,
-					},
-					[6228] = {
-						[1] = 5480,
-						[5] = 5,
-					},
-					[508] = {
-						[1] = 124,
-						[5] = 1,
-					},
-					[6426] = {
-						[1] = 5111,
-						[5] = 4,
-					},
-					[5531] = {
-						[1] = 1366,
-						[5] = 1,
-					},
-					[670] = {
-						[1] = 27909,
-						[5] = 41,
 					},
 				},
 			},
-			[6534] = {
-				[1] = {
-					[1] = {
-						[1] = 17186,
-						[5] = 24,
-						[11] = 20,
-					},
-					[2] = {
-						[200] = {
-							[1] = 17186,
-							[2] = 1524,
-							[3] = 24,
-							[20] = {
-								[1] = 12,
-								[3] = 2,
-								[5] = 1,
-								[6] = 9,
-							},
-							[30] = {
-								[1] = 1374,
-								[2] = 944,
-							},
-						},
-					},
-					[3] = {
-						[31] = {
-							[1] = {
-								[1] = 17186,
-								[2] = 1524,
-								[3] = 24,
-							},
-							[4] = {
-								[1] = 12,
-								[3] = 2,
-								[5] = 1,
-								[6] = 9,
-							},
-							[5] = {
-								[1] = 1374,
-								[2] = 944,
-							},
-						},
-					},
-				},
+			[2020] = {
 				[2] = {
 					[1] = {
-						[1] = 39765,
-						[3] = 6,
-						[5] = 135,
-						[9] = 265,
-						[10] = 51810,
+						[1] = 341,
+						[5] = 1,
 					},
 					[2] = {
-						[2] = {
-							[1] = 5459,
-							[2] = 589,
-							[3] = 12,
-							[4] = 1,
-							[5] = 99,
-							[6] = 25419,
-							[30] = {
-								[5] = 108,
-							},
-						},
-						[3] = {
-							[1] = 500,
-							[2] = 146,
-							[3] = 4,
-							[5] = 40,
-							[6] = 5520,
-							[20] = {
-								[1] = 1,
-								[5] = 1,
-							},
-						},
-						[4] = {
-							[1] = 907,
-							[2] = 465,
-							[3] = 2,
-							[5] = 58,
-							[6] = 10498,
-						},
-						[5] = {
-							[1] = 1678,
-							[2] = 1032,
-							[3] = 2,
-							[5] = 18,
-							[6] = 6157,
-						},
-						[6] = {
-							[1] = 1053,
-							[2] = 320,
-							[3] = 4,
-							[5] = 35,
-							[6] = 3360,
-						},
-						[200] = {
-							[1] = 30168,
-							[2] = 1308,
-							[3] = 111,
-							[4] = 28,
-							[20] = {
-								[1] = 12,
-								[2] = 2,
-								[3] = 3,
-								[5] = 1,
-								[6] = 3,
-								[7] = 3,
-							},
-							[30] = {
-								[4] = 9,
-							},
-						},
-						[0] = {
-							[2] = 152,
-							[5] = 15,
-							[6] = 856,
-						},
-					},
-				},
-				[3] = {
-					[6219] = {
-						[1] = 1250,
-						[5] = 1,
-					},
-					[6214] = {
-						[1] = 580,
-						[5] = 1,
-					},
-					[6223] = {
-						[1] = 2242,
-						[5] = 2,
-					},
-					[6211] = {
-						[1] = 3840,
-						[5] = 7,
-					},
-					[670] = {
-						[1] = 7750,
-						[5] = 12,
-					},
-					[678] = {
-						[1] = 1524,
-						[5] = 1,
 					},
 				},
 			},
@@ -36405,6 +38211,11 @@ SW_DataCollection = {
 								[5] = 111,
 							},
 						},
+						[0] = {
+							[2] = 57,
+							[5] = 16,
+							[6] = 626,
+						},
 						[200] = {
 							[1] = 12484,
 							[2] = 757,
@@ -36420,11 +38231,6 @@ SW_DataCollection = {
 								[2] = 90,
 								[4] = 15,
 							},
-						},
-						[0] = {
-							[2] = 57,
-							[5] = 16,
-							[6] = 626,
 						},
 					},
 				},
@@ -36470,25 +38276,6 @@ SW_DataCollection = {
 						},
 					},
 					[3] = {
-						[31] = {
-							[1] = {
-								[1] = 145793,
-								[2] = 3686,
-								[3] = 125,
-								[4] = 5,
-							},
-							[4] = {
-								[1] = 50,
-								[3] = 12,
-								[6] = 24,
-								[7] = 14,
-							},
-							[5] = {
-								[1] = 1171,
-								[2] = 6568,
-								[3] = 18,
-							},
-						},
 						[743] = {
 							[1] = {
 								[1] = 60991,
@@ -36511,6 +38298,25 @@ SW_DataCollection = {
 								[1] = 1171,
 								[2] = 3311,
 								[3] = 6,
+							},
+						},
+						[31] = {
+							[1] = {
+								[1] = 145793,
+								[2] = 3686,
+								[3] = 125,
+								[4] = 5,
+							},
+							[4] = {
+								[1] = 50,
+								[3] = 12,
+								[6] = 24,
+								[7] = 14,
+							},
+							[5] = {
+								[1] = 1171,
+								[2] = 6568,
+								[3] = 18,
 							},
 						},
 					},
@@ -36579,6 +38385,11 @@ SW_DataCollection = {
 								[5] = 31,
 							},
 						},
+						[0] = {
+							[2] = 91,
+							[5] = 76,
+							[6] = 3498,
+						},
 						[200] = {
 							[1] = 127875,
 							[2] = 1778,
@@ -36596,11 +38407,6 @@ SW_DataCollection = {
 								[2] = 558,
 								[4] = 162,
 							},
-						},
-						[0] = {
-							[2] = 91,
-							[5] = 76,
-							[6] = 3498,
 						},
 					},
 				},
@@ -36675,903 +38481,52 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[4527] = {
-				[1] = {
-					[1] = {
-					},
-					[2] = {
-					},
-					[3] = {
-					},
-				},
+			[6355] = {
 				[2] = {
 					[1] = {
-						[10] = 85,
-						[9] = 1,
-					},
-					[2] = {
-						[2] = {
-							[2] = 85,
-							[5] = 1,
-							[6] = 85,
-						},
-					},
-				},
-				[3] = {
-					[4527] = {
-						[10] = 85,
-						[9] = 1,
-					},
-				},
-			},
-			[656] = {
-				[2] = {
-					[1] = {
-						[1] = 1874,
+						[1] = 11,
 						[5] = 1,
 					},
 					[2] = {
 					},
 				},
 			},
-			[6544] = {
-				[1] = {
-					[1] = {
-						[1] = 3604,
-						[5] = 11,
-						[11] = 54,
-					},
-					[2] = {
-						[200] = {
-							[1] = 3604,
-							[2] = 797,
-							[3] = 11,
-							[20] = {
-								[1] = 4,
-								[3] = 2,
-								[7] = 2,
-							},
-							[30] = {
-								[1] = 193,
-								[2] = 543,
-							},
-						},
-					},
-					[3] = {
-						[31] = {
-							[1] = {
-								[1] = 3604,
-								[2] = 797,
-								[3] = 11,
-							},
-							[4] = {
-								[1] = 4,
-								[3] = 2,
-								[7] = 2,
-							},
-							[5] = {
-								[1] = 193,
-								[2] = 543,
-							},
-						},
-					},
-				},
+			[1467] = {
 				[2] = {
 					[1] = {
-						[1] = 7556,
-						[3] = 1,
-						[5] = 21,
-						[9] = 36,
-						[10] = 7603,
+						[1] = 275,
+						[5] = 1,
 					},
 					[2] = {
-						[1] = {
-							[1] = 199,
-							[2] = 199,
-							[3] = 1,
-						},
-						[2] = {
-							[1] = 419,
-							[2] = 419,
-							[3] = 1,
-							[5] = 9,
-							[6] = 2283,
-						},
-						[3] = {
-							[1] = 56,
-							[2] = 56,
-							[3] = 1,
-							[30] = {
-								[5] = 55,
-							},
-						},
-						[4] = {
-							[2] = 185,
-							[5] = 20,
-							[6] = 3667,
-						},
-						[5] = {
-							[1] = 3355,
-							[2] = 2064,
-							[3] = 2,
-							[4] = 1,
-							[5] = 4,
-							[6] = 1492,
-						},
-						[200] = {
-							[1] = 3527,
-							[2] = 584,
-							[3] = 16,
-							[4] = 2,
-							[20] = {
-								[1] = 2,
-								[6] = 2,
-							},
-							[30] = {
-								[2] = 30,
-								[4] = 1,
-							},
-						},
-						[0] = {
-							[2] = 67,
-							[5] = 3,
-							[6] = 161,
-						},
-					},
-				},
-				[3] = {
-					[6211] = {
-						[1] = 2019,
-						[5] = 9,
-					},
-					[678] = {
-						[1] = 1585,
-						[5] = 2,
-					},
-				},
-			},
-			[670] = {
-				[1] = {
-					[1] = {
-						[1] = 364172,
-						[5] = 1810,
-						[7] = 5860,
-						[8] = 3161,
-						[10] = 22685,
-						[9] = 501,
-						[11] = 4358,
-					},
-					[2] = {
-						[200] = {
-							[1] = 316469,
-							[2] = 1668,
-							[3] = 1653,
-							[4] = 256,
-							[20] = {
-								[1] = 155,
-								[3] = 24,
-								[6] = 73,
-								[7] = 50,
-								[8] = 7,
-								[11] = 1,
-							},
-							[30] = {
-								[2] = 1365,
-								[4] = 352,
-							},
-						},
-						[0] = {
-							[2] = 120,
-							[5] = 447,
-							[6] = 16443,
-						},
-						[3] = {
-							[1] = 824,
-							[2] = 180,
-							[3] = 51,
-							[5] = 24,
-							[6] = 4320,
-						},
-					},
-					[3] = {
-						[709] = {
-							[1] = {
-								[1] = 2900,
-								[2] = 375,
-								[3] = 17,
-								[4] = 3,
-							},
-							[4] = {
-								[1] = 1,
-								[6] = 1,
-							},
-						},
-						[601] = {
-							[1] = {
-								[1] = 3551,
-								[2] = 306,
-								[3] = 24,
-								[4] = 4,
-							},
-							[2] = {
-								[1] = 60,
-								[2] = 20,
-								[3] = 3,
-								[6] = 20,
-							},
-							[3] = {
-								[1] = 29,
-								[2] = 1,
-								[3] = 29,
-							},
-							[4] = {
-								[1] = 3,
-								[7] = 1,
-								[6] = 2,
-							},
-							[5] = {
-								[4] = 3,
-							},
-						},
-						[121] = {
-							[1] = {
-								[1] = 26449,
-								[2] = 1668,
-								[3] = 34,
-								[4] = 3,
-							},
-							[2] = {
-								[1] = 20,
-								[2] = 20,
-								[3] = 1,
-							},
-							[4] = {
-								[1] = 4,
-								[3] = 1,
-								[6] = 2,
-								[7] = 1,
-							},
-							[5] = {
-								[2] = 60,
-							},
-						},
-						[695] = {
-							[1] = {
-								[2] = 31,
-								[7] = 40,
-								[8] = 1066,
-							},
-						},
-						[495] = {
-							[1] = {
-								[1] = 1408,
-								[2] = 184,
-								[3] = 13,
-							},
-							[4] = {
-								[1] = 2,
-								[3] = 2,
-							},
-						},
-						[620] = {
-							[1] = {
-								[1] = 9425,
-								[2] = 1003,
-								[3] = 29,
-								[4] = 8,
-							},
-							[4] = {
-								[1] = 3,
-								[7] = 2,
-								[6] = 1,
-							},
-							[5] = {
-								[2] = 31,
-							},
-						},
-						[6571] = {
-							[1] = {
-								[2] = 180,
-								[7] = 24,
-								[8] = 4320,
-							},
-						},
-						[715] = {
-							[1] = {
-								[1] = 1538,
-								[2] = 79,
-								[3] = 24,
-							},
-						},
-						[132] = {
-							[1] = {
-								[1] = 255,
-								[2] = 47,
-								[3] = 6,
-							},
-							[4] = {
-								[1] = 7,
-								[8] = 7,
-							},
-						},
-						[118] = {
-							[1] = {
-								[1] = 26069,
-								[2] = 829,
-								[3] = 71,
-								[4] = 12,
-							},
-							[2] = {
-								[1] = 4960,
-								[2] = 20,
-								[3] = 248,
-								[6] = 2601,
-							},
-							[4] = {
-								[1] = 5,
-								[6] = 2,
-								[7] = 2,
-								[11] = 1,
-							},
-							[5] = {
-								[2] = 61,
-							},
-						},
-						[31] = {
-							[1] = {
-								[1] = 195772,
-								[2] = 1080,
-								[3] = 1179,
-								[4] = 187,
-							},
-							[2] = {
-								[1] = 40,
-								[2] = 20,
-								[3] = 2,
-							},
-							[4] = {
-								[1] = 109,
-								[3] = 20,
-								[6] = 51,
-								[7] = 38,
-							},
-							[5] = {
-								[2] = 1032,
-								[4] = 349,
-							},
-						},
-						[591] = {
-							[1] = {
-								[1] = 17846,
-								[2] = 980,
-								[3] = 70,
-								[4] = 9,
-							},
-							[4] = {
-								[1] = 4,
-								[7] = 1,
-								[6] = 3,
-							},
-							[5] = {
-								[2] = 30,
-							},
-						},
-						[689] = {
-							[1] = {
-								[1] = 4392,
-								[2] = 114,
-								[3] = 85,
-								[4] = 10,
-							},
-							[4] = {
-								[1] = 12,
-								[3] = 1,
-								[6] = 7,
-								[7] = 4,
-							},
-							[5] = {
-								[2] = 61,
-							},
-						},
-						[117] = {
-							[1] = {
-								[2] = 120,
-								[7] = 407,
-								[8] = 15377,
-							},
-						},
-						[706] = {
-							[1] = {
-								[1] = 879,
-								[2] = 153,
-								[3] = 11,
-								[4] = 3,
-							},
-							[5] = {
-								[2] = 30,
-							},
-						},
-						[133] = {
-							[1] = {
-								[1] = 24379,
-								[2] = 717,
-								[3] = 76,
-								[4] = 13,
-							},
-							[4] = {
-								[1] = 4,
-								[7] = 1,
-								[6] = 3,
-							},
-							[5] = {
-								[2] = 60,
-							},
-						},
-						[119] = {
-							[1] = {
-								[1] = 1021,
-								[2] = 810,
-								[3] = 2,
-								[4] = 1,
-							},
-						},
-						[690] = {
-							[1] = {
-								[1] = 19,
-								[2] = 19,
-								[3] = 1,
-							},
-						},
-						[6573] = {
-							[1] = {
-								[1] = 149,
-								[2] = 149,
-								[3] = 1,
-							},
-						},
-						[180] = {
-							[1] = {
-								[1] = 37,
-								[2] = 37,
-								[3] = 1,
-							},
-						},
-						[114] = {
-							[1] = {
-								[1] = 169,
-								[2] = 74,
-								[3] = 4,
-								[4] = 1,
-							},
-						},
-						[111] = {
-							[1] = {
-								[1] = 824,
-								[2] = 18,
-								[3] = 51,
-							},
-						},
-						[725] = {
-							[1] = {
-								[1] = 211,
-								[2] = 68,
-								[3] = 5,
-								[4] = 2,
-							},
-							[4] = {
-								[1] = 1,
-								[6] = 1,
-							},
-						},
-					},
-				},
-				[2] = {
-					[1] = {
-						[1] = 469973,
-						[2] = 23785,
-						[3] = 4,
-						[4] = 9,
-						[5] = 674,
-						[6] = 7687,
-						[7] = 847300,
-						[8] = 354785,
-						[9] = 105,
-						[10] = 19885,
-					},
-					[2] = {
-						[1] = {
-							[1] = 2563,
-							[2] = 1592,
-							[3] = 2,
-						},
-						[2] = {
-							[1] = 9358,
-							[2] = 1266,
-							[3] = 12,
-							[4] = 1,
-							[5] = 4,
-							[6] = 581,
-							[20] = {
-								[1] = 1,
-								[2] = 1,
-							},
-							[30] = {
-								[1] = 100,
-								[5] = 11,
-							},
-						},
-						[3] = {
-							[1] = 7773,
-							[2] = 1725,
-							[3] = 16,
-							[5] = 68,
-							[6] = 13257,
-							[30] = {
-								[5] = 2163,
-							},
-						},
-						[4] = {
-							[1] = 713,
-							[2] = 713,
-							[3] = 1,
-						},
-						[5] = {
-							[1] = 11092,
-							[2] = 998,
-							[3] = 33,
-							[5] = 21,
-							[6] = 4335,
-							[20] = {
-								[1] = 3,
-								[2] = 3,
-							},
-							[30] = {
-								[5] = 1920,
-							},
-						},
-						[6] = {
-							[2] = 300,
-							[5] = 5,
-							[6] = 1380,
-						},
-						[200] = {
-							[1] = 416068,
-							[2] = 3496,
-							[3] = 586,
-							[4] = 24,
-							[5] = 3,
-							[6] = 68,
-							[20] = {
-								[1] = 221,
-								[3] = 84,
-								[5] = 2,
-								[6] = 81,
-								[7] = 47,
-								[8] = 7,
-							},
-							[30] = {
-								[1] = 3656,
-								[2] = 7378,
-								[3] = 14,
-								[5] = 117,
-							},
-						},
 						[300] = {
-							[1] = 10674,
-							[2] = 2636,
-							[3] = 6,
-						},
-						[0] = {
-							[2] = 66,
-							[5] = 4,
-							[6] = 264,
+							[1] = 275,
+							[2] = 275,
+							[3] = 1,
 						},
 					},
 				},
-				[3] = {
-					[6462] = {
-						[1] = 2335,
-						[5] = 7,
-					},
-					[6494] = {
-						[1] = 120,
-						[5] = 2,
-					},
-					[6510] = {
-						[1] = 204,
-						[5] = 4,
-					},
-					[6526] = {
-						[1] = 4297,
-						[5] = 32,
-						[9] = 9,
-						[10] = 262,
-					},
-					[6479] = {
-						[1] = 13717,
-						[5] = 76,
-						[9] = 19,
-						[10] = 981,
-					},
-					[6495] = {
-						[1] = 1082,
-						[5] = 16,
-					},
-					[6448] = {
-						[1] = 1041,
-						[5] = 2,
-					},
-					[6527] = {
-						[1] = 399,
-						[5] = 2,
-					},
-					[6512] = {
-						[1] = 10284,
-						[5] = 20,
-						[9] = 10,
-						[10] = 740,
-					},
-					[6465] = {
-						[1] = 16576,
-						[5] = 60,
-						[9] = 17,
-						[10] = 727,
-					},
-					[6544] = {
-						[1] = 750,
-						[5] = 2,
-						[9] = 2,
-						[10] = 134,
-					},
-					[6497] = {
-						[1] = 358,
-						[5] = 2,
-					},
-					[6230] = {
-						[1] = 1345,
-						[5] = 7,
-					},
-					[670] = {
-						[7] = 5080,
-						[8] = 2621,
-					},
-					[6215] = {
-						[1] = 764,
-						[5] = 7,
-					},
-					[6546] = {
-						[1] = 1870,
-						[5] = 12,
-					},
-					[6499] = {
-						[1] = 2208,
-						[5] = 18,
-						[9] = 10,
-						[10] = 212,
-					},
-					[6452] = {
-						[1] = 11724,
-						[5] = 76,
-						[9] = 9,
-						[10] = 277,
-					},
-					[6511] = {
-						[1] = 86,
+			},
+			[4042] = {
+				[2] = {
+					[1] = {
+						[1] = 438,
 						[5] = 1,
 					},
-					[6484] = {
-						[1] = 4340,
-						[5] = 31,
-						[9] = 6,
-						[10] = 130,
+					[2] = {
 					},
-					[6558] = {
-						[1] = 26908,
-						[5] = 61,
-						[9] = 24,
-						[10] = 1864,
+				},
+			},
+			[2685] = {
+				[2] = {
+					[1] = {
 					},
-					[6516] = {
-						[1] = 1292,
-						[5] = 12,
-					},
-					[6532] = {
-						[1] = 5615,
-						[5] = 46,
-						[9] = 11,
-						[10] = 218,
-					},
-					[6485] = {
-						[1] = 1551,
-						[5] = 14,
-						[9] = 4,
-						[10] = 68,
-					},
-					[6564] = {
-						[1] = 6567,
-						[5] = 35,
-						[9] = 14,
-						[10] = 416,
-					},
-					[6454] = {
-						[1] = 4214,
-						[5] = 13,
-						[9] = 3,
-						[10] = 110,
-					},
-					[6470] = {
-						[1] = 579,
-						[5] = 4,
-					},
-					[6438] = {
-						[1] = 11553,
-						[5] = 34,
-						[9] = 11,
-						[10] = 845,
-					},
-					[6439] = {
-						[1] = 6204,
-						[5] = 48,
-						[9] = 9,
-						[10] = 509,
-					},
-					[6518] = {
-						[1] = 5528,
-						[5] = 39,
-						[9] = 14,
-						[10] = 355,
-					},
-					[6534] = {
-						[1] = 2648,
-						[5] = 18,
-						[9] = 3,
-						[10] = 59,
-					},
-					[6456] = {
-						[1] = 14528,
-						[5] = 42,
-						[9] = 8,
-						[10] = 592,
-					},
-					[6566] = {
-						[1] = 4055,
-						[5] = 49,
-						[9] = 12,
-						[10] = 312,
-					},
-					[6519] = {
-						[1] = 3251,
-						[5] = 23,
-						[9] = 1,
-						[10] = 34,
-					},
-					[6545] = {
-						[1] = 8603,
-						[5] = 21,
-						[9] = 3,
-						[10] = 207,
-					},
-					[6523] = {
-						[1] = 373,
-						[5] = 2,
-					},
-					[6441] = {
-						[1] = 1826,
-						[5] = 6,
-					},
-					[6520] = {
-						[1] = 949,
-						[5] = 10,
-					},
-					[6536] = {
-						[1] = 1959,
-						[5] = 7,
-						[9] = 4,
-						[10] = 228,
-					},
-					[6552] = {
-						[1] = 2821,
-						[5] = 26,
-						[9] = 15,
-						[10] = 319,
-					},
-					[6442] = {
-						[1] = 7248,
-						[5] = 52,
-						[9] = 9,
-						[10] = 174,
-					},
-					[6538] = {
-						[1] = 4139,
-						[5] = 34,
-						[9] = 16,
-						[10] = 457,
-					},
-					[6537] = {
-						[1] = 18877,
-						[5] = 55,
-						[9] = 36,
-						[10] = 2162,
-					},
-					[6553] = {
-						[1] = 583,
-						[5] = 3,
-					},
-					[6443] = {
-						[1] = 8201,
-						[5] = 41,
-						[9] = 4,
-						[10] = 158,
-					},
-					[6460] = {
-						[1] = 9169,
-						[5] = 24,
-						[9] = 7,
-						[10] = 578,
-					},
-					[6223] = {
-						[1] = 1131,
-						[5] = 3,
-					},
-					[6491] = {
-						[1] = 8794,
-						[5] = 51,
-						[9] = 11,
-						[10] = 200,
-					},
-					[6507] = {
-						[1] = 663,
-						[5] = 9,
-						[9] = 8,
-						[10] = 140,
-					},
-					[6208] = {
-						[1] = 1133,
-						[5] = 2,
-					},
-					[6476] = {
-						[1] = 9033,
-						[5] = 62,
-						[9] = 19,
-						[10] = 491,
-					},
-					[6475] = {
-						[1] = 8336,
-						[5] = 69,
-						[9] = 10,
-						[10] = 184,
-					},
-					[6508] = {
-						[1] = 2992,
-						[5] = 24,
-						[9] = 9,
-						[10] = 202,
-					},
-					[6568] = {
-						[1] = 38823,
-						[5] = 287,
-						[9] = 90,
-						[10] = 5761,
-					},
-					[6503] = {
-						[1] = 2940,
-						[5] = 19,
-						[9] = 10,
-						[10] = 184,
-					},
-					[6556] = {
-						[1] = 606,
-						[5] = 3,
-					},
-					[6509] = {
-						[1] = 698,
-						[5] = 3,
-					},
-					[6498] = {
-						[1] = 9403,
-						[5] = 76,
-						[9] = 24,
-						[10] = 473,
+					[2] = {
+						[200] = {
+							[20] = {
+								[1] = 1,
+								[3] = 1,
+							},
+						},
 					},
 				},
 			},
@@ -37592,6 +38547,12 @@ SW_DataCollection = {
 					},
 				},
 			},
+			["Name"] = "Left raid",
+			["initTS"] = {
+				["uTS"] = -155006.2969999313,
+				["msO"] = -0.2970000000004802,
+				["epochTS"] = 1517173379,
+			},
 			[4520] = {
 				[2] = {
 					[1] = {
@@ -37607,12 +38568,6 @@ SW_DataCollection = {
 					},
 				},
 			},
-			["initTS"] = {
-				["epochTS"] = 1517173379,
-				["msO"] = -0.2970000000004802,
-				["uTS"] = -152114.2969999313,
-			},
-			["Name"] = "Left raid",
 		},
 		[3] = {
 			[1] = {
@@ -37629,12 +38584,6 @@ SW_DataCollection = {
 								[9] = 4,
 							},
 						},
-						[177] = {
-							[6] = {
-								[10] = 90,
-								[9] = 1,
-							},
-						},
 						[41] = {
 							[2] = {
 								[1] = 1346,
@@ -37644,6 +38593,12 @@ SW_DataCollection = {
 							},
 							[6] = {
 								[10] = 380,
+								[9] = 1,
+							},
+						},
+						[177] = {
+							[6] = {
+								[10] = 90,
 								[9] = 1,
 							},
 						},
@@ -37686,9 +38641,9 @@ SW_DataCollection = {
 			},
 			["Name"] = "SyncInit",
 			["initTS"] = {
-				["epochTS"] = 1517173588,
+				["uTS"] = -154797.375,
 				["msO"] = -0.374999999998181,
-				["uTS"] = -151905.375,
+				["epochTS"] = 1517173588,
 			},
 			[6222] = {
 				[2] = {
@@ -37718,9 +38673,9 @@ SW_DataCollection = {
 				},
 			},
 			["initTS"] = {
-				["epochTS"] = 1517174070,
+				["uTS"] = -154314.7030000687,
 				["msO"] = 0.2970000000004802,
-				["uTS"] = -151422.7030000687,
+				["epochTS"] = 1517174070,
 			},
 			["Name"] = "Left group",
 		},
@@ -37741,9 +38696,9 @@ SW_DataCollection = {
 				},
 			},
 			["initTS"] = {
-				["epochTS"] = 1517174075,
+				["uTS"] = -154309.5940001011,
 				["msO"] = 0.4060000000008586,
-				["uTS"] = -151417.5940001011,
+				["epochTS"] = 1517174075,
 			},
 			["Name"] = "Joined group",
 		},
@@ -37996,9 +38951,9 @@ SW_DataCollection = {
 				},
 			},
 			["initTS"] = {
-				["epochTS"] = 1517174078,
+				["uTS"] = -154307.3440001011,
 				["msO"] = -0.3439999999991414,
-				["uTS"] = -151415.3440001011,
+				["epochTS"] = 1517174078,
 			},
 			[2905] = {
 				[2] = {
@@ -39002,19 +39957,19 @@ SW_DataCollection = {
 					[2] = {
 					},
 					[3] = {
+						[423] = {
+							[2] = {
+								[1] = 2328,
+								[2] = 1187,
+								[3] = 2,
+							},
+						},
 						[330] = {
 							[2] = {
 								[1] = 5118,
 								[2] = 2540,
 								[3] = 11,
 								[4] = 2,
-							},
-						},
-						[423] = {
-							[2] = {
-								[1] = 2328,
-								[2] = 1187,
-								[3] = 2,
 							},
 						},
 					},
@@ -39776,19 +40731,19 @@ SW_DataCollection = {
 					[2] = {
 					},
 					[3] = {
-						[136] = {
-							[2] = {
-								[1] = 398,
-								[2] = 398,
-								[3] = 1,
-							},
-						},
 						[41] = {
 							[2] = {
 								[1] = 5714,
 								[2] = 1948,
 								[3] = 4,
 								[4] = 1,
+							},
+						},
+						[136] = {
+							[2] = {
+								[1] = 398,
+								[2] = 398,
+								[3] = 1,
 							},
 						},
 					},
@@ -40435,11 +41390,11 @@ SW_DataCollection = {
 					},
 				},
 				[3] = {
-					[6998] = {
-						[2] = 23712,
-					},
 					[6989] = {
 						[2] = 559,
+					},
+					[6998] = {
+						[2] = 23712,
 					},
 				},
 			},
@@ -40756,19 +41711,19 @@ SW_DataCollection = {
 					[2] = {
 					},
 					[3] = {
+						[423] = {
+							[2] = {
+								[1] = 4442,
+								[2] = 1142,
+								[3] = 4,
+							},
+						},
 						[2239] = {
 							[2] = {
 								[1] = 4083,
 								[2] = 1360,
 								[3] = 5,
 								[4] = 1,
-							},
-						},
-						[423] = {
-							[2] = {
-								[1] = 4442,
-								[2] = 1142,
-								[3] = 4,
 							},
 						},
 					},
@@ -42138,16 +43093,16 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[1093] = {
+			[4353] = {
 				[2] = {
 					[1] = {
-						[1] = 1775,
+						[1] = 190,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 1775,
-							[2] = 1775,
+							[1] = 190,
+							[2] = 190,
 							[3] = 1,
 						},
 					},
@@ -42168,16 +43123,16 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[4564] = {
+			[6632] = {
 				[2] = {
 					[1] = {
-						[1] = 480,
+						[1] = 47,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 480,
-							[2] = 480,
+							[1] = 47,
+							[2] = 47,
 							[3] = 1,
 						},
 					},
@@ -42378,13 +43333,6 @@ SW_DataCollection = {
 								[3] = 1,
 							},
 						},
-						[48] = {
-							[1] = {
-								[1] = 68,
-								[2] = 34,
-								[3] = 2,
-							},
-						},
 						[191] = {
 							[1] = {
 								[1] = 43,
@@ -42393,6 +43341,13 @@ SW_DataCollection = {
 							},
 							[5] = {
 								[5] = 14,
+							},
+						},
+						[48] = {
+							[1] = {
+								[1] = 68,
+								[2] = 34,
+								[3] = 2,
 							},
 						},
 					},
@@ -42436,16 +43391,16 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[6051] = {
+			[394] = {
 				[2] = {
 					[1] = {
-						[1] = 1646,
+						[1] = 188,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 1646,
-							[2] = 1646,
+							[1] = 188,
+							[2] = 188,
 							[3] = 1,
 						},
 					},
@@ -42623,33 +43578,48 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[3554] = {
+			[3426] = {
 				[2] = {
 					[1] = {
-						[1] = 126,
+						[1] = 326,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 126,
-							[2] = 126,
+							[1] = 326,
+							[2] = 326,
 							[3] = 1,
 						},
 					},
 				},
 			},
-			[7043] = {
-				[2] = {
+			[2503] = {
+				[1] = {
 					[1] = {
-						[1] = 398,
-						[5] = 1,
+						[2] = 3234,
 					},
 					[2] = {
-						[300] = {
-							[1] = 398,
-							[2] = 398,
-							[3] = 1,
+					},
+					[3] = {
+						[2896] = {
+							[2] = {
+								[1] = 3234,
+								[2] = 152,
+								[3] = 22,
+							},
 						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[2] = 3234,
+					},
+					[2] = {
+					},
+				},
+				[3] = {
+					[2503] = {
+						[2] = 3234,
 					},
 				},
 			},
@@ -42722,17 +43692,33 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[4816] = {
-				[2] = {
+			[575] = {
+				[1] = {
 					[1] = {
+						[1] = 640,
+						[5] = 1,
 					},
 					[2] = {
 						[200] = {
-							[20] = {
-								[1] = 1,
+							[1] = 640,
+							[2] = 640,
+							[3] = 1,
+						},
+					},
+					[3] = {
+						[2341] = {
+							[1] = {
+								[1] = 640,
+								[2] = 640,
 								[3] = 1,
 							},
 						},
+					},
+				},
+				[3] = {
+					[657] = {
+						[1] = 640,
+						[5] = 1,
 					},
 				},
 			},
@@ -42751,31 +43737,59 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[3432] = {
-				[2] = {
+			[7087] = {
+				[1] = {
 					[1] = {
-						[1] = 74,
-						[5] = 1,
+						[2] = 4453,
 					},
 					[2] = {
-						[300] = {
-							[1] = 74,
-							[2] = 74,
-							[3] = 1,
+					},
+					[3] = {
+						[330] = {
+							[2] = {
+								[1] = 1922,
+								[2] = 1922,
+								[3] = 1,
+							},
+						},
+						[2239] = {
+							[2] = {
+								[1] = 2531,
+								[2] = 920,
+								[3] = 4,
+								[4] = 1,
+							},
 						},
 					},
 				},
+				[3] = {
+					[7008] = {
+						[2] = 244,
+					},
+					[2721] = {
+						[2] = 1922,
+					},
+					[7091] = {
+						[2] = 675,
+					},
+					[5331] = {
+						[2] = 692,
+					},
+					[3871] = {
+						[2] = 920,
+					},
+				},
 			},
-			[2770] = {
+			[5206] = {
 				[2] = {
 					[1] = {
-						[1] = 1419,
+						[1] = 96,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 1419,
-							[2] = 1419,
+							[1] = 96,
+							[2] = 96,
 							[3] = 1,
 						},
 					},
@@ -42850,61 +43864,51 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[3944] = {
+			[4813] = {
 				[2] = {
 					[1] = {
-						[1] = 90,
-						[5] = 9,
-					},
-					[2] = {
-						[300] = {
-							[1] = 90,
-							[2] = 10,
-							[3] = 9,
-						},
-					},
-				},
-			},
-			[7025] = {
-				[2] = {
-					[1] = {
-						[1] = 10,
+						[1] = 1745,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 10,
-							[2] = 10,
+							[1] = 1745,
+							[2] = 1745,
 							[3] = 1,
 						},
 					},
 				},
 			},
-			[6139] = {
+			[4981] = {
 				[2] = {
 					[1] = {
-						[1] = 87,
+						[1] = 563,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 87,
-							[2] = 87,
+							[1] = 563,
+							[2] = 563,
 							[3] = 1,
 						},
 					},
 				},
 			},
-			[3908] = {
+			["initTS"] = {
+				["uTS"] = -154187.9070000649,
+				["msO"] = 0.09300000000257569,
+				["epochTS"] = 1517174197,
+			},
+			[1450] = {
 				[2] = {
 					[1] = {
-						[1] = 957,
+						[1] = 270,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 957,
-							[2] = 957,
+							[1] = 270,
+							[2] = 270,
 							[3] = 1,
 						},
 					},
@@ -42925,17 +43929,17 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[6940] = {
+			[1926] = {
 				[2] = {
 					[1] = {
-						[1] = 511,
-						[5] = 1,
+						[1] = 334,
+						[5] = 2,
 					},
 					[2] = {
 						[300] = {
-							[1] = 511,
-							[2] = 511,
-							[3] = 1,
+							[1] = 334,
+							[2] = 255,
+							[3] = 2,
 						},
 					},
 				},
@@ -43153,33 +44157,18 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[311] = {
-				[1] = {
-					[1] = {
-						[2] = 450,
-					},
-					[2] = {
-					},
-					[3] = {
-						[185] = {
-							[2] = {
-								[1] = 450,
-								[2] = 225,
-								[3] = 2,
-							},
-						},
-					},
-				},
+			[7003] = {
 				[2] = {
 					[1] = {
-						[2] = 450,
+						[1] = 1,
+						[5] = 1,
 					},
 					[2] = {
-					},
-				},
-				[3] = {
-					[311] = {
-						[2] = 450,
+						[300] = {
+							[1] = 1,
+							[2] = 1,
+							[3] = 1,
+						},
 					},
 				},
 			},
@@ -43290,46 +44279,33 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[6326] = {
+			[1103] = {
 				[1] = {
 					[1] = {
-						[2] = 2887,
+						[1] = 505,
+						[5] = 1,
 					},
 					[2] = {
+						[200] = {
+							[1] = 505,
+							[2] = 505,
+							[3] = 1,
+						},
 					},
 					[3] = {
-						[330] = {
-							[2] = {
-								[1] = 2887,
-								[2] = 95,
-								[3] = 45,
-								[4] = 3,
+						[31] = {
+							[1] = {
+								[1] = 505,
+								[2] = 505,
+								[3] = 1,
 							},
 						},
 					},
 				},
-				[2] = {
-					[1] = {
-						[2] = 7095,
-					},
-					[2] = {
-					},
-				},
 				[3] = {
-					[4397] = {
-						[2] = 80,
-					},
-					[6326] = {
-						[2] = 790,
-					},
-					[6755] = {
-						[2] = 1223,
-					},
-					[6736] = {
-						[2] = 495,
-					},
-					[6923] = {
-						[2] = 299,
+					[657] = {
+						[1] = 505,
+						[5] = 1,
 					},
 				},
 			},
@@ -43387,41 +44363,18 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[5666] = {
-				[1] = {
-					[1] = {
-						[2] = 1116,
-					},
-					[2] = {
-					},
-					[3] = {
-						[330] = {
-							[2] = {
-								[1] = 1116,
-								[2] = 1116,
-								[3] = 1,
-								[4] = 1,
-							},
-						},
-					},
-				},
+			[3422] = {
 				[2] = {
 					[1] = {
-						[1] = 2125,
-						[2] = 1116,
+						[1] = 138,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 2125,
-							[2] = 2125,
+							[1] = 138,
+							[2] = 138,
 							[3] = 1,
 						},
-					},
-				},
-				[3] = {
-					[5666] = {
-						[2] = 1116,
 					},
 				},
 			},
@@ -43473,46 +44426,18 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[6764] = {
-				[1] = {
-					[1] = {
-						[1] = 312,
-						[5] = 1,
-					},
-					[2] = {
-						[200] = {
-							[1] = 312,
-							[2] = 312,
-							[3] = 1,
-						},
-					},
-					[3] = {
-						[31] = {
-							[1] = {
-								[1] = 312,
-								[2] = 312,
-								[3] = 1,
-							},
-						},
-					},
-				},
+			[6669] = {
 				[2] = {
 					[1] = {
-						[1] = 156,
+						[1] = 10,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 156,
-							[2] = 156,
+							[1] = 10,
+							[2] = 10,
 							[3] = 1,
 						},
-					},
-				},
-				[3] = {
-					[657] = {
-						[1] = 312,
-						[5] = 1,
 					},
 				},
 			},
@@ -43532,31 +44457,31 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[5721] = {
+			[4190] = {
 				[2] = {
 					[1] = {
-						[1] = 724,
+						[1] = 128,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 724,
-							[2] = 724,
+							[1] = 128,
+							[2] = 128,
 							[3] = 1,
 						},
 					},
 				},
 			},
-			[6700] = {
+			[3738] = {
 				[2] = {
 					[1] = {
-						[1] = 10,
+						[1] = 88,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 10,
-							[2] = 10,
+							[1] = 88,
+							[2] = 88,
 							[3] = 1,
 						},
 					},
@@ -43574,88 +44499,6 @@ SW_DataCollection = {
 							[2] = 46,
 							[3] = 1,
 						},
-					},
-				},
-			},
-			[1175] = {
-				[2] = {
-					[1] = {
-						[1] = 498,
-						[5] = 2,
-					},
-					[2] = {
-						[300] = {
-							[1] = 498,
-							[2] = 430,
-							[3] = 2,
-						},
-					},
-				},
-			},
-			[533] = {
-				[2] = {
-					[1] = {
-						[1] = 2033,
-						[5] = 1,
-					},
-					[2] = {
-						[300] = {
-							[1] = 2033,
-							[2] = 2033,
-							[3] = 1,
-						},
-					},
-				},
-			},
-			[3129] = {
-				[2] = {
-					[1] = {
-						[1] = 233,
-						[5] = 1,
-					},
-					[2] = {
-						[300] = {
-							[1] = 233,
-							[2] = 233,
-							[3] = 1,
-						},
-					},
-				},
-			},
-			[3372] = {
-				[1] = {
-					[1] = {
-						[2] = 3387,
-					},
-					[2] = {
-					},
-					[3] = {
-						[330] = {
-							[2] = {
-								[1] = 3387,
-								[2] = 3387,
-								[3] = 1,
-								[4] = 1,
-							},
-						},
-					},
-				},
-				[2] = {
-					[1] = {
-						[1] = 1078,
-						[5] = 2,
-					},
-					[2] = {
-						[300] = {
-							[1] = 1078,
-							[2] = 626,
-							[3] = 2,
-						},
-					},
-				},
-				[3] = {
-					[3992] = {
-						[2] = 3387,
 					},
 				},
 			},
@@ -43713,31 +44556,113 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[3738] = {
+			[3372] = {
+				[1] = {
+					[1] = {
+						[2] = 3387,
+					},
+					[2] = {
+					},
+					[3] = {
+						[330] = {
+							[2] = {
+								[1] = 3387,
+								[2] = 3387,
+								[3] = 1,
+								[4] = 1,
+							},
+						},
+					},
+				},
 				[2] = {
 					[1] = {
-						[1] = 88,
+						[1] = 1078,
+						[5] = 2,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1078,
+							[2] = 626,
+							[3] = 2,
+						},
+					},
+				},
+				[3] = {
+					[3992] = {
+						[2] = 3387,
+					},
+				},
+			},
+			[3129] = {
+				[2] = {
+					[1] = {
+						[1] = 233,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 88,
-							[2] = 88,
+							[1] = 233,
+							[2] = 233,
 							[3] = 1,
 						},
 					},
 				},
 			},
-			[4190] = {
+			[533] = {
 				[2] = {
 					[1] = {
-						[1] = 128,
+						[1] = 2033,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 128,
-							[2] = 128,
+							[1] = 2033,
+							[2] = 2033,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[1175] = {
+				[2] = {
+					[1] = {
+						[1] = 498,
+						[5] = 2,
+					},
+					[2] = {
+						[300] = {
+							[1] = 498,
+							[2] = 430,
+							[3] = 2,
+						},
+					},
+				},
+			},
+			[6700] = {
+				[2] = {
+					[1] = {
+						[1] = 10,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 10,
+							[2] = 10,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[5721] = {
+				[2] = {
+					[1] = {
+						[1] = 724,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 724,
+							[2] = 724,
 							[3] = 1,
 						},
 					},
@@ -43773,18 +44698,46 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[6669] = {
+			[6764] = {
+				[1] = {
+					[1] = {
+						[1] = 312,
+						[5] = 1,
+					},
+					[2] = {
+						[200] = {
+							[1] = 312,
+							[2] = 312,
+							[3] = 1,
+						},
+					},
+					[3] = {
+						[31] = {
+							[1] = {
+								[1] = 312,
+								[2] = 312,
+								[3] = 1,
+							},
+						},
+					},
+				},
 				[2] = {
 					[1] = {
-						[1] = 10,
+						[1] = 156,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 10,
-							[2] = 10,
+							[1] = 156,
+							[2] = 156,
 							[3] = 1,
 						},
+					},
+				},
+				[3] = {
+					[657] = {
+						[1] = 312,
+						[5] = 1,
 					},
 				},
 			},
@@ -43803,48 +44756,84 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[3422] = {
-				[2] = {
-					[1] = {
-						[1] = 138,
-						[5] = 1,
-					},
-					[2] = {
-						[300] = {
-							[1] = 138,
-							[2] = 138,
-							[3] = 1,
-						},
-					},
-				},
-			},
-			[1103] = {
+			[5666] = {
 				[1] = {
 					[1] = {
-						[1] = 505,
-						[5] = 1,
+						[2] = 1116,
 					},
 					[2] = {
-						[200] = {
-							[1] = 505,
-							[2] = 505,
-							[3] = 1,
-						},
 					},
 					[3] = {
-						[31] = {
-							[1] = {
-								[1] = 505,
-								[2] = 505,
+						[330] = {
+							[2] = {
+								[1] = 1116,
+								[2] = 1116,
 								[3] = 1,
+								[4] = 1,
 							},
 						},
 					},
 				},
-				[3] = {
-					[657] = {
-						[1] = 505,
+				[2] = {
+					[1] = {
+						[1] = 2125,
+						[2] = 1116,
 						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 2125,
+							[2] = 2125,
+							[3] = 1,
+						},
+					},
+				},
+				[3] = {
+					[5666] = {
+						[2] = 1116,
+					},
+				},
+			},
+			[6326] = {
+				[1] = {
+					[1] = {
+						[2] = 2887,
+					},
+					[2] = {
+					},
+					[3] = {
+						[330] = {
+							[2] = {
+								[1] = 2887,
+								[2] = 95,
+								[3] = 45,
+								[4] = 3,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[2] = 7095,
+					},
+					[2] = {
+					},
+				},
+				[3] = {
+					[4397] = {
+						[2] = 80,
+					},
+					[6326] = {
+						[2] = 790,
+					},
+					[6755] = {
+						[2] = 1223,
+					},
+					[6736] = {
+						[2] = 495,
+					},
+					[6923] = {
+						[2] = 299,
 					},
 				},
 			},
@@ -43878,18 +44867,33 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[7003] = {
-				[2] = {
+			[311] = {
+				[1] = {
 					[1] = {
-						[1] = 1,
-						[5] = 1,
+						[2] = 450,
 					},
 					[2] = {
-						[300] = {
-							[1] = 1,
-							[2] = 1,
-							[3] = 1,
+					},
+					[3] = {
+						[185] = {
+							[2] = {
+								[1] = 450,
+								[2] = 225,
+								[3] = 2,
+							},
 						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[2] = 450,
+					},
+					[2] = {
+					},
+				},
+				[3] = {
+					[311] = {
+						[2] = 450,
 					},
 				},
 			},
@@ -44015,67 +45019,77 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[1926] = {
+			[6940] = {
 				[2] = {
 					[1] = {
-						[1] = 334,
-						[5] = 2,
-					},
-					[2] = {
-						[300] = {
-							[1] = 334,
-							[2] = 255,
-							[3] = 2,
-						},
-					},
-				},
-			},
-			[1450] = {
-				[2] = {
-					[1] = {
-						[1] = 270,
+						[1] = 511,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 270,
-							[2] = 270,
+							[1] = 511,
+							[2] = 511,
 							[3] = 1,
 						},
 					},
 				},
 			},
-			["initTS"] = {
-				["epochTS"] = 1517174197,
-				["msO"] = 0.09300000000257569,
-				["uTS"] = -151295.9070000649,
-			},
-			[4981] = {
+			[3908] = {
 				[2] = {
 					[1] = {
-						[1] = 563,
+						[1] = 957,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 563,
-							[2] = 563,
+							[1] = 957,
+							[2] = 957,
 							[3] = 1,
 						},
 					},
 				},
 			},
-			[4813] = {
+			[6139] = {
 				[2] = {
 					[1] = {
-						[1] = 1745,
+						[1] = 87,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 1745,
-							[2] = 1745,
+							[1] = 87,
+							[2] = 87,
 							[3] = 1,
+						},
+					},
+				},
+			},
+			[7025] = {
+				[2] = {
+					[1] = {
+						[1] = 10,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 10,
+							[2] = 10,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[3944] = {
+				[2] = {
+					[1] = {
+						[1] = 90,
+						[5] = 9,
+					},
+					[2] = {
+						[300] = {
+							[1] = 90,
+							[2] = 10,
+							[3] = 9,
 						},
 					},
 				},
@@ -44127,12 +45141,11 @@ SW_DataCollection = {
 								[3] = 3,
 							},
 						},
-						[191] = {
+						[32] = {
 							[1] = {
-								[1] = 46,
-								[2] = 46,
-								[3] = 1,
-								[4] = 1,
+								[1] = 26,
+								[2] = 13,
+								[3] = 2,
 							},
 						},
 						[48] = {
@@ -44142,11 +45155,12 @@ SW_DataCollection = {
 								[3] = 2,
 							},
 						},
-						[32] = {
+						[191] = {
 							[1] = {
-								[1] = 26,
-								[2] = 13,
-								[3] = 2,
+								[1] = 46,
+								[2] = 46,
+								[3] = 1,
+								[4] = 1,
 							},
 						},
 					},
@@ -44171,91 +45185,47 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[5206] = {
+			[2770] = {
 				[2] = {
 					[1] = {
-						[1] = 96,
+						[1] = 1419,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 96,
-							[2] = 96,
+							[1] = 1419,
+							[2] = 1419,
 							[3] = 1,
 						},
 					},
 				},
 			},
-			[7087] = {
-				[1] = {
+			[3432] = {
+				[2] = {
 					[1] = {
-						[2] = 4453,
+						[1] = 74,
+						[5] = 1,
 					},
 					[2] = {
-					},
-					[3] = {
-						[2239] = {
-							[2] = {
-								[1] = 2531,
-								[2] = 920,
-								[3] = 4,
-								[4] = 1,
-							},
+						[300] = {
+							[1] = 74,
+							[2] = 74,
+							[3] = 1,
 						},
-						[330] = {
-							[2] = {
-								[1] = 1922,
-								[2] = 1922,
-								[3] = 1,
-							},
-						},
-					},
-				},
-				[3] = {
-					[7008] = {
-						[2] = 244,
-					},
-					[2721] = {
-						[2] = 1922,
-					},
-					[7091] = {
-						[2] = 675,
-					},
-					[5331] = {
-						[2] = 692,
-					},
-					[3871] = {
-						[2] = 920,
 					},
 				},
 			},
-			[575] = {
-				[1] = {
+			[4816] = {
+				[2] = {
 					[1] = {
-						[1] = 640,
-						[5] = 1,
 					},
 					[2] = {
 						[200] = {
-							[1] = 640,
-							[2] = 640,
-							[3] = 1,
-						},
-					},
-					[3] = {
-						[2341] = {
-							[1] = {
-								[1] = 640,
-								[2] = 640,
+							[20] = {
+								[1] = 1,
 								[3] = 1,
 							},
 						},
-					},
-				},
-				[3] = {
-					[657] = {
-						[1] = 640,
-						[5] = 1,
 					},
 				},
 			},
@@ -44304,61 +45274,46 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[2503] = {
-				[1] = {
-					[1] = {
-						[2] = 3234,
-					},
-					[2] = {
-					},
-					[3] = {
-						[2896] = {
-							[2] = {
-								[1] = 3234,
-								[2] = 152,
-								[3] = 22,
-							},
-						},
-					},
-				},
+			[7043] = {
 				[2] = {
 					[1] = {
-						[2] = 3234,
-					},
-					[2] = {
-					},
-				},
-				[3] = {
-					[2503] = {
-						[2] = 3234,
-					},
-				},
-			},
-			[3426] = {
-				[2] = {
-					[1] = {
-						[1] = 326,
+						[1] = 398,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 326,
-							[2] = 326,
+							[1] = 398,
+							[2] = 398,
 							[3] = 1,
 						},
 					},
 				},
 			},
-			[394] = {
+			[3554] = {
 				[2] = {
 					[1] = {
-						[1] = 188,
+						[1] = 126,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 188,
-							[2] = 188,
+							[1] = 126,
+							[2] = 126,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[6051] = {
+				[2] = {
+					[1] = {
+						[1] = 1646,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1646,
+							[2] = 1646,
 							[3] = 1,
 						},
 					},
@@ -44409,31 +45364,31 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[6632] = {
+			[4564] = {
 				[2] = {
 					[1] = {
-						[1] = 47,
+						[1] = 480,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 47,
-							[2] = 47,
+							[1] = 480,
+							[2] = 480,
 							[3] = 1,
 						},
 					},
 				},
 			},
-			[4353] = {
+			[1093] = {
 				[2] = {
 					[1] = {
-						[1] = 190,
+						[1] = 1775,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 190,
-							[2] = 190,
+							[1] = 1775,
+							[2] = 1775,
 							[3] = 1,
 						},
 					},
@@ -44464,18 +45419,18 @@ SW_DataCollection = {
 					[2] = {
 					},
 					[3] = {
-						[188] = {
-							[2] = {
-								[1] = 1639,
-								[2] = 1639,
-								[3] = 1,
-							},
-						},
 						[36] = {
 							[2] = {
 								[1] = 612,
 								[2] = 204,
 								[3] = 3,
+							},
+						},
+						[188] = {
+							[2] = {
+								[1] = 1639,
+								[2] = 1639,
+								[3] = 1,
 							},
 						},
 					},
@@ -44549,9 +45504,9 @@ SW_DataCollection = {
 				},
 			},
 			["initTS"] = {
-				["uTS"] = -65544.59400010109,
-				["msO"] = 0.4059999999999491,
 				["epochTS"] = 1517259948,
+				["msO"] = 0.4059999999999491,
+				["uTS"] = -68436.59400010109,
 			},
 		},
 		[9] = {
@@ -44585,21 +45540,7 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[3335] = {
-				[2] = {
-					[1] = {
-						[1] = 174,
-						[5] = 1,
-					},
-					[2] = {
-						[300] = {
-							[1] = 174,
-							[2] = 174,
-							[3] = 1,
-						},
-					},
-				},
-			},
+			["Name"] = "SyncInit",
 			[5890] = {
 				[2] = {
 					[1] = {
@@ -44616,9 +45557,9 @@ SW_DataCollection = {
 				},
 			},
 			["initTS"] = {
-				["uTS"] = -65519.56200003624,
-				["msO"] = 0.4380000000001019,
 				["epochTS"] = 1517259973,
+				["msO"] = 0.4380000000001019,
+				["uTS"] = -68411.56200003624,
 			},
 			[7124] = {
 				[2] = {
@@ -44635,7 +45576,21 @@ SW_DataCollection = {
 					},
 				},
 			},
-			["Name"] = "SyncInit",
+			[3335] = {
+				[2] = {
+					[1] = {
+						[1] = 174,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 174,
+							[2] = 174,
+							[3] = 1,
+						},
+					},
+				},
+			},
 		},
 		[10] = {
 			[4474] = {
@@ -44715,11 +45670,25 @@ SW_DataCollection = {
 					},
 				},
 			},
-			["Name"] = "Left raid",
+			[3335] = {
+				[2] = {
+					[1] = {
+						[1] = 116,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 116,
+							[2] = 116,
+							[3] = 1,
+						},
+					},
+				},
+			},
 			["initTS"] = {
-				["epochTS"] = 1517260016,
+				["uTS"] = -68369,
 				["msO"] = 0,
-				["uTS"] = -65477,
+				["epochTS"] = 1517260016,
 			},
 			[6629] = {
 				[2] = {
@@ -44736,21 +45705,7 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[3335] = {
-				[2] = {
-					[1] = {
-						[1] = 116,
-						[5] = 1,
-					},
-					[2] = {
-						[300] = {
-							[1] = 116,
-							[2] = 116,
-							[3] = 1,
-						},
-					},
-				},
-			},
+			["Name"] = "Left raid",
 		},
 		[11] = {
 			[7141] = {
@@ -44869,25 +45824,11 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[6937] = {
-				[2] = {
-					[1] = {
-						[1] = 255,
-						[5] = 1,
-					},
-					[2] = {
-						[300] = {
-							[1] = 255,
-							[2] = 255,
-							[3] = 1,
-						},
-					},
-				},
-			},
+			["Name"] = "SyncInit",
 			["initTS"] = {
-				["epochTS"] = 1517260121,
+				["uTS"] = -68264.29699993134,
 				["msO"] = -0.2969999999995707,
-				["uTS"] = -65372.29699993134,
+				["epochTS"] = 1517260121,
 			},
 			[4810] = {
 				[2] = {
@@ -44904,7 +45845,21 @@ SW_DataCollection = {
 					},
 				},
 			},
-			["Name"] = "SyncInit",
+			[6937] = {
+				[2] = {
+					[1] = {
+						[1] = 255,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 255,
+							[2] = 255,
+							[3] = 1,
+						},
+					},
+				},
+			},
 		},
 		[12] = {
 			[3575] = {
@@ -44991,34 +45946,27 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[657] = {
+			[6095] = {
 				[2] = {
 					[1] = {
-						[1] = 570,
-						[3] = 1,
-						[5] = 1,
+						[1] = 260,
+						[5] = 2,
 					},
 					[2] = {
-						[5] = {
-							[1] = 570,
-							[2] = 570,
-							[3] = 1,
+						[300] = {
+							[1] = 260,
+							[2] = 149,
+							[3] = 2,
 						},
 					},
 				},
 			},
-			[5655] = {
+			[6740] = {
 				[2] = {
 					[1] = {
-						[1] = 110,
-						[5] = 1,
+						[2] = 1935,
 					},
 					[2] = {
-						[300] = {
-							[1] = 110,
-							[2] = 110,
-							[3] = 1,
-						},
 					},
 				},
 			},
@@ -45068,14 +46016,10 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[7139] = {
-				[2] = {
-					[1] = {
-						[2] = 970,
-					},
-					[2] = {
-					},
-				},
+			["initTS"] = {
+				["epochTS"] = 1517260209,
+				["msO"] = -0.4059999999999491,
+				["uTS"] = -68176.40599989891,
 			},
 			[7103] = {
 				[2] = {
@@ -45087,6 +46031,61 @@ SW_DataCollection = {
 						[300] = {
 							[1] = 193,
 							[2] = 193,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[4030] = {
+				[2] = {
+					[1] = {
+						[2] = 1949,
+					},
+					[2] = {
+					},
+				},
+			},
+			[657] = {
+				[2] = {
+					[1] = {
+						[1] = 570,
+						[3] = 1,
+						[5] = 1,
+					},
+					[2] = {
+						[5] = {
+							[1] = 570,
+							[2] = 570,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[983] = {
+				[2] = {
+					[1] = {
+						[1] = 299,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 299,
+							[2] = 299,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[1536] = {
+				[2] = {
+					[1] = {
+						[1] = 139,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 139,
+							[2] = 139,
 							[3] = 1,
 						},
 					},
@@ -45127,53 +46126,24 @@ SW_DataCollection = {
 					[4030] = {
 						[2] = 1949,
 					},
-					[7157] = {
-						[2] = 610,
+					[6740] = {
+						[2] = 1935,
 					},
 					[6379] = {
 						[2] = 659,
 					},
-					[7139] = {
-						[2] = 970,
-					},
 					[6950] = {
 						[2] = 961,
 					},
-					[6740] = {
-						[2] = 1935,
+					[7139] = {
+						[2] = 970,
+					},
+					[7157] = {
+						[2] = 610,
 					},
 				},
 			},
-			[1934] = {
-				[2] = {
-					[1] = {
-						[1] = 164,
-						[5] = 1,
-					},
-					[2] = {
-						[300] = {
-							[1] = 164,
-							[2] = 164,
-							[3] = 1,
-						},
-					},
-				},
-			},
-			[983] = {
-				[2] = {
-					[1] = {
-						[1] = 299,
-						[5] = 1,
-					},
-					[2] = {
-						[300] = {
-							[1] = 299,
-							[2] = 299,
-							[3] = 1,
-						},
-					},
-				},
-			},
+			["Name"] = "Left group",
 			[6821] = {
 				[2] = {
 					[1] = {
@@ -45198,56 +46168,41 @@ SW_DataCollection = {
 					},
 				},
 			},
-			["Name"] = "Left group",
-			[1536] = {
+			[7139] = {
 				[2] = {
 					[1] = {
-						[1] = 139,
+						[2] = 970,
+					},
+					[2] = {
+					},
+				},
+			},
+			[5655] = {
+				[2] = {
+					[1] = {
+						[1] = 110,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 139,
-							[2] = 139,
+							[1] = 110,
+							[2] = 110,
 							[3] = 1,
 						},
 					},
 				},
 			},
-			[4030] = {
+			[1934] = {
 				[2] = {
 					[1] = {
-						[2] = 1949,
-					},
-					[2] = {
-					},
-				},
-			},
-			["initTS"] = {
-				["uTS"] = -65284.40599989891,
-				["msO"] = -0.4059999999999491,
-				["epochTS"] = 1517260209,
-			},
-			[6740] = {
-				[2] = {
-					[1] = {
-						[2] = 1935,
-					},
-					[2] = {
-					},
-				},
-			},
-			[6095] = {
-				[2] = {
-					[1] = {
-						[1] = 260,
-						[5] = 2,
+						[1] = 164,
+						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 260,
-							[2] = 149,
-							[3] = 2,
+							[1] = 164,
+							[2] = 164,
+							[3] = 1,
 						},
 					},
 				},
@@ -45281,16 +46236,10 @@ SW_DataCollection = {
 								[9] = 2,
 							},
 						},
-						[188] = {
-							[2] = {
-								[1] = 4722,
-								[2] = 2691,
-								[3] = 2,
-								[5] = 4722,
-							},
+						[36] = {
 							[6] = {
-								[10] = 1328,
-								[9] = 3,
+								[10] = 1064,
+								[9] = 5,
 							},
 						},
 						[41] = {
@@ -45305,10 +46254,16 @@ SW_DataCollection = {
 								[9] = 7,
 							},
 						},
-						[36] = {
+						[188] = {
+							[2] = {
+								[1] = 4722,
+								[2] = 2691,
+								[3] = 2,
+								[5] = 4722,
+							},
 							[6] = {
-								[10] = 1064,
-								[9] = 5,
+								[10] = 1328,
+								[9] = 3,
 							},
 						},
 					},
@@ -45743,16 +46698,16 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[4979] = {
+			[7123] = {
 				[2] = {
 					[1] = {
-						[1] = 1239,
+						[1] = 257,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 1239,
-							[2] = 1239,
+							[1] = 257,
+							[2] = 257,
 							[3] = 1,
 						},
 					},
@@ -45774,20 +46729,10 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[7186] = {
-				[2] = {
-					[1] = {
-						[1] = 217,
-						[5] = 1,
-					},
-					[2] = {
-						[300] = {
-							[1] = 217,
-							[2] = 217,
-							[3] = 1,
-						},
-					},
-				},
+			["initTS"] = {
+				["epochTS"] = 1517260358,
+				["msO"] = 0.5,
+				["uTS"] = -68026.5,
 			},
 			[6821] = {
 				[2] = {
@@ -45804,17 +46749,17 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[899] = {
+			[7132] = {
 				[2] = {
 					[1] = {
-						[1] = 888,
-						[5] = 1,
+						[1] = 839,
+						[5] = 3,
 					},
 					[2] = {
 						[300] = {
-							[1] = 888,
-							[2] = 888,
-							[3] = 1,
+							[1] = 839,
+							[2] = 397,
+							[3] = 3,
 						},
 					},
 				},
@@ -45849,17 +46794,17 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[7132] = {
+			[1613] = {
 				[2] = {
 					[1] = {
-						[1] = 839,
-						[5] = 3,
+						[1] = 1881,
+						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 839,
-							[2] = 397,
-							[3] = 3,
+							[1] = 1881,
+							[2] = 1881,
+							[3] = 1,
 						},
 					},
 				},
@@ -45910,16 +46855,16 @@ SW_DataCollection = {
 				},
 			},
 			["Name"] = "SyncInit",
-			[1613] = {
+			[4979] = {
 				[2] = {
 					[1] = {
-						[1] = 1881,
+						[1] = 1239,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 1881,
-							[2] = 1881,
+							[1] = 1239,
+							[2] = 1239,
 							[3] = 1,
 						},
 					},
@@ -45940,10 +46885,20 @@ SW_DataCollection = {
 					},
 				},
 			},
-			["initTS"] = {
-				["uTS"] = -65134.5,
-				["msO"] = 0.5,
-				["epochTS"] = 1517260358,
+			[7186] = {
+				[2] = {
+					[1] = {
+						[1] = 217,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 217,
+							[2] = 217,
+							[3] = 1,
+						},
+					},
+				},
 			},
 			[7139] = {
 				[1] = {
@@ -45975,16 +46930,16 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[7123] = {
+			[899] = {
 				[2] = {
 					[1] = {
-						[1] = 257,
+						[1] = 888,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 257,
-							[2] = 257,
+							[1] = 888,
+							[2] = 888,
 							[3] = 1,
 						},
 					},
@@ -46120,24 +47075,9 @@ SW_DataCollection = {
 			},
 			["Name"] = "Left group",
 			["initTS"] = {
-				["epochTS"] = 1517260744,
+				["uTS"] = -67641.20300006867,
 				["msO"] = -0.2030000000004293,
-				["uTS"] = -64749.20300006867,
-			},
-			[4079] = {
-				[2] = {
-					[1] = {
-						[1] = 40,
-						[5] = 4,
-					},
-					[2] = {
-						[300] = {
-							[1] = 40,
-							[2] = 10,
-							[3] = 4,
-						},
-					},
-				},
+				["epochTS"] = 1517260744,
 			},
 			[6379] = {
 				[2] = {
@@ -46154,14 +47094,23 @@ SW_DataCollection = {
 					},
 				},
 			},
+			[4079] = {
+				[2] = {
+					[1] = {
+						[1] = 40,
+						[5] = 4,
+					},
+					[2] = {
+						[300] = {
+							[1] = 40,
+							[2] = 10,
+							[3] = 4,
+						},
+					},
+				},
+			},
 		},
 		[15] = {
-			["Name"] = "Joined group",
-			["initTS"] = {
-				["epochTS"] = 1517260800,
-				["msO"] = -0.06300000000010186,
-				["uTS"] = -64693.06299996376,
-			},
 			[7103] = {
 				[2] = {
 					[1] = {
@@ -46177,6 +47126,12 @@ SW_DataCollection = {
 					},
 				},
 			},
+			["initTS"] = {
+				["uTS"] = -67585.06299996376,
+				["msO"] = -0.06300000000010186,
+				["epochTS"] = 1517260800,
+			},
+			["Name"] = "Joined group",
 		},
 		[16] = {
 			[4079] = {
@@ -46241,9 +47196,9 @@ SW_DataCollection = {
 				},
 			},
 			["initTS"] = {
-				["epochTS"] = 1517260803,
+				["uTS"] = -67581.59400010109,
 				["msO"] = 0.4059999999999491,
-				["uTS"] = -64689.59400010109,
+				["epochTS"] = 1517260803,
 			},
 			[1536] = {
 				[2] = {
@@ -46365,65 +47320,6 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[394] = {
-				[2] = {
-					[1] = {
-						[1] = 293,
-						[5] = 1,
-					},
-					[2] = {
-						[300] = {
-							[1] = 293,
-							[2] = 293,
-							[3] = 1,
-						},
-					},
-				},
-			},
-			[7255] = {
-				[2] = {
-					[1] = {
-						[1] = 42,
-						[5] = 1,
-					},
-					[2] = {
-						[300] = {
-							[1] = 42,
-							[2] = 42,
-							[3] = 1,
-						},
-					},
-				},
-			},
-			[6708] = {
-				[2] = {
-					[1] = {
-						[1] = 696,
-						[5] = 1,
-					},
-					[2] = {
-						[300] = {
-							[1] = 696,
-							[2] = 696,
-							[3] = 1,
-						},
-					},
-				},
-			},
-			[7235] = {
-				[2] = {
-					[1] = {
-					},
-					[2] = {
-						[200] = {
-							[20] = {
-								[1] = 1,
-								[3] = 1,
-							},
-						},
-					},
-				},
-			},
 			[7233] = {
 				[2] = {
 					[1] = {
@@ -46439,6 +47335,21 @@ SW_DataCollection = {
 					},
 				},
 			},
+			[5696] = {
+				[2] = {
+					[1] = {
+						[1] = 1231,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1231,
+							[2] = 1231,
+							[3] = 1,
+						},
+					},
+				},
+			},
 			[7225] = {
 				[2] = {
 					[1] = {
@@ -46449,6 +47360,93 @@ SW_DataCollection = {
 						[300] = {
 							[1] = 219,
 							[2] = 219,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[394] = {
+				[2] = {
+					[1] = {
+						[1] = 293,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 293,
+							[2] = 293,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[657] = {
+				[1] = {
+					[1] = {
+						[1] = 28,
+						[5] = 2,
+					},
+					[2] = {
+						[200] = {
+							[1] = 28,
+							[2] = 15,
+							[3] = 2,
+						},
+					},
+					[3] = {
+						[31] = {
+							[1] = {
+								[1] = 28,
+								[2] = 15,
+								[3] = 2,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 259,
+						[3] = 1,
+						[5] = 4,
+					},
+					[2] = {
+						[3] = {
+							[1] = 29,
+							[2] = 29,
+							[3] = 1,
+						},
+						[4] = {
+							[1] = 91,
+							[2] = 91,
+							[3] = 1,
+						},
+						[200] = {
+							[1] = 139,
+							[2] = 71,
+							[3] = 2,
+							[30] = {
+								[4] = 2,
+							},
+						},
+					},
+				},
+				[3] = {
+					[4079] = {
+						[1] = 28,
+						[5] = 2,
+					},
+				},
+			},
+			[6139] = {
+				[2] = {
+					[1] = {
+						[1] = 59,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 59,
+							[2] = 59,
 							[3] = 1,
 						},
 					},
@@ -46529,17 +47527,17 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[6371] = {
+			[3402] = {
 				[2] = {
 					[1] = {
-						[1] = 1782,
-						[5] = 2,
+						[1] = 505,
+						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 1782,
-							[2] = 1703,
-							[3] = 2,
+							[1] = 505,
+							[2] = 505,
+							[3] = 1,
 						},
 					},
 				},
@@ -46555,6 +47553,96 @@ SW_DataCollection = {
 							[1] = 363,
 							[2] = 242,
 							[3] = 2,
+						},
+					},
+				},
+			},
+			[2164] = {
+				[2] = {
+					[1] = {
+						[1] = 1307,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1307,
+							[2] = 1307,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7235] = {
+				[2] = {
+					[1] = {
+					},
+					[2] = {
+						[200] = {
+							[20] = {
+								[1] = 1,
+								[3] = 1,
+							},
+						},
+					},
+				},
+			},
+			[6371] = {
+				[2] = {
+					[1] = {
+						[1] = 1782,
+						[5] = 2,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1782,
+							[2] = 1703,
+							[3] = 2,
+						},
+					},
+				},
+			},
+			[7212] = {
+				[2] = {
+					[1] = {
+						[1] = 1143,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1143,
+							[2] = 1143,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7061] = {
+				[2] = {
+					[1] = {
+						[1] = 304,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 304,
+							[2] = 304,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			["Name"] = "Left group",
+			[7255] = {
+				[2] = {
+					[1] = {
+						[1] = 42,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 42,
+							[2] = 42,
+							[3] = 1,
 						},
 					},
 				},
@@ -46596,143 +47684,10 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[3402] = {
-				[2] = {
-					[1] = {
-						[1] = 505,
-						[5] = 1,
-					},
-					[2] = {
-						[300] = {
-							[1] = 505,
-							[2] = 505,
-							[3] = 1,
-						},
-					},
-				},
-			},
-			[2164] = {
-				[2] = {
-					[1] = {
-						[1] = 1307,
-						[5] = 1,
-					},
-					[2] = {
-						[300] = {
-							[1] = 1307,
-							[2] = 1307,
-							[3] = 1,
-						},
-					},
-				},
-			},
-			[7212] = {
-				[2] = {
-					[1] = {
-						[1] = 1143,
-						[5] = 1,
-					},
-					[2] = {
-						[300] = {
-							[1] = 1143,
-							[2] = 1143,
-							[3] = 1,
-						},
-					},
-				},
-			},
-			[7061] = {
-				[2] = {
-					[1] = {
-						[1] = 304,
-						[5] = 1,
-					},
-					[2] = {
-						[300] = {
-							[1] = 304,
-							[2] = 304,
-							[3] = 1,
-						},
-					},
-				},
-			},
-			["Name"] = "Left group",
-			[6139] = {
-				[2] = {
-					[1] = {
-						[1] = 59,
-						[5] = 1,
-					},
-					[2] = {
-						[300] = {
-							[1] = 59,
-							[2] = 59,
-							[3] = 1,
-						},
-					},
-				},
-			},
-			[657] = {
-				[1] = {
-					[1] = {
-						[1] = 28,
-						[5] = 2,
-					},
-					[2] = {
-						[200] = {
-							[1] = 28,
-							[2] = 15,
-							[3] = 2,
-						},
-					},
-					[3] = {
-						[31] = {
-							[1] = {
-								[1] = 28,
-								[2] = 15,
-								[3] = 2,
-							},
-						},
-					},
-				},
-				[2] = {
-					[1] = {
-						[1] = 259,
-						[3] = 1,
-						[5] = 4,
-					},
-					[2] = {
-						[3] = {
-							[1] = 29,
-							[2] = 29,
-							[3] = 1,
-						},
-						[4] = {
-							[1] = 91,
-							[2] = 91,
-							[3] = 1,
-						},
-						[200] = {
-							[1] = 139,
-							[2] = 71,
-							[3] = 2,
-							[30] = {
-								[4] = 2,
-							},
-						},
-					},
-				},
-				[3] = {
-					[4079] = {
-						[1] = 28,
-						[5] = 2,
-					},
-				},
-			},
 			["initTS"] = {
-				["epochTS"] = 1517260831,
+				["uTS"] = -67554.53200006485,
 				["msO"] = -0.5320000000001528,
-				["uTS"] = -64662.53200006485,
+				["epochTS"] = 1517260831,
 			},
 			[7236] = {
 				[2] = {
@@ -46748,16 +47703,16 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[5696] = {
+			[6708] = {
 				[2] = {
 					[1] = {
-						[1] = 1231,
+						[1] = 696,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 1231,
-							[2] = 1231,
+							[1] = 696,
+							[2] = 696,
 							[3] = 1,
 						},
 					},
@@ -46767,9 +47722,9 @@ SW_DataCollection = {
 		[18] = {
 			["Name"] = "SyncInit",
 			["initTS"] = {
-				["uTS"] = 119.5320000000065,
-				["msO"] = -0.4679999999934807,
 				["epochTS"] = 1517325613,
+				["msO"] = -0.4679999999934807,
+				["uTS"] = -2772.46799993515,
 			},
 			[7263] = {
 				[2] = {
@@ -46842,12 +47797,10 @@ SW_DataCollection = {
 								[9] = 1,
 							},
 						},
-						[374] = {
-							[2] = {
-								[1] = 897,
-								[2] = 897,
-								[3] = 1,
-								[5] = 897,
+						[693] = {
+							[6] = {
+								[10] = 247,
+								[9] = 1,
 							},
 						},
 						[31] = {
@@ -46858,16 +47811,18 @@ SW_DataCollection = {
 								[4] = 1,
 							},
 						},
-						[112] = {
+						[780] = {
 							[6] = {
-								[10] = 3150,
-								[9] = 7,
+								[10] = 579,
+								[9] = 3,
 							},
 						},
-						[509] = {
-							[6] = {
-								[10] = 873,
-								[9] = 1,
+						[374] = {
+							[2] = {
+								[1] = 897,
+								[2] = 897,
+								[3] = 1,
+								[5] = 897,
 							},
 						},
 						[584] = {
@@ -46893,16 +47848,16 @@ SW_DataCollection = {
 								[9] = 5,
 							},
 						},
-						[780] = {
+						[509] = {
 							[6] = {
-								[10] = 579,
-								[9] = 3,
+								[10] = 873,
+								[9] = 1,
 							},
 						},
-						[693] = {
+						[112] = {
 							[6] = {
-								[10] = 247,
-								[9] = 1,
+								[10] = 3150,
+								[9] = 7,
 							},
 						},
 					},
@@ -47000,11 +47955,14 @@ SW_DataCollection = {
 								[3] = 3,
 							},
 						},
-						[158] = {
+						[31] = {
 							[1] = {
-								[1] = 1770,
-								[2] = 304,
-								[3] = 6,
+								[1] = 111,
+								[2] = 61,
+								[3] = 2,
+							},
+							[5] = {
+								[4] = 2,
 							},
 						},
 						[82] = {
@@ -47015,14 +47973,11 @@ SW_DataCollection = {
 								[4] = 1,
 							},
 						},
-						[31] = {
+						[158] = {
 							[1] = {
-								[1] = 111,
-								[2] = 61,
-								[3] = 2,
-							},
-							[5] = {
-								[4] = 2,
+								[1] = 1770,
+								[2] = 304,
+								[3] = 6,
 							},
 						},
 					},
@@ -47063,61 +48018,18 @@ SW_DataCollection = {
 					},
 				},
 			},
-			[7272] = {
-				[1] = {
-					[1] = {
-						[1] = 104,
-						[5] = 2,
-						[11] = 13,
-					},
-					[2] = {
-						[200] = {
-							[1] = 104,
-							[2] = 55,
-							[3] = 2,
-						},
-					},
-					[3] = {
-						[31] = {
-							[1] = {
-								[1] = 104,
-								[2] = 55,
-								[3] = 2,
-							},
-						},
-					},
-				},
+			[2915] = {
 				[2] = {
 					[1] = {
-						[1] = 1197,
-						[3] = 1,
-						[5] = 5,
+						[1] = 108,
+						[5] = 1,
 					},
 					[2] = {
-						[6] = {
-							[1] = 600,
-							[2] = 303,
-							[3] = 2,
-						},
-						[200] = {
-							[1] = 111,
-							[2] = 61,
-							[3] = 2,
-							[30] = {
-								[4] = 2,
-							},
-						},
-						[4] = {
-							[1] = 486,
-							[2] = 486,
+						[300] = {
+							[1] = 108,
+							[2] = 108,
 							[3] = 1,
 						},
-					},
-				},
-				[3] = {
-					[2100] = {
-						[1] = 104,
-						[5] = 2,
 					},
 				},
 			},
@@ -47237,6 +48149,70 @@ SW_DataCollection = {
 					},
 				},
 			},
+			[7272] = {
+				[1] = {
+					[1] = {
+						[1] = 104,
+						[5] = 2,
+						[11] = 13,
+					},
+					[2] = {
+						[200] = {
+							[1] = 104,
+							[2] = 55,
+							[3] = 2,
+						},
+					},
+					[3] = {
+						[31] = {
+							[1] = {
+								[1] = 104,
+								[2] = 55,
+								[3] = 2,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 1197,
+						[3] = 1,
+						[5] = 5,
+					},
+					[2] = {
+						[6] = {
+							[1] = 600,
+							[2] = 303,
+							[3] = 2,
+						},
+						[200] = {
+							[1] = 111,
+							[2] = 61,
+							[3] = 2,
+							[30] = {
+								[4] = 2,
+							},
+						},
+						[4] = {
+							[1] = 486,
+							[2] = 486,
+							[3] = 1,
+						},
+					},
+				},
+				[3] = {
+					[2100] = {
+						[1] = 104,
+						[5] = 2,
+					},
+				},
+			},
+			["initTS"] = {
+				["epochTS"] = 1517325653,
+				["msO"] = -0.3899999999994179,
+				["uTS"] = -2732.390000104904,
+			},
+			["Name"] = "SyncInit",
 			[5007] = {
 				[2] = {
 					[1] = {
@@ -47247,22 +48223,1857 @@ SW_DataCollection = {
 					},
 				},
 			},
-			["initTS"] = {
-				["uTS"] = 159.6100000000006,
-				["msO"] = -0.3899999999994179,
-				["epochTS"] = 1517325653,
-			},
-			["Name"] = "SyncInit",
-			[2915] = {
+		},
+		[20] = {
+			[7274] = {
 				[2] = {
 					[1] = {
-						[1] = 108,
+						[1] = 42,
 						[5] = 1,
 					},
 					[2] = {
 						[300] = {
-							[1] = 108,
-							[2] = 108,
+							[1] = 42,
+							[2] = 42,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[1] = {
+				[1] = {
+					[1] = {
+					},
+					[2] = {
+					},
+					[3] = {
+						[53] = {
+							[6] = {
+								[9] = 1,
+							},
+						},
+					},
+				},
+			},
+			["Name"] = "SyncInit",
+			[7273] = {
+				[2] = {
+					[1] = {
+						[1] = 40,
+						[5] = 4,
+					},
+					[2] = {
+						[300] = {
+							[1] = 40,
+							[2] = 10,
+							[3] = 4,
+						},
+					},
+				},
+			},
+			["initTS"] = {
+				["uTS"] = 9.60899999999674,
+				["msO"] = -0.3910000000032596,
+				["epochTS"] = 1517328395,
+			},
+		},
+		[21] = {
+			[1] = {
+				[1] = {
+					[1] = {
+					},
+					[2] = {
+					},
+					[3] = {
+						[53] = {
+							[6] = {
+								[9] = 1,
+							},
+						},
+					},
+				},
+			},
+			[7426] = {
+				[2] = {
+					[1] = {
+						[1] = 10,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 10,
+							[2] = 10,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7427] = {
+				[2] = {
+					[1] = {
+						[1] = 2738,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 2738,
+							[2] = 2738,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[5396] = {
+				[2] = {
+					[1] = {
+						[1] = 1679,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1679,
+							[2] = 1679,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7365] = {
+				[2] = {
+					[1] = {
+						[1] = 120,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 120,
+							[2] = 120,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[1174] = {
+				[2] = {
+					[1] = {
+						[1] = 145,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 145,
+							[2] = 145,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[2651] = {
+				[2] = {
+					[1] = {
+						[1] = 1183,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1183,
+							[2] = 1183,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[3064] = {
+				[2] = {
+					[1] = {
+						[1] = 298,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 298,
+							[2] = 298,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7369] = {
+				[2] = {
+					[1] = {
+						[1] = 517,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 517,
+							[2] = 517,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[5465] = {
+				[2] = {
+					[1] = {
+						[1] = 1293,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1293,
+							[2] = 1293,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7371] = {
+				[2] = {
+					[1] = {
+						[1] = 508,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 508,
+							[2] = 508,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7308] = {
+				[2] = {
+					[1] = {
+						[1] = 98,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 98,
+							[2] = 98,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7372] = {
+				[2] = {
+					[1] = {
+						[1] = 1653,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1653,
+							[2] = 1653,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[5404] = {
+				[2] = {
+					[1] = {
+						[1] = 345,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 345,
+							[2] = 345,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[3829] = {
+				[2] = {
+					[1] = {
+						[1] = 1369,
+						[5] = 2,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1369,
+							[2] = 877,
+							[3] = 2,
+						},
+					},
+				},
+			},
+			[7437] = {
+				[1] = {
+					[1] = {
+						[2] = 142,
+					},
+					[2] = {
+					},
+					[3] = {
+						[36] = {
+							[2] = {
+								[1] = 142,
+								[2] = 71,
+								[3] = 2,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[2] = 142,
+					},
+					[2] = {
+					},
+				},
+				[3] = {
+					[7437] = {
+						[2] = 142,
+					},
+				},
+			},
+			[3862] = {
+				[2] = {
+					[1] = {
+						[1] = 457,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 457,
+							[2] = 457,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7376] = {
+				[2] = {
+					[1] = {
+						[1] = 135,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 135,
+							[2] = 135,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[3545] = {
+				[1] = {
+					[1] = {
+						[2] = 17907,
+					},
+					[2] = {
+					},
+					[3] = {
+						[423] = {
+							[2] = {
+								[1] = 17907,
+								[2] = 1776,
+								[3] = 14,
+								[4] = 3,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 253,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 253,
+							[2] = 253,
+							[3] = 1,
+						},
+					},
+				},
+				[3] = {
+					[7400] = {
+						[2] = 17907,
+					},
+				},
+			},
+			[7377] = {
+				[2] = {
+					[1] = {
+						[1] = 124,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 124,
+							[2] = 124,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[4838] = {
+				[2] = {
+					[1] = {
+						[1] = 91,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 91,
+							[2] = 91,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7379] = {
+				[2] = {
+					[1] = {
+						[1] = 380,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 380,
+							[2] = 380,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[2721] = {
+				[2] = {
+					[1] = {
+						[1] = 2236,
+						[5] = 6,
+					},
+					[2] = {
+						[300] = {
+							[1] = 2236,
+							[2] = 549,
+							[3] = 6,
+						},
+					},
+				},
+			},
+			[3642] = {
+				[2] = {
+					[1] = {
+						[1] = 365,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 365,
+							[2] = 365,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[1273] = {
+				[2] = {
+					[1] = {
+						[1] = 457,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 457,
+							[2] = 457,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[3897] = {
+				[2] = {
+					[1] = {
+						[1] = 808,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 808,
+							[2] = 808,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[5541] = {
+				[2] = {
+					[1] = {
+						[1] = 10,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 10,
+							[2] = 10,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7383] = {
+				[2] = {
+					[1] = {
+						[1] = 63,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 63,
+							[2] = 63,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[5796] = {
+				[2] = {
+					[1] = {
+						[1] = 643,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 643,
+							[2] = 643,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[4336] = {
+				[2] = {
+					[1] = {
+						[1] = 10,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 10,
+							[2] = 10,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7132] = {
+				[2] = {
+					[1] = {
+						[1] = 1064,
+						[5] = 3,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1064,
+							[2] = 586,
+							[3] = 3,
+						},
+					},
+				},
+			},
+			[6999] = {
+				[1] = {
+					[1] = {
+						[2] = 66,
+					},
+					[2] = {
+					},
+					[3] = {
+						[382] = {
+							[2] = {
+								[1] = 66,
+								[2] = 11,
+								[3] = 6,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[2] = 66,
+					},
+					[2] = {
+					},
+				},
+				[3] = {
+					[6999] = {
+						[2] = 66,
+					},
+				},
+			},
+			[3963] = {
+				[2] = {
+					[1] = {
+						[1] = 300,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 300,
+							[2] = 300,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7324] = {
+				[2] = {
+					[1] = {
+						[1] = 847,
+						[5] = 2,
+					},
+					[2] = {
+						[300] = {
+							[1] = 847,
+							[2] = 446,
+							[3] = 2,
+						},
+					},
+				},
+			},
+			[7436] = {
+				[1] = {
+					[1] = {
+						[1] = 153,
+						[5] = 1,
+					},
+					[2] = {
+						[200] = {
+							[1] = 153,
+							[2] = 153,
+							[3] = 1,
+						},
+					},
+					[3] = {
+						[376] = {
+							[1] = {
+								[1] = 153,
+								[2] = 153,
+								[3] = 1,
+							},
+						},
+					},
+				},
+				[3] = {
+					[657] = {
+						[1] = 153,
+						[5] = 1,
+					},
+				},
+			},
+			[7325] = {
+				[2] = {
+					[1] = {
+						[1] = 10,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 10,
+							[2] = 10,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[4344] = {
+				[1] = {
+					[1] = {
+						[2] = 400,
+					},
+					[2] = {
+					},
+					[3] = {
+						[36] = {
+							[2] = {
+								[1] = 400,
+								[2] = 80,
+								[3] = 5,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 686,
+						[2] = 400,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 686,
+							[2] = 686,
+							[3] = 1,
+						},
+					},
+				},
+				[3] = {
+					[4344] = {
+						[2] = 400,
+					},
+				},
+			},
+			["Name"] = "Left raid",
+			[4575] = {
+				[2] = {
+					[1] = {
+						[1] = 143,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 143,
+							[2] = 143,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[6023] = {
+				[2] = {
+					[1] = {
+						[1] = 480,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 480,
+							[2] = 480,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7391] = {
+				[2] = {
+					[1] = {
+						[1] = 1319,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1319,
+							[2] = 1319,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7423] = {
+				[2] = {
+					[1] = {
+						[1] = 444,
+						[5] = 2,
+					},
+					[2] = {
+						[300] = {
+							[1] = 444,
+							[2] = 334,
+							[3] = 2,
+						},
+					},
+				},
+			},
+			[7392] = {
+				[2] = {
+					[1] = {
+						[1] = 1023,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1023,
+							[2] = 1023,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[6313] = {
+				[2] = {
+					[1] = {
+						[1] = 166,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 166,
+							[2] = 166,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[4852] = {
+				[2] = {
+					[1] = {
+						[1] = 319,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 319,
+							[2] = 319,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[3744] = {
+				[2] = {
+					[1] = {
+						[1] = 1726,
+						[5] = 2,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1726,
+							[2] = 1613,
+							[3] = 2,
+						},
+					},
+				},
+			},
+			[3739] = {
+				[2] = {
+					[1] = {
+						[1] = 476,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 476,
+							[2] = 476,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7331] = {
+				[2] = {
+					[1] = {
+						[1] = 10,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 10,
+							[2] = 10,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7395] = {
+				[2] = {
+					[1] = {
+						[1] = 291,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 291,
+							[2] = 291,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7417] = {
+				[2] = {
+					[1] = {
+						[1] = 243,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 243,
+							[2] = 243,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7396] = {
+				[2] = {
+					[1] = {
+						[1] = 259,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 259,
+							[2] = 259,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7333] = {
+				[2] = {
+					[1] = {
+						[1] = 252,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 252,
+							[2] = 252,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[2952] = {
+				[2] = {
+					[1] = {
+						[1] = 522,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 522,
+							[2] = 522,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7334] = {
+				[2] = {
+					[1] = {
+						[1] = 173,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 173,
+							[2] = 173,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7281] = {
+				[2] = {
+					[1] = {
+						[1] = 771,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 771,
+							[2] = 771,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[411] = {
+				[2] = {
+					[1] = {
+						[1] = 793,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 793,
+							[2] = 793,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7405] = {
+				[1] = {
+					[1] = {
+						[2] = 756,
+					},
+					[2] = {
+					},
+					[3] = {
+						[185] = {
+							[2] = {
+								[1] = 756,
+								[2] = 189,
+								[3] = 4,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[2] = 756,
+					},
+					[2] = {
+					},
+				},
+				[3] = {
+					[7405] = {
+						[2] = 756,
+					},
+				},
+			},
+			[7336] = {
+				[2] = {
+					[1] = {
+						[1] = 730,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 730,
+							[2] = 730,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7146] = {
+				[2] = {
+					[1] = {
+						[1] = 2287,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 2287,
+							[2] = 2287,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[3303] = {
+				[1] = {
+					[1] = {
+						[1] = 244,
+						[5] = 9,
+					},
+					[2] = {
+						[200] = {
+							[1] = 226,
+							[2] = 41,
+							[3] = 6,
+						},
+						[3] = {
+							[1] = 18,
+							[2] = 6,
+							[3] = 3,
+						},
+					},
+					[3] = {
+						[111] = {
+							[1] = {
+								[1] = 18,
+								[2] = 6,
+								[3] = 3,
+							},
+						},
+						[31] = {
+							[1] = {
+								[1] = 226,
+								[2] = 41,
+								[3] = 6,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 40,
+						[5] = 3,
+					},
+					[2] = {
+						[200] = {
+							[1] = 40,
+							[2] = 15,
+							[3] = 3,
+						},
+					},
+				},
+				[3] = {
+					[657] = {
+						[1] = 244,
+						[5] = 9,
+					},
+				},
+			},
+			[6258] = {
+				[2] = {
+					[1] = {
+						[1] = 1093,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1093,
+							[2] = 1093,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7338] = {
+				[2] = {
+					[1] = {
+						[1] = 10,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 10,
+							[2] = 10,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7402] = {
+				[2] = {
+					[1] = {
+						[1] = 24,
+						[5] = 2,
+					},
+					[2] = {
+						[300] = {
+							[1] = 24,
+							[2] = 15,
+							[3] = 2,
+						},
+					},
+				},
+			},
+			[2904] = {
+				[2] = {
+					[1] = {
+						[1] = 1385,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1385,
+							[2] = 1385,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7400] = {
+				[2] = {
+					[1] = {
+						[1] = 221,
+						[2] = 17907,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 221,
+							[2] = 221,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7141] = {
+				[2] = {
+					[1] = {
+						[1] = 674,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 674,
+							[2] = 674,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7277] = {
+				[2] = {
+					[1] = {
+						[1] = 1166,
+						[5] = 2,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1166,
+							[2] = 693,
+							[3] = 2,
+						},
+					},
+				},
+			},
+			[7404] = {
+				[2] = {
+					[1] = {
+						[1] = 298,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 298,
+							[2] = 298,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7278] = {
+				[1] = {
+					[1] = {
+						[2] = 136,
+					},
+					[2] = {
+					},
+					[3] = {
+						[36] = {
+							[2] = {
+								[1] = 136,
+								[2] = 136,
+								[3] = 1,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[2] = 136,
+					},
+					[2] = {
+					},
+				},
+				[3] = {
+					[7278] = {
+						[2] = 136,
+					},
+				},
+			},
+			[6343] = {
+				[2] = {
+					[1] = {
+						[1] = 452,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 452,
+							[2] = 452,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7406] = {
+				[2] = {
+					[1] = {
+						[1] = 1234,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1234,
+							[2] = 1234,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7386] = {
+				[2] = {
+					[1] = {
+						[1] = 84,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 84,
+							[2] = 84,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[5553] = {
+				[2] = {
+					[1] = {
+						[1] = 3,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 3,
+							[2] = 3,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7344] = {
+				[2] = {
+					[1] = {
+						[1] = 649,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 649,
+							[2] = 649,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[2513] = {
+				[2] = {
+					[1] = {
+						[1] = 340,
+						[5] = 2,
+					},
+					[2] = {
+						[300] = {
+							[1] = 340,
+							[2] = 330,
+							[3] = 2,
+						},
+					},
+				},
+			},
+			[5567] = {
+				[2] = {
+					[1] = {
+						[1] = 428,
+						[5] = 2,
+					},
+					[2] = {
+						[300] = {
+							[1] = 428,
+							[2] = 420,
+							[3] = 2,
+							[30] = {
+								[5] = 2,
+							},
+						},
+					},
+				},
+			},
+			[22] = {
+				[2] = {
+					[1] = {
+						[1] = 428,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 428,
+							[2] = 428,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7346] = {
+				[2] = {
+					[1] = {
+						[1] = 1173,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1173,
+							[2] = 1173,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7283] = {
+				[2] = {
+					[1] = {
+						[1] = 189,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 189,
+							[2] = 189,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7382] = {
+				[2] = {
+					[1] = {
+						[1] = 1158,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1158,
+							[2] = 1158,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7411] = {
+				[2] = {
+					[1] = {
+						[1] = 10,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 10,
+							[2] = 10,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7348] = {
+				[2] = {
+					[1] = {
+						[1] = 593,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 593,
+							[2] = 593,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[3192] = {
+				[2] = {
+					[1] = {
+						[1] = 2125,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 2125,
+							[2] = 2125,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7282] = {
+				[1] = {
+					[1] = {
+						[2] = 269,
+					},
+					[2] = {
+					},
+					[3] = {
+						[136] = {
+							[2] = {
+								[1] = 269,
+								[2] = 163,
+								[3] = 2,
+								[4] = 1,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 250,
+						[2] = 269,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 250,
+							[2] = 250,
+							[3] = 1,
+						},
+					},
+				},
+				[3] = {
+					[7282] = {
+						[2] = 269,
+					},
+				},
+			},
+			[5425] = {
+				[2] = {
+					[1] = {
+						[1] = 10,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 10,
+							[2] = 10,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7357] = {
+				[2] = {
+					[1] = {
+						[1] = 73,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 73,
+							[2] = 73,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7414] = {
+				[2] = {
+					[1] = {
+						[1] = 93,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 93,
+							[2] = 93,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[1726] = {
+				[2] = {
+					[1] = {
+						[1] = 267,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 267,
+							[2] = 267,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[3129] = {
+				[2] = {
+					[1] = {
+						[1] = 10,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 10,
+							[2] = 10,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7352] = {
+				[2] = {
+					[1] = {
+						[1] = 168,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 168,
+							[2] = 168,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[3799] = {
+				[2] = {
+					[1] = {
+						[1] = 176,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 176,
+							[2] = 176,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7351] = {
+				[2] = {
+					[1] = {
+						[1] = 84,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 84,
+							[2] = 84,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[1171] = {
+				[2] = {
+					[1] = {
+						[1] = 10,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 10,
+							[2] = 10,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7360] = {
+				[2] = {
+					[1] = {
+						[1] = 248,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 248,
+							[2] = 248,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[2662] = {
+				[2] = {
+					[1] = {
+						[1] = 307,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 307,
+							[2] = 307,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[218] = {
+				[2] = {
+					[1] = {
+						[1] = 1047,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1047,
+							[2] = 1047,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[6276] = {
+				[2] = {
+					[1] = {
+						[1] = 917,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 917,
+							[2] = 917,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7356] = {
+				[2] = {
+					[1] = {
+						[1] = 1025,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1025,
+							[2] = 1025,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[5007] = {
+				[2] = {
+					[1] = {
+						[1] = 339,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 339,
+							[2] = 339,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[3821] = {
+				[2] = {
+					[1] = {
+						[1] = 399,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 399,
+							[2] = 399,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7421] = {
+				[2] = {
+					[1] = {
+						[1] = 2359,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 2359,
+							[2] = 2359,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[2527] = {
+				[2] = {
+					[1] = {
+						[1] = 157,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 157,
+							[2] = 157,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[657] = {
+				[1] = {
+					[1] = {
+						[1] = 40,
+						[5] = 3,
+					},
+					[2] = {
+						[200] = {
+							[1] = 40,
+							[2] = 15,
+							[3] = 3,
+						},
+					},
+					[3] = {
+						[31] = {
+							[1] = {
+								[1] = 40,
+								[2] = 15,
+								[3] = 3,
+							},
+						},
+					},
+				},
+				[2] = {
+					[1] = {
+						[1] = 397,
+						[3] = 6,
+						[5] = 10,
+					},
+					[2] = {
+						[200] = {
+							[1] = 379,
+							[2] = 153,
+							[3] = 7,
+						},
+						[3] = {
+							[1] = 18,
+							[2] = 6,
+							[3] = 3,
+						},
+					},
+				},
+				[3] = {
+					[3303] = {
+						[1] = 40,
+						[5] = 3,
+					},
+				},
+			},
+			[7359] = {
+				[2] = {
+					[1] = {
+						[1] = 55,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 55,
+							[2] = 55,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			["initTS"] = {
+				["uTS"] = 52.92199999999139,
+				["msO"] = -0.07800000000861473,
+				["epochTS"] = 1517328438,
+			},
+			[5074] = {
+				[2] = {
+					[1] = {
+						[1] = 113,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 113,
+							[2] = 113,
+							[3] = 1,
+						},
+					},
+				},
+			},
+			[7373] = {
+				[2] = {
+					[1] = {
+						[1] = 1512,
+						[5] = 1,
+					},
+					[2] = {
+						[300] = {
+							[1] = 1512,
+							[2] = 1512,
 							[3] = 1,
 						},
 					},

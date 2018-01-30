@@ -76,7 +76,7 @@ LunaDB = {
 						},
 					},
 				},
-				["pettarget"] = {
+				["party"] = {
 					["barorder"] = {
 						["horizontal"] = {
 							[1] = "portrait",
@@ -129,7 +129,7 @@ LunaDB = {
 						},
 					},
 				},
-				["party"] = {
+				["pettarget"] = {
 					["barorder"] = {
 						["horizontal"] = {
 							[1] = "portrait",
@@ -175,6 +175,7 @@ LunaDB = {
 			["enemyCastbars"] = true,
 			["texture"] = "Flat",
 			["clickcasting"] = {
+				["mouseDownClicks"] = true,
 				["bindings"] = {
 					["Alt-LeftButton"] = "Renew(Rank 6)",
 					["Shift-RightButton"] = "Flash Heal",
@@ -183,13 +184,12 @@ LunaDB = {
 					["Ctrl-LeftButton"] = "Greater Heal(Rank 2)",
 					["Button4"] = "Renew(Rank 6)",
 				},
-				["mouseDownClicks"] = true,
 			},
 			["RangePolRate"] = 0.5,
 			["detachedTooltip"] = {
 				["fontSizePercent"] = 1,
 			},
-			["mouseover"] = false,
+			["hidden"] = true,
 			["units"] = {
 				["targettargettarget"] = {
 					["incheal"] = {
@@ -207,9 +207,9 @@ LunaDB = {
 						["AurasPerRow"] = 9,
 						["emphasizeAuras"] = {
 							["debuffs"] = {
-								["Gehennas' Curse"] = true,
-								["Veil of Shadow"] = true,
 								["Mortal Strike"] = true,
+								["Veil of Shadow"] = true,
+								["Gehennas' Curse"] = true,
 							},
 						},
 					},
@@ -234,9 +234,9 @@ LunaDB = {
 						["x"] = 92,
 					},
 					["healthBar"] = {
-						["vertical"] = false,
-						["reactionType"] = "never",
 						["colorType"] = "static",
+						["reactionType"] = "never",
+						["vertical"] = false,
 						["size"] = 4,
 					},
 					["tags"] = {
@@ -262,10 +262,6 @@ LunaDB = {
 					["position"] = {
 						["y"] = -537.87,
 						["x"] = 856.9330790338471,
-					},
-					["portrait"] = {
-						["enabled"] = false,
-						["size"] = 5,
 					},
 					["indicators"] = {
 						["icons"] = {
@@ -295,9 +291,13 @@ LunaDB = {
 					["powerBar"] = {
 						["enabled"] = false,
 						["vertical"] = false,
-						["hide"] = false,
-						["invert"] = false,
 						["size"] = 1,
+						["invert"] = false,
+						["hide"] = false,
+					},
+					["portrait"] = {
+						["enabled"] = false,
+						["size"] = 5,
 					},
 				},
 				["partytarget"] = {
@@ -435,6 +435,7 @@ LunaDB = {
 						["size"] = 8,
 					},
 					["tags"] = {
+						["enabled"] = false,
 						["bartags"] = {
 							["healthBar"] = {
 								["center"] = "",
@@ -456,7 +457,6 @@ LunaDB = {
 								["size"] = 11,
 							},
 						},
-						["enabled"] = false,
 					},
 					["druidBar"] = {
 						["enabled"] = false,
@@ -468,17 +468,9 @@ LunaDB = {
 					["combatText"] = {
 						["enabled"] = false,
 					},
-					["powerBar"] = {
-						["vertical"] = false,
-						["ticker"] = true,
-					},
-					["position"] = {
-						["y"] = -563.2000000000001,
-						["x"] = 565.1999735021118,
-					},
 					["indicators"] = {
 						["icons"] = {
-							["raidTarget"] = {
+							["rezz"] = {
 								["enabled"] = false,
 							},
 							["pvprank"] = {
@@ -490,25 +482,33 @@ LunaDB = {
 							["leader"] = {
 								["enabled"] = false,
 							},
-							["ready"] = {
+							["pvp"] = {
 								["enabled"] = false,
 							},
 							["status"] = {
 								["enabled"] = false,
 							},
-							["rezz"] = {
+							["raidTarget"] = {
 								["enabled"] = false,
 							},
 							["masterLoot"] = {
 								["enabled"] = false,
 							},
-							["pvp"] = {
+							["ready"] = {
 								["enabled"] = false,
 							},
 						},
 					},
+					["position"] = {
+						["y"] = -563.2000000000001,
+						["x"] = 565.1999735021118,
+					},
+					["powerBar"] = {
+						["vertical"] = false,
+						["ticker"] = true,
+					},
 				},
-				["party"] = {
+				["pettarget"] = {
 					["barorder"] = {
 						["horizontal"] = {
 							[1] = "portrait",
@@ -520,7 +520,6 @@ LunaDB = {
 						["vertical"] = {
 						},
 					},
-					["enabled"] = false,
 					["tags"] = {
 						["bartags"] = {
 							["healthBar"] = {
@@ -552,9 +551,9 @@ LunaDB = {
 						["enlargedbuffsize"] = 19,
 						["emphasizeAuras"] = {
 							["debuffs"] = {
-								["Ignite Mana"] = true,
-								["Veil of Shadow"] = true,
 								["Gehennas' Curse"] = true,
+								["Veil of Shadow"] = true,
+								["Ignite Mana"] = true,
 								["Mortal Strike"] = true,
 							},
 						},
@@ -607,17 +606,20 @@ LunaDB = {
 							},
 						},
 					},
-					["combatText"] = {
-						["enabled"] = false,
-					},
 					["position"] = {
 						["y"] = -563.2000000000001,
 						["x"] = 683.5970926619774,
 					},
+					["comboPoints"] = {
+						["enabled"] = false,
+					},
+					["highlight"] = {
+						["enabled"] = false,
+					},
 					["indicators"] = {
 						["icons"] = {
-							["raidTarget"] = {
-								["size"] = 14,
+							["rezz"] = {
+								["enabled"] = false,
 							},
 							["pvprank"] = {
 								["enabled"] = false,
@@ -631,8 +633,8 @@ LunaDB = {
 							["status"] = {
 								["enabled"] = false,
 							},
-							["rezz"] = {
-								["enabled"] = false,
+							["raidTarget"] = {
+								["size"] = 14,
 							},
 							["masterLoot"] = {
 								["enabled"] = false,
@@ -642,10 +644,7 @@ LunaDB = {
 							},
 						},
 					},
-					["highlight"] = {
-						["enabled"] = false,
-					},
-					["comboPoints"] = {
+					["combatText"] = {
 						["enabled"] = false,
 					},
 				},
@@ -715,15 +714,15 @@ LunaDB = {
 								["size"] = 7,
 							},
 							["raidTarget"] = {
-								["y"] = -1,
-								["x"] = -24,
 								["enabled"] = true,
+								["x"] = -24,
+								["y"] = -1,
 								["size"] = 19,
 							},
 							["ready"] = {
-								["y"] = 6,
-								["x"] = 8,
 								["enabled"] = true,
+								["x"] = 8,
+								["y"] = 6,
 							},
 						},
 					},
@@ -742,9 +741,54 @@ LunaDB = {
 					["castBar"] = {
 						["vertical"] = false,
 					},
-					["fader"] = {
-						["speedyFade"] = true,
-						["inactiveAlpha"] = 0.1,
+					["squares"] = {
+						["debuffs"] = {
+							["colors"] = {
+								[1] = {
+									["g"] = 0.4784313725490196,
+									["b"] = 0.2352941176470588,
+								},
+								[2] = {
+									["b"] = 0.3843137254901961,
+									["g"] = 0,
+									["r"] = 1,
+								},
+								[3] = {
+									["b"] = 0.9294117647058824,
+									["r"] = 1,
+								},
+							},
+							["names"] = {
+								[1] = "weakened soul",
+								[2] = "mortal strike",
+								[3] = "veil of shadow",
+							},
+						},
+						["owndispdebuffs"] = true,
+						["innersize"] = 10,
+						["hottracker"] = false,
+						["outersize"] = 4,
+						["debuffcolors"] = true,
+						["colors"] = true,
+						["buffs"] = {
+							["colors"] = {
+								[1] = {
+									["b"] = 1,
+									["g"] = 0.5568627450980392,
+									["r"] = 0.2078431372549019,
+								},
+								[3] = {
+									["g"] = 1,
+									["r"] = 1,
+								},
+							},
+							["names"] = {
+								[1] = "Power Word: Shield",
+								[2] = "Rejuvenation",
+								[3] = "Renew",
+							},
+						},
+						["buffcolors"] = true,
 					},
 					["showparty"] = true,
 					["barorder"] = {
@@ -763,9 +807,9 @@ LunaDB = {
 						["x"] = 61,
 					},
 					["healthBar"] = {
-						["vertical"] = false,
-						["reactionType"] = "never",
 						["colorType"] = "static",
+						["reactionType"] = "never",
+						["vertical"] = false,
 					},
 					["tags"] = {
 						["bartags"] = {
@@ -793,66 +837,21 @@ LunaDB = {
 					},
 					["growth"] = "RIGHT",
 					["titles"] = false,
-					["petgrp"] = true,
+					["fader"] = {
+						["speedyFade"] = true,
+						["inactiveAlpha"] = 0.1,
+					},
+					["highlight"] = {
+						["ontarget"] = true,
+						["alpha"] = 0.5,
+					},
+					["padding"] = 1,
 					["powerBar"] = {
 						["enabled"] = false,
 						["vertical"] = false,
 						["hide"] = false,
 					},
-					["padding"] = 1,
-					["highlight"] = {
-						["ontarget"] = true,
-						["alpha"] = 0.5,
-					},
-					["squares"] = {
-						["debuffs"] = {
-							["colors"] = {
-								[1] = {
-									["g"] = 0.4784313725490196,
-									["b"] = 0.2352941176470588,
-								},
-								[2] = {
-									["b"] = 0.3843137254901961,
-									["g"] = 0,
-									["r"] = 1,
-								},
-								[3] = {
-									["r"] = 1,
-									["b"] = 0.9294117647058824,
-								},
-							},
-							["names"] = {
-								[1] = "weakened soul",
-								[2] = "mortal strike",
-								[3] = "veil of shadow",
-							},
-						},
-						["owndispdebuffs"] = true,
-						["innersize"] = 10,
-						["hottracker"] = false,
-						["outersize"] = 4,
-						["buffcolors"] = true,
-						["colors"] = true,
-						["buffs"] = {
-							["colors"] = {
-								[1] = {
-									["b"] = 1,
-									["g"] = 0.5568627450980392,
-									["r"] = 0.2078431372549019,
-								},
-								[3] = {
-									["g"] = 1,
-									["r"] = 1,
-								},
-							},
-							["names"] = {
-								[1] = "Power Word: Shield",
-								[2] = "Rejuvenation",
-								[3] = "Renew",
-							},
-						},
-						["debuffcolors"] = true,
-					},
+					["petgrp"] = true,
 				},
 				["targettarget"] = {
 					["highlight"] = {
@@ -902,6 +901,12 @@ LunaDB = {
 						["y"] = -537.87,
 						["x"] = 801.85,
 					},
+					["portrait"] = {
+						["enabled"] = false,
+					},
+					["powerBar"] = {
+						["enabled"] = false,
+					},
 					["indicators"] = {
 						["icons"] = {
 							["raidTarget"] = {
@@ -927,14 +932,8 @@ LunaDB = {
 							},
 						},
 					},
-					["portrait"] = {
-						["enabled"] = false,
-					},
-					["powerBar"] = {
-						["enabled"] = false,
-					},
 				},
-				["pettarget"] = {
+				["party"] = {
 					["barorder"] = {
 						["horizontal"] = {
 							[1] = "portrait",
@@ -946,6 +945,7 @@ LunaDB = {
 						["vertical"] = {
 						},
 					},
+					["enabled"] = false,
 					["tags"] = {
 						["bartags"] = {
 							["healthBar"] = {
@@ -964,7 +964,7 @@ LunaDB = {
 				},
 			},
 			["tooltipCombat"] = true,
-			["hidden"] = true,
+			["font"] = "big_noodle_titling",
 			["auraborderType"] = "black",
 			["classColors"] = {
 				["SHAMAN"] = {
@@ -975,7 +975,7 @@ LunaDB = {
 			["bars"] = {
 				["backgroundAlpha"] = 0.01,
 			},
-			["font"] = "big_noodle_titling",
+			["mouseover"] = false,
 		},
 	},
 }

@@ -45,24 +45,11 @@ gOutfitter_Settings = {
 			["Name"] = "Around Town",
 		},
 	},
-	["Version"] = 7,
 	["Options"] = {
 		["MinimapButtonAngle"] = -1.5708,
 		["HideMinimapButton"] = true,
 	},
-	["HideHelm"] = {
-		[13216] = true,
-		[0] = false,
-		[13102] = true,
-		[14293] = true,
-		[18526] = true,
-		[12604] = true,
-		[16921] = false,
-		[16693] = true,
-		[18727] = false,
-		[10726] = false,
-		[10588] = false,
-	},
+	["Version"] = 7,
 	["Outfits"] = {
 		["Partial"] = {
 			[1] = {
@@ -109,11 +96,11 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
-					["ChestSlot"] = {
-						["Name"] = "Truefaith Vestments",
-						["Code"] = 14154,
+					["RangedSlot"] = {
+						["Name"] = "Essence Gatherer",
+						["Code"] = 19435,
 						["SubCode"] = 0,
-						["EnchantCode"] = 1893,
+						["EnchantCode"] = 0,
 					},
 					["Trinket1Slot"] = {
 						["Name"] = "Royal Seal of Eldre'Thalas",
@@ -140,9 +127,27 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
-					["WaistSlot"] = {
-						["Name"] = "Belt of Transcendence",
-						["Code"] = 16925,
+					["ShoulderSlot"] = {
+						["Name"] = "Pauldrons of Transcendence",
+						["Code"] = 16924,
+						["SubCode"] = 0,
+						["EnchantCode"] = 2604,
+					},
+					["Finger0Slot"] = {
+						["Name"] = "Pure Elementium Band",
+						["Code"] = 19382,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["ChestSlot"] = {
+						["Name"] = "Truefaith Vestments",
+						["Code"] = 14154,
+						["SubCode"] = 0,
+						["EnchantCode"] = 1893,
+					},
+					["NeckSlot"] = {
+						["Name"] = "Wavefront Necklace",
+						["Code"] = 20685,
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
@@ -152,41 +157,23 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 2590,
 					},
-					["RangedSlot"] = {
-						["Name"] = "Essence Gatherer",
-						["Code"] = 19435,
+					["WaistSlot"] = {
+						["Name"] = "Belt of Transcendence",
+						["Code"] = 16925,
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
-					},
-					["NeckSlot"] = {
-						["Name"] = "Wavefront Necklace",
-						["Code"] = 20685,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["Finger0Slot"] = {
-						["Name"] = "Pure Elementium Band",
-						["Code"] = 19382,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["ShoulderSlot"] = {
-						["Name"] = "Pauldrons of Transcendence",
-						["Code"] = 16924,
-						["SubCode"] = 0,
-						["EnchantCode"] = 2604,
 					},
 				},
-				["Name"] = "Balanced",
 				["CategoryID"] = "Partial",
+				["Name"] = "Balanced",
 			},
 			[2] = {
 				["Items"] = {
-					["WristSlot"] = {
-						["Name"] = "Sublime Wristguards",
-						["Code"] = 18497,
+					["Finger0Slot"] = {
+						["Name"] = "Blood of the Martyr",
+						["Code"] = 17045,
 						["SubCode"] = 0,
-						["EnchantCode"] = 1883,
+						["EnchantCode"] = 0,
 					},
 					["BackSlot"] = {
 						["Name"] = "Frostwolf Advisor's Cloak",
@@ -198,8 +185,8 @@ gOutfitter_Settings = {
 						["Name"] = "Briarwood Reed",
 						["Code"] = 12930,
 						["SubCode"] = 0,
-						["SpellDmg"] = 22,
 						["EnchantCode"] = 0,
+						["SpellDmg"] = 22,
 					},
 					["FeetSlot"] = {
 						["Name"] = "Dragonrider Boots",
@@ -211,8 +198,8 @@ gOutfitter_Settings = {
 						["Name"] = "Skyshroud Leggings",
 						["Code"] = 13170,
 						["SubCode"] = 0,
-						["SpellDmg"] = 28,
 						["EnchantCode"] = 0,
+						["SpellDmg"] = 28,
 					},
 					["Finger1Slot"] = {
 						["Name"] = "Band of Dark Dominion",
@@ -220,9 +207,9 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
-					["RangedSlot"] = {
-						["Name"] = "Bonecreeper Stylus",
-						["Code"] = 13938,
+					["ChestSlot"] = {
+						["Name"] = "Flowing Ritual Robes",
+						["Code"] = 20032,
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
@@ -243,42 +230,12 @@ gOutfitter_Settings = {
 						["Code"] = 18534,
 						["SubCode"] = 0,
 						["MetaSlotName"] = "TwoHandSlot",
-						["SpellDmg"] = 15,
 						["EnchantCode"] = 0,
+						["SpellDmg"] = 15,
 					},
 					["SecondaryHandSlot"] = {
 						["Name"] = "",
 						["Code"] = 0,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["NeckSlot"] = {
-						["Name"] = "Choker of Enlightenment",
-						["Code"] = 17109,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["ChestSlot"] = {
-						["Name"] = "Flowing Ritual Robes",
-						["Code"] = 20032,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["HeadSlot"] = {
-						["Name"] = "Crimson Felt Hat",
-						["Code"] = 18727,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["Finger0Slot"] = {
-						["Name"] = "Blood of the Martyr",
-						["Code"] = 17045,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["WaistSlot"] = {
-						["Name"] = "Frostwolf Cloth Belt",
-						["Code"] = 19090,
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
@@ -288,10 +245,40 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 930,
 					},
+					["RangedSlot"] = {
+						["Name"] = "Bonecreeper Stylus",
+						["Code"] = 13938,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["WaistSlot"] = {
+						["Name"] = "Frostwolf Cloth Belt",
+						["Code"] = 19090,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["WristSlot"] = {
+						["Name"] = "Sublime Wristguards",
+						["Code"] = 18497,
+						["SubCode"] = 0,
+						["EnchantCode"] = 1883,
+					},
+					["HeadSlot"] = {
+						["Name"] = "Crimson Felt Hat",
+						["Code"] = 18727,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["NeckSlot"] = {
+						["Name"] = "Choker of Enlightenment",
+						["Code"] = 17109,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
 				},
 				["StatID"] = "SpellDmg",
-				["CategoryID"] = "Partial",
 				["Name"] = "Deeps",
+				["CategoryID"] = "Partial",
 			},
 			[3] = {
 				["Items"] = {
@@ -337,11 +324,11 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
-					["RangedSlot"] = {
-						["Name"] = "Glowstar Rod of Healing",
-						["Code"] = 15281,
-						["SubCode"] = 2038,
-						["EnchantCode"] = 0,
+					["ChestSlot"] = {
+						["Name"] = "Truefaith Vestments",
+						["Code"] = 14154,
+						["SubCode"] = 0,
+						["EnchantCode"] = 1893,
 					},
 					["Trinket1Slot"] = {
 						["Name"] = "Royal Seal of Eldre'Thalas",
@@ -368,29 +355,11 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
-					["HandsSlot"] = {
-						["Name"] = "Handguards of Transcendence",
-						["Code"] = 16920,
+					["ShoulderSlot"] = {
+						["Name"] = "Zandalar Confessor's Mantle",
+						["Code"] = 19841,
 						["SubCode"] = 0,
-						["EnchantCode"] = 930,
-					},
-					["WaistSlot"] = {
-						["Name"] = "Zandalar Confessor's Bindings",
-						["Code"] = 19842,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["ChestSlot"] = {
-						["Name"] = "Truefaith Vestments",
-						["Code"] = 14154,
-						["SubCode"] = 0,
-						["EnchantCode"] = 1893,
-					},
-					["WristSlot"] = {
-						["Name"] = "Bindings of Transcendence",
-						["Code"] = 16926,
-						["SubCode"] = 0,
-						["EnchantCode"] = 2566,
+						["EnchantCode"] = 2604,
 					},
 					["NeckSlot"] = {
 						["Name"] = "Wavefront Necklace",
@@ -398,24 +367,43 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
-					["ShoulderSlot"] = {
-						["Name"] = "Zandalar Confessor's Mantle",
-						["Code"] = 19841,
+					["RangedSlot"] = {
+						["Name"] = "Glowstar Rod of Healing",
+						["Code"] = 15281,
+						["SubCode"] = 2038,
+						["EnchantCode"] = 0,
+					},
+					["WristSlot"] = {
+						["Name"] = "Bindings of Transcendence",
+						["Code"] = 16926,
 						["SubCode"] = 0,
-						["EnchantCode"] = 2604,
+						["EnchantCode"] = 2566,
+					},
+					["WaistSlot"] = {
+						["Name"] = "Zandalar Confessor's Bindings",
+						["Code"] = 19842,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["HandsSlot"] = {
+						["Name"] = "Handguards of Transcendence",
+						["Code"] = 16920,
+						["SubCode"] = 0,
+						["EnchantCode"] = 930,
 					},
 				},
 				["StatID"] = "Healing",
-				["Name"] = "Heal",
 				["CategoryID"] = "Partial",
+				["Name"] = "Heal",
 			},
 			[4] = {
 				["Items"] = {
-					["WristSlot"] = {
-						["Name"] = "Vambraces of Prophecy",
-						["Code"] = 16819,
+					["Finger0Slot"] = {
+						["ManaRegen"] = 6.25,
+						["Name"] = "Pure Elementium Band",
+						["Code"] = 19382,
 						["SubCode"] = 0,
-						["EnchantCode"] = 2566,
+						["EnchantCode"] = 0,
 					},
 					["BackSlot"] = {
 						["Name"] = "Hide of the Wild",
@@ -448,12 +436,12 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
-					["RangedSlot"] = {
-						["ManaRegen"] = 5,
-						["Name"] = "Essence Gatherer",
-						["Code"] = 19435,
+					["ChestSlot"] = {
+						["ManaRegen"] = 6,
+						["Name"] = "Truefaith Vestments",
+						["Code"] = 14154,
 						["SubCode"] = 0,
-						["EnchantCode"] = 0,
+						["EnchantCode"] = 1893,
 					},
 					["Trinket1Slot"] = {
 						["Name"] = "Mindtap Talisman",
@@ -475,35 +463,10 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 2505,
 					},
-					["ChestSlot"] = {
-						["ManaRegen"] = 6,
-						["Name"] = "Truefaith Vestments",
-						["Code"] = 14154,
-						["SubCode"] = 0,
-						["EnchantCode"] = 1893,
-					},
-					["HandsSlot"] = {
-						["Name"] = "Gloves of Prophecy",
-						["Code"] = 16812,
-						["SubCode"] = 0,
-						["EnchantCode"] = 930,
-					},
-					["Finger0Slot"] = {
-						["ManaRegen"] = 6.25,
-						["Name"] = "Pure Elementium Band",
-						["Code"] = 19382,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["ShoulderSlot"] = {
-						["Name"] = "Pauldrons of Transcendence",
-						["Code"] = 16924,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["WaistSlot"] = {
-						["Name"] = "Belt of Transcendence",
-						["Code"] = 16925,
+					["RangedSlot"] = {
+						["ManaRegen"] = 5,
+						["Name"] = "Essence Gatherer",
+						["Code"] = 19435,
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
@@ -514,10 +477,34 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 2590,
 					},
+					["WristSlot"] = {
+						["Name"] = "Vambraces of Prophecy",
+						["Code"] = 16819,
+						["SubCode"] = 0,
+						["EnchantCode"] = 2566,
+					},
+					["WaistSlot"] = {
+						["Name"] = "Belt of Transcendence",
+						["Code"] = 16925,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["ShoulderSlot"] = {
+						["Name"] = "Pauldrons of Transcendence",
+						["Code"] = 16924,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["HandsSlot"] = {
+						["Name"] = "Gloves of Prophecy",
+						["Code"] = 16812,
+						["SubCode"] = 0,
+						["EnchantCode"] = 930,
+					},
 				},
 				["StatID"] = "ManaRegen",
-				["CategoryID"] = "Partial",
 				["Name"] = "Mp/5",
+				["CategoryID"] = "Partial",
 			},
 		},
 		["Accessory"] = {
@@ -533,8 +520,8 @@ gOutfitter_Settings = {
 					},
 				},
 				["StatID"] = "ArgentDawn",
-				["Disabled"] = true,
 				["Name"] = "Argent Dawn",
+				["Disabled"] = true,
 				["CategoryID"] = "Special",
 				["SpecialID"] = "ArgentDawn",
 			},
@@ -584,16 +571,16 @@ gOutfitter_Settings = {
 			[3] = {
 				["Items"] = {
 				},
-				["Name"] = "Battleground",
 				["Disabled"] = true,
+				["Name"] = "Battleground",
 				["CategoryID"] = "Special",
 				["SpecialID"] = "Battleground",
 			},
 			[4] = {
 				["Items"] = {
 				},
-				["Name"] = "Battleground: Alterac Valley",
 				["Disabled"] = true,
+				["Name"] = "Battleground: Alterac Valley",
 				["CategoryID"] = "Special",
 				["SpecialID"] = "AV",
 			},
@@ -641,19 +628,19 @@ gOutfitter_Settings = {
 					},
 				},
 				["StatID"] = "Riding",
-				["Name"] = "Riding",
 				["CategoryID"] = "Special",
+				["Name"] = "Riding",
 				["SpecialID"] = "Riding",
 			},
 		},
 		["Complete"] = {
 			[1] = {
 				["Items"] = {
-					["WristSlot"] = {
-						["Name"] = "Bindings of Transcendence",
-						["Code"] = 16926,
+					["Finger0Slot"] = {
+						["Name"] = "Pure Elementium Band",
+						["Code"] = 19382,
 						["SubCode"] = 0,
-						["EnchantCode"] = 2566,
+						["EnchantCode"] = 0,
 					},
 					["BackSlot"] = {
 						["Name"] = "Hide of the Wild",
@@ -691,9 +678,9 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
-					["RangedSlot"] = {
-						["Name"] = "Essence Gatherer",
-						["Code"] = 19435,
+					["ChestSlot"] = {
+						["Name"] = "",
+						["Code"] = 0,
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
@@ -715,11 +702,17 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 2505,
 					},
-					["ShoulderSlot"] = {
-						["Name"] = "Pauldrons of Transcendence",
-						["Code"] = 16924,
+					["WaistSlot"] = {
+						["Name"] = "Belt of Transcendence",
+						["Code"] = 16925,
 						["SubCode"] = 0,
-						["EnchantCode"] = 2604,
+						["EnchantCode"] = 0,
+					},
+					["LegsSlot"] = {
+						["Name"] = "Leggings of Transcendence",
+						["Code"] = 16922,
+						["SubCode"] = 0,
+						["EnchantCode"] = 2590,
 					},
 					["SecondaryHandSlot"] = {
 						["Name"] = "",
@@ -727,19 +720,7 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
-					["ShirtSlot"] = {
-						["Name"] = "Sawbones Shirt",
-						["Code"] = 14617,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["Finger0Slot"] = {
-						["Name"] = "Pure Elementium Band",
-						["Code"] = 19382,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["ChestSlot"] = {
+					["AmmoSlot"] = {
 						["Name"] = "",
 						["Code"] = 0,
 						["SubCode"] = 0,
@@ -751,31 +732,37 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
-					["AmmoSlot"] = {
-						["Name"] = "",
-						["Code"] = 0,
+					["RangedSlot"] = {
+						["Name"] = "Essence Gatherer",
+						["Code"] = 19435,
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
-					["LegsSlot"] = {
-						["Name"] = "Leggings of Transcendence",
-						["Code"] = 16922,
+					["WristSlot"] = {
+						["Name"] = "Bindings of Transcendence",
+						["Code"] = 16926,
 						["SubCode"] = 0,
-						["EnchantCode"] = 2590,
+						["EnchantCode"] = 2566,
 					},
-					["WaistSlot"] = {
-						["Name"] = "Belt of Transcendence",
-						["Code"] = 16925,
+					["ShirtSlot"] = {
+						["Name"] = "Sawbones Shirt",
+						["Code"] = 14617,
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
+					},
+					["ShoulderSlot"] = {
+						["Name"] = "Pauldrons of Transcendence",
+						["Code"] = 16924,
+						["SubCode"] = 0,
+						["EnchantCode"] = 2604,
 					},
 				},
-				["CategoryID"] = "Complete",
 				["Name"] = "Coolboye",
+				["CategoryID"] = "Complete",
 			},
 			[2] = {
 				["Items"] = {
-					["Finger0Slot"] = {
+					["WristSlot"] = {
 						["Name"] = "",
 						["Code"] = 0,
 						["SubCode"] = 0,
@@ -817,7 +804,7 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
-					["ChestSlot"] = {
+					["RangedSlot"] = {
 						["Name"] = "",
 						["Code"] = 0,
 						["SubCode"] = 0,
@@ -841,43 +828,7 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
-					["ShoulderSlot"] = {
-						["Name"] = "",
-						["Code"] = 0,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["ShirtSlot"] = {
-						["Name"] = "Formal White Shirt",
-						["Code"] = 4334,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["SecondaryHandSlot"] = {
-						["Name"] = "",
-						["Code"] = 0,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["WristSlot"] = {
-						["Name"] = "",
-						["Code"] = 0,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["RangedSlot"] = {
-						["Name"] = "",
-						["Code"] = 0,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["NeckSlot"] = {
-						["Name"] = "",
-						["Code"] = 0,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["AmmoSlot"] = {
+					["WaistSlot"] = {
 						["Name"] = "",
 						["Code"] = 0,
 						["SubCode"] = 0,
@@ -889,23 +840,59 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
-					["WaistSlot"] = {
+					["ShirtSlot"] = {
+						["Name"] = "Formal White Shirt",
+						["Code"] = 4334,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["AmmoSlot"] = {
+						["Name"] = "",
+						["Code"] = 0,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["NeckSlot"] = {
+						["Name"] = "",
+						["Code"] = 0,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["ChestSlot"] = {
+						["Name"] = "",
+						["Code"] = 0,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["Finger0Slot"] = {
+						["Name"] = "",
+						["Code"] = 0,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["SecondaryHandSlot"] = {
+						["Name"] = "",
+						["Code"] = 0,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["ShoulderSlot"] = {
 						["Name"] = "",
 						["Code"] = 0,
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
 				},
-				["CategoryID"] = "Complete",
 				["Name"] = "Naked",
+				["CategoryID"] = "Complete",
 			},
 			[3] = {
 				["Items"] = {
-					["Finger0Slot"] = {
-						["Name"] = "Pure Elementium Band",
-						["Code"] = 19382,
+					["WristSlot"] = {
+						["Name"] = "Bindings of Transcendence",
+						["Code"] = 16926,
 						["SubCode"] = 0,
-						["EnchantCode"] = 0,
+						["EnchantCode"] = 2566,
 					},
 					["BackSlot"] = {
 						["Name"] = "Hide of the Wild",
@@ -943,11 +930,11 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
-					["ChestSlot"] = {
-						["Name"] = "Truefaith Vestments",
-						["Code"] = 14154,
+					["RangedSlot"] = {
+						["Name"] = "Essence Gatherer",
+						["Code"] = 19435,
 						["SubCode"] = 0,
-						["EnchantCode"] = 1893,
+						["EnchantCode"] = 0,
 					},
 					["Trinket1Slot"] = {
 						["Name"] = "Insignia of the Horde",
@@ -967,45 +954,9 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 2505,
 					},
-					["ShoulderSlot"] = {
-						["Name"] = "Pauldrons of Transcendence",
-						["Code"] = 16924,
-						["SubCode"] = 0,
-						["EnchantCode"] = 2604,
-					},
-					["ShirtSlot"] = {
-						["Name"] = "Formal White Shirt",
-						["Code"] = 4334,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["SecondaryHandSlot"] = {
-						["Name"] = "",
-						["Code"] = 0,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["WristSlot"] = {
-						["Name"] = "Bindings of Transcendence",
-						["Code"] = 16926,
-						["SubCode"] = 0,
-						["EnchantCode"] = 2566,
-					},
-					["RangedSlot"] = {
-						["Name"] = "Essence Gatherer",
-						["Code"] = 19435,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["NeckSlot"] = {
-						["Name"] = "Wavefront Necklace",
-						["Code"] = 20685,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["AmmoSlot"] = {
-						["Name"] = "",
-						["Code"] = 0,
+					["WaistSlot"] = {
+						["Name"] = "Belt of Transcendence",
+						["Code"] = 16925,
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
@@ -1015,23 +966,59 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 2590,
 					},
-					["WaistSlot"] = {
-						["Name"] = "Belt of Transcendence",
-						["Code"] = 16925,
+					["ShirtSlot"] = {
+						["Name"] = "Formal White Shirt",
+						["Code"] = 4334,
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
-				},
-				["CategoryID"] = "Complete",
-				["Name"] = "PVP Engi",
-			},
-			[4] = {
-				["Items"] = {
+					["AmmoSlot"] = {
+						["Name"] = "",
+						["Code"] = 0,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["NeckSlot"] = {
+						["Name"] = "Wavefront Necklace",
+						["Code"] = 20685,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["ChestSlot"] = {
+						["Name"] = "Truefaith Vestments",
+						["Code"] = 14154,
+						["SubCode"] = 0,
+						["EnchantCode"] = 1893,
+					},
 					["Finger0Slot"] = {
 						["Name"] = "Pure Elementium Band",
 						["Code"] = 19382,
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
+					},
+					["SecondaryHandSlot"] = {
+						["Name"] = "",
+						["Code"] = 0,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["ShoulderSlot"] = {
+						["Name"] = "Pauldrons of Transcendence",
+						["Code"] = 16924,
+						["SubCode"] = 0,
+						["EnchantCode"] = 2604,
+					},
+				},
+				["Name"] = "PVP Engi",
+				["CategoryID"] = "Complete",
+			},
+			[4] = {
+				["Items"] = {
+					["WristSlot"] = {
+						["Name"] = "Vambraces of Prophecy",
+						["Code"] = 16819,
+						["SubCode"] = 0,
+						["EnchantCode"] = 2566,
 					},
 					["BackSlot"] = {
 						["Name"] = "Hide of the Wild",
@@ -1069,11 +1056,11 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
-					["ChestSlot"] = {
-						["Name"] = "Truefaith Vestments",
-						["Code"] = 14154,
+					["RangedSlot"] = {
+						["Name"] = "Essence Gatherer",
+						["Code"] = 19435,
 						["SubCode"] = 0,
-						["EnchantCode"] = 1893,
+						["EnchantCode"] = 0,
 					},
 					["Trinket1Slot"] = {
 						["Name"] = "Briarwood Reed",
@@ -1093,45 +1080,9 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 2505,
 					},
-					["ShoulderSlot"] = {
-						["Name"] = "Mantle of Prophecy",
-						["Code"] = 16816,
-						["SubCode"] = 0,
-						["EnchantCode"] = 2483,
-					},
-					["ShirtSlot"] = {
-						["Name"] = "Formal White Shirt",
-						["Code"] = 4334,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["SecondaryHandSlot"] = {
-						["Name"] = "",
-						["Code"] = 0,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["WristSlot"] = {
-						["Name"] = "Vambraces of Prophecy",
-						["Code"] = 16819,
-						["SubCode"] = 0,
-						["EnchantCode"] = 2566,
-					},
-					["RangedSlot"] = {
-						["Name"] = "Essence Gatherer",
-						["Code"] = 19435,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["NeckSlot"] = {
-						["Name"] = "Choker of Enlightenment",
-						["Code"] = 17109,
-						["SubCode"] = 0,
-						["EnchantCode"] = 0,
-					},
-					["AmmoSlot"] = {
-						["Name"] = "",
-						["Code"] = 0,
+					["WaistSlot"] = {
+						["Name"] = "Belt of Transcendence",
+						["Code"] = 16925,
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
@@ -1141,17 +1092,66 @@ gOutfitter_Settings = {
 						["SubCode"] = 0,
 						["EnchantCode"] = 2590,
 					},
-					["WaistSlot"] = {
-						["Name"] = "Belt of Transcendence",
-						["Code"] = 16925,
+					["ShirtSlot"] = {
+						["Name"] = "Formal White Shirt",
+						["Code"] = 4334,
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
+					["AmmoSlot"] = {
+						["Name"] = "",
+						["Code"] = 0,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["NeckSlot"] = {
+						["Name"] = "Choker of Enlightenment",
+						["Code"] = 17109,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["ChestSlot"] = {
+						["Name"] = "Truefaith Vestments",
+						["Code"] = 14154,
+						["SubCode"] = 0,
+						["EnchantCode"] = 1893,
+					},
+					["Finger0Slot"] = {
+						["Name"] = "Pure Elementium Band",
+						["Code"] = 19382,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["SecondaryHandSlot"] = {
+						["Name"] = "",
+						["Code"] = 0,
+						["SubCode"] = 0,
+						["EnchantCode"] = 0,
+					},
+					["ShoulderSlot"] = {
+						["Name"] = "Mantle of Prophecy",
+						["Code"] = 16816,
+						["SubCode"] = 0,
+						["EnchantCode"] = 2483,
+					},
 				},
-				["CategoryID"] = "Complete",
 				["Name"] = "PvP",
+				["CategoryID"] = "Complete",
 			},
 		},
+	},
+	["HideHelm"] = {
+		[13216] = true,
+		[0] = false,
+		[13102] = true,
+		[14293] = true,
+		[18526] = true,
+		[12604] = true,
+		[10588] = false,
+		[16693] = true,
+		[10726] = false,
+		[18727] = false,
+		[16921] = false,
 	},
 	["HideCloak"] = {
 		[15138] = false,

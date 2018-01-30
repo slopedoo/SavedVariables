@@ -1,9 +1,0 @@
-
-BagFuDB = {
-	["profiles"] = {
-		["Default"] = {
-			["detachedTooltip"] = {
-			},
-		},
-	},
-}

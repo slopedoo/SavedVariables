@@ -1,9 +1,0 @@
-
-DurabilityFuDB = {
-	["profiles"] = {
-		["Default"] = {
-			["detachedTooltip"] = {
-			},
-		},
-	},
-}

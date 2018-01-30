@@ -1,9 +1,0 @@
-
-ClockFuDB = {
-	["profiles"] = {
-		["Default"] = {
-			["detachedTooltip"] = {
-			},
-		},
-	},
-}

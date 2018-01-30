@@ -1,2 +1,0 @@
-
-smmConfigPC = nil

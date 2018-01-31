@@ -1,6 +1,6 @@
 
 SpamThrottle_Config = {
-	["STChinese"] = true,
+	["STCtrlMsgs"] = false,
 	["STActive"] = true,
 	["STGoldSeller"] = true,
 	["STBanTimeout"] = 3600,
@@ -8,16 +8,16 @@ SpamThrottle_Config = {
 	["STWispBack"] = false,
 	["STDupFilter"] = true,
 	["STFuzzy"] = false,
-	["STWispMsgs"] = false,
-	["STYellMsgs"] = true,
-	["STBanPerm"] = false,
-	["STWhiteChannel2"] = "Raid",
-	["STSayMsgs"] = true,
-	["Version"] = "Vanilla_1.12",
 	["STWhiteChannel1"] = "Guild",
-	["STCtrlMsgs"] = false,
-	["STReverse"] = false,
+	["STYellMsgs"] = true,
+	["STWhiteChannel2"] = "Raid",
+	["STBanPerm"] = false,
 	["STColor"] = false,
+	["Version"] = "Vanilla_1.12",
+	["STReverse"] = false,
+	["STChinese"] = true,
+	["STWispMsgs"] = false,
+	["STSayMsgs"] = true,
 	["STWhiteChannel3"] = "Party",
 }
 SpamThrottle_KeywordFilterList = {

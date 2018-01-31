@@ -1,51 +1,13 @@
 
 oRADB = {
-	["disabled"] = {
-		["Default"] = true,
-	},
-	["disabledModules"] = {
-		["Default"] = {
-			["Participant/CoolDown"] = true,
-			["Participant/Resist"] = true,
-			["Optional/MainTank"] = true,
-			["Participant/Item"] = true,
-			["Optional/CoolDown"] = true,
-			["Participant/Assist"] = true,
-			["Participant/Durability"] = true,
-			["Optional/PlayerTarget"] = true,
-			["Leader/MainTank"] = true,
-			["Options Menu"] = true,
-			["Participant/Ready"] = true,
-			["Optional/Resurrection"] = true,
-			["Participant/Resurrection"] = true,
-			["Leader/Invite"] = true,
-			["Participant/Buff"] = true,
-			["Leader/RaidWarn"] = true,
-			["Leader/Ready"] = true,
-			["Participant/MainTank"] = true,
-			["Optional/Version"] = true,
-			["Leader/Item"] = true,
-			["Participant/RaidWarn"] = true,
-			["Optional/Zone"] = true,
-			["Leader/Resist"] = true,
-			["Leader/Durability"] = true,
-		},
-	},
 	["namespaces"] = {
-		["Participant/MainTank"] = {
-			["profiles"] = {
-				["Default"] = {
-					["notifydeath"] = true,
-				},
-			},
-		},
 		["Optional/MainTank"] = {
 			["profiles"] = {
 				["Default"] = {
-					["posx"] = -0.1331183881598413,
-					["posy"] = 205.4667521288732,
 					["scale"] = 1.012000036239624,
 					["tooltips"] = false,
+					["posy"] = 205.4667521288732,
+					["posx"] = -0.1331183881598413,
 				},
 			},
 		},
@@ -54,8 +16,10 @@ oRADB = {
 				["Default"] = {
 					["cooldowns"] = {
 						["Lingzor"] = 1517174209,
-						["Kontaz"] = 1517174108,
-						["Reil"] = 1517174918,
+						["Kontaz"] = 1517428452,
+						["Uknowit"] = 1517427415,
+						["Reil"] = 1517430199,
+						["Ricknmorty"] = 1517428017,
 					},
 					["hidden"] = true,
 				},
@@ -69,14 +33,6 @@ oRADB = {
 				},
 			},
 		},
-		["inviteleader"] = {
-			["profiles"] = {
-				["Default"] = {
-					["promotes"] = {
-					},
-				},
-			},
-		},
 		["Leader/Invite"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -85,9 +41,30 @@ oRADB = {
 				},
 			},
 		},
+		["inviteleader"] = {
+			["profiles"] = {
+				["Default"] = {
+					["promotes"] = {
+					},
+				},
+			},
+		},
+		["Participant/MainTank"] = {
+			["profiles"] = {
+				["Default"] = {
+					["notifydeath"] = true,
+				},
+			},
+		},
 	},
 	["profiles"] = {
 		["Default"] = {
+			["maintanktable"] = {
+				[1] = "Pantzer",
+				[2] = "Msexedead",
+				[3] = "Meffo",
+				[4] = "Oxhoof",
+			},
 			["bartexture"] = "smooth",
 		},
 	},

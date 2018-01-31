@@ -63,7 +63,7 @@ MACRO 16777228 "PW:S" Spell_Holy_PowerWordShield
 /cast [mod:shift] Smite
 /stopmacro [mod:shift]
 /script SpellStopCasting() 
-/cast [help,nodead][@targettarget,help,nodead] Power Word: Shield; [mod:alt,@player] Power Word: Shield;
+/cast [mod:alt,@player] Power Word: Shield;
 /stopmacro [mod:alt]
 /lunamo Power Word: Shield
 END

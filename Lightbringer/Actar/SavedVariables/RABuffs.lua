@@ -1,2 +1,2 @@
 
-RABui_IsUIShown = false
+RABui_IsUIShown = true

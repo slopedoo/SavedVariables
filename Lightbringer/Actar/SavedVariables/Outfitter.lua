@@ -39,13 +39,19 @@ gOutfitter_Settings = {
 			},
 		},
 		[3] = {
-			["Name"] = "Around Town",
+			["Name"] = "Dining",
 		},
 		[4] = {
 			["Items"] = {
 				["Trinket0Slot"] = {
-					["Name"] = "Briarwood Reed",
-					["Code"] = 12930,
+					["Name"] = "Rejuvenating Gem",
+					["Code"] = 19395,
+					["SubCode"] = 0,
+					["EnchantCode"] = 0,
+				},
+				["Trinket1Slot"] = {
+					["Name"] = "Darkmoon Card: Blue Dragon",
+					["Code"] = 19288,
 					["SubCode"] = 0,
 					["EnchantCode"] = 0,
 				},
@@ -56,35 +62,16 @@ gOutfitter_Settings = {
 		},
 		[6] = {
 			["Items"] = {
-				["BackSlot"] = {
-					["Name"] = "Onyxia Scale Cloak",
-					["Code"] = 15138,
-					["SubCode"] = 0,
-					["EnchantCode"] = 804,
-				},
-				["Trinket0Slot"] = {
-					["Name"] = "Rejuvenating Gem",
-					["Code"] = 19395,
+				["Trinket1Slot"] = {
+					["Name"] = "Darkmoon Card: Blue Dragon",
+					["Code"] = 19288,
 					["SubCode"] = 0,
 					["EnchantCode"] = 0,
 				},
 			},
 		},
 		[7] = {
-			["Items"] = {
-				["BackSlot"] = {
-					["Name"] = "Hide of the Wild",
-					["Code"] = 18510,
-					["SubCode"] = 0,
-					["EnchantCode"] = 2463,
-				},
-				["Trinket0Slot"] = {
-					["Name"] = "Rejuvenating Gem",
-					["Code"] = 19395,
-					["SubCode"] = 0,
-					["EnchantCode"] = 0,
-				},
-			},
+			["Name"] = "Riding",
 		},
 	},
 	["Options"] = {
@@ -454,8 +441,8 @@ gOutfitter_Settings = {
 						["EnchantCode"] = 2463,
 					},
 					["Trinket0Slot"] = {
-						["Name"] = "Darkmoon Card: Blue Dragon",
-						["Code"] = 19288,
+						["Name"] = "Rejuvenating Gem",
+						["Code"] = 19395,
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
@@ -486,8 +473,8 @@ gOutfitter_Settings = {
 						["EnchantCode"] = 1893,
 					},
 					["Trinket1Slot"] = {
-						["Name"] = "Rejuvenating Gem",
-						["Code"] = 19395,
+						["Name"] = "Darkmoon Card: Blue Dragon",
+						["Code"] = 19288,
 						["SubCode"] = 0,
 						["EnchantCode"] = 0,
 					},
@@ -607,6 +594,7 @@ gOutfitter_Settings = {
 					},
 				},
 				["Name"] = "Around Town",
+				["Disabled"] = true,
 				["CategoryID"] = "Special",
 				["SpecialID"] = "City",
 			},
@@ -630,6 +618,7 @@ gOutfitter_Settings = {
 				["Items"] = {
 				},
 				["Name"] = "Battleground: Arathi Basin",
+				["Disabled"] = true,
 				["CategoryID"] = "Special",
 				["SpecialID"] = "AB",
 			},
@@ -637,6 +626,7 @@ gOutfitter_Settings = {
 				["Items"] = {
 				},
 				["Name"] = "Battleground: Warsong Gulch",
+				["Disabled"] = true,
 				["CategoryID"] = "Special",
 				["SpecialID"] = "WSG",
 			},
@@ -644,6 +634,7 @@ gOutfitter_Settings = {
 				["Items"] = {
 				},
 				["Name"] = "Dining",
+				["Disabled"] = true,
 				["CategoryID"] = "Special",
 				["SpecialID"] = "Dining",
 			},
@@ -651,6 +642,7 @@ gOutfitter_Settings = {
 				["Items"] = {
 				},
 				["Name"] = "Priest: Shadowform",
+				["Disabled"] = true,
 				["CategoryID"] = "Special",
 				["SpecialID"] = "Shadowform",
 			},
@@ -1184,7 +1176,7 @@ gOutfitter_Settings = {
 	},
 	["HideHelm"] = {
 		[13216] = true,
-		[0] = false,
+		[0] = true,
 		[13102] = true,
 		[14293] = true,
 		[18526] = true,

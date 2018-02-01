@@ -1,43 +1,51 @@
 
 oRADB = {
+	["disabled"] = {
+		["Default"] = true,
+	},
+	["disabledModules"] = {
+		["Default"] = {
+			["Participant/CoolDown"] = true,
+			["Participant/Resist"] = true,
+			["Optional/MainTank"] = true,
+			["Participant/Item"] = true,
+			["Optional/CoolDown"] = true,
+			["Participant/Assist"] = true,
+			["Participant/Durability"] = true,
+			["Leader/Item"] = true,
+			["Leader/MainTank"] = true,
+			["Options Menu"] = true,
+			["Participant/Ready"] = true,
+			["Optional/Resurrection"] = true,
+			["Optional/PlayerTarget"] = true,
+			["Participant/Resurrection"] = true,
+			["Participant/RaidWarn"] = true,
+			["Leader/Invite"] = true,
+			["Leader/Ready"] = true,
+			["Participant/MainTank"] = true,
+			["Optional/Version"] = true,
+			["Participant/Buff"] = true,
+			["Leader/RaidWarn"] = true,
+			["Optional/Zone"] = true,
+			["Leader/Resist"] = true,
+			["Leader/Durability"] = true,
+		},
+	},
 	["namespaces"] = {
+		["Participant/MainTank"] = {
+			["profiles"] = {
+				["Default"] = {
+					["notifydeath"] = true,
+				},
+			},
+		},
 		["Optional/MainTank"] = {
 			["profiles"] = {
 				["Default"] = {
+					["posx"] = -0.1331183881598413,
+					["posy"] = 205.4667521288732,
 					["scale"] = 1.012000036239624,
 					["tooltips"] = false,
-					["posy"] = 205.4667521288732,
-					["posx"] = -0.1331183881598413,
-				},
-			},
-		},
-		["Optional/CoolDown"] = {
-			["profiles"] = {
-				["Default"] = {
-					["cooldowns"] = {
-						["Lingzor"] = 1517174209,
-						["Kontaz"] = 1517428452,
-						["Uknowit"] = 1517427415,
-						["Reil"] = 1517430199,
-						["Ricknmorty"] = 1517428017,
-					},
-					["hidden"] = true,
-				},
-			},
-		},
-		["cooldownoptional"] = {
-			["profiles"] = {
-				["Default"] = {
-					["posx"] = 1112.166304313851,
-					["posy"] = 172.3333181508166,
-				},
-			},
-		},
-		["Leader/Invite"] = {
-			["profiles"] = {
-				["Default"] = {
-					["promotes"] = {
-					},
 				},
 			},
 		},
@@ -49,22 +57,32 @@ oRADB = {
 				},
 			},
 		},
-		["Participant/MainTank"] = {
+		["cooldownoptional"] = {
 			["profiles"] = {
 				["Default"] = {
-					["notifydeath"] = true,
+					["posx"] = 1112.166304313851,
+					["posy"] = 172.3333181508166,
+				},
+			},
+		},
+		["Optional/CoolDown"] = {
+			["profiles"] = {
+				["Default"] = {
+					["hidden"] = true,
+				},
+			},
+		},
+		["Leader/Invite"] = {
+			["profiles"] = {
+				["Default"] = {
+					["promotes"] = {
+					},
 				},
 			},
 		},
 	},
 	["profiles"] = {
 		["Default"] = {
-			["maintanktable"] = {
-				[1] = "Pantzer",
-				[2] = "Msexedead",
-				[3] = "Meffo",
-				[4] = "Oxhoof",
-			},
 			["bartexture"] = "smooth",
 		},
 	},

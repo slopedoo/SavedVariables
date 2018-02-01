@@ -1,5 +1,5 @@
 MACRO 16777235 "BROODLORD" Spell_Holy_PowerWordShield
-/run m=0 for i=1,40 do if(strfind(tostring(UnitDebuff("target",i)),"Ability_Warrior_SavageBlow"))then m=1 end end if m==1 then CastSpellByName("Power Word: Shield") end
+/run m=0 for i=1,40 do if(strfind(tostring(UnitDebuff("targettarget",i)),"Ability_Warrior_SavageBlow"))then m=1 end end if m==1 then SpellStopCasting()  TargetUnit("targettarget") CastSpellByName("Power Word: Shield") TargetLastTarget() end
 END
 MACRO 16777236 "DISPEL" Spell_Holy_DispelMagic
 #showtooltip Dispel Magic

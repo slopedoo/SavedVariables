@@ -1,12 +1,15 @@
 
 cyCircledDB = {
+	["disabled"] = {
+		["Default"] = true,
+	},
 	["profiles"] = {
 		["Default"] = {
 			["colors"] = {
 				["normal"] = {
-					["b"] = 0,
-					["g"] = 0,
 					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
 				},
 			},
 			["skin"] = "SquareThin",

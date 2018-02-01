@@ -19,6 +19,10 @@ pfDatabase_fav = {
 	},
 }
 pfQuest_history = {
+	["The Ichor of Undeath"] = true,
+	["Of Coursers We Know"] = true,
+	["Cenarion Aid"] = true,
+	["Priest"] = true,
 }
 pfQuest_colors = {
 }

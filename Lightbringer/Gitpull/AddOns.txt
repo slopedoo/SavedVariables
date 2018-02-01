@@ -17,7 +17,7 @@ cdframes: disabled
 Chronometer: disabled
 ClassicSnowFall: enabled
 Clean_Up_GUI: disabled
-cyCircled: disabled
+cyCircled: enabled
 DebuffTimers: enabled
 Decursive: disabled
 EasyCloak: disabled
@@ -60,3 +60,4 @@ ShaguQuest: disabled
 CleverMacro: enabled
 modguide: enabled
 VanillaGuide: enabled
+VCB: disabled

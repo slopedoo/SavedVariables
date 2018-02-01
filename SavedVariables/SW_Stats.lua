@@ -745,6 +745,7 @@ SW_SpellsNSchools = {
 		[48] = "Corrosive Poison",
 		[49] = "Parasitic Serpent",
 		[50] = "Deadly Poison IV",
+		[51] = "Lightning",
 	},
 	[4] = {
 		[1] = "Frostbolt",
@@ -914,5 +915,6 @@ SW_SpellsNSchools = {
 		[8] = "Gnomish Death Ray",
 		[9] = "Rip",
 		[10] = "Rend Flesh",
+		[11] = "Pounce Bleed",
 	},
 }

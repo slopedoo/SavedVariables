@@ -6,7 +6,7 @@ oCBDB = {
 				["timeSize"] = 13,
 				["spellFontShadow"] = false,
 				["spellFont"] = "BIGNOODLE",
-				["height"] = 18,
+				["height"] = 20,
 				["latencyFontMonochrome"] = false,
 				["timeFontShadow"] = false,
 				["hideLagBar"] = true,
@@ -23,7 +23,7 @@ oCBDB = {
 			},
 			["lock"] = true,
 			["Pos"] = {
-				["CastingBar"] = "561.35364235823 224.38951435601",
+				["CastingBar"] = "561.35364235823 225.98957108093",
 				["BREATH"] = "543.20238683557 727.00911599723",
 				["EXHAUSTION"] = "540.00243305079 699.80905644227",
 			},

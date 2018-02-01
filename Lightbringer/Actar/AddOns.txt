@@ -21,7 +21,7 @@ ChatSuey-PlayerLinks: disabled
 ChatSuey-WebLinks: disabled
 Informant: disabled
 sRaidFrames: enabled
-VCB: disabled
+VCB: enabled
 vQueue: disabled
 WebDKP: disabled
 oRA2: enabled

@@ -1,25 +1,7 @@
 
 SI_Global = {
 	["BanOptParty"] = false,
-	["BanOptOfficer"] = false,
-	["Mods"] = {
-		["Custom Filter"] = {
-			["Enabled"] = true,
-			["Vars"] = {
-				["Text"] = "100g=\n90g=\n80g=\n70g=\n60g=\n50g=\nl0vew0whaha\nlovewowhaha\nl 0 v e w 0 w h a h a",
-			},
-		},
-		["ChatSanitizer"] = {
-			["Enabled"] = true,
-			["Vars"] = {
-			},
-		},
-		["Special Snowflake Blocker"] = {
-			["Enabled"] = false,
-			["Vars"] = {
-			},
-		},
-	},
+	["BannedSelected"] = 18,
 	["AutoResponse"] = false,
 	["BannedPlayers"] = {
 		[1] = {
@@ -293,9 +275,29 @@ SI_Global = {
 			[3] = false,
 		},
 	},
-	["BanOptDuel"] = true,
-	["WhisperBlock"] = false,
-	["BanDuration"] = 6,
-	["BannedSelected"] = 18,
+	["BanOptPublic"] = 1,
 	["BanOptGuild"] = false,
+	["BanOptOfficer"] = false,
+	["BanDuration"] = 6,
+	["Mods"] = {
+		["Custom Filter"] = {
+			["Enabled"] = true,
+			["Vars"] = {
+				["Text"] = "100g=\n90g=\n80g=\n70g=\n60g=\n50g=\nl0vew0whaha\nlovewowhaha\nl 0 v e w 0 w h a h a",
+			},
+		},
+		["ChatSanitizer"] = {
+			["Enabled"] = true,
+			["Vars"] = {
+			},
+		},
+		["Special Snowflake Blocker"] = {
+			["Enabled"] = false,
+			["Vars"] = {
+			},
+		},
+	},
+	["BanOptDuel"] = true,
+	["BanOptWhisper"] = 1,
+	["WhisperBlock"] = false,
 }

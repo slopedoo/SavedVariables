@@ -8,8 +8,8 @@ cyCircledDB = {
 			["colors"] = {
 				["normal"] = {
 					["r"] = 0,
-					["g"] = 0,
 					["b"] = 0,
+					["g"] = 0,
 				},
 			},
 			["skin"] = "SquareThin",

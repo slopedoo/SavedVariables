@@ -19,13 +19,13 @@ oRADB = {
 			["Optional/Resurrection"] = true,
 			["Optional/PlayerTarget"] = true,
 			["Participant/Resurrection"] = true,
-			["Participant/RaidWarn"] = true,
 			["Leader/Invite"] = true,
+			["Leader/RaidWarn"] = true,
 			["Leader/Ready"] = true,
 			["Participant/MainTank"] = true,
 			["Optional/Version"] = true,
 			["Participant/Buff"] = true,
-			["Leader/RaidWarn"] = true,
+			["Participant/RaidWarn"] = true,
 			["Optional/Zone"] = true,
 			["Leader/Resist"] = true,
 			["Leader/Durability"] = true,
@@ -49,11 +49,13 @@ oRADB = {
 				},
 			},
 		},
-		["inviteleader"] = {
+		["Optional/CoolDown"] = {
 			["profiles"] = {
 				["Default"] = {
-					["promotes"] = {
+					["cooldowns"] = {
+						["Pnickelson"] = 1517520370,
 					},
+					["hidden"] = true,
 				},
 			},
 		},
@@ -65,10 +67,11 @@ oRADB = {
 				},
 			},
 		},
-		["Optional/CoolDown"] = {
+		["inviteleader"] = {
 			["profiles"] = {
 				["Default"] = {
-					["hidden"] = true,
+					["promotes"] = {
+					},
 				},
 			},
 		},

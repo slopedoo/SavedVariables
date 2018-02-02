@@ -127,7 +127,7 @@ OutfitDisplayFrame: enabled
 Outfitter: enabled
 RAT: enabled
 SpamThrottle: enabled
-SuperIgnore: enabled
+SuperIgnore: disabled
 VF_RealmPlayers: enabled
 WIM: enabled
 BuffWatch: disabled

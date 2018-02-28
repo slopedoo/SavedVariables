@@ -130,6 +130,18 @@ RABui_Settings = {
 				["out"] = "RAID",
 			},
 			[10] = {
+				["cmd"] = "motw 12345678",
+				["label"] = "MotW",
+				["color"] = {
+					[1] = 0.8313725490196078,
+					[2] = 0.5882352941176471,
+					[3] = 1,
+				},
+				["priority"] = 5,
+				["extralabel"] = "",
+				["out"] = "RAID",
+			},
+			[11] = {
 				["cmd"] = "blank 12345678",
 				["label"] = "",
 				["color"] = {
@@ -141,7 +153,7 @@ RABui_Settings = {
 				["out"] = "RAID",
 				["extralabel"] = "",
 			},
-			[11] = {
+			[12] = {
 				["cmd"] = "mageblood 12345678 spd",
 				["label"] = "Mageblood",
 				["color"] = {
@@ -153,7 +165,7 @@ RABui_Settings = {
 				["out"] = "CHANNEL:NocHealing",
 				["extralabel"] = "",
 			},
-			[12] = {
+			[13] = {
 				["cmd"] = "wisdom 12345678 p",
 				["label"] = "Distilled Wisdom",
 				["color"] = {
@@ -164,18 +176,6 @@ RABui_Settings = {
 				["priority"] = 5,
 				["out"] = "CHANNEL:NocHealing",
 				["extralabel"] = "",
-			},
-			[13] = {
-				["cmd"] = "mistletoe 12345678 pd",
-				["label"] = "Mistletoe",
-				["color"] = {
-					[1] = 1,
-					[2] = 0.3843137254901961,
-					[3] = 0.3647058823529412,
-				},
-				["priority"] = 5,
-				["extralabel"] = "",
-				["out"] = "RAID",
 			},
 			[14] = {
 				["cmd"] = "blank 12345678",

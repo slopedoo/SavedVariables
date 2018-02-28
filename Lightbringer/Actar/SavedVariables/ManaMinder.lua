@@ -52,8 +52,8 @@ ManaMinderCharDB = {
 		["mainFrame"] = {
 			["width"] = 68,
 			["position"] = {
-				["y"] = -717.3870001739088,
-				["x"] = 650.8783811591514,
+				["y"] = -871.5540457172799,
+				["x"] = 795.0447919321658,
 				["point"] = "TOPLEFT",
 				["relativePoint"] = "TOPLEFT",
 			},

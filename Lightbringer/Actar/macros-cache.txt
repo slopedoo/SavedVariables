@@ -12,7 +12,7 @@ MACRO 16777237 "DISPEL SELF" Spell_Holy_DispelMagic
 /cast [mod:ctrl] Touch of Weakness; [mod:shift] Shoot; [@player] Dispel Magic
 END
 MACRO 16777221 "Ench" Spell_Shadow_Curse
-/1 Enchanter LFW. +4 stats, Lifestealing, 24 heal/4mp5 bracer ++
+/1 Enchanter LFW. +4 stats, +30 SP weapon, Lifestealing, 24 heal/4mp5 bracer ++
 END
 MACRO 16777238 "FH3" Spell_Holy_FlashHeal
 #showtooltip Flash Heal
@@ -23,7 +23,7 @@ END
 MACRO 16777239 "FH7" Spell_Holy_FlashHeal
 #showtooltip Flash Heal
 /cast [mod:ctrl,@mouseover,exists] Heal(Rank 1);
-/lunamo Flash Heal
+/lunamo Flash Heal(Rank 7)
 END
 MACRO 16777240 "GH2" Spell_Holy_GreaterHeal
 #showtooltip Greater Heal(Rank 2)
@@ -54,6 +54,15 @@ END
 MACRO 16777244 "INNER FIRE" Spell_Holy_InnerFire
 #showtooltip Inner Fire
 /cast [mod:shift] Mana Burn; Inner Fire
+END
+MACRO 16777248 "MANA OIL" boss_odunrunes_blue
+/run for i=0,4 do for j=1,18 do local h=GetContainerItemLink if not(h(i,j)==nil)then if strfind(h(i,j), "Brilliant Mana Oil")then p=PickupInventoryItem UseContainerItem(i,j)p(16) ReplaceEnchant()end end end end
+END
+MACRO 16777249 "PI" Spell_Holy_PowerInfusion
+#showtooltip Power Infusion
+/target Gallatrix
+/cast Power Infusion
+/script TargetLastTarget()
 END
 MACRO 16777245 "POH" Spell_Holy_PrayerOfHealing02
 #showtooltip Prayer of Healing

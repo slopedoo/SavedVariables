@@ -2,33 +2,33 @@
 AtlasQuest_Options = {
 	["Gitpush"] = {
 		["ShownSide"] = "Left",
-		["NoQuerySpam"] = "yes",
 		["AtlasAutoShow"] = 2,
+		["NoQuerySpam"] = "yes",
 	},
 	["Reare"] = {
 		["ShownSide"] = "Left",
-		["AtlasAutoShow"] = 2,
 		["NoQuerySpam"] = "yes",
+		["AtlasAutoShow"] = 2,
 	},
 	["Gitpull"] = {
 		["ShownSide"] = "Left",
-		["NoQuerySpam"] = "yes",
 		["AtlasAutoShow"] = 2,
+		["NoQuerySpam"] = "yes",
 	},
 	["Version"] = "4.1.2",
 	["Actar"] = {
 		["ShownSide"] = "Left",
-		["AtlasAutoShow"] = 2,
 		["NoQuerySpam"] = "yes",
+		["AtlasAutoShow"] = 2,
 	},
 	["Bartharan"] = {
 		["ShownSide"] = "Left",
-		["NoQuerySpam"] = "yes",
 		["AtlasAutoShow"] = 2,
+		["NoQuerySpam"] = "yes",
 	},
 	["Vocie"] = {
 		["ShownSide"] = "Left",
-		["NoQuerySpam"] = "yes",
 		["AtlasAutoShow"] = 2,
+		["NoQuerySpam"] = "yes",
 	},
 }

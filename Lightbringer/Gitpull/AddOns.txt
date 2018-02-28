@@ -61,3 +61,5 @@ CleverMacro: enabled
 modguide: enabled
 VanillaGuide: enabled
 VCB: disabled
+VanillaGraphicBoost: disabled
+SmartHeal: disabled

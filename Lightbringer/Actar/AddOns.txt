@@ -34,7 +34,7 @@ DeuceCommander: disabled
 coolDown: disabled
 YaHT: disabled
 SW_Stats: enabled
-VF_RaidDamage: enabled
+VF_RaidDamage: disabled
 SW_FixLogStrings: enabled
 HonorSpy: disabled
 !Questie: disabled
@@ -64,7 +64,7 @@ ShaguPlates: enabled
 ShaguQuest: enabled
 xDamageFont: enabled
 CT_Timer: disabled
-Ace2: enabled
+Ace2: disabled
 AnaronsWoWMod: disabled
 Atlas: enabled
 AtlasLoot: enabled
@@ -111,7 +111,7 @@ DPSMate_Procs: enabled
 DPSMate_HealingTaken: enabled
 DPSMate_Healing: enabled
 DPSMate_Threat: enabled
-DPSMate: disabled
+DPSMate: enabled
 EnhTooltip: disabled
 EquipCompare: disabled
 EzDismount: enabled
@@ -121,11 +121,11 @@ KLHThreatMeter: enabled
 LegacyLogsArmory: enabled
 MikScrollingBattleText: enabled
 MikScrollingBattleTextOptions: enabled
-MobHealth: enabled
+MobHealth: disabled
 oCB: enabled
 OutfitDisplayFrame: enabled
 Outfitter: enabled
-RAT: enabled
+RAT: disabled
 SpamThrottle: enabled
 SuperIgnore: disabled
 VF_RealmPlayers: enabled
@@ -157,6 +157,8 @@ cyCircled: enabled
 ManaMinder: enabled
 MinimapButtonFrame: enabled
 VanillaRatingBuster: enabled
-VF_BGStats: enabled
+VF_BGStats: disabled
 VF_CharacterStats: enabled
 modguide: disabled
+VanillaGraphicBoost: disabled
+SmartHeal: disabled

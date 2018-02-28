@@ -1,9 +1,6 @@
 MACRO 3 "Mana Consume" Spell_Frost_Wisp
 /mana consume
 END
-MACRO 6 "REC" Spell_Nature_Strength
-/1 <Noctum> is recruiting for AQ40 progression! 1x RSham, 1x HPriest. Exceptional applicants always considered. PM for info! [DKP - 11/11, 8/8 - Wed/Sun 19:30 - 23:30 (server time) - Apply at http://noctum.wowhordes.com - https://discord.gg/g25Mw6K
-END
 MACRO 4 "RESET" Spell_Holiday_ToW_SpiceCloud
 /script ResetInstances();
 /camp

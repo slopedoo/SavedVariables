@@ -52,9 +52,6 @@ oRADB = {
 		["Optional/CoolDown"] = {
 			["profiles"] = {
 				["Default"] = {
-					["cooldowns"] = {
-						["Pnickelson"] = 1517520370,
-					},
 					["hidden"] = true,
 				},
 			},

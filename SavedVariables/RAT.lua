@@ -7,7 +7,7 @@ Rat_Settings = {
 		["g"] = 0.44,
 		["b"] = 0.87,
 	},
-	["Major Soulstone"] = 1,
+	["showhide"] = 0,
 	["abilitytextcolor"] = {
 		["r"] = 1,
 		["g"] = 1,
@@ -35,5 +35,5 @@ Rat_Settings = {
 	["MinimapY"] = -29.79686029181089,
 	["Innervate"] = 1,
 	["Mana Tide Totem"] = 1,
-	["showhide"] = 0,
+	["Major Soulstone"] = 1,
 }

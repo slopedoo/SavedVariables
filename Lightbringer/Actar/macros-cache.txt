@@ -53,7 +53,9 @@ MACRO 16777243 "IF" Spell_Frost_WindWalkOn
 END
 MACRO 16777244 "INNER FIRE" Spell_Holy_InnerFire
 #showtooltip Inner Fire
-/cast [mod:shift] Mana Burn; Inner Fire
+/cast [mod:shift] Mana Burn; [mod:ctrl] Inner Fire
+/stopmacro [mod:shift/ctrl]
+/gh Flash Heal
 END
 MACRO 16777248 "MANA OIL" boss_odunrunes_blue
 /run for i=0,4 do for j=1,18 do local h=GetContainerItemLink if not(h(i,j)==nil)then if strfind(h(i,j), "Brilliant Mana Oil")then p=PickupInventoryItem UseContainerItem(i,j)p(16) ReplaceEnchant()end end end end

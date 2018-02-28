@@ -32,22 +32,18 @@ TheoryCraft_SetBonuses = {
 			["text"] = "+8 All Resistances.",
 		},
 	},
-	["Necropile Raiment"] = {
+	["Confessor's Raiment"] = {
 		[1] = {
 			["pieces"] = 2,
-			["text"] = "Increased Defense +3.",
+			["text"] = "Increases healing done by spells and effects by up to 22.",
 		},
 		[2] = {
 			["pieces"] = 3,
-			["text"] = "+5 Intellect.",
+			["text"] = "Increase the range of your Smite and Holy Fire spells by 5 yds.",
 		},
 		[3] = {
-			["pieces"] = 4,
-			["text"] = "+15 All Resistances.",
-		},
-		[4] = {
 			["pieces"] = 5,
-			["text"] = "Increases damage and healing done by magical spells and effects by up to 23.",
+			["text"] = "Reduces the casting time of your Mind Control spell by 0.5 sec.",
 		},
 	},
 	["Magister's Regalia"] = {
@@ -82,18 +78,22 @@ TheoryCraft_SetBonuses = {
 			["text"] = "Increases your chance of a critical hit with Prayer of Healing by 25%.",
 		},
 	},
-	["Confessor's Raiment"] = {
+	["Necropile Raiment"] = {
 		[1] = {
 			["pieces"] = 2,
-			["text"] = "Increases healing done by spells and effects by up to 22.",
+			["text"] = "Increased Defense +3.",
 		},
 		[2] = {
 			["pieces"] = 3,
-			["text"] = "Increase the range of your Smite and Holy Fire spells by 5 yds.",
+			["text"] = "+5 Intellect.",
 		},
 		[3] = {
+			["pieces"] = 4,
+			["text"] = "+15 All Resistances.",
+		},
+		[4] = {
 			["pieces"] = 5,
-			["text"] = "Reduces the casting time of your Mind Control spell by 0.5 sec.",
+			["text"] = "Increases damage and healing done by magical spells and effects by up to 23.",
 		},
 	},
 	["Vestments of Transcendence"] = {

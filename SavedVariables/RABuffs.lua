@@ -1,6 +1,6 @@
 
 RABui_Settings = {
-	["lockwindow"] = true,
+	["newestVersionTitle"] = "0.10.2",
 	["trustctra"] = false,
 	["newestVersionPlayer"] = "Actar",
 	["newestVersion"] = 0.1002,
@@ -13,8 +13,8 @@ RABui_Settings = {
 	["syntaxhelp"] = true,
 	["enableGreeting"] = true,
 	["showsampleoutputonclick"] = false,
-	["showraid"] = true,
-	["newestVersionTitle"] = "0.10.2",
+	["firstRun"] = false,
+	["lockwindow"] = true,
 	["Layout"] = {
 		["Lightbringer.Actar.current"] = {
 			[1] = {
@@ -52,8 +52,8 @@ RABui_Settings = {
 					[3] = 1,
 				},
 				["priority"] = 5,
-				["extralabel"] = "",
 				["out"] = "CHANNEL:tejireajirjar",
+				["extralabel"] = "",
 			},
 			[4] = {
 				["cmd"] = "onycloak 12345678",
@@ -64,8 +64,8 @@ RABui_Settings = {
 					[3] = 1,
 				},
 				["priority"] = 5,
-				["extralabel"] = "",
 				["out"] = "RAID",
+				["extralabel"] = "",
 			},
 			[5] = {
 				["cmd"] = "blank 12345678",
@@ -76,8 +76,8 @@ RABui_Settings = {
 					[3] = 1,
 				},
 				["priority"] = 5,
-				["out"] = "RAID",
 				["extralabel"] = "",
+				["out"] = "RAID",
 			},
 			[6] = {
 				["label"] = "Fortitude",
@@ -114,8 +114,8 @@ RABui_Settings = {
 					[3] = 0.5647058823529412,
 				},
 				["priority"] = 3,
-				["extralabel"] = "",
 				["out"] = "CHANNEL:NocPriests",
+				["extralabel"] = "",
 			},
 			[9] = {
 				["cmd"] = "ai 12345678",
@@ -126,8 +126,8 @@ RABui_Settings = {
 					[3] = 1,
 				},
 				["priority"] = 3,
-				["extralabel"] = "",
 				["out"] = "RAID",
+				["extralabel"] = "",
 			},
 			[10] = {
 				["cmd"] = "motw 12345678",
@@ -138,8 +138,8 @@ RABui_Settings = {
 					[3] = 1,
 				},
 				["priority"] = 5,
-				["extralabel"] = "",
 				["out"] = "RAID",
+				["extralabel"] = "",
 			},
 			[11] = {
 				["cmd"] = "blank 12345678",
@@ -150,8 +150,8 @@ RABui_Settings = {
 					[3] = 1,
 				},
 				["priority"] = 5,
-				["out"] = "RAID",
 				["extralabel"] = "",
+				["out"] = "RAID",
 			},
 			[12] = {
 				["cmd"] = "mageblood 12345678 spd",
@@ -162,8 +162,8 @@ RABui_Settings = {
 					[3] = 0.9529411764705882,
 				},
 				["priority"] = 5,
-				["out"] = "CHANNEL:NocHealing",
 				["extralabel"] = "",
+				["out"] = "CHANNEL:NocHealing",
 			},
 			[13] = {
 				["cmd"] = "wisdom 12345678 p",
@@ -174,8 +174,8 @@ RABui_Settings = {
 					[3] = 0.3725490196078432,
 				},
 				["priority"] = 5,
-				["out"] = "CHANNEL:NocHealing",
 				["extralabel"] = "",
+				["out"] = "CHANNEL:NocHealing",
 			},
 			[14] = {
 				["cmd"] = "blank 12345678",
@@ -186,8 +186,8 @@ RABui_Settings = {
 					[3] = 0,
 				},
 				["priority"] = 5,
-				["extralabel"] = "",
 				["out"] = "RAID",
+				["extralabel"] = "",
 			},
 			[15] = {
 				["cmd"] = "firepot 12345678 p",
@@ -198,8 +198,8 @@ RABui_Settings = {
 					[3] = 0.09411764705882353,
 				},
 				["priority"] = 5,
-				["out"] = "CHANNEL:NocHealing",
 				["extralabel"] = "",
+				["out"] = "CHANNEL:NocHealing",
 			},
 			[16] = {
 				["cmd"] = "naturepot 12345678 p",
@@ -210,8 +210,8 @@ RABui_Settings = {
 					[3] = 0,
 				},
 				["priority"] = 5,
-				["out"] = "CHANNEL:NocHealing",
 				["extralabel"] = "",
+				["out"] = "CHANNEL:NocHealing",
 			},
 			[17] = {
 				["cmd"] = "shadowpot 12345678 p",
@@ -222,8 +222,8 @@ RABui_Settings = {
 					[3] = 0.803921568627451,
 				},
 				["priority"] = 5,
-				["out"] = "CHANNEL:NocHealing",
 				["extralabel"] = "",
+				["out"] = "CHANNEL:NocHealing",
 			},
 		},
 		["Lightbringer.Bartharan.current"] = {
@@ -271,11 +271,11 @@ RABui_Settings = {
 	["keepversions"] = false,
 	["alwayscastbigbuffs"] = true,
 	["outlocale"] = "",
-	["colorizechat"] = true,
 	["castbigbuffs"] = true,
+	["colorizechat"] = true,
 	["showsolo"] = false,
 	["enablefadingfx"] = true,
 	["partymode"] = true,
 	["dummymode"] = false,
-	["firstRun"] = false,
+	["showraid"] = true,
 }

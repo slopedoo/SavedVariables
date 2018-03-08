@@ -8,9 +8,9 @@ postal_Characters = {
 	["Lightbringer|Horde"] = {
 		["Gitpull"] = 76700.906,
 		["Gitpush"] = 66514.984,
-		["Actar"] = 15055.765,
-		["Vocie"] = 102204.562,
-		["Bartharan"] = 24621.812,
+		["Actar"] = 530709.89,
+		["Bartharan"] = 85627.515,
 		["Sqlite"] = 360982.25,
+		["Vocie"] = 102204.562,
 	},
 }

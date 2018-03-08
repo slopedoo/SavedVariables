@@ -49,7 +49,10 @@ MACRO 16777233 "HELM" Spell_Holy_SpiritualGuidence
 END
 MACRO 16777243 "IF" Spell_Frost_WindWalkOn
 #showtooltip Inner Focus
-/cast [mod:shift] Shadow Word: Pain; Inner Focus
+/cast [mod:shift] Shadow Word: Pain
+/stopmacro [mod:shift]
+/use 14
+/cast Inner Focus
 END
 MACRO 16777244 "INNER FIRE" Spell_Holy_InnerFire
 #showtooltip Inner Fire
@@ -84,5 +87,7 @@ MACRO 16777246 "SOOTHE" Spell_Holy_MindSooth
 END
 MACRO 16777247 "WOTF" Spell_Shadow_RaiseDead
 #showtooltip Will of the Forsaken
-/cast [mod:shift] Mind Blast; Will of the Forsaken
+/cast [mod:shift] Mind Blast; [mod:ctrl] Will of the Forsaken
+/stopmacro [mod:shift/ctrl]
+/gh Flash Heal(Rank 2)
 END

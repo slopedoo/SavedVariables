@@ -189,7 +189,7 @@ LunaDB = {
 			["detachedTooltip"] = {
 				["fontSizePercent"] = 1,
 			},
-			["mouseover"] = false,
+			["hidden"] = true,
 			["units"] = {
 				["targettargettarget"] = {
 					["incheal"] = {
@@ -263,13 +263,6 @@ LunaDB = {
 						["y"] = -558,
 						["x"] = 861.5,
 					},
-					["powerBar"] = {
-						["enabled"] = false,
-						["vertical"] = false,
-						["hide"] = false,
-						["invert"] = false,
-						["size"] = 1,
-					},
 					["portrait"] = {
 						["enabled"] = false,
 						["size"] = 5,
@@ -298,6 +291,13 @@ LunaDB = {
 								["enabled"] = false,
 							},
 						},
+					},
+					["powerBar"] = {
+						["enabled"] = false,
+						["vertical"] = false,
+						["hide"] = false,
+						["invert"] = false,
+						["size"] = 1,
 					},
 				},
 				["partytarget"] = {
@@ -608,6 +608,14 @@ LunaDB = {
 							},
 						},
 					},
+					["combatText"] = {
+						["xoffset"] = 0,
+						["size"] = 1.2,
+					},
+					["position"] = {
+						["y"] = -573,
+						["x"] = 683,
+					},
 					["indicators"] = {
 						["icons"] = {
 							["raidTarget"] = {
@@ -636,22 +644,14 @@ LunaDB = {
 							},
 						},
 					},
-					["position"] = {
-						["y"] = -573,
-						["x"] = 683,
-					},
-					["combatText"] = {
-						["xoffset"] = 0,
-						["size"] = 1.2,
-					},
 					["highlight"] = {
-						["enabled"] = false,
-					},
-					["comboPoints"] = {
 						["enabled"] = false,
 					},
 					["powerBar"] = {
 						["size"] = 6,
+					},
+					["comboPoints"] = {
+						["enabled"] = false,
 					},
 				},
 				["raid"] = {
@@ -750,7 +750,10 @@ LunaDB = {
 					["castBar"] = {
 						["vertical"] = false,
 					},
-					["petgrp"] = true,
+					["fader"] = {
+						["speedyFade"] = true,
+						["inactiveAlpha"] = 0.1,
+					},
 					["showparty"] = true,
 					["barorder"] = {
 						["horizontal"] = {
@@ -795,6 +798,19 @@ LunaDB = {
 								["size"] = 8,
 							},
 						},
+					},
+					["growth"] = "RIGHT",
+					["titles"] = false,
+					["petgrp"] = true,
+					["powerBar"] = {
+						["enabled"] = false,
+						["vertical"] = false,
+						["hide"] = false,
+					},
+					["padding"] = 1,
+					["highlight"] = {
+						["ontarget"] = true,
+						["alpha"] = 0.5,
 					},
 					["squares"] = {
 						["debuffs"] = {
@@ -845,22 +861,6 @@ LunaDB = {
 						},
 						["debuffcolors"] = true,
 					},
-					["titles"] = false,
-					["fader"] = {
-						["speedyFade"] = true,
-						["inactiveAlpha"] = 0.1,
-					},
-					["powerBar"] = {
-						["enabled"] = false,
-						["vertical"] = false,
-						["hide"] = false,
-					},
-					["padding"] = 1,
-					["highlight"] = {
-						["ontarget"] = true,
-						["alpha"] = 0.5,
-					},
-					["growth"] = "RIGHT",
 				},
 				["targettarget"] = {
 					["highlight"] = {
@@ -910,9 +910,6 @@ LunaDB = {
 						["y"] = -558,
 						["x"] = 799.5,
 					},
-					["powerBar"] = {
-						["enabled"] = false,
-					},
 					["indicators"] = {
 						["icons"] = {
 							["raidTarget"] = {
@@ -939,6 +936,9 @@ LunaDB = {
 						},
 					},
 					["portrait"] = {
+						["enabled"] = false,
+					},
+					["powerBar"] = {
 						["enabled"] = false,
 					},
 				},
@@ -972,18 +972,18 @@ LunaDB = {
 				},
 			},
 			["tooltipCombat"] = true,
+			["auraborderType"] = "black",
 			["classColors"] = {
 				["SHAMAN"] = {
 					["g"] = 0.4666666666666667,
 					["r"] = 0.3764705882352941,
 				},
 			},
-			["auraborderType"] = "black",
 			["font"] = "big_noodle_titling",
 			["bars"] = {
 				["backgroundAlpha"] = 0.01,
 			},
-			["hidden"] = true,
+			["mouseover"] = false,
 		},
 	},
 }

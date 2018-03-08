@@ -260,8 +260,19 @@ AtlasLootCharDB = {
 			[5] = "PvPMountsPvP|AtlasLootGeneralPvPItems",
 		},
 	},
-	["HidePanel"] = false,
+	["QuickLooks"] = {
+	},
 	["MinimapButtonRadius"] = 78,
+	["ItemSpam"] = true,
+	["LastBoss"] = "RFCTaragaman",
+	["PartialMatching"] = true,
+	["FirstTime"] = false,
+	["MinimapButtonPosition"] = 315,
+	["HidePanel"] = false,
+	["AllLinks"] = false,
+	["EquipCompare"] = false,
+	["AtlasLootVersion"] = "40605",
+	["LastSearchedText"] = "wolf",
 	["WishList"] = {
 		[1] = {
 			[1] = 17064,
@@ -320,17 +331,6 @@ AtlasLootCharDB = {
 			[5] = "BWLNefarian|AtlasLootItems",
 		},
 	},
-	["LastBoss"] = "RFCTaragaman",
-	["QuickLooks"] = {
-	},
-	["ItemSpam"] = true,
-	["MinimapButtonPosition"] = 315,
-	["PartialMatching"] = true,
-	["AllLinks"] = false,
-	["EquipCompare"] = false,
-	["AtlasLootVersion"] = "40605",
-	["LastSearchedText"] = "wolf",
-	["FirstTime"] = false,
 	["MinimapButton"] = false,
 	["LootlinkTT"] = false,
 }

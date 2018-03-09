@@ -8,36 +8,27 @@ TheoryCraft_Settings = {
 		["Shadow"] = 0,
 		["Nature"] = 0,
 	},
-	["mana"] = true,
-	["buttontextx"] = 1.111,
+	["buttontexty"] = 10.22,
+	["ColG"] = 1,
 	["ColG2"] = 1,
 	["hpm"] = true,
 	["ColR2"] = 1,
 	["embedstyle1"] = true,
-	["combinedot"] = true,
+	["embed"] = true,
 	["tryfirst"] = "averagedam",
 	["trysecondsfg"] = -1,
-	["ColG"] = 1,
+	["buttontextx"] = 1.111,
 	["tryfirstsfg"] = -1,
-	["ColB"] = 1,
-	["ColB2"] = 0.6862745098039216,
-	["GenerateList"] = "",
+	["mana"] = true,
+	["procs"] = true,
 	["FontPath"] = "Fonts\\ArialN.TTF",
-	["ColR"] = 1,
-	["dontresist"] = true,
-	["dataversion"] = "1.06",
-	["trysecond"] = "averagehealnocrit",
+	["GenerateList"] = "",
 	["mitigation"] = true,
+	["dontresist"] = true,
+	["trysecond"] = "averagehealnocrit",
+	["dataversion"] = "1.06",
+	["ColR"] = 1,
 	["CustomOutfit"] = {
-		["intellect"] = 0,
-		["newstat"] = {
-		},
-		["strength"] = 0,
-		["agility"] = 0,
-		["name"] = "Naked",
-		["stamina"] = 0,
-		["wear"] = {
-		},
 		["destat"] = {
 			[1] = "Head",
 			[2] = "Neck",
@@ -59,21 +50,22 @@ TheoryCraft_Settings = {
 			[18] = "Tabard",
 			[19] = "Ammo",
 		},
-		["spirit"] = 0,
+		["newstat"] = {
+		},
 		["slots"] = {
 			["Ranged"] = {
 				["stats"] = {
 				},
 				["name"] = "|cff1eff00|Hitem:15281:0:2038:0|h[Glowstar Rod of Healing]|h|r",
 				["data"] = {
-					["RangedSpeed"] = 1.5,
+					["numlines"] = 7,
 					["Healing"] = 26,
 					["name"] = "Glowstar Rod of Healing",
 					["procs"] = {
 					},
 					["RangedMax"] = 98,
+					["RangedSpeed"] = 1.5,
 					["RangedMin"] = 52,
-					["numlines"] = 7,
 				},
 			},
 			["Trinket1"] = {
@@ -128,8 +120,8 @@ TheoryCraft_Settings = {
 							["exact"] = 0,
 							["amount"] = 1,
 							["duration"] = 15,
-							["proc"] = 0.02,
 							["type"] = "ICPercent",
+							["proc"] = 0.02,
 						},
 					},
 					["numlines"] = 6,
@@ -172,60 +164,12 @@ TheoryCraft_Settings = {
 				["data"] = {
 					["numlines"] = 7,
 					["MeleeMax"] = 182,
-					["MeleeMin"] = 121,
+					["name"] = "Demonslayer",
 					["procs"] = {
 					},
 					["MeleeAPMult"] = 3.3,
 					["MainSpeed"] = 3.1,
-					["name"] = "Demonslayer",
-				},
-			},
-			["Waist"] = {
-				["stats"] = {
-					["intellect"] = 26,
-					["settype"] = "Vestments of Transcendence",
-					["spirit"] = 9,
-					["stamina"] = 14,
-				},
-				["name"] = "|cffa335ee|Hitem:16925:0:0:0|h[Belt of Transcendence]|h|r",
-				["data"] = {
-					["name"] = "Belt of Transcendence",
-					["procs"] = {
-					},
-					["numlines"] = 25,
-					["Healing"] = 26,
-				},
-			},
-			["Wrist"] = {
-				["stats"] = {
-					["intellect"] = 11,
-					["stamina"] = 9,
-					["spirit"] = 11,
-					["settype"] = "Haruspex's Garb",
-				},
-				["name"] = "|cffa335ee|Hitem:19840:0:0:0|h[Zandalar Haruspex's Bracers]|h|r",
-				["data"] = {
-					["name"] = "Zandalar Haruspex's Bracers",
-					["procs"] = {
-					},
-					["numlines"] = 20,
-					["Healing"] = 24,
-				},
-			},
-			["Neck"] = {
-				["stats"] = {
-					["meleecritchance"] = 1,
-					["attackpower"] = 40,
-					["rangedattackpower"] = 40,
-				},
-				["name"] = "|cffa335ee|Hitem:19856:0:0:0|h[The Eye of Hakkar]|h|r",
-				["data"] = {
-					["AttackPowerReport"] = 40,
-					["name"] = "The Eye of Hakkar",
-					["procs"] = {
-					},
-					["numlines"] = 6,
-					["CritReport"] = 1,
+					["MeleeMin"] = 121,
 				},
 			},
 			["Back"] = {
@@ -242,14 +186,70 @@ TheoryCraft_Settings = {
 					["Meleehitchance"] = 1,
 				},
 			},
+			["Wrist"] = {
+				["stats"] = {
+					["intellect"] = 11,
+					["settype"] = "Haruspex's Garb",
+					["spirit"] = 11,
+					["stamina"] = 9,
+				},
+				["name"] = "|cffa335ee|Hitem:19840:0:0:0|h[Zandalar Haruspex's Bracers]|h|r",
+				["data"] = {
+					["name"] = "Zandalar Haruspex's Bracers",
+					["procs"] = {
+					},
+					["numlines"] = 20,
+					["Healing"] = 24,
+				},
+			},
+			["Neck"] = {
+				["stats"] = {
+					["rangedattackpower"] = 40,
+					["attackpower"] = 40,
+					["meleecritchance"] = 1,
+				},
+				["name"] = "|cffa335ee|Hitem:19856:0:0:0|h[The Eye of Hakkar]|h|r",
+				["data"] = {
+					["AttackPowerReport"] = 40,
+					["name"] = "The Eye of Hakkar",
+					["procs"] = {
+					},
+					["numlines"] = 6,
+					["CritReport"] = 1,
+				},
+			},
+			["Waist"] = {
+				["stats"] = {
+					["intellect"] = 26,
+					["stamina"] = 14,
+					["spirit"] = 9,
+					["settype"] = "Vestments of Transcendence",
+				},
+				["name"] = "|cffa335ee|Hitem:16925:0:0:0|h[Belt of Transcendence]|h|r",
+				["data"] = {
+					["name"] = "Belt of Transcendence",
+					["procs"] = {
+					},
+					["numlines"] = 25,
+					["Healing"] = 26,
+				},
+			},
 		},
+		["agility"] = 0,
+		["name"] = "Naked",
+		["strength"] = 0,
+		["wear"] = {
+		},
+		["intellect"] = 0,
+		["spirit"] = 0,
+		["stamina"] = 0,
 	},
-	["procs"] = true,
-	["buttontexty"] = 10.22,
+	["ColB2"] = 0.6862745098039216,
+	["ColB"] = 1,
 	["critchancedata"] = {
-		["329:9"] = {
-			["casts"] = 186,
-			["crits"] = 41,
+		["319:7"] = {
+			["casts"] = 8,
+			["crits"] = 0,
 		},
 		["273:5"] = {
 			["casts"] = 349,
@@ -291,9 +291,9 @@ TheoryCraft_Settings = {
 			["casts"] = 18,
 			["crits"] = 2,
 		},
-		["317:32"] = {
+		["370:8"] = {
 			["casts"] = 1,
-			["crits"] = 1,
+			["crits"] = 0,
 		},
 		["302:34"] = {
 			["casts"] = 3,
@@ -315,13 +315,13 @@ TheoryCraft_Settings = {
 			["casts"] = 12,
 			["crits"] = 2,
 		},
-		["283:5"] = {
-			["casts"] = 46,
-			["crits"] = 7,
+		["329:7"] = {
+			["casts"] = 31,
+			["crits"] = 10,
 		},
-		["287:5"] = {
-			["casts"] = 709,
-			["crits"] = 88,
+		["305:7"] = {
+			["casts"] = 1015,
+			["crits"] = 125,
 		},
 		["166:6"] = {
 			["casts"] = 5,
@@ -343,17 +343,17 @@ TheoryCraft_Settings = {
 			["casts"] = 1,
 			["crits"] = 0,
 		},
-		["269:30"] = {
-			["casts"] = 20,
-			["crits"] = 8,
+		["304:32"] = {
+			["casts"] = 5,
+			["crits"] = 3,
 		},
 		["286:5"] = {
 			["casts"] = 61,
 			["crits"] = 8,
 		},
-		["165:5"] = {
-			["casts"] = 2,
-			["crits"] = 0,
+		["386:5"] = {
+			["casts"] = 185,
+			["crits"] = 24,
 		},
 		["293:5"] = {
 			["casts"] = 655,
@@ -391,9 +391,9 @@ TheoryCraft_Settings = {
 			["casts"] = 637,
 			["crits"] = 79,
 		},
-		["248:31"] = {
-			["casts"] = 1,
-			["crits"] = 0,
+		["271:5"] = {
+			["casts"] = 5,
+			["crits"] = 1,
 		},
 		["347:7"] = {
 			["casts"] = 1143,
@@ -439,9 +439,9 @@ TheoryCraft_Settings = {
 			["casts"] = 2879,
 			["crits"] = 445,
 		},
-		["356:6"] = {
-			["casts"] = 65,
-			["crits"] = 3,
+		["349:7"] = {
+			["casts"] = 54,
+			["crits"] = 15,
 		},
 		["456:7"] = {
 			["casts"] = 106,
@@ -479,9 +479,9 @@ TheoryCraft_Settings = {
 			["casts"] = 1,
 			["crits"] = 0,
 		},
-		["351:32"] = {
-			["casts"] = 4,
-			["crits"] = 2,
+		["285:5"] = {
+			["casts"] = 70,
+			["crits"] = 4,
 		},
 		["317:7"] = {
 			["casts"] = 32,
@@ -499,17 +499,17 @@ TheoryCraft_Settings = {
 			["casts"] = 72,
 			["crits"] = 13,
 		},
-		["298:34"] = {
-			["casts"] = 3,
-			["crits"] = 1,
+		["308:32"] = {
+			["casts"] = 6,
+			["crits"] = 0,
 		},
 		["251:30"] = {
 			["casts"] = 2,
 			["crits"] = 1,
 		},
-		["286:30"] = {
-			["casts"] = 1,
-			["crits"] = 1,
+		["252:31"] = {
+			["casts"] = 14,
+			["crits"] = 4,
 		},
 		["335:7"] = {
 			["casts"] = 408,
@@ -520,8 +520,8 @@ TheoryCraft_Settings = {
 			["crits"] = 4,
 		},
 		["311:7"] = {
-			["casts"] = 3,
-			["crits"] = 0,
+			["casts"] = 5,
+			["crits"] = 1,
 		},
 		["322:7"] = {
 			["casts"] = 383,
@@ -559,9 +559,9 @@ TheoryCraft_Settings = {
 			["casts"] = 8,
 			["crits"] = 1,
 		},
-		["371:8"] = {
-			["casts"] = 7,
-			["crits"] = 1,
+		["314:10"] = {
+			["casts"] = 348,
+			["crits"] = 62,
 		},
 		["430:8"] = {
 			["casts"] = 14,
@@ -624,16 +624,16 @@ TheoryCraft_Settings = {
 			["crits"] = 10,
 		},
 		["353:7"] = {
-			["casts"] = 586,
+			["casts"] = 596,
 			["crits"] = 69,
 		},
 		["455:7"] = {
 			["casts"] = 9,
 			["crits"] = 2,
 		},
-		["254:5"] = {
-			["casts"] = 102,
-			["crits"] = 7,
+		["266:8"] = {
+			["casts"] = 5,
+			["crits"] = 0,
 		},
 		["396:7"] = {
 			["casts"] = 514,
@@ -663,17 +663,17 @@ TheoryCraft_Settings = {
 			["casts"] = 68,
 			["crits"] = 11,
 		},
-		["304:7"] = {
-			["casts"] = 70,
-			["crits"] = 9,
+		["369:8"] = {
+			["casts"] = 8,
+			["crits"] = 1,
 		},
 		["414:7"] = {
 			["casts"] = 1,
 			["crits"] = 0,
 		},
-		["284:31"] = {
-			["casts"] = 23,
-			["crits"] = 9,
+		["307:31"] = {
+			["casts"] = 30,
+			["crits"] = 11,
 		},
 		["297:6"] = {
 			["casts"] = 67,
@@ -687,9 +687,9 @@ TheoryCraft_Settings = {
 			["casts"] = 1,
 			["crits"] = 0,
 		},
-		["298:6"] = {
-			["casts"] = 133,
-			["crits"] = 17,
+		["302:7"] = {
+			["casts"] = 156,
+			["crits"] = 10,
 		},
 		["303:6"] = {
 			["casts"] = 319,
@@ -763,9 +763,9 @@ TheoryCraft_Settings = {
 			["casts"] = 16,
 			["crits"] = 3,
 		},
-		["353:32"] = {
-			["casts"] = 7,
-			["crits"] = 2,
+		["304:8"] = {
+			["casts"] = 3,
+			["crits"] = 0,
 		},
 		["376:7"] = {
 			["casts"] = 22,
@@ -839,9 +839,9 @@ TheoryCraft_Settings = {
 			["casts"] = 4,
 			["crits"] = 1,
 		},
-		["346:32"] = {
-			["casts"] = 16,
-			["crits"] = 4,
+		["307:5"] = {
+			["casts"] = 115,
+			["crits"] = 16,
 		},
 		["347:8"] = {
 			["casts"] = 3,
@@ -872,12 +872,16 @@ TheoryCraft_Settings = {
 			["crits"] = 21,
 		},
 		["360:7"] = {
-			["casts"] = 7,
-			["crits"] = 1,
+			["casts"] = 8,
+			["crits"] = 2,
 		},
 		["313:31"] = {
 			["casts"] = 53,
 			["crits"] = 26,
+		},
+		["358:7"] = {
+			["casts"] = 1,
+			["crits"] = 0,
 		},
 		["232:6"] = {
 			["casts"] = 1,
@@ -887,9 +891,9 @@ TheoryCraft_Settings = {
 			["casts"] = 855,
 			["crits"] = 138,
 		},
-		["279:5"] = {
-			["casts"] = 36,
-			["crits"] = 5,
+		["428:7"] = {
+			["casts"] = 1,
+			["crits"] = 0,
 		},
 		["376:8"] = {
 			["casts"] = 58,
@@ -903,45 +907,45 @@ TheoryCraft_Settings = {
 			["casts"] = 1,
 			["crits"] = 0,
 		},
-		["424:8"] = {
-			["casts"] = 7,
-			["crits"] = 1,
+		["302:9"] = {
+			["casts"] = 51,
+			["crits"] = 16,
 		},
 		["276:31"] = {
 			["casts"] = 50,
 			["crits"] = 18,
 		},
-		["412:7"] = {
-			["casts"] = 32,
-			["crits"] = 6,
+		["298:6"] = {
+			["casts"] = 133,
+			["crits"] = 17,
 		},
-		["321:30"] = {
-			["casts"] = 1,
-			["crits"] = 1,
+		["297:8"] = {
+			["casts"] = 273,
+			["crits"] = 44,
 		},
 		["279:31"] = {
 			["casts"] = 14,
 			["crits"] = 4,
 		},
-		["300:6"] = {
-			["casts"] = 8,
-			["crits"] = 3,
+		["248:6"] = {
+			["casts"] = 31,
+			["crits"] = 4,
 		},
 		["345:9"] = {
 			["casts"] = 11,
 			["crits"] = 2,
 		},
-		["248:6"] = {
-			["casts"] = 31,
-			["crits"] = 4,
+		["329:34"] = {
+			["casts"] = 13,
+			["crits"] = 3,
 		},
 		["299:7"] = {
 			["casts"] = 47,
 			["crits"] = 5,
 		},
-		["307:31"] = {
-			["casts"] = 30,
-			["crits"] = 11,
+		["284:31"] = {
+			["casts"] = 23,
+			["crits"] = 9,
 		},
 		["300:30"] = {
 			["casts"] = 10,
@@ -955,37 +959,37 @@ TheoryCraft_Settings = {
 			["casts"] = 33,
 			["crits"] = 2,
 		},
-		["346:7"] = {
-			["casts"] = 1205,
-			["crits"] = 199,
+		["304:7"] = {
+			["casts"] = 70,
+			["crits"] = 9,
 		},
-		["355:7"] = {
-			["casts"] = 532,
-			["crits"] = 71,
+		["302:30"] = {
+			["casts"] = 5,
+			["crits"] = 2,
 		},
 		["316:5"] = {
 			["casts"] = 1333,
 			["crits"] = 209,
 		},
-		["266:8"] = {
-			["casts"] = 5,
-			["crits"] = 0,
+		["254:5"] = {
+			["casts"] = 102,
+			["crits"] = 7,
 		},
-		["266:5"] = {
-			["casts"] = 550,
-			["crits"] = 81,
+		["291:30"] = {
+			["casts"] = 2,
+			["crits"] = 1,
 		},
 		["341:7"] = {
 			["casts"] = 3577,
 			["crits"] = 613,
 		},
-		["300:34"] = {
-			["casts"] = 2,
-			["crits"] = 0,
-		},
-		["311:32"] = {
+		["296:32"] = {
 			["casts"] = 1,
 			["crits"] = 0,
+		},
+		["420:7"] = {
+			["casts"] = 6,
+			["crits"] = 1,
 		},
 		["331:8"] = {
 			["casts"] = 41,
@@ -1003,17 +1007,17 @@ TheoryCraft_Settings = {
 			["casts"] = 1215,
 			["crits"] = 151,
 		},
-		["266:30"] = {
-			["casts"] = 14,
-			["crits"] = 2,
-		},
-		["352:7"] = {
-			["casts"] = 808,
-			["crits"] = 159,
+		["285:8"] = {
+			["casts"] = 2,
+			["crits"] = 0,
 		},
 		["323:7"] = {
 			["casts"] = 142,
 			["crits"] = 24,
+		},
+		["358:8"] = {
+			["casts"] = 1,
+			["crits"] = 0,
 		},
 		["439:8"] = {
 			["casts"] = 1,
@@ -1027,21 +1031,21 @@ TheoryCraft_Settings = {
 			["casts"] = 493,
 			["crits"] = 58,
 		},
-		["292:30"] = {
-			["casts"] = 16,
+		["364:5"] = {
+			["casts"] = 10,
 			["crits"] = 3,
 		},
 		["336:8"] = {
 			["casts"] = 2,
 			["crits"] = 0,
 		},
-		["321:7"] = {
-			["casts"] = 793,
-			["crits"] = 99,
+		["175:7"] = {
+			["casts"] = 15,
+			["crits"] = 4,
 		},
-		["304:8"] = {
-			["casts"] = 3,
-			["crits"] = 0,
+		["353:32"] = {
+			["casts"] = 7,
+			["crits"] = 2,
 		},
 		["367:8"] = {
 			["casts"] = 1,
@@ -1055,9 +1059,9 @@ TheoryCraft_Settings = {
 			["casts"] = 1,
 			["crits"] = 0,
 		},
-		["302:31"] = {
-			["casts"] = 27,
-			["crits"] = 10,
+		["416:7"] = {
+			["casts"] = 2,
+			["crits"] = 0,
 		},
 		["289:7"] = {
 			["casts"] = 69,
@@ -1067,81 +1071,81 @@ TheoryCraft_Settings = {
 			["casts"] = 314,
 			["crits"] = 42,
 		},
-		["282:6"] = {
-			["casts"] = 2542,
-			["crits"] = 332,
-		},
-		["370:32"] = {
-			["casts"] = 14,
-			["crits"] = 3,
-		},
-		["327:8"] = {
-			["casts"] = 5,
-			["crits"] = 2,
-		},
-		["383:7"] = {
-			["casts"] = 39,
-			["crits"] = 5,
-		},
-		["314:10"] = {
-			["casts"] = 348,
-			["crits"] = 62,
-		},
-		["302:5"] = {
-			["casts"] = 249,
-			["crits"] = 46,
-		},
-		["285:5"] = {
-			["casts"] = 70,
-			["crits"] = 4,
-		},
-		["281:5"] = {
-			["casts"] = 35,
-			["crits"] = 3,
-		},
-		["401:7"] = {
-			["casts"] = 29,
-			["crits"] = 9,
-		},
-		["313:6"] = {
-			["casts"] = 1553,
-			["crits"] = 194,
-		},
-		["308:32"] = {
-			["casts"] = 6,
-			["crits"] = 0,
-		},
-		["298:9"] = {
-			["casts"] = 24,
-			["crits"] = 8,
-		},
-		["301:5"] = {
-			["casts"] = 478,
-			["crits"] = 59,
-		},
-		["401:5"] = {
-			["casts"] = 104,
-			["crits"] = 28,
+		["283:30"] = {
+			["casts"] = 1,
+			["crits"] = 1,
 		},
 		["300:5"] = {
 			["casts"] = 450,
 			["crits"] = 68,
 		},
-		["309:7"] = {
-			["casts"] = 165,
+		["402:7"] = {
+			["casts"] = 5,
+			["crits"] = 1,
+		},
+		["369:7"] = {
+			["casts"] = 1194,
+			["crits"] = 185,
+		},
+		["371:8"] = {
+			["casts"] = 7,
+			["crits"] = 1,
+		},
+		["302:5"] = {
+			["casts"] = 249,
+			["crits"] = 46,
+		},
+		["286:30"] = {
+			["casts"] = 1,
+			["crits"] = 1,
+		},
+		["370:32"] = {
+			["casts"] = 14,
+			["crits"] = 3,
+		},
+		["351:32"] = {
+			["casts"] = 4,
+			["crits"] = 2,
+		},
+		["313:6"] = {
+			["casts"] = 1553,
+			["crits"] = 194,
+		},
+		["356:6"] = {
+			["casts"] = 65,
+			["crits"] = 3,
+		},
+		["401:5"] = {
+			["casts"] = 104,
 			["crits"] = 28,
 		},
-		["342:7"] = {
-			["casts"] = 6,
+		["301:5"] = {
+			["casts"] = 478,
+			["crits"] = 59,
+		},
+		["321:8"] = {
+			["casts"] = 2,
 			["crits"] = 0,
 		},
-		["294:6"] = {
-			["casts"] = 941,
-			["crits"] = 138,
+		["330:32"] = {
+			["casts"] = 1,
+			["crits"] = 0,
 		},
-		["302:9"] = {
-			["casts"] = 51,
-			["crits"] = 16,
+		["347:32"] = {
+			["casts"] = 18,
+			["crits"] = 7,
+		},
+		["248:31"] = {
+			["casts"] = 1,
+			["crits"] = 0,
+		},
+		["394:8"] = {
+			["casts"] = 2,
+			["crits"] = 0,
+		},
+		["424:8"] = {
+			["casts"] = 7,
+			["crits"] = 1,
 		},
 		["333:7"] = {
 			["casts"] = 46,
@@ -1151,17 +1155,17 @@ TheoryCraft_Settings = {
 			["casts"] = 933,
 			["crits"] = 111,
 		},
-		["275:31"] = {
-			["casts"] = 45,
-			["crits"] = 17,
-		},
-		["306:6"] = {
-			["casts"] = 210,
-			["crits"] = 35,
-		},
-		["294:31"] = {
-			["casts"] = 27,
+		["341:32"] = {
+			["casts"] = 13,
 			["crits"] = 8,
+		},
+		["294:7"] = {
+			["casts"] = 2481,
+			["crits"] = 368,
+		},
+		["165:5"] = {
+			["casts"] = 2,
+			["crits"] = 0,
 		},
 		["315:6"] = {
 			["casts"] = 6,
@@ -1171,85 +1175,85 @@ TheoryCraft_Settings = {
 			["casts"] = 116,
 			["crits"] = 7,
 		},
-		["261:5"] = {
-			["casts"] = 553,
-			["crits"] = 59,
+		["269:30"] = {
+			["casts"] = 20,
+			["crits"] = 8,
 		},
-		["310:7"] = {
-			["casts"] = 554,
-			["crits"] = 80,
+		["265:5"] = {
+			["casts"] = 1,
+			["crits"] = 0,
 		},
-		["283:31"] = {
-			["casts"] = 21,
-			["crits"] = 3,
+		["430:7"] = {
+			["casts"] = 17,
+			["crits"] = 2,
 		},
-		["307:5"] = {
-			["casts"] = 115,
-			["crits"] = 16,
+		["346:32"] = {
+			["casts"] = 16,
+			["crits"] = 4,
 		},
 		["293:30"] = {
 			["casts"] = 10,
 			["crits"] = 4,
 		},
-		["305:7"] = {
-			["casts"] = 1015,
-			["crits"] = 125,
-		},
-		["334:7"] = {
-			["casts"] = 2732,
-			["crits"] = 399,
-		},
-		["320:7"] = {
-			["casts"] = 148,
-			["crits"] = 37,
-		},
-		["160:5"] = {
-			["casts"] = 2,
-			["crits"] = 1,
-		},
-		["322:32"] = {
-			["casts"] = 5,
-			["crits"] = 2,
-		},
-		["252:31"] = {
-			["casts"] = 14,
-			["crits"] = 4,
-		},
-		["430:7"] = {
-			["casts"] = 14,
-			["crits"] = 2,
-		},
-		["291:5"] = {
-			["casts"] = 424,
-			["crits"] = 74,
-		},
-		["362:32"] = {
-			["casts"] = 3,
-			["crits"] = 2,
-		},
-		["418:8"] = {
-			["casts"] = 2,
-			["crits"] = 0,
-		},
-		["370:8"] = {
-			["casts"] = 1,
-			["crits"] = 0,
+		["287:5"] = {
+			["casts"] = 709,
+			["crits"] = 88,
 		},
 		["321:32"] = {
 			["casts"] = 25,
 			["crits"] = 7,
 		},
-		["378:8"] = {
-			["casts"] = 26,
+		["320:7"] = {
+			["casts"] = 148,
+			["crits"] = 37,
+		},
+		["283:5"] = {
+			["casts"] = 46,
 			["crits"] = 7,
+		},
+		["322:32"] = {
+			["casts"] = 5,
+			["crits"] = 2,
+		},
+		["319:6"] = {
+			["casts"] = 26,
+			["crits"] = 8,
+		},
+		["395:32"] = {
+			["casts"] = 2,
+			["crits"] = 0,
+		},
+		["291:5"] = {
+			["casts"] = 424,
+			["crits"] = 74,
 		},
 		["348:32"] = {
 			["casts"] = 1,
 			["crits"] = 0,
 		},
-		["330:32"] = {
+		["335:32"] = {
+			["casts"] = 7,
+			["crits"] = 2,
+		},
+		["317:32"] = {
+			["casts"] = 1,
+			["crits"] = 1,
+		},
+		["334:7"] = {
+			["casts"] = 2732,
+			["crits"] = 399,
+		},
+		["378:8"] = {
+			["casts"] = 26,
+			["crits"] = 7,
+		},
+		["278:30"] = {
 			["casts"] = 1,
 			["crits"] = 0,
+		},
+		["310:7"] = {
+			["casts"] = 554,
+			["crits"] = 80,
 		},
 		["338:7"] = {
 			["casts"] = 447,
@@ -1267,9 +1271,9 @@ TheoryCraft_Settings = {
 			["casts"] = 39,
 			["crits"] = 6,
 		},
-		["261:30"] = {
-			["casts"] = 5,
-			["crits"] = 0,
+		["329:9"] = {
+			["casts"] = 186,
+			["crits"] = 41,
 		},
 		["255:5"] = {
 			["casts"] = 19,
@@ -1279,32 +1283,32 @@ TheoryCraft_Settings = {
 			["casts"] = 6,
 			["crits"] = 0,
 		},
-		["302:32"] = {
-			["casts"] = 1,
-			["crits"] = 0,
-		},
-		["302:6"] = {
-			["casts"] = 580,
-			["crits"] = 79,
-		},
-		["273:30"] = {
-			["casts"] = 4,
+		["317:8"] = {
+			["casts"] = 3,
 			["crits"] = 1,
+		},
+		["395:5"] = {
+			["casts"] = 395,
+			["crits"] = 62,
+		},
+		["252:6"] = {
+			["casts"] = 577,
+			["crits"] = 70,
 		},
 		["316:30"] = {
 			["casts"] = 18,
 			["crits"] = 6,
 		},
-		["407:32"] = {
-			["casts"] = 1,
-			["crits"] = 0,
+		["297:7"] = {
+			["casts"] = 12,
+			["crits"] = 3,
 		},
 		["243:5"] = {
 			["casts"] = 1,
 			["crits"] = 0,
 		},
-		["322:30"] = {
-			["casts"] = 1,
+		["359:32"] = {
+			["casts"] = 3,
 			["crits"] = 0,
 		},
 		["337:7"] = {
@@ -1319,49 +1323,49 @@ TheoryCraft_Settings = {
 			["casts"] = 3,
 			["crits"] = 0,
 		},
-		["239:31"] = {
-			["casts"] = 44,
-			["crits"] = 5,
-		},
-		["270:5"] = {
-			["casts"] = 4,
-			["crits"] = 0,
-		},
-		["287:30"] = {
-			["casts"] = 2,
+		["235:6"] = {
+			["casts"] = 7,
 			["crits"] = 1,
+		},
+		["290:6"] = {
+			["casts"] = 186,
+			["crits"] = 30,
+		},
+		["370:5"] = {
+			["casts"] = 2835,
+			["crits"] = 415,
 		},
 		["330:7"] = {
 			["casts"] = 5,
 			["crits"] = 1,
 		},
-		["276:5"] = {
-			["casts"] = 38,
-			["crits"] = 4,
+		["276:6"] = {
+			["casts"] = 1254,
+			["crits"] = 179,
 		},
 		["323:32"] = {
 			["casts"] = 1,
 			["crits"] = 1,
 		},
-		["339:5"] = {
-			["casts"] = 150,
-			["crits"] = 18,
+		["285:31"] = {
+			["casts"] = 1,
+			["crits"] = 0,
 		},
-		["259:6"] = {
-			["casts"] = 22,
-			["crits"] = 2,
+		["332:32"] = {
+			["casts"] = 1,
+			["crits"] = 0,
 		},
 		["314:9"] = {
 			["casts"] = 1,
 			["crits"] = 0,
 		},
-		["334:32"] = {
-			["casts"] = 56,
-			["crits"] = 9,
+		["348:7"] = {
+			["casts"] = 213,
+			["crits"] = 31,
 		},
-		["356:31"] = {
-			["casts"] = 1,
-			["crits"] = 0,
+		["314:35"] = {
+			["casts"] = 27,
+			["crits"] = 3,
 		},
 		["278:31"] = {
 			["casts"] = 1,
@@ -1371,49 +1375,49 @@ TheoryCraft_Settings = {
 			["casts"] = 1,
 			["crits"] = 0,
 		},
-		["275:6"] = {
-			["casts"] = 888,
-			["crits"] = 143,
-		},
 		["351:6"] = {
 			["casts"] = 45,
 			["crits"] = 11,
 		},
-		["314:35"] = {
-			["casts"] = 27,
-			["crits"] = 3,
+		["275:6"] = {
+			["casts"] = 888,
+			["crits"] = 143,
 		},
-		["348:7"] = {
-			["casts"] = 213,
-			["crits"] = 31,
+		["356:31"] = {
+			["casts"] = 1,
+			["crits"] = 0,
+		},
+		["334:32"] = {
+			["casts"] = 56,
+			["crits"] = 9,
 		},
 		["359:5"] = {
 			["casts"] = 10,
 			["crits"] = 4,
 		},
-		["332:32"] = {
-			["casts"] = 1,
-			["crits"] = 0,
+		["259:6"] = {
+			["casts"] = 22,
+			["crits"] = 2,
 		},
-		["285:31"] = {
-			["casts"] = 1,
-			["crits"] = 0,
+		["339:5"] = {
+			["casts"] = 150,
+			["crits"] = 18,
 		},
-		["276:6"] = {
-			["casts"] = 1254,
-			["crits"] = 179,
+		["276:5"] = {
+			["casts"] = 38,
+			["crits"] = 4,
 		},
-		["370:5"] = {
-			["casts"] = 2835,
-			["crits"] = 415,
-		},
-		["290:6"] = {
-			["casts"] = 186,
-			["crits"] = 30,
-		},
-		["235:6"] = {
-			["casts"] = 7,
+		["287:30"] = {
+			["casts"] = 2,
 			["crits"] = 1,
+		},
+		["270:5"] = {
+			["casts"] = 4,
+			["crits"] = 0,
+		},
+		["239:31"] = {
+			["casts"] = 44,
+			["crits"] = 5,
 		},
 		["271:6"] = {
 			["casts"] = 73,
@@ -1423,41 +1427,41 @@ TheoryCraft_Settings = {
 			["casts"] = 8,
 			["crits"] = 3,
 		},
-		["359:32"] = {
-			["casts"] = 3,
+		["322:30"] = {
+			["casts"] = 1,
 			["crits"] = 0,
 		},
 		["391:7"] = {
 			["casts"] = 1,
 			["crits"] = 0,
 		},
-		["297:7"] = {
-			["casts"] = 12,
-			["crits"] = 3,
+		["407:32"] = {
+			["casts"] = 1,
+			["crits"] = 0,
 		},
-		["252:6"] = {
-			["casts"] = 577,
-			["crits"] = 70,
-		},
-		["395:5"] = {
-			["casts"] = 395,
-			["crits"] = 62,
-		},
-		["317:8"] = {
-			["casts"] = 3,
+		["273:30"] = {
+			["casts"] = 4,
 			["crits"] = 1,
+		},
+		["302:6"] = {
+			["casts"] = 580,
+			["crits"] = 79,
+		},
+		["302:32"] = {
+			["casts"] = 1,
+			["crits"] = 0,
 		},
 		["356:32"] = {
 			["casts"] = 1,
 			["crits"] = 0,
 		},
-		["319:7"] = {
-			["casts"] = 8,
+		["261:30"] = {
+			["casts"] = 5,
 			["crits"] = 0,
 		},
-		["300:32"] = {
-			["casts"] = 3,
-			["crits"] = 1,
+		["158:5"] = {
+			["casts"] = 5,
+			["crits"] = 0,
 		},
 		["292:7"] = {
 			["casts"] = 354,
@@ -1467,21 +1471,21 @@ TheoryCraft_Settings = {
 			["casts"] = 2,
 			["crits"] = 0,
 		},
-		["335:32"] = {
-			["casts"] = 7,
-			["crits"] = 2,
-		},
-		["278:30"] = {
-			["casts"] = 1,
+		["418:8"] = {
+			["casts"] = 2,
 			["crits"] = 0,
 		},
-		["319:6"] = {
-			["casts"] = 26,
-			["crits"] = 8,
+		["362:32"] = {
+			["casts"] = 3,
+			["crits"] = 2,
 		},
-		["329:7"] = {
-			["casts"] = 31,
-			["crits"] = 10,
+		["251:5"] = {
+			["casts"] = 100,
+			["crits"] = 17,
+		},
+		["160:5"] = {
+			["casts"] = 2,
+			["crits"] = 1,
 		},
 		["407:7"] = {
 			["casts"] = 189,
@@ -1495,65 +1499,65 @@ TheoryCraft_Settings = {
 			["casts"] = 90,
 			["crits"] = 9,
 		},
-		["395:32"] = {
-			["casts"] = 2,
-			["crits"] = 0,
+		["298:34"] = {
+			["casts"] = 3,
+			["crits"] = 1,
 		},
-		["158:5"] = {
-			["casts"] = 5,
-			["crits"] = 0,
-		},
-		["304:32"] = {
-			["casts"] = 5,
+		["281:5"] = {
+			["casts"] = 35,
 			["crits"] = 3,
+		},
+		["261:5"] = {
+			["casts"] = 553,
+			["crits"] = 59,
 		},
 		["298:30"] = {
 			["casts"] = 2,
 			["crits"] = 1,
 		},
-		["386:5"] = {
-			["casts"] = 185,
-			["crits"] = 24,
+		["294:31"] = {
+			["casts"] = 27,
+			["crits"] = 8,
 		},
-		["294:7"] = {
-			["casts"] = 2481,
-			["crits"] = 368,
+		["306:6"] = {
+			["casts"] = 210,
+			["crits"] = 35,
 		},
-		["265:5"] = {
-			["casts"] = 1,
-			["crits"] = 0,
+		["275:31"] = {
+			["casts"] = 45,
+			["crits"] = 17,
 		},
 		["418:7"] = {
 			["casts"] = 134,
 			["crits"] = 35,
 		},
-		["394:8"] = {
-			["casts"] = 2,
+		["294:6"] = {
+			["casts"] = 941,
+			["crits"] = 138,
+		},
+		["342:7"] = {
+			["casts"] = 6,
 			["crits"] = 0,
 		},
-		["271:5"] = {
-			["casts"] = 5,
+		["309:7"] = {
+			["casts"] = 165,
+			["crits"] = 28,
+		},
+		["300:32"] = {
+			["casts"] = 3,
 			["crits"] = 1,
 		},
-		["347:32"] = {
-			["casts"] = 18,
-			["crits"] = 7,
-		},
-		["341:32"] = {
-			["casts"] = 13,
+		["298:9"] = {
+			["casts"] = 24,
 			["crits"] = 8,
 		},
-		["251:5"] = {
-			["casts"] = 100,
-			["crits"] = 17,
+		["283:31"] = {
+			["casts"] = 21,
+			["crits"] = 3,
 		},
-		["321:8"] = {
-			["casts"] = 2,
-			["crits"] = 0,
-		},
-		["349:7"] = {
-			["casts"] = 54,
-			["crits"] = 15,
+		["401:7"] = {
+			["casts"] = 29,
+			["crits"] = 9,
 		},
 		["309:32"] = {
 			["casts"] = 9,
@@ -1567,85 +1571,85 @@ TheoryCraft_Settings = {
 			["casts"] = 3,
 			["crits"] = 1,
 		},
-		["369:7"] = {
-			["casts"] = 1194,
-			["crits"] = 185,
+		["383:7"] = {
+			["casts"] = 39,
+			["crits"] = 5,
 		},
-		["402:7"] = {
+		["327:8"] = {
 			["casts"] = 5,
-			["crits"] = 1,
+			["crits"] = 2,
 		},
-		["283:30"] = {
-			["casts"] = 1,
-			["crits"] = 1,
+		["282:6"] = {
+			["casts"] = 2542,
+			["crits"] = 332,
 		},
-		["416:7"] = {
-			["casts"] = 2,
-			["crits"] = 0,
+		["302:31"] = {
+			["casts"] = 27,
+			["crits"] = 10,
 		},
 		["316:7"] = {
 			["casts"] = 336,
 			["crits"] = 46,
 		},
-		["175:7"] = {
-			["casts"] = 15,
-			["crits"] = 4,
+		["321:7"] = {
+			["casts"] = 793,
+			["crits"] = 99,
 		},
-		["364:5"] = {
-			["casts"] = 10,
+		["292:30"] = {
+			["casts"] = 16,
 			["crits"] = 3,
 		},
-		["358:8"] = {
+		["352:7"] = {
+			["casts"] = 808,
+			["crits"] = 159,
+		},
+		["266:30"] = {
+			["casts"] = 14,
+			["crits"] = 2,
+		},
+		["311:32"] = {
 			["casts"] = 1,
 			["crits"] = 0,
 		},
-		["285:8"] = {
+		["300:34"] = {
 			["casts"] = 2,
-			["crits"] = 0,
-		},
-		["420:7"] = {
-			["casts"] = 6,
-			["crits"] = 1,
-		},
-		["296:32"] = {
-			["casts"] = 1,
 			["crits"] = 0,
 		},
 		["298:31"] = {
 			["casts"] = 25,
 			["crits"] = 13,
 		},
-		["291:30"] = {
-			["casts"] = 2,
-			["crits"] = 1,
+		["266:5"] = {
+			["casts"] = 550,
+			["crits"] = 81,
 		},
 		["424:7"] = {
 			["casts"] = 179,
 			["crits"] = 38,
 		},
-		["302:30"] = {
-			["casts"] = 5,
-			["crits"] = 2,
+		["355:7"] = {
+			["casts"] = 532,
+			["crits"] = 71,
 		},
-		["369:8"] = {
-			["casts"] = 8,
-			["crits"] = 1,
+		["346:7"] = {
+			["casts"] = 1205,
+			["crits"] = 199,
 		},
 		["284:6"] = {
 			["casts"] = 244,
 			["crits"] = 32,
 		},
-		["329:34"] = {
-			["casts"] = 13,
+		["300:6"] = {
+			["casts"] = 8,
 			["crits"] = 3,
 		},
-		["297:8"] = {
-			["casts"] = 273,
-			["crits"] = 44,
+		["321:30"] = {
+			["casts"] = 1,
+			["crits"] = 1,
 		},
-		["302:7"] = {
-			["casts"] = 156,
-			["crits"] = 10,
+		["412:7"] = {
+			["casts"] = 32,
+			["crits"] = 6,
 		},
 		["284:7"] = {
 			["casts"] = 1,
@@ -1655,11 +1659,11 @@ TheoryCraft_Settings = {
 			["casts"] = 3,
 			["crits"] = 0,
 		},
-		["428:7"] = {
-			["casts"] = 1,
-			["crits"] = 0,
+		["279:5"] = {
+			["casts"] = 36,
+			["crits"] = 5,
 		},
 	},
-	["embed"] = true,
+	["combinedot"] = true,
 	["healanddamage"] = true,
 }

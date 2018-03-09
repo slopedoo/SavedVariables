@@ -161,5 +161,5 @@ VF_BGStats: disabled
 VF_CharacterStats: enabled
 modguide: disabled
 VanillaGraphicBoost: disabled
-SmartHeal: enabled
-GodzillaHeal: disabled
+SmartHeal: disabled
+GodzillaHeal: enabled

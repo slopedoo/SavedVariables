@@ -37,12 +37,12 @@ MACRO 16777241 "GH4" Spell_Holy_GreaterHeal
 /stopmacro [mod:shift]
 /lunamo Greater Heal
 END
-MACRO 16777242 "HEAL3" Spell_Holy_Heal
-#showtooltip Heal(Rank 2)
+MACRO 16777242 "HEAL4" Spell_Holy_Heal
+#showtooltip Heal(Rank 4)
 /cast [mod:shift] Fade
 /use [mod:ctrl] Heavy Runecloth Bandage
 /stopmacro [mod:shift/ctrl]
-/lunamo Heal(Rank 2)
+/lunamo Heal(Rank 4)
 END
 MACRO 16777233 "HELM" Spell_Holy_SpiritualGuidence
 /script UseInventoryItem(1)
@@ -65,7 +65,7 @@ MACRO 16777248 "MANA OIL" boss_odunrunes_blue
 END
 MACRO 16777249 "PI" Spell_Holy_PowerInfusion
 #showtooltip Power Infusion
-/target Gallatrix
+/target Gahd
 /cast Power Infusion
 /script TargetLastTarget()
 END
@@ -89,5 +89,5 @@ MACRO 16777247 "WOTF" Spell_Shadow_RaiseDead
 #showtooltip Will of the Forsaken
 /cast [mod:shift] Mind Blast; [mod:ctrl] Will of the Forsaken
 /stopmacro [mod:shift/ctrl]
-/gh Flash Heal(Rank 2)
+/gh Flash Heal(Rank 3)
 END

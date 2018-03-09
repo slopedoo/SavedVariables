@@ -28,7 +28,7 @@ RABui_Settings = {
 				["cmd"] = "mana pdsa",
 				["out"] = "RAID",
 				["priority"] = 1,
-				["extralabel"] = "",
+				["extralabel"] = " (3 dead)",
 			},
 			[2] = {
 				["label"] = "DPS",
@@ -41,7 +41,7 @@ RABui_Settings = {
 				["cmd"] = "mana mlh",
 				["out"] = "RAID",
 				["priority"] = 1,
-				["extralabel"] = "",
+				["extralabel"] = " (1 dead)",
 			},
 			[3] = {
 				["cmd"] = "ss 12345678",

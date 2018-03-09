@@ -4,9 +4,9 @@ GodzillaHeal_Settings = {
 	["Randomize"] = 0,
 	["ExcludeExpression"] = "",
 	["Threshold"] = 250,
-	["AutoDownRank"] = false,
+	["CancelThreshold"] = 300,
 	["Mode"] = 1,
 	["Watch"] = {
 	},
-	["CancelThreshold"] = 300,
+	["AutoDownRank"] = true,
 }
